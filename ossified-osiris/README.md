@@ -1,5 +1,5 @@
 # Astro Starter Kit: Basics
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4a7a140-58ee-4e85-90e1-b2cc7806b641/deploy-status)](https://app.netlify.com/sites/tangerine-salmiakki-d5cfaa/deploys) ?branch=dev/deploy-status?branch=dev
 
 
 ```sh
