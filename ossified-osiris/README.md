@@ -1,6 +1,6 @@
 # Astro Starter Kit: Basics
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f98df05e-a3fa-4e01-a98a-ea9ef81a129c/deploy-status)](https://app.netlify.com/sites/heartfelt-puppy-caa588/deploys) ?branch=dev/deploy-status?branch=dev
+
 
 ```sh
 npm create astro@latest -- --template basics
