@@ -31,6 +31,6 @@ path = "/*"  # CSP soll auf alle Seiten angewendet werden
 excludedPath = ["/admin/*", "*.css", "*.js", "*.svg", "*.jpg", "*.png"]
 
 [[edge_functions]]
-function = "csp-nonce"
+function = "__csp-nonce"
 path = "/*"
 
