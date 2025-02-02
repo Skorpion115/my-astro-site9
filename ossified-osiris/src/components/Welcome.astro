@@ -2,8 +2,8 @@
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 // Generiere nonce hier
-import { randomBytes } from 'crypto';
-const nonce = randomBytes(16).toString('base64');
+// import { randomBytes } from 'crypto';
+// const nonce = randomBytes(16).toString('base64');
 import Layout from '../layouts/Layout.astro'; // Stelle sicher, dass der Pfad stimmt
 // import { randomBytes } from 'crypto';
 // const nonce = Astro.fetchContentSecurityPolicyNonce(); // Holen des Nonce-Werts
@@ -40,7 +40,8 @@ import Layout from '../layouts/Layout.astro'; // Stelle sicher, dass der Pfad st
 				fill="#111827"></path></svg
 		>
 		<h2>What's New in Astro 5.0?</h2>
-		<script type="module" nonce={nonce}></script>
+		<!--
+		<script type="module" nonce={nonce}></script> -->
 		<p>
 			From content layers to server islands, click to learn more about the new features and
 			improvements in Astro 5.0
@@ -53,8 +54,8 @@ import Layout from '../layouts/Layout.astro'; // Stelle sicher, dass der Pfad st
 	<!--
 	<script type="module" src="/js/deinScript.js" nonce={nonce} is:inline></script>
 	<script type="module" nonce={nonce} is:inline></script>
-	<script type="module" src="/js/deinScript.js" is:inline></script> -->
-	<script type="module" src="/js/deinScript.js" nonce={nonce} is:inline></script>
+	<script type="module" src="/js/deinScript.js" is:inline></script>
+	<script type="module" src="/js/deinScript.js" nonce={nonce} is:inline></script> -->
 
 
 	  
