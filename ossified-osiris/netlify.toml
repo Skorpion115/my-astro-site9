@@ -19,18 +19,4 @@ Access-Control-Allow-Methods = "GET,POST,PUT,PATCH,DELETE"
 Access-Control-Allow-Credentials = "true"
 X-Content-Type-Options = "nosniff"
 
-# CSP-Nonce Plugin aktivieren
-[[plugins]]
-package = "@netlify/plugin-csp-nonce"
-
-[plugins.inputs]
-reportOnly = true  # Testmodus, um nichts zu blockieren
-reportUri = "/__csp-violations"  # Optionale Logging-URL
-unsafeEval = false  # Falls du eval() nicht brauchst
-path = "/*"  # CSP soll auf alle Seiten angewendet werden
-excludedPath = ["/admin/*", "*.css", "*.js", "*.svg", "*.jpg", "*.png"]
-
-[[edge_functions]]
-function = "__csp-nonce"
-path = "/*"
 
