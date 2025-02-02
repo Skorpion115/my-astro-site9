@@ -1,7 +1,5 @@
 ---
-
-
-
+const nonce = Astro.props.nonce; // Netlify setzt automatisch das Nonce
 // const nonce = randomBytes(16).toString('base64');
 ---
 
@@ -14,20 +12,14 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<!-- Content Security Policy (CSP) Header mit Nonce 
-		<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'nonce-{{nonce}}';" /> -->
-		<!--
-		<meta http-equiv="Content-Security-Policy" content={`script-src 'self' 'nonce-${nonce}'`} /> -->
 		<title>Astro Basics</title>
-		<!-- Content Security Policy (CSP) Header mit Nonce -->
-		 <!--
-		<meta http-equiv="Content-Security-Policy" content={`script-src 'self' 'nonce-${nonce}'`} /> -->
 	</head>
 	<body>
 		<slot />
 	</body>
 	<!--
 	<script type="module" src="/deinScript.js" nonce={nonce} is:inline></script> -->
+	<script src="/dein-script.js" nonce={nonce} is:inline></script>
 
 </html>
 
