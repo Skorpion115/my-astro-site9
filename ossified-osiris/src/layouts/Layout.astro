@@ -1,10 +1,8 @@
 ---
-import { randomBytes } from 'crypto';
 
-// Generiere eine zufällige nonce
+
+
 // const nonce = randomBytes(16).toString('base64');
-// const nonce = 'your_generated_nonce_here'; // Generiere den Nonce hier
-const nonce = randomBytes(16).toString('base64');
 ---
 
 
@@ -28,7 +26,8 @@ const nonce = randomBytes(16).toString('base64');
 	<body>
 		<slot />
 	</body>
-	<script type="module" src="/deinScript.js" nonce={nonce} is:inline></script>
+	<!--
+	<script type="module" src="/deinScript.js" nonce={nonce} is:inline></script> -->
 
 </html>
 
