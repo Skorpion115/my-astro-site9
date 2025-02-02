@@ -23,4 +23,4 @@ X-Content-Type-Options = "nosniff"
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'nonce-{NONCE}' 'strict-dynamic' https://www.googletagmanager.com https://www.google-analytics.com https://www.youtube.com https://www.gstatic.com; object-src 'none'; base-uri 'self'; report-uri /csp-violation-report-endpoint;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'nonce-{NONCE}' 'strict-dynamic'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self';"
