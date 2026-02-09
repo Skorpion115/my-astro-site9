@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PaypalButton from "../../components/PaypalButton.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Rose Room Noten & BackingTrack kaufen | Musicstudio Ziebart";
+const description =
+  "Gitarrensolo zu »Rose Room« als PDF. Ideal für Jazz-Gitarre. Sofort-Download nach Zahlung.";
+const keywords =
+  "Rose Room, Guitar Solo, Jazz Gitarre, Gitarrennoten, PDF Download";
+const pageUrl = getPageUrl(Astro);
+
+// Produktdaten
+const priceGross = "4,95";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <h1>Rose Room – Guitar Solo</h1>
+
+  <img
+    src="/bilder/Anfang.jpg"
+    alt="Rose Room – Jazz Guitar Solo Vorschau"
+    class="product-image"
+  />
+
+  <p>
+    Hol dir die <strong>
+      Noten Rose Room Jazz Guitar Solo + Rose Room Rhythm Guitar + Rose Room Bass +
+      BackingTrack + Rose Room Mastering
+    </strong> für dein Gitarrenspiel.
+    <br />
+    Sofortiger Download nach Zahlung.
+  </p>
+
+  <ul>
+    <li>✔ Klar notiertes Guitar Solo</li>
+    <li>✔ Für Unterricht & Selbststudium</li>
+    <li>✔ Sofortiger Download nach Zahlung</li>
+  </ul>
+
+  <table class="price-table">
+    <tr>
+      <th>Produkt</th>
+      <td>Rose Room – Guitar Solo (PDF)</td>
+    </tr>
+    <tr>
+      <th>Gesamtpreis</th>
+      <td><strong>{priceGross} €</strong></td>
+    </tr>
+  </table>
+
+ <p class="small">
+    Gemäß § 19 Abs. 1 UStG wird keine Umsatzsteuer berechnet.
+  </p>
+
+  <PaypalButton
+    itemName="Rose Room – Guitar Solo (PDF)"
+    amount={priceGross}
+    returnUrl="https://www.musicstudio-ziebart.de/download/rose-room/"
+  />
+
+  <p class="vat-note">
+    <small>
+      Rechnung auf Anfrage per E-Mail erhältlich.
+    </small>
+  </p>
+
+  <p>
+    <a href="/kunden-login/inhaltsverzeichnis/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
+  </p>
+</BaseLayout>

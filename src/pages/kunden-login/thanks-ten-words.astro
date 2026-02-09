@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Danke – Dein Download ist bereit";
+const description =
+  "Vielen Dank für deine Zahlung! Deine Noten- & Tabulaturblatt ‚Ten Words‘ ist jetzt zum Download verfügbar.";
+const keywords = "Ten Words, Noten, Tabulatur, Download Noten, PDF";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <h1>Danke für deine Zahlung!</h1>
+
+  <h2>Deine Downloads</h2>
+
+  <ul>
+    <li>
+      <a href="/downloads/Ten_Words_by_Satriani.pdf" download class="cta-button">
+        🎵 Ten Words – Noten & Tabulatur
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1fbLmpYHQW2bBpryXcYK2iNNPlWxNBUnk"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Ten Words – BackingTrack
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1VC6dS8mLwb0mPzFkvUXNzemQ2wxZGqJP"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Ten Words – Mastering
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+</BaseLayout>

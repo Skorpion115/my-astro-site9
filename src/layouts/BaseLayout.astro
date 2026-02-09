@@ -1,0 +1,192 @@
+---
+import IubendaScript from "../components/IubendaScript.astro";
+import GoogleScripts from "../components/GoogleScripts.astro";
+import Header from "../components/Header.astro";
+import Footer1 from "../components/Footer1.astro";
+import Footer2 from "../components/Footer2.astro";
+
+const {
+  pageTitle,
+  description,
+  keywords,
+  href,
+  ogTitle,
+  ogDescription,
+  ogUrl,
+  ogType,
+  twitterTitle,
+  twitterDescription,
+  twitterUrl,
+} = Astro.props;
+
+// FallBack wird nicht genutzt da mit href übergeben wird
+const urlPath = new URL(Astro.request.url).pathname;
+
+// Canonical URL berechnen und übergeben
+const canonicalUrl = href || `${Astro.site}${urlPath}`;
+
+// Netlify setzt automatisch das Nonce
+const nonce = Astro.props.nonce || "";
+
+// console.log("[SERVER] Astro nonce:", Astro.props.nonce);
+console.log("[SERVER] Astro nonce:", nonce);
+console.log(`[SERVER] Nonce IubendaScript läuft! ${nonce}`);
+console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- ✨ Slot für Seitenspezifisches aus MarkdownPostLayout etc. -->
+    <slot name="head" />
+    <link rel="icon" href="/favicon.ico" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="16x16" href="/apple-touch-icon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="Language" content="de_DE" />
+    <meta name="date" content={new Date().toISOString().split("T")[0]} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+
+    <!-- Canonical URL einfügen, wenn `href` übergeben wurde -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <title>{pageTitle}</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={ogTitle || pageTitle} />
+    <meta property="og:description" content={ogDescription || description} />
+    <meta property="og:url" content={ogUrl || href} />
+    <meta property="og:type" content={ogType || "website"} />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={twitterTitle || pageTitle} />
+    <meta
+      name="twitter:description"
+      content={twitterDescription || description}
+    />
+    <meta name="twitter:url" content={twitterUrl || href} />
+    <meta
+      name="google-site-verification"
+      content="Zitul6WICKD7zrzgptxGVrh2GEhozasdEM_d1tGi2aw"
+    />
+    <meta
+      name="author"
+      content="Musicstudio Ziebart, postmaster@musicstudio-ziebart.de"
+    />
+    <meta
+      name="DC.Publisher"
+      content="Musicstudio Ziebart, postmaster@musicstudio-ziebart.de"
+    />
+    <meta name="page-topic" content="Musikunterricht, Musikschule, Bildung" />
+    <meta name="DC.rights" content="Alle Rechte liegen beim Author" />
+    <meta name="robots" content="max-snippet:-1, INDEX, FOLLOW" />
+    <meta name="theme-color" content="#191919" />
+
+    <!-- Client-Side Navigation -->
+    
+
+    <!-- Bedingte CSS-Dateien fuer spezifische Seiten -->
+    {
+      urlPath === "/gitarrenunterricht/" && (
+        <link rel="stylesheet" href="/styles/gitarrenunterricht.css" />
+      )
+    }
+    {
+      urlPath === "/e-gitarrenunterricht/" && (
+        <link rel="stylesheet" href="/styles/e-gitarrenunterricht.css" />
+      )
+    }
+    {
+      urlPath === "/e-bassunterricht/" && (
+        <link rel="stylesheet" href="/styles/e-bassunterricht.css" />
+      )
+    }
+    {
+      urlPath === "/banjounterricht/" && (
+        <link rel="stylesheet" href="/styles/banjounterricht.css" />
+      )
+    }
+    {
+      urlPath === "/klavierunterricht/" && (
+        <link rel="stylesheet" href="/styles/klavierunterricht.css" />
+      )
+    }
+    {
+      urlPath === "/keyboardunterricht/" && (
+        <link rel="stylesheet" href="/styles/keyboardunterricht.css" />
+      )
+    }
+    {
+      urlPath === "/akkordeonunterricht/" && (
+        <link rel="stylesheet" href="/styles/akkordeonunterricht.css" />
+      )
+    }
+    {
+      urlPath === "/saxophonunterricht/" && (
+        <link rel="stylesheet" href="/styles/saxophonunterricht.css" />
+      )
+    }
+    {
+      urlPath === "/klarinettenunterricht/" && (
+        <link rel="stylesheet" href="/styles/klarinettenunterricht.css" />
+      )
+    }
+    {
+      urlPath === "/querfloetenunterricht/" && (
+        <link rel="stylesheet" href="/styles/querfloetenunterricht.css" />
+      )
+    }
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Inhalt</a>
+    <!-- Google Tag Manager (noscript) -->
+
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PWK4LSL"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+
+    <Header nonce={nonce} />
+    <script nonce={nonce}>
+      console.log("[BROWSER] Nonce Header läuft!");
+    </script>
+
+    <h1 id="top" transition:animate="slide" class="page-title">{pageTitle}</h1>
+
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer1 />
+    <br />
+    <Footer2 />
+
+    <!-- IubendaScript kommt hier nach den Inhalten, aber vor GoogleScripts -->
+    <IubendaScript nonce={nonce} />
+    <script nonce={nonce}>
+      console.log("[BROWSER] IubendaScript läuft!");
+    </script>
+
+    <!-- GoogleScripts kommt nach IubendaScript -->
+    <GoogleScripts nonce={nonce} />
+    <script nonce={nonce}>
+      console.log("[BROWSER] GoogleScripts läuft!");
+    </script>
+
+    <!-- Scripte extern einbinden -->
+    <script src="/scripts/menu.js" nonce={nonce} defer></script>
+    <script src="/scripts/load-iframes.js" nonce={nonce} defer is:inline
+    ></script>
+    <script src="/scripts/document-cookie.js" nonce={nonce} defer is:inline
+    ></script>
+    <script src="/scripts/script-check.js" nonce={nonce} defer is:inline
+    ></script>
+    <script src="/scripts/delete-gacookies.js" defer></script>
+  </body>
+</html>

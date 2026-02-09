@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Danke – Dein Download ist bereit";
+const description =
+  "Vielen Dank für deine Zahlung! Deine Noten- & Tabulaturblatt ‚Kleiner Schelm‘ ist jetzt zum Download verfügbar.";
+const keywords = "Kleiner Schelm, Noten, Download Noten, PDF";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <h1>Danke für deine Zahlung!</h1>
+
+  <h2>Deine Downloads</h2>
+
+  <ul>
+    <li>
+      <a href="/downloads/Kleiner_Schelm.pdf" download class="cta-button">
+        📄 Kleiner Schelm – Orgelnoten
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1JIfAu3pjlYPAJMRsJos7dcL8qIXkOpqD"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Kleiner Schelm – Play Along
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+</BaseLayout>

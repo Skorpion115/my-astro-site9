@@ -1,0 +1,93 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogPost from "../components/BlogPost.astro";
+
+// Interface für das Frontmatter jedes Blog-Posts
+interface PostFrontmatter {
+  title: string;
+  description: string;
+  pubDate: string;
+  author: string;
+  image: { url: string; alt: string };
+  visibility: "public" | "draft";
+  /*
+  tags: string[]; */
+}
+
+// Interface für den Blog-Post mit URL
+interface BlogPostType {
+  url?: string;
+  frontmatter: PostFrontmatter;
+}
+
+// Sammeln aller Blog-Posts
+const globFiles = import.meta.glob<{ frontmatter: PostFrontmatter }>("./posts/*.md", { eager: true });
+const posts: BlogPostType[] = Object.entries(globFiles)
+  .map(([path, post]: [string, any]) => {
+    // Extrahiere den Dateinamen aus dem Pfad (z.B. "banjo-daempfer" aus "./posts/banjo-daempfer.md")
+    const filename = path.split('/').pop()?.replace('.md', '') || '';
+    return {
+      url: `/posts/${filename}/`,
+      frontmatter: post.frontmatter,
+    };
+  })
+  .filter((post) => post.frontmatter.visibility === "public")
+  .sort((a, b) => new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime());
+
+const pageTitle = "Meine Blog Seite";
+const pageDescription = "Blogbeiträge rund um Musik, Instrumente und Unterricht vom Musicstudio Ziebart.";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <Fragment slot="head">
+    <meta name="description" content={pageDescription} />
+    <link rel="canonical" href={pageUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={pageUrl} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+  </Fragment>
+  <p>
+    Wie spielt eine Blues Harp Mundharmonika?
+  </p>
+  <p>
+    Ich möchte einige gute Ratschläge für Musiker und Musikerinnen geben. Viele
+    Gitarren Anfänger wissen nicht wie man eine Gitarre stimmt. Hier zu habe ich
+    den kleinen Blog Gitarre stimmen geschrieben. Das gleiche gilt auch für alle
+    Banjo Picker. Da das Banjo lauter als eine normale Gitarre ist haben viele
+    Bedenken wegen der Nachbarschaft vor allen in Wohnungen. Hier stelle ich
+    einen Banjo Dämpfer vor der das Problem lösen sollte.
+  </p>
+  <p>
+    Außerdem möchte ich noch das Astro Framework erwähnen mit dem ich meine
+    ganze Webseite geschrieben habe.
+  </p>
+
+  <ul>
+    {posts.map((post) => (
+      <BlogPost 
+        url={post.url} 
+        title={post.frontmatter.title} 
+        description={post.frontmatter.description}
+        pubDate={post.frontmatter.pubDate}
+        author={post.frontmatter.author} 
+      />
+    ))}
+  </ul>
+<!--
+  <ul>
+    {posts.map((post) => (
+      <li>
+        <a href={post.url}>{post.frontmatter.title}</a>
+      </li>
+    ))}
+  </ul> -->
+</BaseLayout>

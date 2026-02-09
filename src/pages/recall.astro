@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getPageUrl } from "../utils/getPageUrl.js";
+
+const pageTitle = "Ich rufe Sie zurück!";
+const description = "Falls Sie Fragen haben, können Sie mir gerne eine kurze Mitteilung schicken. Ich werde Sie zurückrufen! 😀";
+const keywords = "rueckruf, callback, telefon rueckruf";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+>
+  <div class="container4">
+    <form 
+      name="callback-form"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/danke-seite/"
+    >
+      <p style="display:none">
+        <label>Bitte nicht ausfüllen: <input type="text" name="bot-field" /></label>
+      </p>
+      <input type="hidden" name="form-name" value="callback-form">
+      <input type="hidden" name="_next" value="https://www.musicstudio-ziebart.de/danke-seite/">
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Namen eintragen" required />
+      </div>
+
+      <div>
+        <label for="subject">Betreff:</label>
+        <input
+          name="subject"
+          type="text"
+          id="subject"
+          maxlength="30"
+          placeholder="Rückruf"
+          class="form-control form-control-lg"
+        >
+      </div>
+
+      <div>
+        <label for="message">Nachricht:</label>
+        <textarea
+          id="message"
+          name="message"
+          cols="23"
+          rows="10"
+          class="form-control form-control-lg"
+          placeholder="Bitte um Rückruf"></textarea>
+      </div>
+
+      <div>
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Telefonnummer" required />
+      </div>
+
+      <div>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" placeholder="E-Mail" />
+      </div>
+
+      <div>
+        <label>
+          <input type="checkbox" name="consent" required />
+          Ich stimme der Verarbeitung meiner Daten gemäß der
+          <a href="/datenschutz/" target="_blank">Datenschutzerklärung</a> zu.
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-lg btn-primary">Absenden</button>
+    </form>
+  </div>
+</BaseLayout>

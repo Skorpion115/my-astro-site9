@@ -1,17 +1,221 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getPageUrl } from "../utils/getPageUrl.js";
+import Card from "../components/Card.astro";
+const pageTitle = "Musiklehrer erteilt Musikunterricht | Musicstudio Ziebart";
+const description =
+  "Ich gebe Musikunterricht in Nürnberg 🎹. Individueller Unterricht für Anfänger und Fortgeschrittene 🎼, jetzt anrufen! Tel.: 0911/6320890.";
+const keywords =
+  "musiklehrer erteilt musikunterricht | musicstudio-ziebart, musikunterricht nürnberg, musikschule für alle, musikmachen, musik machen, musikschule nürnberg standorte, gitarrenschule nürnberg, musikunterricht nürnberg, musikschule nürnberg lehrer, musikschule nürnberg preise, musikschule eibach, musicstudio ziebart online musikunterricht, privatmusikunterricht, musikunterricht grundschule, musikschule, google search console, günstige Preise, musikausbildung, qualifizierter musiklehrer, online-musikunterricht, kinder musikalisch fördern, musicstudio-ziebart, musikschule nürnberg kinder, klavierunterricht kinder nürnberg, musikschulen nürnberg, musikschule nürnberg, nürnberg musikschule, gitarrenunterricht für kinder nürnberg, gitarre lernen nürnberg, musikschule nürnberg eibach, musikschule nürnberg preise, musikschule in der naehe, musikschule nürnberg kinder, musiklehrer, musiklehrer nürnberg";
+const pageUrl = getPageUrl(Astro);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro npm run dev geht immer noch</h1>
-	</body>
-</html>
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <div class="firmenname">Staatl. Anerk. Musiklehrer</div>
+  <p>
+    <img
+      src="/images/musikunterricht.webp"
+      alt="Musiklehrer erteilt Musikunterricht | Musicstudio-ziebart"
+      loading="lazy"
+    />
+  </p>
+  <br />
+
+  <article class="conteneur">
+    <section class="marchandise marchandise-1">
+      <h2>Musikunterricht für alle</h2>
+      <p>
+        Das <strong>Musicstudio Ziebart</strong> wurde 1984 gegründet. 
+        Ich bin <strong>staatlich anerkannter Musiklehrer</strong> mit pädagogischer Ausbildung 
+        und gebe <strong>Musikunterricht in Nürnberg</strong> für alle Altersklassen. 
+        Unsere <strong>Musikschule</strong> ist für jeden geeignet, der Freude an Musik hat. 
+        Das Unterrichtshonorar ist bei allen Instrumenten dasselbe.  
+        Oft werde ich gefragt: <em>„Ab wann sollte man mit dem Musizieren anfangen?“</em>  
+        Meine Empfehlung: Ab der 2. Klasse ist ein gutes Alter, bei der Blockflöte kann man 
+        auch etwas früher beginnen.
+      </p>
+      <h2>Ist Musikunterricht gut für Kinder?</h2>
+      <p>
+        Ja, der Besuch einer <strong>Musikschule</strong> kann für Kinder sehr vorteilhaft sein. 
+        <strong>Musikunterricht</strong> fördert nicht nur musikalische Fähigkeiten, 
+        sondern auch Konzentration, Geduld und persönliche Entwicklung.
+      </p>
+      <h2>Was bringt Musikschule?</h2>
+      <p>
+        <strong>Musik und das Erlernen eines Instruments</strong> helfen Kindern und 
+        Jugendlichen, Eigeninitiative und Leistungsbereitschaft zu entwickeln.  
+        <strong>Musikschulen</strong> fördern außerdem <strong>Ausdauer</strong> 
+        und <strong>Konzentrationsfähigkeit</strong> – Fähigkeiten, die auch im Alltag 
+        von Vorteil sind.
+      </p>
+      <h2>Warum wird Musik in der Schule unterrichtet?</h2>
+      <p>
+        Guter Musikunterricht, ob in der allgemeinbildenden Schule oder in der
+        Musikschule, unterstützt die Entwicklung von Kindern und Jugendlichen
+        umfassend.
+      </p>
+      <h2>Qualifizierte Musiklehrer</h2>
+      <p>
+        <strong>Qualifizierte Musiklehrer</strong> sind entscheidend, damit Schüler nicht 
+        überfordert werden. Ein guter Unterricht folgt einem klaren, 
+        pädagogischen Aufbau und steigert die Motivation.  
+        Um ein Instrument so zu erlernen, dass es <em>wirklich nach Musik klingt</em>, 
+        braucht man im Durchschnitt etwa <strong>zwei Jahre regelmäßigen Unterricht</strong>.
+      </p>
+      <h2>Musikunterricht für Anfänger und Fortgeschrittener</h2>
+      <p>
+        Tauchen Sie ein in die wunderbare Welt der Musik!  
+        Egal ob <strong>Anfänger oder Fortgeschrittener</strong> – 
+        ich biete <strong>professionellen Musikunterricht in Nürnberg</strong> 
+        für verschiedene Instrumente: von <strong>Gitarre</strong>, 
+        <strong>Klavier</strong> und <strong>E-Gitarre</strong> 
+        über <strong>Bass</strong> bis hin zu <strong>Klarinette</strong> und 
+        <strong>Saxophon</strong>.
+      </p>
+      <p>
+        Musik selber spielen oder Musik machen ist ein interressantes Hobby für
+        jung und alt und vielleicht macht es ja der eine oder die andere einmal
+        zum Beruf? Musik spielen macht Spaß! Außerdem führt das Musizieren oder
+        Singen weg von der Konsumierung und führt zu eigenen Kreativitäten!
+      </p>
+      <h2>Online-Musikunterricht in ganz Deutschland</h2>
+      <p>
+        Zusätzlich zum Präsenzunterricht biete ich einen 
+        <strong>Online-Musikunterricht</strong> an.  
+        Dieser Unterricht findet über <strong>Skype</strong> oder <strong>Zoom</strong> statt 
+        und hat denselben Preis wie der normale Unterricht.  
+        Sie können monatlich kündigen und sind an keine langen Verträge gebunden.  
+        Die Ferien im August sind kostenfrei.
+      </p>
+      <p>
+        Ein großer Vorteil des <strong>Online-Musikunterrichts</strong>:  
+        Egal, ob Sie in <strong>Nürnberg</strong> oder in einem anderen Bundesland wohnen – 
+        wir können uns einmal pro Woche virtuell treffen.  
+        Das spart Anfahrtszeit und Kosten.  
+        Viele meiner Schüler, z.B. aus Thüringen, sind begeistert von dieser Möglichkeit.
+      </p>
+
+      <p>
+        <small>
+          Hinweis: Für alle Handy Benutzer. Oben rechts ist so ein Kreis für das
+          Sonnenzeichen. Darauf klicken dann wird es zu einem Mond. Dies ist der
+          Darkmode falls die Sonneneinstrahlung zu stark ist.
+        </small>
+      </p>
+    </section>
+
+    <section class="marchandise marchandise-2">
+      <h2>Was kostet Musikunterricht in Deuschland?</h2>
+      <p>
+        Von den Musikschulen Nürnberg bin ich wahrscheinlich die günstigste mit
+        72,- € Monatshonorar bei 45 min Einzelunterricht.
+      </p>
+      <p>Ich freue mich auf Ihren Besuch oder Anruf!</p>
+      <br />
+      <h2>Kontakt - Musikunterricht in Nürnberg</h2>
+      <p>
+        Musicstudio Ziebart <br />
+        Gunzenhausener Str. 20 <br />
+        90451 Nürnberg
+      </p>
+      <p>Staatl. anerkannter Musiklehrer für Kinder und Erwachsene</p>
+
+      <ul class="link-card-grid">
+        <Card
+          href="/recall/"
+          title="Rückruf"
+          body="Kurze Mitteilung an mich!"
+        />
+      </ul>
+      <hr />
+      <br />
+      <img
+        src="images/anruf-192x192.png"
+        alt="Bild Telefonhoerer"
+        aria-label="Bild Telefonhoerer"
+      />
+      <h2>Telefon</h2>
+      <address>
+        <p>
+          Ruf mich an:<br />
+          <a href="tel:+499116320890" class="normal-links">0911 6320890</a>
+        </p>
+      </address>
+      <br />
+      <p>
+        eMail:&nbsp;
+        <!--
+        <a
+          href="mailto:postmaster@musicstudio-ziebart.de"
+          class="normal-links"
+          onfocus="this.blur()"
+          >postmaster@musicstudio-ziebart.de
+        </a> -->
+
+        <a href="mailto:postmaster@musicstudio-ziebart.de" class="normal-links"
+          >postmaster@musicstudio-ziebart.de</a
+        >
+      </p>
+      <p>
+        Meine
+        <a
+          href="https://maps.google.de/maps?ie=UTF8&cid=10230175189141752103&q=Musikschule+Ziebart&iwloc=A&gl=DE&hl=de"
+          target="top"
+          class="normal-links"
+          >Standortansicht im Stadtplan!
+        </a>
+      </p>
+      <hr />
+      <br />
+      <br />
+      <p>ÖFFNUNGSZEITEN:</p>
+      <p>Montag - Freitag 14.00 - 19.00 Uhr</p>
+      <br />
+      <p>
+        Powered by <a href="https://astro.build" class="normal-links"
+          >{Astro.generator}</a
+        >
+      </p>
+      <br />
+      <hr />
+      <br />
+      <p>
+        Auf meinem YouTube Kanal ist für alle Hammond Fans was dabei! Auch
+        E-Gitarristen und Akustische Gitarre kommen auf ihre Kosten. Übrigens
+        das klassische Klavier ist bei den Menschen immer noch hoch im Kurs.
+        Einfach unten auf YouTube klicken!
+      </p>
+      <hr />
+      <section>
+        <h2>Schulferien in Bayern 2025</h2>
+        <ul class="ferien-liste">
+          <li><strong>Faschingsferien:</strong> 3. März bis 7. März 2025</li>
+          <li><strong>Osterferien:</strong> 14. April bis 25. April 2025</li>
+          <li><strong>Pfingstferien:</strong> 10. Juni bis 20. Juni 2025</li>
+          <li>
+            <strong>Sommerferien:</strong> 1. August bis 15. September 2025
+          </li>
+          <li>
+            <strong>Herbstferien:</strong> 3. November bis 7. November 2025 und 19.
+            November 2025
+          </li>
+          <li>
+            <strong>Weihnachtsferien:</strong> 22. Dezember 2025 bis 5. Januar 2026
+          </li>
+        </ul>
+      </section>
+    </section>
+  </article>
+</BaseLayout>

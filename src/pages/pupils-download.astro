@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getPageUrl } from "../utils/getPageUrl.js";
+const pageTitle = "Schülermaterial";
+const description = "Schüler download";
+const keywords = "Songs für Schüler";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <section id="download2">
+    <h2 transition:animate="slide">Gespielte Titel</h2>
+    <article>
+      <br />
+      <br />
+      <table class="basis-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Titel</th>
+            <th>Komponist</th>
+            <th>Instrument</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          
+          <tr>
+            <td>1</td>
+            <td>Like Ice In The Sunshine</td>
+            <td>Beagle Music</td>
+            <td>Gitarre</td>
+          </tr>
+          <tr>
+            <td>
+              <span>anhören</span>
+              <audio controls>
+                <source src="/Songs/Like_Ice.mp3" type="audio/mpeg" />
+                Dein Browser unterstützt das Audio-Element nicht.
+              </audio>
+            </td>
+            <td>
+              <a
+                href="/bilder/Ice_In_The_Sunshine%20-%20Guitar.pdf"
+                target="_blank"
+                class="normal-links">ansehen</a
+              >
+            </td>
+            <td>
+              <a href="/zip_download/Mrs_Robinson.zip" class="normal-links"
+                >keinen zip download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Variante A -->
+        
+        <div class="basis-card">
+        <div class="basis-header">ID: 1</div>
+        <div><span>Titel:</span> Like Ice In The Sunshine</div>
+        <div><span>Komponist:</span> Beagle Music</div>
+        <div><span>Instrument:</span> Gitarre</div>
+        <div>
+          <span>anhören</span>
+          <audio controls>
+            <source src="/Songs/Like_Ice.mp3" type="audio/mpeg" />
+            Dein Browser unterstützt das Audio-Element nicht.
+          </audio>
+        </div>
+        <div>
+          <span>ansehen:</span><a
+            href="/bilder/Ice_In_The_Sunshine%20-%20Guitar.pdf"
+            target="_blank"
+            class="normal-links"
+          >
+            ansehen</a
+          >
+        </div>
+        <div>
+          <span>Download:</span><a
+            href="/zip_download/Mrs_Robinson.zip"
+            class="normal-links"
+          >
+            Kein Zip Download</a
+          >
+        </div>
+      </div>
+
+      <br />
+      <p>
+        <a href="/" class="normal-links">home</a>
+      </p>
+    </article>
+  </section>
+</BaseLayout>
