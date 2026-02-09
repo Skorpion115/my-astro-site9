@@ -1,0 +1,157 @@
+/* ============================= */
+/* Basis-Layout für das Songbook */
+/* ============================= */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.lesson-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* ----------------------------- */
+/* Linke Spalte: Noten + Audio   */
+/* ----------------------------- */
+.notes {
+  flex: 2; /* ca. 2/3 */
+}
+
+.notes section {
+  margin-bottom: 3rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.notes h2 {
+  margin-top: 0;
+}
+
+.notes iframe {
+  width: 100%;
+  height: 92vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+.pdf-download {
+  margin-bottom: 0.5rem;
+}
+
+.pdf-download a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.pdf-download a:hover {
+  text-decoration: underline;
+}
+
+.audio-links {
+  margin-top: 0.5rem;
+}
+
+.audio-links a {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.audio-links a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------- */
+/* Rechte Spalte: Inhaltsverzeichnis */
+/* ----------------------------- */
+.content {
+  flex: 1; /* ca. 1/3 */
+  position: sticky;
+  top: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.content h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.content a {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* Responsive Layout             */
+/* ============================= */
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .notes iframe {
+    height: 80vh;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+  .lesson-layout {
+    flex-direction: column;
+  }
+
+  .content {
+    position: static;
+    margin-top: 1rem;
+    max-height: none;
+  }
+
+  .notes iframe {
+    height: 60vh;
+  }
+
+  .content a, .pdf-download a, .audio-links a {
+    font-size: 0.95rem;
+  }
+}
+
+/* Kleine optische Verbesserungen */
+.notes section:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.audio-links a:hover {
+  color: #d93025;
+}
+
+.content a:hover {
+  color: #d93025;
+}
