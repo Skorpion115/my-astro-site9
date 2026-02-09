@@ -1,5 +1,8 @@
 # build output
 dist/
+*log
+*env
+
 # generated types
 .astro/
 
@@ -12,7 +15,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # environment variables
 .env
 .env.production
@@ -22,3 +24,15 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Dateien ausschließen
+*mp4
+
+# netlify
+.netlify/
+
+# log Files
+*log
+
+# Dateien ausschließen
+.vscode
