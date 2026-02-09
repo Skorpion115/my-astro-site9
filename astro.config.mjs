@@ -1,14 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://www.musicstudio-ziebart.de",
-
-    trailingSlash: "always",
-
-    output: "static",
-
+    site: 'https://www.musicstudio-ziebart.de',
+    output: 'static',
+    adapter: netlify(),    // hier den Adapter eintragen
+    trailingSlash: 'always',
     devToolbar: {
     enabled: false,
   },
