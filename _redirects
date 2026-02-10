@@ -1,8 +1,13 @@
 # ==============================
-# Passwortschutz Ten Words
+# Passwortschutz Accountbereich
 # ==============================
-/kundenlogin/ten-words/*   /__tenwords-protected   200  Basic-Auth:tenwords:tenwords2026
+/kundenlogin/account/*       /__account-protected    200  Basic-Auth:tenwords:tenwords2026
+
+# ==============================
+# Passwortschutz Songbook
+# ==============================
 /kundenlogin/account/songbook_2/*   /__tenwords-protected   200  Basic-Auth:tenwords:tenwords2026
+
 
 
 # ==============================
