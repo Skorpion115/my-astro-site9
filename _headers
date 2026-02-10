@@ -1,0 +1,11 @@
+# ==============================
+# Passwortschutz Accountbereich
+# ==============================
+/kundenlogin/account/*
+  Basic-Auth: tenwords:tenwords2026
+
+# ==============================
+# Passwortschutz Songbook
+# ==============================
+/kundenlogin/account/songbook_2/*
+  Basic-Auth: tenwords:tenwords2026
