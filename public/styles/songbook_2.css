@@ -55,7 +55,7 @@ h1 {
 .pdf-download a {
   text-decoration: none;
   color: #1a73e8;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .pdf-download a:hover {
@@ -94,6 +94,11 @@ h1 {
 }
 
 .content h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.content h4 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
