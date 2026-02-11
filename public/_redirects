@@ -1,19 +1,10 @@
-# ==============================
-# Passwortschutz Accountbereich
-# ==============================
-/kundenlogin/account/*       /__account-protected    200  Basic-Auth:tenwords:tenwords2026
-
-# ==============================
-# Passwortschutz Songbook
-# ==============================
-/kundenlogin/account/songbook_2/*   /__tenwords-protected   200  Basic-Auth:tenwords:tenwords2026
-
-
-
+# Schutz für Kundenbereich
+/kundenlogin/account/*  /__account-protected  200  Basic-Auth:tenwords:tenwords2026
+/kundenlogin/account/songbook_2/*  /__account-protected  200  Basic-Auth:tenwords:tenwords2026
 # ==============================
 # From URL shorterer script
 # ==============================
-/astronautical-ascension   https://github.com/Skorpion115/my-astro-site8
+/astronautical-ascension   https://github.com/Skorpion115/my-astro-site9
 # ==============================
 # Weiterleitungen alter Seiten
 # ==============================

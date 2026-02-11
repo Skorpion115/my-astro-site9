@@ -14,8 +14,12 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         placeholder="Passwort"
         autocomplete="off"
       />
+      <!--
+      <button id="login-btn">Login</button> -->
 
-      <button id="login-btn">Login</button>
+      <button onclick="logout()">Logout</button>
+
+      
 
       <p id="error" class="error hidden">❌ Falsches Passwort</p>
     </section>
@@ -386,6 +390,7 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         </div>
 
         <script src="/scripts/login.js" defer></script>
+
       </div>
     </section>
   </article>
