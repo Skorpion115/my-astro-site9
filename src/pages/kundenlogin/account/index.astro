@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 ---
+
 <BaseLayout title="Schülerbereich">
   <article class="account-page">
-    <!-- LOGIN -->
+    <!-- LOGIN-BEREICH -->
     <section id="login-box">
       <h1>🔐 Schülerbereich</h1>
       <p class="normal-links">Bitte Passwort eingeben:</p>
@@ -14,24 +15,25 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
         placeholder="Passwort"
         autocomplete="off"
       />
-      <!--
-      <button id="login-btn">Login</button> -->
-
-      <button onclick="logout()">Logout</button>
-
-      
+      <button id="login-btn">Login</button>
 
       <p id="error" class="error hidden">❌ Falsches Passwort</p>
     </section>
 
-    <!-- GESCHÜTZTER INHALT -->
-
+    <!-- GESCHÜTZTER BEREICH -->
     <section id="content" class="hidden">
+      <h1>🎸 Willkommen im geschützten Bereich</h1>
+
+      <!-- Optionaler Logout-Button -->
+      <button class="auth-logout" onclick="logout()">Logout</button>
+
+      <!-- Geschützter Content -->
       <nav class="account-nav">
-      <a href="/kundenlogin/account/songbook_2/" class="normal-links">
-        📘 The Big Guitar Songbook
-      </a>
-    </nav>
+        <a href="/kundenlogin/account/songbook_2/" class="normal-links">
+          📘 The Big Guitar Songbook
+        </a>
+      </nav>
+
       <h1>🎸 Ten Words - Jo Satriani</h1>
 
       <div class="login-meta">
@@ -388,10 +390,10 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
             </div>
           </div>
         </div>
-
-        <script src="/scripts/login.js" defer></script>
-
       </div>
     </section>
+
+    <!-- Login Script -->
+    <script src="/scripts/login.js" defer></script>
   </article>
 </BaseLayout>

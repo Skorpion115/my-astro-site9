@@ -25,7 +25,8 @@ h1 {
 /* Linke Spalte: Noten + Audio   */
 /* ----------------------------- */
 .notes {
-  flex: 2; /* ca. 2/3 */
+  flex: 2;
+  /* ca. 2/3 */
 }
 
 .notes section {
@@ -33,12 +34,52 @@ h1 {
   background-color: #fff;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .notes h2 {
   margin-top: 0;
 }
+
+/* ==============================
+   Logout Button
+   ============================== */
+.logout-container {
+  margin: 1rem 0;
+  /* ersetzt das Inline-Style */
+  text-align: left;
+  /* optional: links ausgerichtet, kann auch center sein */
+}
+
+
+.auth-logout {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  /* Abstand oben/unten */
+  margin-left: 1rem;
+  /* leicht vom linken Rand weg */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-logout:hover {
+  background-color: #005fa3;
+  transform: translateY(-1px);
+}
+
+.auth-logout:active {
+  background-color: #004d80;
+  transform: translateY(0);
+}
+
+/* PDF Einbettung */
 
 .notes iframe {
   width: 100%;
@@ -82,7 +123,8 @@ h1 {
 /* Rechte Spalte: Inhaltsverzeichnis */
 /* ----------------------------- */
 .content {
-  flex: 1; /* ca. 1/3 */
+  flex: 1;
+  /* ca. 1/3 */
   position: sticky;
   top: 1rem;
   background-color: #fff;
@@ -90,7 +132,7 @@ h1 {
   border-radius: 10px;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .content h3 {
@@ -142,14 +184,16 @@ h1 {
     height: 60vh;
   }
 
-  .content a, .pdf-download a, .audio-links a {
+  .content a,
+  .pdf-download a,
+  .audio-links a {
     font-size: 0.95rem;
   }
 }
 
 /* Kleine optische Verbesserungen */
 .notes section:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.2s ease-in-out;
 }
 

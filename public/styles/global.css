@@ -1395,6 +1395,8 @@ table.basis-table tbody tr.active {
 /* ==============================
    Login-Box komplett
    ============================== */
+
+/* versteckt den Login-Bereich, bis er benötigt wird */
 .hidden {
   display: none;
 }
@@ -1402,6 +1404,12 @@ table.basis-table tbody tr.active {
 .error {
   color: red;
 }
+
+input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 
 .account-page h1 {
   color: #1d72b8;
@@ -1455,6 +1463,32 @@ table.basis-table tbody tr.active {
   font-weight: bold;
 }
 
+/* Logout-Button */
+.auth-logout {
+  display: inline-block;
+  margin: 1rem 0 1rem 1rem; /* oben 1rem, rechts 0, unten 1rem, links 1rem */
+  padding: 0.5rem 1.2rem;    /* innen Abstand für angenehme Größe */
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;               /* weiße Schrift */
+  background-color: #007acc; /* schöne blaue Farbe */
+  border: none;
+  border-radius: 0.4rem;     /* abgerundete Ecken */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* leichter Schatten */
+}
+
+.auth-logout:hover {
+  background-color: #005ea3; /* dunkler beim Hover */
+  transform: translateY(-2px); /* kleiner Hover-Effekt nach oben */
+}
+
+.auth-logout:active {
+  transform: translateY(0); /* Button geht wieder zurück beim Klicken */
+}
+
+
 /* Sauberes zentralles Flexbox-Layout für die Listen-Links */
 
 .login-meta {
@@ -1480,6 +1514,7 @@ table.basis-table tbody tr.active {
 .login-meta hr {
   display: block;
 }
+
 
 /* Navigation für Account-Bereich */
 .account-nav {
