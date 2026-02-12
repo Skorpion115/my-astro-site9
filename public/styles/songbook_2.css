@@ -1,5 +1,9 @@
+/* ===================================== */
+/* SONGBOOK 2 – OPTIMIERTE STRUKTUR     */
+/* ===================================== */
+
 /* ============================= */
-/* Basis-Layout für das Songbook */
+/* 1. BASIS                      */
 /* ============================= */
 
 body {
@@ -15,33 +19,43 @@ h1 {
   margin-bottom: 2rem;
 }
 
+/* ============================= */
+/* 2. LAYOUT                     */
+/* ============================= */
+
 .lesson-layout {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
 }
 
-/* ----------------------------- */
-/* Linke Spalte: Noten + Audio   */
-/* ----------------------------- */
+/* ============================= */
+/* 3. SONG-BEREICH (LINKS)       */
+/* ============================= */
+
 .notes {
-  flex: 2; /* ca. 2/3 */
+  flex: 2;
 }
 
-.notes section {
+.song {
   margin-bottom: 3rem;
   background-color: #fff;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
-.notes h2 {
+.song:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.song h2 {
   margin-top: 0;
 }
 
-/* PDF Einbettung */
-.notes iframe {
+/* PDF Anzeige */
+.song iframe {
   width: 100%;
   height: 92vh;
   border: 1px solid #ccc;
@@ -49,18 +63,18 @@ h1 {
   margin-top: 0.5rem;
 }
 
+/* ============================= */
+/* 4. LINKS & DOWNLOADS          */
+/* ============================= */
+
 .pdf-download {
   margin-bottom: 0.5rem;
 }
 
-.pdf-download a {
+.pdf-download a,
+.audio-links a {
   text-decoration: none;
   color: #1a73e8;
-  font-weight: normal;
-}
-
-.pdf-download a:hover {
-  text-decoration: underline;
 }
 
 .audio-links {
@@ -70,20 +84,21 @@ h1 {
 .audio-links a {
   display: block;
   margin-bottom: 0.5rem;
-  text-decoration: none;
-  color: #1a73e8;
   font-weight: bold;
 }
 
+.pdf-download a:hover,
 .audio-links a:hover {
   text-decoration: underline;
+  color: #d93025;
 }
 
-/* ----------------------------- */
-/* Rechte Spalte: Inhaltsverzeichnis */
-/* ----------------------------- */
+/* ============================= */
+/* 5. INHALTSVERZEICHNIS (RECHTS)*/
+/* ============================= */
+
 .content {
-  flex: 1; /* ca. 1/3 */
+  flex: 1;
   background-color: #fff;
   padding: 1rem;
   border-radius: 10px;
@@ -92,7 +107,8 @@ h1 {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.content h3, .content h4 {
+.content h3,
+.content h4 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -109,9 +125,10 @@ h1 {
   color: #d93025;
 }
 
-/* ============================== */
-/* Logout Button                  */
-/* ============================== */
+/* ============================= */
+/* 6. LOGOUT BUTTON              */
+/* ============================= */
+
 .logout-container {
   margin: 1rem 0;
   text-align: left;
@@ -141,63 +158,45 @@ h1 {
 }
 
 /* ============================= */
-/* Responsive Layout             */
+/* 7. RESPONSIVE + STICKY        */
 /* ============================= */
 
-/* Desktop / Tablet: Sticky Titelleiste */
+/* Desktop / Tablet: rechte Spalte bleibt sticky */
 @media (min-width: 361px) {
-  .song-list {
-    position: sticky;
-    top: 1rem;
-    height: calc(100vh - 2rem);
-    overflow-y: auto;
-  }
-
   .content {
     position: sticky;
     top: 1rem;
     max-height: calc(100vh - 2rem);
+    overflow-y: auto;
   }
 }
 
-/* Tablet: sehr kleine Tablets */
+/* Tablet */
 @media (max-width: 850px) {
-  .notes iframe {
+  .song iframe {
     height: 80vh;
   }
 
   .lesson-layout {
-    flex-direction: row; /* nebeneinander */
     gap: 1rem;
   }
 }
 
-/* Kleines Smartphone: zwischen 400px und 361px */
-@media (max-width: 400px) and (min-width: 361px) {
-  .lesson-layout {
-    flex-direction: row;
-    gap: 0.5rem;
+/* Kleine Smartphones */
+@media (max-width: 400px) {
+  .song iframe {
+    height: 68vh;
   }
 
-  .notes iframe {
-    height: 68vh;
+  .lesson-layout {
+    gap: 0.5rem;
   }
 }
 
-/* Sehr kleines Smartphone: 360px und kleiner (Galaxy S20e) */
+/* Sehr kleine Smartphones */
 @media (max-width: 360px) {
-  .lesson-layout {
-    flex-direction: row;
-    gap: 0.3rem;
-  }
-
-  .notes iframe {
+  .song iframe {
     height: 60vh;
-  }
-
-  .song-list {
-    font-size: 0.85rem;
-    position: static; /* nicht sticky auf sehr kleinen Geräten */
   }
 
   .content {
@@ -205,14 +204,4 @@ h1 {
     margin-top: 1rem;
     max-height: none;
   }
-}
-
-/* Kleine optische Verbesserungen */
-.notes section:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: box-shadow 0.2s ease-in-out;
-}
-
-.audio-links a:hover {
-  color: #d93025;
 }
