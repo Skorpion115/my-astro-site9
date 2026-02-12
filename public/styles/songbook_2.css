@@ -25,8 +25,7 @@ h1 {
 /* Linke Spalte: Noten + Audio   */
 /* ----------------------------- */
 .notes {
-  flex: 2;
-  /* ca. 2/3 */
+  flex: 2; /* ca. 2/3 */
 }
 
 .notes section {
@@ -41,46 +40,7 @@ h1 {
   margin-top: 0;
 }
 
-/* ==============================
-   Logout Button
-   ============================== */
-.logout-container {
-  margin: 1rem 0;
-  /* ersetzt das Inline-Style */
-  text-align: left;
-  /* optional: links ausgerichtet, kann auch center sein */
-}
-
-
-.auth-logout {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0;
-  /* Abstand oben/unten */
-  margin-left: 1rem;
-  /* leicht vom linken Rand weg */
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: #0077cc;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.auth-logout:hover {
-  background-color: #005fa3;
-  transform: translateY(-1px);
-}
-
-.auth-logout:active {
-  background-color: #004d80;
-  transform: translateY(0);
-}
-
 /* PDF Einbettung */
-
 .notes iframe {
   width: 100%;
   height: 92vh;
@@ -123,10 +83,7 @@ h1 {
 /* Rechte Spalte: Inhaltsverzeichnis */
 /* ----------------------------- */
 .content {
-  flex: 1;
-  /* ca. 1/3 */
-  position: sticky;
-  top: 1rem;
+  flex: 1; /* ca. 1/3 */
   background-color: #fff;
   padding: 1rem;
   border-radius: 10px;
@@ -135,12 +92,7 @@ h1 {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.content h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.content h4 {
+.content h3, .content h4 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -154,40 +106,104 @@ h1 {
 }
 
 .content a:hover {
-  text-decoration: underline;
+  color: #d93025;
+}
+
+/* ============================== */
+/* Logout Button                  */
+/* ============================== */
+.logout-container {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.auth-logout {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-logout:hover {
+  background-color: #005fa3;
+  transform: translateY(-1px);
+}
+
+.auth-logout:active {
+  background-color: #004d80;
+  transform: translateY(0);
 }
 
 /* ============================= */
 /* Responsive Layout             */
 /* ============================= */
 
-/* Tablet */
-@media (max-width: 1100px) {
-  .notes iframe {
-    height: 80vh;
-  }
-}
-
-/* Smartphone */
-@media (max-width: 768px) {
-  .lesson-layout {
-    flex-direction: column;
+/* Desktop / Tablet: Sticky Titelleiste */
+@media (min-width: 361px) {
+  .song-list {
+    position: sticky;
+    top: 1rem;
+    height: calc(100vh - 2rem);
+    overflow-y: auto;
   }
 
   .content {
-    position: static;
-    margin-top: 1rem;
-    max-height: none;
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - 2rem);
+  }
+}
+
+/* Tablet: sehr kleine Tablets */
+@media (max-width: 850px) {
+  .notes iframe {
+    height: 80vh;
+  }
+
+  .lesson-layout {
+    flex-direction: row; /* nebeneinander */
+    gap: 1rem;
+  }
+}
+
+/* Kleines Smartphone: zwischen 400px und 361px */
+@media (max-width: 400px) and (min-width: 361px) {
+  .lesson-layout {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .notes iframe {
+    height: 68vh;
+  }
+}
+
+/* Sehr kleines Smartphone: 360px und kleiner (Galaxy S20e) */
+@media (max-width: 360px) {
+  .lesson-layout {
+    flex-direction: row;
+    gap: 0.3rem;
   }
 
   .notes iframe {
     height: 60vh;
   }
 
-  .content a,
-  .pdf-download a,
-  .audio-links a {
-    font-size: 0.95rem;
+  .song-list {
+    font-size: 0.85rem;
+    position: static; /* nicht sticky auf sehr kleinen Geräten */
+  }
+
+  .content {
+    position: static;
+    margin-top: 1rem;
+    max-height: none;
   }
 }
 
@@ -198,9 +214,5 @@ h1 {
 }
 
 .audio-links a:hover {
-  color: #d93025;
-}
-
-.content a:hover {
   color: #d93025;
 }
