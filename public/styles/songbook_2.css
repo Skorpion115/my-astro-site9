@@ -205,3 +205,10 @@ h1 {
     max-height: none;
   }
 }
+
+/* Songbook Cover */
+.songbook-cover {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
