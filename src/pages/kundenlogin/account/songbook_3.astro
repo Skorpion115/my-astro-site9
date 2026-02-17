@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import ExtraSongs from "../../../components/Songs/ExtraSongs.astro";
+---
+
+<BaseLayout title="The Big Guitar Songbook Teil 3">
+  
+  <link rel="stylesheet" href="/styles/songbook_3.css" />
+
+  <div class="songbook-hero">
+    <img
+      src="/images/songbook-cover.jpg"
+      alt="The Big Guitar Songbook Cover"
+    />
+    <div class="hero-overlay">
+      <h1>The Big Guitar Songbook Teil 3</h1>
+      <p>Premium Arrangements • Noten • Tabs • Play-Alongs</p>
+    </div>
+  </div>
+
+  <p>Habe mich bei den Noten streng an die Originalaufnahmen gehalten!</p>
+
+  <div class="logout-container">
+    <button class="auth-logout">Logout</button>
+  </div>
+
+  <main>
+    <p>
+      Rechts im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
+      auf der linken Seite angezeigt.
+    </p>
+
+    <div class="lesson-layout">
+
+      <!-- Linke Spalte -->
+      <div class="notes">
+        <section id="horse-with-no-name" class="song">
+          <h2>A Horse With No Name</h2>
+
+          <p class="pdf-download">
+            <a href="/notes/a-horse-with-no-name.pdf" download>
+              ⬇ Noten als PDF herunterladen
+            </a>
+          </p>
+
+          <div class="pdf-download">
+            <a href="https://drive.google.com/file/d/1T3OteHiFfySNE0kv98e4WTFYPm4JaH6R/preview">
+              ▶ Play Along
+            </a>
+          </div>
+
+          <iframe
+            src="/notes/a-horse-with-no-name.pdf"
+            title="A Horse With No Name – Noten">
+          </iframe>
+        </section>
+        <ExtraSongs />
+      </div>
+
+      <!-- Rechte Spalte -->
+      <aside class="content">
+        <h3>Inhaltsverzeichnis</h3>
+        <h4>🎸 Popmusik</h4>
+        <a href="#horse-with-no-name">
+          A Horse With No Name - America
+        </a>
+        <a href="#reflections-of-my-life">Reflections Of My Life - Marmalade</a>
+      </aside>
+
+    </div>
+
+  </main>
+
+
+  <script src="/scripts/login.js" defer></script>
+  <script src="/scripts/scroll-offset.js" defer></script>
+
+
+</BaseLayout>

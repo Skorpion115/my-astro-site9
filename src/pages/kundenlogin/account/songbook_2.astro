@@ -1,41 +1,40 @@
-<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Big Guitar Songbook</title>
-    <link rel="stylesheet" href="/styles/songbook_2.css" />
-  </head>
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
+---
 
-  <body>
-    <div class="songbook-hero">
-      <img
-        src="/images/songbook-cover.jpg"
-        alt="The Big Guitar Songbook Cover"
-      />
-      <div class="hero-overlay">
-        <h1>The Big Guitar Songbook</h1>
-        <p>Premium Arrangements • Noten • Tabs • Play-Alongs</p>
-      </div>
+<BaseLayout title="The Big Guitar Songbook">
+  <!-- Hero-Block -->
+
+  <link rel="stylesheet" href="/styles/songbook_2.css" />
+
+  <div class="songbook-hero">
+    <img src="/images/songbook-cover.jpg" alt="The Big Guitar Songbook Cover" />
+    <div class="hero-overlay">
+      <h1>The Big Guitar Songbook</h1>
+      <p>Premium Arrangements • Noten • Tabs • Play-Alongs</p>
     </div>
-    <p>Habe mich bei den Noten streng an die Orginalaufnahmen gehalten!</p>
+  </div>
+  <p>Habe mich bei den Noten streng an die Orginalaufnahmen gehalten!</p>
 
-    <!-- Logout-Button -->
-    <div class="logout-container">
-      <button class="auth-logout">Logout</button>
-    </div>
+  <!-- Logout-Button -->
+  <div class="logout-container">
+    <button class="auth-logout">Logout</button>
+  </div>
 
-    <main>
-      <!-- ======================== -->
-      <!-- SONGBOOK LAYOUT -->
-      <!-- ======================== -->
-      <p>
-        Rechts im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
-        auf der linken Seite angezeigt.
-      </p>
-      <div class="lesson-layout">
+  <main>
+    <!-- ======================== -->
+    <!-- SONGBOOK LAYOUT -->
+    <!-- ======================== -->
+    <p>
+      Rechts im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
+      auf der linken Seite angezeigt.
+    </p>
+    <div class="lesson-layout">
+      <!-- Linke Spalte -->
+      <div class="notes">
         <!-- Linke Spalte: Noten + Audio -->
-        <div class="notes">
+         <div class="notes">
           <section id="horse-with-no-name" class="song">
             <h2>A Horse With No Name</h2>
             <p class="pdf-download">
@@ -88,7 +87,8 @@
             <iframe
               src="/notes/mad-world.pdf"
               title="Mad World – Noten"
-              loading="lazy">
+              loading="lazy"
+            >
             </iframe>
           </section>
           <section id="take-my-hand" class="song">
@@ -861,6 +861,9 @@
               title="The Boxer – Noten"
               loading="lazy"></iframe>
           </section>
+
+          <AdditionalSongs />
+
           <section id="shame" class="song">
             <h2>Shame</h2>
             <p class="pdf-download">
@@ -1075,7 +1078,10 @@
           <section id="ain't-no-sunshine" class="song">
             <h2>Ain't No Sunshine</h2>
             <p class="pdf-download">
-              <a href="/notes/Ain't%20No%20Sunshine%20-%20Nylon%20Guitar.pdf" download>
+              <a
+                href="/notes/Ain't%20No%20Sunshine%20-%20Nylon%20Guitar.pdf"
+                download
+              >
                 ⬇ Noten als PDF herunterladen
               </a>
             </p>
@@ -1105,7 +1111,10 @@
           <section id="going-up-the-country" class="song">
             <h2>Going Up The Country</h2>
             <p class="pdf-download">
-              <a href="/notes/Going%20Up%20The%20Country%20-%20Guitar.pdf" download>
+              <a
+                href="/notes/Going%20Up%20The%20Country%20-%20Guitar.pdf"
+                download
+              >
                 ⬇ Noten als PDF herunterladen
               </a>
             </p>
@@ -1133,71 +1142,71 @@
               loading="lazy"></iframe>
           </section>
 
-
           <!-- Weitere Songs hier unten einfügen -->
         </div>
-
-        <!-- Rechte Spalte: Inhaltsverzeichnis -->
-        <aside class="content">
-          <h3>Inhaltsverzeichnis</h3>
-          <h4>🎸 Popmusik</h4>
-          <a href="#horse-with-no-name">A Horse With No Name - America</a>
-          <a href="#mad-world">Mad World - Gary Jules</a>
-          <a href="#while-my-guitar-gently-weeps"
-            >While My Guitar Gently Weeps - George Harrison</a
-          >
-          <a href="#across-the-universe">Across The Universe - Beatles</a>
-          <a href="#do-you-want-to-know-a-secret">Do You Want To Know A Secret? - Beatles</a>
-          <a href="#eleanor-rigby">Eleanor Rigby - Beatles</a>
-          <a href="#in-my-life">In My Life - Beatles</a>
-          <a href="#no-reply">No Reply - Beatles</a>
-          <a href="#with-a-little-help-from-my-friends"
-            >With A Little Help From My Friends - Beatles</a
-          >
-          <a href="#1-2-3-4-I-Love-You"
-            >1,2,3,4 (I Love You) - Plain White T's</a
-          >
-          <a href="#heart-of-gold">Heart Of Gold - Neil Young</a>
-          <a href="#hey-hey-my-my">Hey Hey My My - Neil Young</a>
-          <a href="#old-man">Old Man - Neil Young</a>
-          <a href="#harvest-moon">Harvest Moon - Neil Young</a>
-          <a href="#kathys-song">Kathy's Song - Simon & Garfunkel</a>
-          <a href="#mrs-robinson">Mrs. Robinson - Simon & Garfunkel</a>
-          <a href="#scarborough-fair">Scarborough Fair - Simon & Garfunkel</a>
-          <a href="#the-boxer">The Boxer - Simon & Garfunkel</a>
-          <a href="#shame">Shame - Robie Williams</a>
-          <a href="#the-a-team">The A Team - Ed Sheeran</a>
-          <a href="#hey-there-delilah">Hey There Delilah - Plain White T's</a>
-          <a href="#hotel-california">Hotel California - Eagles</a>
-          <a href="#in-the-year-2525">In The Year 2525 - Zager & Evans</a>
-          <a href="#more-than-words">More Than Words - Extrem</a>
-          <a href="#we-are-the-people">We Are The People - Empire Of The Sun</a>
-          <h4>🎸 Country & Western</h4>
-          <a href="#take-my-hand">Take My Hand - Smokestack - Lightning</a>
-          <a href="#no-no-never">No No Never - Texas Lightning</a>
-          <a href="#i-take-a-lot-of-pride"
-            >I Take A Lot Of Pride In What I Am - Merle Haggard</a
-          >
-          <h4>🎸 Folk / Singer-Songwriter</h4>
-          <a href="#city-of-neworleans">City Of NewOrleans - Arlo Guthrie</a>
-          <a href="#gentle-on-my-mind">Gentle On My Mind - Glenn Campell</a>
-          <a href="#the-night-they-drove-old-dixie-down"
-            >The Night They Drove Old Dixie Down - Joan Baez</a
-          >
-          <a href="#vincent">Vincent - Don Mc Lean</a>
-          <h4>🎸 Klassik</h4>
-          <a href="#classical-gas">Classical Gas - Mason Williams</a>
-          <h4>🎸 Liedermacher / Chanson</h4>
-          <a href="#über-den-wolken">Über den Wolken - Reinhard Mey</a>
-          <h4>🎸 Blues</h4>
-          <a href="#ain't-no-sunshine">Ain't No Sunshine - Bill Withers</a>
-          <a href="#going-up-the-country">Going Up The Country - Canned Heat</a>
-          <!-- Weitere Songs hier hinzufügen -->
-        </aside>
       </div>
-      <!-- ======================== -->
-    </main>
-    <script src="/scripts/login.js" defer></script>
-    <script src="/scripts/scroll-offset.js" defer></script>
-  </body>
-</html>
+
+      <!-- Rechte Spalte: Inhaltsverzeichnis -->
+      <aside class="content">
+        <h3>Inhaltsverzeichnis</h3>
+        <h4>🎸 Popmusik</h4>
+        <a href="#horse-with-no-name">A Horse With No Name - America</a>
+        <a href="#mad-world">Mad World - Gary Jules</a>
+        <a href="#while-my-guitar-gently-weeps"
+          >While My Guitar Gently Weeps - George Harrison</a
+        >
+        <a href="#across-the-universe">Across The Universe - Beatles</a>
+        <a href="#do-you-want-to-know-a-secret"
+          >Do You Want To Know A Secret? - Beatles</a
+        >
+        <a href="#eleanor-rigby">Eleanor Rigby - Beatles</a>
+        <a href="#in-my-life">In My Life - Beatles</a>
+        <a href="#no-reply">No Reply - Beatles</a>
+        <a href="#with-a-little-help-from-my-friends"
+          >With A Little Help From My Friends - Beatles</a
+        >
+        <a href="#1-2-3-4-I-Love-You">1,2,3,4 (I Love You) - Plain White T's</a>
+        <a href="#heart-of-gold">Heart Of Gold - Neil Young</a>
+        <a href="#hey-hey-my-my">Hey Hey My My - Neil Young</a>
+        <a href="#old-man">Old Man - Neil Young</a>
+        <a href="#harvest-moon">Harvest Moon - Neil Young</a>
+        <a href="#kathys-song">Kathy's Song - Simon & Garfunkel</a>
+        <a href="#mrs-robinson">Mrs. Robinson - Simon & Garfunkel</a>
+        <a href="#scarborough-fair">Scarborough Fair - Simon & Garfunkel</a>
+        <a href="#the-boxer">The Boxer - Simon & Garfunkel</a>
+        <a href="#reflections-of-my-life">Reflections Of My Life - Marmalade</a>
+        <a href="#shame">Shame - Robie Williams</a>
+        <a href="#the-a-team">The A Team - Ed Sheeran</a>
+        <a href="#hey-there-delilah">Hey There Delilah - Plain White T's</a>
+        <a href="#hotel-california">Hotel California - Eagles</a>
+        <a href="#in-the-year-2525">In The Year 2525 - Zager & Evans</a>
+        <a href="#more-than-words">More Than Words - Extrem</a>
+        <a href="#we-are-the-people">We Are The People - Empire Of The Sun</a>
+        <h4>🎸 Country & Western</h4>
+        <a href="#take-my-hand">Take My Hand - Smokestack - Lightning</a>
+        <a href="#no-no-never">No No Never - Texas Lightning</a>
+        <a href="#i-take-a-lot-of-pride"
+          >I Take A Lot Of Pride In What I Am - Merle Haggard</a
+        >
+        <h4>🎸 Folk / Singer-Songwriter</h4>
+        <a href="#city-of-neworleans">City Of NewOrleans - Arlo Guthrie</a>
+        <a href="#gentle-on-my-mind">Gentle On My Mind - Glenn Campell</a>
+        <a href="#the-night-they-drove-old-dixie-down"
+          >The Night They Drove Old Dixie Down - Joan Baez</a
+        >
+        <a href="#vincent">Vincent - Don Mc Lean</a>
+        <h4>🎸 Klassik</h4>
+        <a href="#classical-gas">Classical Gas - Mason Williams</a>
+        <h4>🎸 Liedermacher / Chanson</h4>
+        <a href="#über-den-wolken">Über den Wolken - Reinhard Mey</a>
+        <h4>🎸 Blues</h4>
+        <a href="#ain't-no-sunshine">Ain't No Sunshine - Bill Withers</a>
+        <a href="#going-up-the-country">Going Up The Country - Canned Heat</a>
+        <!-- Weitere Songs hier hinzufügen -->
+      </aside>
+    </div>
+    <!-- ======================== -->
+  </main>
+  <script src="/scripts/login.js" defer></script>
+  <script src="/scripts/scroll-offset.js" defer></script>
+</BaseLayout>
