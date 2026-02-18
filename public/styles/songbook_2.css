@@ -296,3 +296,22 @@ html.dark .content a:hover {
   color: #ff6b6b;
 }
 
+/* Fixiertes Floating Button */
+
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #1a73e8;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.scroll-top:hover {
+  background: #d93025;
+}
+

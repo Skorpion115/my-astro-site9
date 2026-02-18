@@ -11,7 +11,7 @@ import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
   <div class="songbook-hero">
     <img src="/images/songbook-cover.jpg" alt="The Big Guitar Songbook Cover" />
     <div class="hero-overlay">
-      <h1>The Big Guitar Songbook</h1>
+      <h1 id="top">The Big Guitar Songbook</h1>
       <p>Premium Arrangements • Noten • Tabs • Play-Alongs</p>
     </div>
   </div>
@@ -39,6 +39,7 @@ import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
       Rechts im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
       auf der linken Seite angezeigt.
     </p>
+    
     <div class="lesson-layout">
       <!-- Linke Spalte -->
       <div class="notes-column"> <!-- Grid Spalte -->
@@ -1216,8 +1217,10 @@ import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
         <!-- Weitere Songs hier hinzufügen -->
       </aside>
     </div>
-    <!-- ======================== -->
   </main>
+  
+  <a href="#top" class="scroll-top">⬆</a>
+  
   <script src="/scripts/login.js" defer></script>
   <script src="/scripts/scroll-offset.js" defer></script>
 </BaseLayout>
