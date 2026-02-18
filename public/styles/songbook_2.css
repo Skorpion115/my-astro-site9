@@ -11,7 +11,6 @@ body {
   margin: 0;
   padding: 1rem;
   line-height: 1.5;
-  background-color: #f9f9f9;
 }
 
 h1 {
@@ -84,7 +83,7 @@ h1 {
 .audio-links a {
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .pdf-download a:hover,
@@ -118,7 +117,7 @@ h1 {
   margin-bottom: 0.5rem;
   text-decoration: none;
   color: #1a73e8;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .content a:hover {
@@ -258,6 +257,7 @@ h1 {
   margin: 0;
   letter-spacing: 2px;
   font-weight: 700;
+  color: #fff;
 }
 
 /* Untertitel / Beschreibung */
@@ -266,3 +266,33 @@ h1 {
   font-size: clamp(1rem, 1.5vw, 1.4rem);
   opacity: 0.95;
 }
+
+/* ============================= */
+/* DARK MODE SONGBOOK           */
+/* ============================= */
+
+html.dark body {
+  background-color: #1e1e1e;
+}
+
+html.dark .song {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .content {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .audio-links a,
+html.dark .pdf-download a,
+html.dark .content a {
+  color: #4da3ff;
+}
+
+html.dark .pdf-download a:hover,
+html.dark .content a:hover {
+  color: #ff6b6b;
+}
+
