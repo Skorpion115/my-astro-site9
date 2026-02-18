@@ -62,45 +62,54 @@ body {
   --font: "IBM", sans-serif;
   --line: 3ch;
   --font-scale: 0.4vw;
+
   margin: 0 auto;
   width: 100%;
+  padding: 0 0.625rem; /* ← seitlicher Abstand */
+
   font-family: var(--font);
   font-style: normal;
-  font-size: calc(1rem + var(--font-scale));
-  line-height: var(--line);
   font-weight: 400;
-  padding: 0;
+  line-height: var(--line);
+
+  font-size: clamp(1rem, calc(1rem + var(--font-scale)), 1.25rem);
   opacity: 1;
 }
 
 h1 {
-  margin: 2.5rem 1.25rem 0rem 0.25rem;
-  font-size: 1.3rem;
+  margin: 2.5rem 1.25rem 0 0.25rem;
+  font-size: clamp(1.3rem, calc(1.3rem + var(--font-scale)), 2rem);
   color: #5269e9;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: clamp(1.25rem, calc(1.25rem + var(--font-scale)), 1.75rem);
   font-weight: bold;
   padding: 1.25rem 1.25rem;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, calc(1.2rem + var(--font-scale)), 1.5rem);
   font-weight: bold;
   padding: 1.25rem 1.25rem;
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, calc(1.2rem + var(--font-scale)), 1.4rem);
   font-weight: bold;
   padding: 1.25rem 1.25rem;
 }
 
 h5 {
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, calc(1.1rem + var(--font-scale)), 1.3rem);
   font-weight: normal;
+  padding: 1.25rem 1.25rem;
+}
+
+h6 {
+  font-size: clamp(1rem, calc(1rem + var(--font-scale)), 1.2rem);
+  font-weight: bold;
   padding: 1.25rem 1.25rem;
 }
 
@@ -534,10 +543,57 @@ hamburger,
   padding: 0.2rem;
 }
 
+/* HERO BILD STARTSEITE MIT TEXT */
+.hero {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 1rem auto;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Overlay Text */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  padding: 1rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin: 0.2rem 0;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+}
+
+
 /* Responsives Titelbild bei Index */
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
