@@ -1,0 +1,29 @@
+---
+const { pageTitle, description, href } = Astro.props;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={href} />
+  </head>
+
+  <body>
+    <header class="account-header">
+      <nav class="account-nav">
+        <a href="/kundenlogin/account/songbook_2/">Songbook 2</a>
+        <a href="/kundenlogin/account/songbook_3/">Songbook 3</a>
+        <a href="/kundenlogin/account/">Zurück</a>
+      </nav>
+    </header>
+
+    
+
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

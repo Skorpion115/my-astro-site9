@@ -1,17 +1,27 @@
 ---
-import BaseLayout from "../../../layouts/BaseLayout.astro";
+import AccountLayout from "../../../layouts/AccountLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
 import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
+
+// Hier die fehlende Variable definieren
+const pageUrl = getPageUrl(Astro);
+const pageTitle = "The Big Guitar Songbook";
+const description = "Geschützter Songbook-Bereich";
 ---
 
-<BaseLayout title="The Big Guitar Songbook">
-  <!-- Hero-Block -->
+<AccountLayout
+  pageTitle="The Big Guitar Songbook"
+  description="Geschütztes Songbook 2"
+  href={pageUrl}
+>
+  <!-- Hero-Bereich -->
 
   <link rel="stylesheet" href="/styles/songbook_2.css" />
 
   <div class="songbook-hero">
     <img src="/images/songbook-cover.jpg" alt="The Big Guitar Songbook Cover" />
     <div class="hero-overlay">
-      <h1 id="top">The Big Guitar Songbook</h1>
+      <h1 id="top">{pageTitle}</h1>
       <p>Premium Arrangements • Noten • Tabs • Play-Alongs</p>
     </div>
   </div>
@@ -37,14 +47,17 @@ import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
     <!-- ======================== -->
     <p>
       Rechts im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
-      auf der linken Seite angezeigt. Ganz rechts ist so ein blauer ovaler Button. Mit diesem Button kann man die website wieder ganz nach oben scrollen.
+      auf der linken Seite angezeigt. Ganz rechts ist so ein blauer ovaler
+      Button. Mit diesem Button kann man die website wieder ganz nach oben
+      scrollen.
     </p>
-    
+
     <div class="lesson-layout">
       <!-- Linke Spalte -->
-      <div class="notes-column"> <!-- Grid Spalte -->
+      <div class="notes-column">
+        <!-- Grid Spalte -->
         <!-- Linke Spalte: Noten + Audio -->
-         <div class="notes">
+        <div class="notes">
           <section id="horse-with-no-name" class="song">
             <h2>A Horse With No Name</h2>
             <p class="pdf-download">
@@ -899,9 +912,8 @@ import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
                 >▶ Komplettes Arrangment downloaden</a
               >
             </div>
-            <iframe src="/notes/Shame.pdf" 
-              title="Shame – Noten" 
-              loading="lazy"></iframe>
+            <iframe src="/notes/Shame.pdf" title="Shame – Noten" loading="lazy"
+            ></iframe>
           </section>
           <section id="the-a-team" class="song">
             <h2>The A Team</h2>
@@ -1195,7 +1207,9 @@ import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
         <a href="#hotel-california">Hotel California - Eagles</a>
         <a href="#in-the-year-2525">In The Year 2525 - Zager & Evans</a>
         <a href="#more-than-words">More Than Words - Extrem</a>
-        <a href="#you-keep-me-hanging-on">You Keep Me Hanging On - Vanilla Fudge</a>
+        <a href="#you-keep-me-hanging-on"
+          >You Keep Me Hanging On - Vanilla Fudge</a
+        >
         <a href="#we-are-the-people">We Are The People - Empire Of The Sun</a>
         <h4>🎸 Country & Western</h4>
         <a href="#take-my-hand">Take My Hand - Smokestack - Lightning</a>
@@ -1221,10 +1235,10 @@ import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
         <!-- Weitere Songs hier hinzufügen -->
       </aside>
     </div>
+    <a href="#top" class="scroll-top" aria-label="Zurück nach oben">⬆</a>
+    
   </main>
-  
-  <a href="#top" class="scroll-top">⬆</a>
   
   <script src="/scripts/login.js" defer></script>
   <script src="/scripts/scroll-offset.js" defer></script>
-</BaseLayout>
+</AccountLayout>
