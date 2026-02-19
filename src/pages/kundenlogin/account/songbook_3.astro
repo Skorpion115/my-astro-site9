@@ -4,28 +4,25 @@ import { getPageUrl } from "../../../utils/getPageUrl.js";
 
 // Hier die fehlende Variable definieren
 const pageUrl = getPageUrl(Astro);
-const pageTitle = "The Big Guitar Songbook Teil 2";
+const pageTitle = "Meine schönsten Klavierstücke";
 const description = "Geschützter Songbook-Bereich";
 ---
 
 <AccountLayout
-  pageTitle="The Big Guitar Songbook"
+  pageTitle="Meine schönsten Klavierstücke"
   description="Geschütztes Songbook 2"
   href={pageUrl}
 >
   <link rel="stylesheet" href="/styles/songbook_2.css" />
 
   <div class="songbook-hero">
-    <img src="/images/songbook-cover.jpg" alt="The Big Guitar Songbook Cover" />
+    <img src="/images/klavier.webp" alt="The Big Guitar Songbook Cover" />
     <div class="hero-overlay">
       <h1 id="top">{pageTitle}</h1>
-      <p>Premium Arrangements • Noten • Tabs • Play-Alongs</p>
+      <p>Klavierstücke • Noten • Play-Alongs</p>
     </div>
   </div>
-  <p>
-    Habe mich bei den Noten streng an die Orginalaufnahmen gehalten! Ist noch in
-    Entwicklung
-  </p>
+  
   <p>
     <a
       href="/kundenlogin/account/"
@@ -57,46 +54,77 @@ const description = "Geschützter Songbook-Bereich";
       <div class="notes-column">
         <!-- Linke Spalte: Noten + Audio -->
         <div class="notes">
-          <section id="horse-with-no-name" class="song">
-            <h2>A Horse With No Name</h2>
+          <section id="arabesque" class="song">
+            <h2>Arabesque Nr. 1</h2>
             <p class="pdf-download">
-              <a href="/notes/a-horse-with-no-name.pdf" download>
+              <a href="/notes/Arabesque_Nr-1.pdf" download>
                 ⬇ Noten als PDF herunterladen
               </a>
             </p>
             <div class="audio-links">
               <a
-                href="https://drive.google.com/file/d/1T3OteHiFfySNE0kv98e4WTFYPm4JaH6R/preview"
+                href="https://drive.google.com/file/d/1VcjhaoAztL0ORt1yxID4QSI92wrGg1Ox/preview"
                 >▶ Play Along</a
               >
             </div>
             <div class="audio-links">
               <a
-                href="https://drive.google.com/uc?export=download&id=1T3OteHiFfySNE0kv98e4WTFYPm4JaH6R"
+                href="https://drive.google.com/uc?export=download&id=1VcjhaoAztL0ORt1yxID4QSI92wrGg1Ox"
                 >▶ Audio downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Arabesque_Nr-1.pdf"
+              title="Arabesque Nr. 1 – Noten"></iframe>
+          </section>
+          <section id="ballade-pour-adeline" class="song">
+            <h2>Ballade Pour Adeline</h2>
+            <p class="pdf-download">
+              <a href="/notes/Ballade%20Pour%20Adeline.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1vx8aV-wzMp9mCIOsHu2BKXCj-cpBZhAW/preview"
+                >▶ Play Along</a
               >
             </div>
             <div class="audio-links">
               <a
-                href="https://drive.google.com/uc?export=download&id=1x3G1BbGAizvK-x2l79oUGCcgh6vB8t5i"
-                >▶ Komplettes Arrangment downloaden</a
+                href="https://drive.google.com/uc?export=download&id=1vx8aV-wzMp9mCIOsHu2BKXCj-cpBZhAW"
+                >▶ Audio downloaden</a
               >
             </div>
             <iframe
-              src="/notes/a-horse-with-no-name.pdf"
-              title="A Horse With No Name – Noten"></iframe>
+              src="/notes/Ballade%20Pour%20Adeline.pdf"
+              title="Ballade Pour Adeline – Noten"></iframe>
           </section>
-        </div>
-      </div>
-
+        </div> <!-- class notes -->
+      </div> <!-- class notes-column -->
       <!-- Rechte Spalte: Inhaltsverzeichnis -->
       <aside class="content">
         <h3>Inhaltsverzeichnis</h3>
-        <h4>🎸 Popmusik</h4>
-        <a href="#horse-with-no-name">A Horse With No Name - America</a>
+        <h4>Romantik</h4>
+        <a href="#arabesque">Arabesque Nr. 1 - Achille Claude Debussy</a>
+        <p>
+          🎹 Debussy am Klavier – echte Dokumente
+
+          Debussy hat um 1913 sogenannte Klavierrollen (Piano Rolls) aufgenommen – für das Reproduktionsklavier Welte-Mignon.
+          Das bedeutet:
+          Er spielte auf einem speziellen Klavier.
+          Sein Spiel wurde mechanisch aufgezeichnet.
+          Diese Rollen konnten später wieder abgespielt werden.
+          Moderne Rekonstruktionen erlauben uns heute, sein Spiel zu hören.
+          Und ja – darunter befinden sich auch Werke wie die Deux Arabesques (L. 66).
+          Das heißt:
+          👉 Man kann heute tatsächlich hören, wie Debussy selbst phrasiert und rubato gespielt hat.
+        </p>
+        <h4>Instumental-Pop</h4>
+        <a href="#ballade-pour-adeline">Ballade Pour Adeline - Richard Clayderman</a>
       </aside>
       <a href="#top" class="scroll-top" aria-label="Zurück nach oben">⬆</a>
-    </div>
+    </div> <!-- class lesson-layout -->
   </main>
 
   <script src="/scripts/login.js" defer></script>
