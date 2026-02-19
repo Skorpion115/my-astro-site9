@@ -1,35 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".account-nav");
-  const links = document.querySelectorAll(".account-nav a");
+const toggle = document.querySelector(".nav-toggle");
+const nav = document.querySelector(".account-nav");
 
-  if (!toggle || !nav) return;
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("active");
 
-  // Menü öffnen / schließen
-  toggle.addEventListener("click", function (e) {
-    e.stopPropagation(); // verhindert sofortiges Schließen
-    nav.classList.toggle("active");
-  });
+  // Body Scroll sperren, wenn Menü offen
+  if(nav.classList.contains("active")){
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+});
 
-  // 🔹 Schließen beim Klick auf Link
-  links.forEach(link => {
-    link.addEventListener("click", function () {
-      nav.classList.remove("active");
-    });
-  });
-
-  // 🔹 Schließen beim Klick außerhalb
-  document.addEventListener("click", function (e) {
-    if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-      nav.classList.remove("active");
-    }
-  });
-
-  // 🔹 ESC Taste schließt Menü
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") {
-      nav.classList.remove("active");
-    }
-  });
-
+// Optional: Menü schließen, wenn irgendwo draußen geklickt wird
+document.addEventListener("click", (e) => {
+  if(nav.classList.contains("active") && !nav.contains(e.target) && !toggle.contains(e.target)){
+    nav.classList.remove("active");
+    document.body.style.overflow = "";
+  }
 });
