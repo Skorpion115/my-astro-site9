@@ -1,5 +1,7 @@
 ---
 const { pageTitle, description, href } = Astro.props;
+const { url } = Astro;
+const currentPath = url.pathname;
 ---
 
 <html lang="de">
@@ -23,22 +25,38 @@ const { pageTitle, description, href } = Astro.props;
 
     <header class="account-header">
       <div class="nav-wrapper">
-        
-        <div class="logo">🎸 Songbooks</div>
 
-        <!-- Hamburger Button -->
+        <!-- 🔥 Hamburger -->
         <button class="nav-toggle" aria-label="Menü öffnen">
           ☰
         </button>
 
         <nav class="account-nav">
-          <a href="/kundenlogin/account/songbook_2/">Songbook 2</a>
-          <a href="/kundenlogin/account/songbook_3/">Songbook 3</a>
-          <a href="/kundenlogin/account/">Zurück</a>
+          <a 
+            href="/kundenlogin/account/songbook_2/"
+            class={currentPath.includes("songbook_2") ? "active" : ""}
+          >
+            Songbook 2
+          </a>
+
+          <a 
+            href="/kundenlogin/account/songbook_3/"
+            class={currentPath.includes("songbook_3") ? "active" : ""}
+          >
+            Songbook 3
+          </a>
+
+          <a 
+            href="/kundenlogin/account/"
+            class={currentPath === "/kundenlogin/account/" ? "active" : ""}
+          >
+            Zurück
+          </a>
         </nav>
 
       </div>
     </header>
+
 
     <main>
       <slot />
