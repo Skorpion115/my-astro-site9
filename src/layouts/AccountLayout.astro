@@ -12,18 +12,37 @@ const { pageTitle, description, href } = Astro.props;
   </head>
 
   <body>
+    <!--
     <header class="account-header">
       <nav class="account-nav">
         <a href="/kundenlogin/account/songbook_2/">Songbook 2</a>
         <a href="/kundenlogin/account/songbook_3/">Songbook 3</a>
         <a href="/kundenlogin/account/">Zurück</a>
       </nav>
-    </header>
+    </header> -->
 
-    
+    <header class="account-header">
+      <div class="nav-wrapper">
+        
+        <div class="logo">🎸 Songbooks</div>
+
+        <!-- Hamburger Button -->
+        <button class="nav-toggle" aria-label="Menü öffnen">
+          ☰
+        </button>
+
+        <nav class="account-nav">
+          <a href="/kundenlogin/account/songbook_2/">Songbook 2</a>
+          <a href="/kundenlogin/account/songbook_3/">Songbook 3</a>
+          <a href="/kundenlogin/account/">Zurück</a>
+        </nav>
+
+      </div>
+    </header>
 
     <main>
       <slot />
     </main>
+    <script src="/scripts/account-menu.js" is:inline></script>
   </body>
 </html>
