@@ -428,3 +428,8 @@ html.dark .content a:hover {
   background: #d93025;
 }
 
+/* PDF Container */
+
+.pdf-container {
+  margin: 1rem 0 3rem 0;
+}

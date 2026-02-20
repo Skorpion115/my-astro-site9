@@ -1,0 +1,108 @@
+---
+import AccountLayout from "../../../layouts/AccountLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+// Hier die fehlende Variable definieren
+const pageUrl = getPageUrl(Astro);
+const pageTitle = "The Big E-Guitar Songbook";
+const description = "Geschützter Songbook-Bereich";
+---
+
+<AccountLayout
+  pageTitle="Meine schönsten Klavierstücke"
+  description="Geschütztes Songbook 2"
+  href={pageUrl}
+>
+  <link rel="stylesheet" href="/styles/songbook_2.css" />
+
+  <div class="songbook-hero">
+    <img src="/images/Gretchgitarre.webp" alt="The Big E-Guitar Songbook Cover" />
+    <div class="hero-overlay">
+      <h1 id="top">{pageTitle}</h1>
+      <p>E-Gitarren Stücke • Noten & Tabs • Play-Alongs</p>
+    </div>
+  </div>
+  
+  <p>
+    <a
+      href="/kundenlogin/account/"
+      class="normal-links"
+      aria-label="Zurück zum Schülerbereich"
+    >
+      Zurück zum Schülerbereich
+    </a>
+  </p>
+
+  <!-- Logout-Button -->
+  <div class="logout-container">
+    <button class="auth-logout">Logout</button>
+  </div>
+
+  <main>
+    <!-- ======================== -->
+    <!-- SONGBOOK LAYOUT -->
+    <!-- ======================== -->
+    <p>
+      Rechts im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
+      auf der linken Seite angezeigt. Ganz rechts ist so ein blauer ovaler
+      Button. Mit diesem Button kann man die website wieder ganz nach oben
+      scrollen.
+    </p>
+
+
+    <div class="lesson-layout">
+      <!-- Linke Spalte -->
+      <div class="notes-column">
+        <!-- Linke Spalte: Noten + Audio -->
+        <div class="notes">
+          <section id="a-horse-with-no-name" class="song">
+            <h2>Horse With No Name</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1S7emLEwRW6mUTXGImUsMHILBSeFm0nK_/preview"
+              >⬇ Noten anschauen
+              </a>
+            </p>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/uc?export=download&id=1S7emLEwRW6mUTXGImUsMHILBSeFm0nK_"      
+              >⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1T3OteHiFfySNE0kv98e4WTFYPm4JaH6R/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1T3OteHiFfySNE0kv98e4WTFYPm4JaH6R"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1x3G1BbGAizvK-x2l79oUGCcgh6vB8t5i"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/a-horse-with-no-name.pdf"
+              title="A Horse With No Name – Noten"></iframe>
+          </section>
+          
+        </div> <!-- class notes -->
+      </div> <!-- class notes-column -->
+      <!-- Rechte Spalte: Inhaltsverzeichnis -->
+      <aside class="content">
+        <h3>Inhaltsverzeichnis</h3>
+        <h4>Popmusik</h4>
+        <a href="#a-horse-with-no-name">A Horse With No Name – America</a>
+        
+      </aside>
+      <a href="#top" class="scroll-top" aria-label="Zurück nach oben">⬆</a>
+    </div> <!-- class lesson-layout -->
+  </main>
+
+  <script src="/scripts/login.js" defer></script>
+  <script src="/scripts/scroll-offset.js" defer></script>
+</AccountLayout>

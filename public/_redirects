@@ -1,6 +1,8 @@
 # Schutz für Kundenbereich
 /kundenlogin/account/*       /__account-protected  200  Basic-Auth:tenwords:tenwords2026
 /kundenlogin/account/songbook_2/*   /__account-protected  200  Basic-Auth:tenwords:tenwords2026
+/kundenlogin/account/songbook_3/*   /__account-protected  200  Basic-Auth:tenwords:tenwords2026
+/kundenlogin/account/songbook_4/*   /__account-protected  200  Basic-Auth:tenwords:tenwords2026
 
 
 # Alles andere Sicherheitsheader optional
