@@ -349,12 +349,13 @@ h1 {
 .hero-overlay {
   position: absolute;
   inset: 0;
+  /*
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0.4),
     rgba(0, 0, 0, 0.75)
-  );
+  ); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -428,8 +429,13 @@ html.dark .content a:hover {
   background: #d93025;
 }
 
-/* PDF Container */
+/* PDF Noten Download Link */
 
-.pdf-container {
-  margin: 1rem 0 3rem 0;
+.pdf-link a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #5269e9;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
 }
