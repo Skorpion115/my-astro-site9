@@ -1,16 +1,9 @@
 # Schutz für Kundenbereich
-# 🔐 Schutz für Kundenbereich (inkl. Unterordner)
-# 200! erzwingt Basic-Auth auf alle Unterpfade
+/kundenlogin/account/*  /.netlify/functions/auth-proxy  200
+/kundenlogin/account       /.netlify/functions/auth-proxy  200
+/kundenlogin/account/      /.netlify/functions/auth-proxy  200
 
-/kundenlogin/account/*   /kundenlogin/account/:splat   200!  Basic-Auth: tenwords tenwords2026
-/kundenlogin/account       /kundenlogin/account   200!  Basic-Auth: tenwords tenwords2026
-/kundenlogin/account/      /kundenlogin/account/   200!  Basic-Auth: tenwords tenwords2026
-/kundenlogin/account/songbook_2       /kundenlogin/account/songbook_2   200!  Basic-Auth: tenwords tenwords2026
-/kundenlogin/account/songbook_2/      /kundenlogin/account/songbook_2/   200!  Basic-Auth: tenwords tenwords2026
-/kundenlogin/account/songbook_3       /kundenlogin/account/songbook_3   200!  Basic-Auth: tenwords tenwords2026
-/kundenlogin/account/songbook_3/      /kundenlogin/account/songbook_3/   200!  Basic-Auth: tenwords tenwords2026
-/kundenlogin/account/songbook_4       /kundenlogin/account/songbook_4   200!  Basic-Auth: tenwords tenwords2026
-/kundenlogin/account/songbook_4/      /kundenlogin/account/songbook_4/   200!  Basic-Auth: tenwords tenwords2026
+
 
 # ==============================
 # Weiterleitungen alter Seiten
