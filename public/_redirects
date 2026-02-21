@@ -2,14 +2,6 @@
 /kundenlogin/account/*  /__account-protected  200  Basic-Auth:tenwords:tenwords2026
 
 # ==============================
-# From URL shorterer script
-# ==============================
-https://github.com/Skorpion115/my-astro-site9
-
-
-# Alles andere Sicherheitsheader optional
-
-# ==============================
 # Weiterleitungen alter Seiten
 # ==============================
 /klarinette/                  /klarinettenunterricht/      301
