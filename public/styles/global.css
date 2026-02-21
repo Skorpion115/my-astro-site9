@@ -1453,6 +1453,7 @@ table.basis-table tbody tr.active {
    ============================== */
 
 /* versteckt den Login-Bereich, bis er benötigt wird */
+/*
 .hidden {
   display: none;
 }
@@ -1481,7 +1482,7 @@ input {
   width: 80%;
   max-width: 300px;
   padding: 10px;
-  margin: 0 auto 15px auto; /* ← DAS ist der Schlüssel */
+  margin: 0 auto 15px auto; 
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
@@ -1518,7 +1519,7 @@ input {
   display: none;
   font-weight: bold;
 }
-
+*/
 /* Logout-Button */
 .auth-logout {
   display: inline-block;
@@ -1545,7 +1546,7 @@ input {
 }
 
 
-/* Sauberes zentralles Flexbox-Layout für die Listen-Links */
+/* Sauberes zentralles Flexbox-Layout für die Listen-Links behalten*/
 
 .login-meta {
   margin-top: 1.5rem;
