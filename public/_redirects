@@ -1,5 +1,5 @@
 # Schutz für Kundenbereich
-/kundenlogin/account/*  /__account-protected  200  Basic-Auth:tenwords:tenwords2026
+/kundenlogin/account*  /__account-protected  200  Basic-Auth:tenwords:tenwords2026
 
 # ==============================
 # Weiterleitungen alter Seiten
