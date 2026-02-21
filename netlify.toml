@@ -18,3 +18,8 @@ for = "/*.html"
   [headers.values]
   Attribution-Reporting-Eligible = '{"trigger": "true"}'
   Attribution-Reporting-Support = '{"os": "true"}'
+
+[[headers]]
+  for = "/kundenlogin/account/*"
+  [headers.values]
+    Basic-Auth = "tenwords:tenwords2026"
