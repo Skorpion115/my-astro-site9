@@ -152,10 +152,10 @@ h1 {
 .song {
   margin-bottom: 3rem;
   background-color: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .song:hover {
@@ -163,7 +163,7 @@ h1 {
 }
 
 .song h2 {
-  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* PDF Anzeige */
