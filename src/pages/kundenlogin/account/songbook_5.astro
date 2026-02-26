@@ -1,0 +1,182 @@
+---
+import AccountLayout from "../../../layouts/AccountLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+// Hier die fehlende Variable definieren
+const pageUrl = getPageUrl(Astro);
+const pageTitle = "My Jazz Guitar Collection";
+const description = "Geschützter Songbook-Bereich";
+---
+
+<AccountLayout
+  pageTitle="My Jazz Guitar Collection"
+  description="Geschütztes Songbook 5"
+  href={pageUrl}
+>
+  <link rel="stylesheet" href="/styles/songbook_2.css" />
+
+  <div class="songbook-hero">
+    <img src="/images/jazzguitar.webp" alt="The Big E-Guitar Songbook Cover" />
+    <div class="hero-overlay">
+      <h1 id="top">{pageTitle}</h1>
+      <p>Jazz Gitarren Stücke • Noten & Tabs • Play-Alongs</p>
+    </div>
+  </div>
+  
+  <p>
+    <a
+      href="/kundenlogin/account/"
+      class="normal-links"
+      aria-label="Zurück zum Schülerbereich"
+    >
+      Zurück zum Schülerbereich
+    </a>
+  </p>
+
+  <!-- Logout-Button -->
+  <div class="logout-container">
+    <button class="auth-logout">Logout</button>
+  </div>
+
+  <main>
+    <!-- ======================== -->
+    <!-- SONGBOOK LAYOUT -->
+    <!-- ======================== -->
+    <p>
+      Recht im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
+      auf der linken Seite angezeigt. Ganz rechts ist so ein blauer ovaler
+      Button. Mit diesem Button kann man die website wieder ganz nach oben
+      scrollen.
+    </p>
+
+
+    <div class="lesson-layout">
+      <!-- Linke Spalte -->
+      <div class="notes-column">
+        <!-- Linke Spalte: Noten + Audio -->
+        <div class="notes">
+          <section id="rose-room" class="song">
+            <h2>Rose Room</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1dgIAZYebkFhFNlx4kGz9LsGx2-nWsKpM/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/155_Ji0iFSFKAkeEHK8xL44p-uImeTfv7/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=155_Ji0iFSFKAkeEHK8xL44p-uImeTfv7"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1dLA_Josn8d8wYLs95ueOz1Z4H7gxLVnP"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1dgIAZYebkFhFNlx4kGz9LsGx2-nWsKpM"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1RI45csrN6b2BTLTQCC-g8S88d8tSUelD"
+                target="_blank"
+                rel="noopener">
+                📄 Rhythmus Gitarre herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="so-what" class="song">
+            <h2>So What</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1xhdfe7B0EeWZ3njk1-V_x0Nv5x4esAy_/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1_jkwfQZm7St_o1nmWeUtVYuPSjMuWlHP/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_jkwfQZm7St_o1nmWeUtVYuPSjMuWlHP"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1xhdfe7B0EeWZ3njk1-V_x0Nv5x4esAy_"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="smile" class="song">
+            <h2>Smile</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/16SeHUykSpWg4Ceo4PXJ_j8_veLiBTG2i/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1uffvgc9Jg8xIfPZbE9oHbFfiRemOFpq5/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1uffvgc9Jg8xIfPZbE9oHbFfiRemOFpq5"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=16SeHUykSpWg4Ceo4PXJ_j8_veLiBTG2i"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=14ASOxbaLfiikqDqOMaeMGlicFg_cFie3"
+                target="_blank"
+                rel="noopener">
+                📄 Bass Noten herunterladen
+              </a>
+            </p>
+          </section>                             
+                 
+        </div> <!-- class notes -->
+      </div> <!-- class notes-column -->
+      <!-- Rechte Spalte: Inhaltsverzeichnis -->
+      <aside class="content">
+        <h3>Inhaltsverzeichnis</h3>
+        <h4>Jazz Guitar Solo</h4>
+        <a href="#rose-room">Rose Room - Charlie Christian</a>
+        <a href="#so-what">So What - Miles Davis</a>
+        <h4>Jazz Guitar Melodic Style</h4>
+        <a href="#smile">Smile - Charlie Chaplin</a>
+      </aside>
+      <a href="#top" class="scroll-top" aria-label="Zurück nach oben">⬆</a>
+    </div> <!-- class lesson-layout -->
+  </main>
+  
+  <script src="/scripts/login.js" defer></script>
+  <script src="/scripts/scroll-offset.js" defer></script>
+</AccountLayout>
