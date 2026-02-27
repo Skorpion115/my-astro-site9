@@ -114,12 +114,12 @@ h1 {
 
   .account-nav {
     position: fixed;
-    top: 70px;  /* Start direkt unter dem Header */
+    top: 0px;  /* Start direkt unter dem Header */
     right: 0;
     height: calc(100vh - 70px); /* Höhe = gesamte Viewport-Höhe minus Header */
     width: 150px;
     background: #005fa3;
-    padding: 5rem 1.5rem;
+    padding: 1rem 1.5rem;
     flex-direction: column;
     gap: 1.0rem;
     transform: translateX(100%); /* komplett nach rechts ausblenden */
