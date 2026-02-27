@@ -439,3 +439,46 @@ html.dark .content a:hover {
   text-decoration: none;
   border-radius: 6px;
 }
+
+/* ANCHOR Videos Einstellungen */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;    /* verhindert Überschreiten der Wrapper-Breite */
+}
+
+.video-container-wrapper {
+  width: 100%;
+  max-width: 560px;   /* maximale Breite für normale Videos */
+  margin: 0 auto;     /* zentrieren */
+  padding: 0 0.5rem;
+  display: block;
+}
+
+.video-container iframe {
+  position: absolute !important; /* erzwingt Position */
+  top: 0;
+  left: 0;
+  width: 100% !important;  /* erzwingt volle Breite des Containers */
+  height: 100% !important; /* erzwingt volle Höhe */
+  max-width: 100% !important;
+  max-height: 100% !important;
+  border: 0;
+}
+
+.video-container-wrapper.thumbnail {
+  max-width: 280px; /* halbe Größe */
+}
