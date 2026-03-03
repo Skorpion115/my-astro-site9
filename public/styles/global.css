@@ -656,7 +656,8 @@ img {
 .glissando-container iframe {
   width: 100%;
   max-width: 800px;  /* Breite begrenzen */
-  height: 500px;     /* Höhe für Desktop */
+  height: 80vh;        /* 80% der Bildschirmhöhe */
+  min-height: 400px;   /* Mindesthöhe */
   border: 1px solid #ccc;
   border-radius: 12px;
   display: block;
