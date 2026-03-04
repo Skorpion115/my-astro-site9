@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getPageUrl } from "../utils/getPageUrl.js";
+const pageTitle = "Notentraining im Musikunterricht in Nürnberg";
+const description = "Das Notentraining ist eine wichtige Grundlage für das Erlernen eines Musikinstrumentes. Es hilft dabei, die Noten zu lesen und zu verstehen, was für das Spielen von Musik unerlässlich ist.";
+const keywords = "notentraining, musikunterricht, noten lesen, musik verstehen";
+const pageUrl = getPageUrl(Astro);
+---
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+
+<p>
+    In meinem Unterricht lege ich großen Wert auf das Notentraining, damit die
+    Schüler die Musik nicht nur spielen, sondern auch verstehen können. Durch
+    regelmäßiges Notentraining können die Schüler ihre Fähigkeiten im Lesen von
+    Noten verbessern und somit schneller Fortschritte beim Spielen machen.
+</p>
+<p>
+    Bei dem Bassschlüssel muss man zwei Stufen höher rechnen, damit der Ton richtig erkannt wird. Das bedeutet ein d wird zum f, ein e zum g, ein a zum c usw. Die erste Tonstufe wird nicht mitgezählt. Es ist wichtig, dass die Schüler diese Unterschiede verstehen, um die Musik korrekt zu spielen.
+</p>
+<p>
+    Mit der Maus unten auf das Keyboard klicken, um die richtigen Tasten zu spielen die oben angegeben sind. Klicke auf 'Let's go', um zu starten. Viel Spaß!
+</p>
+<p>
+    Dieses Notentrainingstool stellt Netlify ein amerikanisches Hostanbieter kostenlos zur Verfügung.
+</p>
+
+<section class="notentraining-app">
+    <h2>Notentraining mit Glissando 🎹</h2>
+    <iframe
+      src="https://glissandovcg.netlify.app/"
+      title="Notentraining mit Glissando"
+      loading="lazy"
+      allowfullscreen
+    ></iframe>
+</section>
+  
+</BaseLayout>

@@ -650,44 +650,6 @@ img {
   margin-right: 3rem;
 }
 
-/* Glissando App */
-
-/* Basis-Styling für Desktop */
-
-.glissando-container iframe {
-  width: 100%;
-  max-width: 800px;
-
-  height: 90dvh;     /* dynamische Bildschirmhöhe */
-  min-height: 500px; /* Sicherheitswert */
-
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  display: block;
-  margin: 2rem auto;
-}
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .glissando-container iframe {
-    height: 400px;
-  }
-}
-
-/* Smartphones */
-@media (max-width: 768px) {
-  .glissando-container iframe {
-    height: 300px;
-  }
-}
-
-/* Kleine Handys */
-@media (max-width: 480px) {
-  .glissando-container iframe {
-    height: 250px;
-  }
-}
-
 /* ANCHOR anmeldung + recall Formular */
 
 .container4 {
@@ -1634,6 +1596,25 @@ input {
 .account-nav a.normal-links:hover {
   background-color: #1a73e8; /* Hintergrund beim Hover */
   color: #ffffff;            /* Textfarbe beim Hover */
+}
+
+/* Notentraining Gissando App */
+
+.notentraining-app {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.notentraining-app iframe {
+  width: 100%;
+  height: 80vh;      /* fast Bildschirmhöhe */
+  min-height: 500px; /* Sicherheit für Desktop */
+  border: none;
+}
+
+.notentraining-text {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 
