@@ -653,15 +653,18 @@ img {
 /* Glissando App */
 
 /* Basis-Styling für Desktop */
+
 .glissando-container iframe {
   width: 100%;
-  max-width: 800px;  /* Breite begrenzen */
-  height: 80vh;        /* 80% der Bildschirmhöhe */
-  min-height: 400px;   /* Mindesthöhe */
+  max-width: 800px;
+
+  height: 90dvh;     /* dynamische Bildschirmhöhe */
+  min-height: 500px; /* Sicherheitswert */
+
   border: 1px solid #ccc;
   border-radius: 12px;
   display: block;
-  margin: 2rem auto; /* Zentriert */
+  margin: 2rem auto;
 }
 
 /* Tablet */
