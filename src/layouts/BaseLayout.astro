@@ -22,6 +22,8 @@ const {
 // FallBack wird nicht genutzt da mit href übergeben wird
 const urlPath = new URL(Astro.request.url).pathname;
 
+const isAccountArea = urlPath.startsWith("/kundenlogin/");
+
 // Canonical URL berechnen und übergeben
 const canonicalUrl = href || `${Astro.site}${urlPath}`;
 
@@ -83,7 +85,12 @@ console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
     />
     <meta name="page-topic" content="Musikunterricht, Musikschule, Bildung" />
     <meta name="DC.rights" content="Alle Rechte liegen beim Author" />
-    <meta name="robots" content="max-snippet:-1, INDEX, FOLLOW" />
+    <meta
+      name="robots"
+      content={isAccountArea
+        ? "noindex, nofollow"
+        : "max-snippet:-1, index, follow"}
+    />
     <meta name="theme-color" content="#191919" />
 
     <!-- Client-Side Navigation -->
