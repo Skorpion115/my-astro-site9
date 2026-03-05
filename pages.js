@@ -278,7 +278,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/train45/`,
+    loc: `${SITE_URL}/notentraining/`,
     changefreq: "weekly",
     lastmod: today,
   },
