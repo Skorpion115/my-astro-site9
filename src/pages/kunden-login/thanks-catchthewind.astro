@@ -4,7 +4,7 @@ import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "Danke – Dein Download ist bereit";
 const description =
-  "Vielen Dank für deine Zahlung! Deine Noten- & Tabulaturblatt ‚Catch The Wind‘ ist jetzt zum Download verfügbar.";
+  "Vielen Dank für deine Zahlung! Dein Noten- & Tabulaturblatt ‚Catch The Wind‘ ist jetzt zum Download verfügbar.";
 const keywords = "Catch The Wind, Noten, Tabulatur, Download Noten, PDF";
 const pageUrl = getPageUrl(Astro);
 ---
@@ -21,10 +21,13 @@ const pageUrl = getPageUrl(Astro);
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
+  noindex={true}
 >
   <h1>Danke für deine Zahlung!</h1>
 
   <h2>Deine Downloads</h2>
+
+  <p><strong>Der Download startet sofort, wenn du auf eine Datei klickst.</strong></p>
 
   <ul>
     <li>
