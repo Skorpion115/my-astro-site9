@@ -1,10 +1,3 @@
-# Schutz für Kundenbereich
-/kundenlogin/account/*  /.netlify/functions/auth-proxy  200
-/kundenlogin/account       /.netlify/functions/auth-proxy  200
-/kundenlogin/account/      /.netlify/functions/auth-proxy  200
-
-
-
 # ==============================
 # Weiterleitungen alter Seiten
 # ==============================

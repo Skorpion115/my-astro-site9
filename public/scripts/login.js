@@ -8,8 +8,8 @@ const STORAGE_KEY = "tenwords-login";
 function showContent() {
   const loginBox = document.getElementById("login-box");
   const content = document.getElementById("content");
-  loginBox?.classList.add("hidden");
-  content?.classList.remove("hidden");
+  if (loginBox) loginBox.style.display = "none";
+  if (content) content.style.display = "block";
 }
 
 // Passwort prüfen
