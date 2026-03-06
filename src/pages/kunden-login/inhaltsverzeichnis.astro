@@ -45,6 +45,7 @@ const pageUrl = getPageUrl(Astro);
       <li>
         <a href="#banjo-5-string" class="normal-links">5-string Banjo Kurse</a>
       </li>
+      <li><a href="#akkordeon-kurse" class="normal-links">Akkordeon Kurse</a></li>
     </ul>
   </nav>
 
@@ -53,9 +54,8 @@ const pageUrl = getPageUrl(Astro);
     <ul>
       <li><a href="#klavier-kurse" class="normal-links">Klavier Kurse</a></li>
       <li><a href="#gitarren-kurse" class="normal-links">Gitarren Kurse</a></li>
-      <li>
-        <a href="#banjo-5-string" class="normal-links">5-string Banjo Kurse</a>
-      </li>
+      <li><a href="#banjo-5-string" class="normal-links">5-string Banjo Kurse</a></li>
+      <li><a href="#akkordeon-kurse" class="normal-links">Akkordeon Kurse</a></li>
     </ul>
   </details>
 
@@ -1559,6 +1559,83 @@ const pageUrl = getPageUrl(Astro);
         >
       </div>
     </div>
+
+    <h2 id="akkordeon-kurse">Akkordeon Kurse</h2>
+      <table class="basis-table">
+        <thead>
+            <tr>
+              <th>ID</th>
+              <th>Titel</th>
+              <th>Komponist</th>
+              <th>Instrument</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+              <td>1</td>
+              <td data-label="Titel">L'accordeon Triste</td>
+              <td data-label="Komponist">Sergio Castelli</td>
+              <td data-label="Instrument">Akkorden</td>
+            </tr>
+          <tr>
+          <td data-label="anhören">
+                <a
+                  href="https://drive.google.com/file/d/1EXdv5njoxyPyRYDI9s40MBeRn1VFV7Sq/preview"
+                  class="normal-links"
+                >
+                  anhören
+                </a>
+              </td>
+          <td data-label="ansehen">
+            <a href="/kunden-login/akkordeon-triste/" class="normal-links">Kaufen</a>
+          </td>
+          <td data-label="download">
+                <a
+                  href="https://www.youtube.com/watch?v=Eo5gEGD5t40"
+                  class="normal-links"
+                  target="_blank"
+                  aria-label="YouTube Video zu L'akkordeon Triste ansehen"
+                  rel="noopener">YouTube Video: L'accordeon Triste</a
+                >
+              </td>	  
+          </tr>		
+        </tbody>
+      </table>
+
+      <!-- Variante gefaltet -->
+
+      <div class="basis-card">
+	<div class="basis-header">ID: 1</div>
+    <div><span>Titel:</span> L'accordeon Triste</div>
+    <div><span>Komponist:</span> Sergio Castelli</div>
+    <div><span>Instrument:</span> Akkordeon</div>
+    
+	<div>
+      <span>anhören:</span><a
+        href="https://drive.google.com/file/d/1EXdv5njoxyPyRYDI9s40MBeRn1VFV7Sq/preview"
+        class="normal-links"
+      >
+        Play Along</a
+      >
+  </div>
+
+  <div>
+    <span>Kaufen</span><a href="kunden-login/akkordeon-triste/" class="normal-links"> Kaufen</a>
+  </div>
+	
+	<div>
+      <span>YouTubeVideo:</span><a
+        href="https://www.youtube.com/watch?v=Eo5gEGD5t40"
+        class="normal-links"
+        target="_blank"
+        aria-label="YouTube Video zu L'akkordeon Triste ansehen"
+        rel="noopener"
+      >
+        L'accordeon Triste</a
+      >
+    </div>
+  </div>
+
 
     <p>
       <a href="#top" class="normal-links" aria-label="Seite nach oben scrollen"
