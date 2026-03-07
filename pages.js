@@ -263,7 +263,17 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/shop/largo/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/shop/nancy-rowland/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/shop/nocturne-opus9-no2/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -274,6 +284,11 @@ export const pages = [
   },
   {
     loc: `${SITE_URL}/shop/smile/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/shop/train45/`,
     changefreq: "weekly",
     lastmod: today,
   },

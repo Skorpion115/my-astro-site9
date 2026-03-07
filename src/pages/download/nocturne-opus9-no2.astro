@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Download – Nocturne Opus 9 No. 2 Frederic Chopin";
+const description = "Download der Noten »Nocturne Opus 9 No. 2«. Vielen Dank für deinen Kauf.";
+const keywords = "Nocturne Opus 9 No. 2, Klavier Download, Noten PDF";
+const pageUrl = getPageUrl(Astro);
+const downloads = [
+  {
+    label: "Nocturne Opus 9 No. 2 – Orginalnoten in Eb Dur (PDF)",
+    url: "https://drive.google.com/uc?export=download&id=1Gru-TB4T6ANqCyVUwqe_LIA_JlRm3Fvk",
+  },
+  {
+    label: "Nocturne Opus 9 No. 2 – Mastering (MP3)",
+    url: "https://drive.google.com/uc?export=download&id=14Hx_9XBP4k8P506c0gTK3FwIj8SInqcp",
+  },
+];
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  noindex={true}
+>
+  <h1>Vielen Dank für deinen Kauf!</h1>
+
+  <p>
+    Du kannst deine <strong>Noten „Nocturne Opus 9 No. 2 – Klavier Solo“</strong> jetzt
+    herunterladen.
+  </p>
+
+  <p>
+    👉 <strong>Wichtig:</strong> Bitte speichere die Datei direkt auf deinem Gerät
+    ab.
+  </p>
+
+  <hr />
+  <ul>
+    {
+      downloads.map((file) => (
+        <li>
+          <a href={file.url} download class="download-button">
+            👉 {file.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <hr />
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail:
+    <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p class="vat-note">
+    Rechnung mit auf Anfrage per E-Mail erhältlich.
+  </p>
+
+  <p>
+    <a href="/" class="normal-links">← Zurück zur Startseite</a>
+  </p>
+</BaseLayout>
