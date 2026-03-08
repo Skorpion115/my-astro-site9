@@ -268,6 +268,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/shop/klavierkonzert-nr-1/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/shop/nancy-rowland/`,
     changefreq: "weekly",
     lastmod: today,
