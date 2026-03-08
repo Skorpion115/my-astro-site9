@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Download – Klavierkonzert Nr. 1 in Bbm – Klavier Solo";
+const description = "Download der Noten »Klavierkonzert Nr. 1 in Bbm«. Vielen Dank für deinen Kauf.";
+const keywords = "Klavierkonzert Nr. 1 in Bbm, Klavier Solo, Noten PDF";
+const pageUrl = getPageUrl(Astro);
+const downloads = [
+  {
+    label: "Klavierkonzert Nr. 1 in Bbm – Klavier Solo (PDF)",
+    url: "https://drive.google.com/uc?export=download&id=1oshmpp8kElCNmTQmHIcz894RIVADXAzu",
+  },
+  {
+    label: "Klavierkonzert Nr. 1 in Bbm – Mastering (MP3)",
+    url: "https://drive.google.com/uc?export=download&id=1lXO4SESfdP84beZLvBLMZ3pi7-AQuBec",
+  },
+];
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  noindex={true}
+>
+  <h1>Vielen Dank für deinen Kauf!</h1>
+
+  <p>
+    Du kannst deine <strong>Noten „Klavierkonzert Nr. 1 in Bbm – Klavier Solo“</strong> jetzt
+    herunterladen.
+  </p>
+
+  <p>
+    👉 <strong>Wichtig:</strong> Bitte speichere die Datei direkt auf deinem Gerät
+    ab.
+  </p>
+
+  <hr />
+  <ul>
+    {
+      downloads.map((file) => (
+        <li>
+          <a href={file.url} download class="download-button">
+            👉 {file.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <hr />
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail:
+    <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p class="vat-note">
+    Rechnung mit auf Anfrage per E-Mail erhältlich.
+  </p>
+
+  <p>
+    <a href="/" class="normal-links">← Zurück zur Startseite</a>
+  </p>
+</BaseLayout>
