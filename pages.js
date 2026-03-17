@@ -302,4 +302,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/shop/mondschein-sonate/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
