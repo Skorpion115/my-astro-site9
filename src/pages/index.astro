@@ -26,8 +26,22 @@ const pageUrl = getPageUrl(Astro);
   <div class="firmenname">Staatl. Anerk. Musiklehrer</div>
 
   <div class="hero">
+    <!--
     <img
       src="/images/musikunterricht.webp"
+      alt="Musikunterricht in Nürnberg – Musicstudio Ziebart"
+      width="1920"
+      height="1280"
+      fetchpriority="high"
+    /> -->
+    <img
+      src="/images/musikunterricht-1280.webp"
+      srcset="
+        /images/musikunterricht-640.webp 640w,
+        /images/musikunterricht-1280.webp 1280w,
+        /images/musikunterricht-1920.webp 1920w
+      "
+      sizes="(max-width: 640px) 100vw, 1200px"
       alt="Musikunterricht in Nürnberg – Musicstudio Ziebart"
       width="1920"
       height="1280"
