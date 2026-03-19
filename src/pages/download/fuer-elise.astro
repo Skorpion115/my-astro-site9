@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Download – Für Elise - Ludwig van Beethoven – Klavier Solo";
+const description = "Download der Noten »Für Elise«. Vielen Dank für deinen Kauf.";
+const keywords = "Für Elise, Ludwig van Beethoven, Klavier Solo, Noten PDF";
+const pageUrl = getPageUrl(Astro);
+const downloads = [
+  {
+    label: "Für Elise – Klavier Solo (PDF)",
+    url: "https://drive.google.com/uc?export=download&id=1aY74UR50ng6qIvTBqgRn4LSzPDTxeKxn",
+  },
+  {
+    label: "Für Elise – Mastering (MP3) - Interpret: Lang Lang",
+    url: "https://drive.google.com/uc?export=download&id=18OPOgkvSY5Yu80N94V2VrXdE78wdBvz0",
+  },
+];
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  noindex={true}
+>
+  <h1>Vielen Dank für deinen Kauf!</h1>
+
+  <p>
+    Du kannst deine <strong>Noten „Für Elise – Klavier Solo“</strong> jetzt
+    herunterladen.
+  </p>
+
+  <p>
+    👉 <strong>Wichtig:</strong> Bitte speichere die Datei direkt auf deinem Gerät
+    ab.
+  </p>
+
+  <hr />
+  <ul>
+    {
+      downloads.map((file) => (
+        <li>
+          <a href={file.url} download class="download-button">
+            👉 {file.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <hr />
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail:
+    <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p class="vat-note">
+    Rechnung mit auf Anfrage per E-Mail erhältlich.
+  </p>
+
+  <p>
+    <a href="/" class="normal-links">← Zurück zur Startseite</a>
+  </p>
+</BaseLayout>
