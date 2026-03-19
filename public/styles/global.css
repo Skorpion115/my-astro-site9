@@ -650,6 +650,42 @@ img {
   margin-right: 3rem;
 }
 
+/* Whats App Button */
+#whatsapp-kontakt {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#whatsapp-kontakt h2 {
+  margin-bottom: 15px;
+}
+
+#whatsapp-kontakt p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+
+.whatsapp-button:active {
+  transform: scale(0.98);
+}
+
 /* ANCHOR anmeldung + recall Formular */
 
 .container4 {
