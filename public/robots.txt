@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /kundenlogin/
 
 # Hinweis auf die Sitemap
 Sitemap: https://www.musicstudio-ziebart.de/sitemap.xml
