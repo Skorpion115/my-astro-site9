@@ -23,7 +23,7 @@ interface BlogPostType {
 // Sammeln aller Blog-Posts
 const globFiles = import.meta.glob<{ frontmatter: PostFrontmatter }>("./posts/*.md", { eager: true });
 const posts: BlogPostType[] = Object.entries(globFiles)
-  .map(([path, post]: [string, any]) => {
+  .map(([path, post]: [string, { frontmatter: PostFrontmatter }]) => {
     // Extrahiere den Dateinamen aus dem Pfad (z.B. "banjo-daempfer" aus "./posts/banjo-daempfer.md")
     const filename = path.split('/').pop()?.replace('.md', '') || '';
     return {
@@ -82,12 +82,4 @@ const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
       />
     ))}
   </ul>
-<!--
-  <ul>
-    {posts.map((post) => (
-      <li>
-        <a href={post.url}>{post.frontmatter.title}</a>
-      </li>
-    ))}
-  </ul> -->
 </BaseLayout>
