@@ -1,5 +1,3 @@
-// @ts-check
-//import { defineConfig, sessionDrivers } from "astro/config";
 import { defineConfig } from 'astro/config';
 import netlify from "@astrojs/netlify";
 
@@ -12,11 +10,4 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  // session: {
-  //   driver: sessionDrivers.redis({
-  //     url: process.env.REDIS_URL
-  //   }),
-  //   cookie: { secure: true },
-  //   ttl: 3600
-  // }
 });
