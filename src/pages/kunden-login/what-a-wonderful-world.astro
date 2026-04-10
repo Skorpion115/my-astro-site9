@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "What A Wonderful World – Noten & Tabulatur kaufen";
+const description =
+  "Kaufe die Noten & Tabulaturen für ‚What A Wonderful World‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "What A Wonderful World, Noten & Tabulaturen, Gitarre, PDF";
+const pageUrl = getPageUrl(Astro);
+const returnUrl =
+  "https://www.musicstudio-ziebart.de/kunden-login/thanks-what-a-wonderful-world/";
+
+const imageSrc = "/bilder/What_A_Wonderful_World_Vorschau.png";
+const imageAlt = "What A Wonderful World – Vorschau";
+const price = "4.95";
+
+const contentHtml = `
+  <p>
+    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
+    Perfekt für Gitarristen, die den Song lernen möchten!
+  </p>
+  <p>
+    Sichere dir meine
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „City Of NewOrleans“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+  </p>
+  <ul>
+    <li>Gitarren-Noten</li>
+    <li>Audioaufnahme mp3</li>
+  </ul>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    pageTitle={pageTitle}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>
