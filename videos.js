@@ -208,11 +208,20 @@ export const videos = [
   },
   {
     loc: "/akkordeon-videoanleitung/",
-    title: "L'accordeon Triste - Frnzösische Akkordeonmusik",
+    title: "L'accordeon Triste - Französische Akkordeonmusik",
     description: "Lerne das Akkordeonstück 'L'accordeon Triste' von Sergio Castelli. Falls jemand das Stück spielen möchte mir einfach eine E-Mail schreiben. Vielleicht kann ich helfen!",
     thumbnail_loc: "https://i.ytimg.com/vi/Eo5gEGD5t40/hqdefault.jpg",
     content_loc: "https://www.youtube.com/embed/Eo5gEGD5t40",
     publication_date: "2025-04-21T10:00:00+02:00",
     duration: "258",
+  },
+  {
+    loc: "/kunden-login/inhaltsverzeichnis/",
+    title: "🎸 Jazz Guitar Lesson: What A Wonderful World (Louis Armstrong)",
+    description: "In diesem Video zeige ich dir, wie du den Klassiker 🎸 Jazz Guitar Lesson: What A Wonderful World (Louis Armstrong)  spielen kannst. Learn how to play 'What A Wonderful World' on jazz guitar with this lesson.",
+    thumbnail_loc: "https://i.ytimg.com/vi/B8qxOtj05A4/hqdefault.jpg",
+    content_loc: "https://www.youtube.com/embed/B8qxOtj05A4",
+    publication_date: "2026-04-19T10:00:00+02:00",
+    duration: "167",
   },
 ];
