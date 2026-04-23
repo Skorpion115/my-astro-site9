@@ -8,7 +8,7 @@ import { videos } from "./videos.js"; // deine Video-Metadaten
 const SITE_URL = "https://www.musicstudio-ziebart.de";
 
 // 📄 Deine statischen Seiten definieren gilt hier für Markdown Seiten
-const today = new Date().toISOString().split('T')[0];
+const today = new Date().toISOString().split("T")[0];
 
 // Markdown Blogposts sammeln
 const postFiles = glob.sync("./src/pages/posts/*.md");
@@ -30,10 +30,9 @@ const urls = [
 // Videos zu URLs zuordnen (z. B. "/gitarre-videoanleitung/" oder "/keyboard-videoanleitung/")
 const videosByUrl = {};
 videos.forEach((video) => {
-  // const urlPath = video.loc.replace(SITE_URL, '');
   function normalizePath(url) {
-  return url.replace(SITE_URL, '').replace(/\/$/, '') + '/';
-}
+    return url.replace(SITE_URL, "").replace(/\/$/, "") + "/";
+  }
   const urlPath = normalizePath(video.loc);
   if (!videosByUrl[urlPath]) videosByUrl[urlPath] = [];
   videosByUrl[urlPath].push(video);
@@ -52,7 +51,7 @@ function formatDate(date) {
 
 // Hilfsfunktion für das Entfernen des Site-URLs von einem Pfad
 function toUrlPath(loc) {
-  return loc.replace(SITE_URL, '');
+  return loc.replace(SITE_URL, "");
 }
 
 // URLs durchgehen und in XML umwandeln
@@ -68,6 +67,32 @@ urls.forEach((entry) => {
   urlEle.ele("changefreq").txt(changefreq);
   urlEle.ele("lastmod").txt(lastmod);
 
+  // 🔥 PRIORITY automatisch setzen
+  let priority = "0.5"; // Standard
+
+  const lowerLoc = loc.toLowerCase();
+
+  if (loc === `${SITE_URL}/`) {
+    priority = "1.0"; // Startseite
+  } else if (lowerLoc.includes("kunden-login")) {
+    priority = "1.0";
+  } else if (lowerLoc.includes("shop")) {
+    priority = "1.0";
+  } else if (lowerLoc.includes("unterricht")) {
+    priority = "0.9";
+  } else if (lowerLoc.includes("videoanleitung")) {
+    priority = "0.8";
+  } else if (lowerLoc.includes("/posts/")) {
+    priority = "0.7";
+  } else if (
+    lowerLoc.includes("nuernberg") ||
+    lowerLoc.includes("n%c3%bcrnberg")
+  ) {
+    priority = "0.9";
+  }
+
+  urlEle.ele("priority").txt(priority);
+
   // URL-Pfad extrahieren
   const urlPath = entry.loc ? toUrlPath(entry.loc) : toUrlPath(entry);
 
@@ -78,9 +103,10 @@ urls.forEach((entry) => {
     videoEle.ele("video:thumbnail_loc").txt(video.thumbnail_loc);
     videoEle.ele("video:title").txt(video.title);
     videoEle.ele("video:description").txt(video.description);
-    //videoEle.ele("video:content_loc").txt(video.content_loc);
     videoEle.ele("video:player_loc").txt(video.content_loc);
-    videoEle.ele("video:publication_date").txt(formatDate(video.publication_date));
+    videoEle
+      .ele("video:publication_date")
+      .txt(formatDate(video.publication_date));
     if (video.duration) {
       videoEle.ele("video:duration").txt(video.duration.toString());
     }
