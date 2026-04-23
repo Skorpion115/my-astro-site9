@@ -30,7 +30,11 @@ const urls = [
 // Videos zu URLs zuordnen (z. B. "/gitarre-videoanleitung/" oder "/keyboard-videoanleitung/")
 const videosByUrl = {};
 videos.forEach((video) => {
-  const urlPath = video.loc.replace(SITE_URL, '');
+  // const urlPath = video.loc.replace(SITE_URL, '');
+  function normalizePath(url) {
+  return url.replace(SITE_URL, '').replace(/\/$/, '') + '/';
+}
+  const urlPath = normalizePath(video.loc);
   if (!videosByUrl[urlPath]) videosByUrl[urlPath] = [];
   videosByUrl[urlPath].push(video);
 });
@@ -74,7 +78,8 @@ urls.forEach((entry) => {
     videoEle.ele("video:thumbnail_loc").txt(video.thumbnail_loc);
     videoEle.ele("video:title").txt(video.title);
     videoEle.ele("video:description").txt(video.description);
-    videoEle.ele("video:content_loc").txt(video.content_loc);
+    //videoEle.ele("video:content_loc").txt(video.content_loc);
+    videoEle.ele("video:player_loc").txt(video.content_loc);
     videoEle.ele("video:publication_date").txt(formatDate(video.publication_date));
     if (video.duration) {
       videoEle.ele("video:duration").txt(video.duration.toString());
