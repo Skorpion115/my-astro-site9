@@ -19,18 +19,26 @@ const {
   twitterUrl,
 } = Astro.props;
 
-// FallBack wird nicht genutzt da mit href übergeben wird
-const urlPath = new URL(Astro.request.url).pathname;
+// URL sauber holen
+const rawPath = new URL(Astro.request.url).pathname;
 
+// 🔧 trailingSlash erzwingen (WICHTIG für SEO)
+const urlPath = rawPath.endsWith("/") ? rawPath : rawPath + "/";
+
+// Account-Bereich erkennen
 const isAccountArea = urlPath.startsWith("/kundenlogin/");
 
-// Canonical URL berechnen und übergeben
+// Canonical URL sauber berechnen
 const canonicalUrl = href || `${Astro.site}${urlPath}`;
+
+// 🔧 OG + Twitter automatisch absichern
+const finalOgUrl = ogUrl || canonicalUrl;
+const finalTwitterUrl = twitterUrl || canonicalUrl;
 
 // Netlify setzt automatisch das Nonce
 const nonce = Astro.props.nonce || "";
 
-// console.log("[SERVER] Astro nonce:", Astro.props.nonce);
+// Debug (kannst du später rausnehmen)
 console.log("[SERVER] Astro nonce:", nonce);
 console.log(`[SERVER] Nonce IubendaScript läuft! ${nonce}`);
 console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
@@ -42,11 +50,14 @@ console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- ✨ Slot für Seitenspezifisches aus MarkdownPostLayout etc. -->
     <slot name="head" />
-    <link rel="icon" href="/favicon.ico" sizes="16x16" />
-    <link rel="apple-touch-icon" sizes="16x16" href="/apple-touch-icon.png" />
-    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" />
+    <!--
+    <link rel="apple-touch-icon" sizes="16x16" href="/apple-touch-icon.png" /> -->
+    <meta property="og:locale" content="de_DE" />
     <link rel="stylesheet" href="/styles/global.css" />
+    <!-- Sitemap ist nicht standard -->
     <link rel="sitemap" href="/sitemap-index.xml" />
+
     <meta name="generator" content={Astro.generator} />
     <meta name="Language" content="de_DE" />
     <meta name="date" content={new Date().toISOString().split("T")[0]} />
@@ -61,7 +72,8 @@ console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content={ogTitle || pageTitle} />
     <meta property="og:description" content={ogDescription || description} />
-    <meta property="og:url" content={ogUrl || href} />
+
+    <meta property="og:url" content={finalOgUrl} />
     <meta property="og:type" content={ogType || "website"} />
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -70,7 +82,8 @@ console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
       name="twitter:description"
       content={twitterDescription || description}
     />
-    <meta name="twitter:url" content={twitterUrl || href} />
+
+    <meta name="twitter:url" content={finalTwitterUrl} />
     <meta
       name="google-site-verification"
       content="Zitul6WICKD7zrzgptxGVrh2GEhozasdEM_d1tGi2aw"

@@ -56,7 +56,7 @@ urls.forEach((entry) => {
   const urlEle = doc.ele("url");
 
   // Wenn 'entry' ein einfacher String (z. B. von posts) ist
-  const loc = typeof entry === "string" ? `${SITE_URL}${entry}` : (entry.loc || "");
+  const loc = typeof entry === "string" ? `${SITE_URL}${entry}` : entry.loc;
   const changefreq = entry.changefreq || "weekly";
   const lastmod = entry.lastmod || today;
 
