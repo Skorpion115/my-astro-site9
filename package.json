@@ -9,7 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.1.9",
+    "astro": "^6.2.1",
     "xmlbuilder2": "^4.0.3"
   },
   "devDependencies": {
