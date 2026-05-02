@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Danke – Dein Download ist bereit";
+const description =
+  "Vielen Dank für deine Zahlung! Deine Noten- & Tabulatur ‚Bossa Dorado‘ ist jetzt zum Download verfügbar.";
+const keywords = "Bossa Dorado, Noten, Tabulatur, Download Noten, PDF";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+  noindex={true}
+>
+  <h1>Danke für deine Zahlung!</h1>
+
+  <h2>Deine Downloads</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1T9-ECbxpqXpu7SnWu7kR7AarzkhPCDgG"
+        class="cta-button">
+        📄 Bossa Dorado – Melody Guitar
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1qoKvWWFNzatf0Voyd8l-FDnl0t2bMDq3"
+        class="cta-button">
+        📄 Bossa Dorado – Rhythmus Guitar
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1syJrWYSclTwrrYziKfO_1Sn--6fth61I"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Bossa Dorado – Mastering
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=13bhclkgY55MXeOLOIjOHa6hFVldepJ9v"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Bossa Dorado – Backing Track
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+</BaseLayout>
