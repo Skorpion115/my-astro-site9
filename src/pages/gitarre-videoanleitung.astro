@@ -3,11 +3,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import YouTube from "../components/YouTube.astro";
 import "../styles/lite-yt-embed.css";
 const pageTitle =
-  "Gitarre Videoanleitungen – Like Ice In the Sunshine, Yesterday & City of New Orleans";
+  "Gitarre Videoanleitungen – Bossa Dorado, Like Ice In the Sunshine, Yesterday & City of New Orleans";
 const description =
-  "Lerne Gitarre spielen mit kostenlosen Videoanleitungen: Like Ice In The Sunshine von Hanno Harders, Yesterday von den Beatles und City of New Orleans von Arlo Guthrie.";
+  "Lerne Gitarre spielen mit kostenlosen Videoanleitungen: Bossa Dorado von Dorado Schmitt, Like Ice In The Sunshine von Hanno Harders, Yesterday von den Beatles und City of New Orleans von Arlo Guthrie.";
 const keywords =
-  "gitarre tutorial, like ice in the sunshine gitarre, yesterday gitarre lernen, city of new orleans gitarre arlo guthrie";
+  "gitarre tutorial, bossa dorado gitarre, like ice in the sunshine gitarre, yesterday gitarre lernen, city of new orleans gitarre arlo guthrie";
 const SITE_URL =
   import.meta.env.SITE_URL || "https://www.musicstudio-ziebart.de";
 const pageUrl = `${SITE_URL}/gitarre-videoanleitung/`;
@@ -16,6 +16,16 @@ const pageUrl = `${SITE_URL}/gitarre-videoanleitung/`;
 // Video-Daten
 
 const videoData = [
+  {
+    loc: `${SITE_URL}/gitarrenunterricht/`,
+    title: "🎸 Bossa Dorado Guitar Lesson – Gypsy Jazz Solo & Rhythm (Dorado Schmitt)",
+    description:
+      "Willkommen zu meinem Gitarren-Tutorial zu “Bossa Dorado” von Dorado Schmitt! In diesem Video zeige ich dir Schritt für Schritt, wie du den Song auf der Konzertgitarre spielen kannst. Ich habe nur das Hauptthema aufgeschrieben. Das andere wäre zu komplex. Es gehört in die Stilrichtung Gypsy Jazz, die von Django Reinhardt geprägt wurde.",
+    contentLoc: "https://www.youtube.com/embed/LYOEuto28l8",
+    thumbnailLoc: "https://i.ytimg.com/vi/LYOEuto28l8/hqdefault.jpg",
+    publicationDate: "2026-05-05T17:00:00+02:00",
+    duration: "PT14M38S",
+  },
   {
     loc: `${SITE_URL}/gitarrenunterricht/`,
     title: "Silence Is Golden – The Tremeloes – Guitar Lesson (Gitarren-Tutorial)",
@@ -28,7 +38,7 @@ const videoData = [
   },
   {
     loc: `${SITE_URL}/gitarrenunterricht/`,
-    title: "🎸 The Lion Sleeps Tonight – Gitarren-Tutorial (einfach erklärt)",
+    title: "🎸 The Lion Sleeps Tonight – The Tokens - Gitarren-Tutorial (einfach erklärt)",
     description:
       "Lerne den bekannten Song 'The Lion Sleeps Tonight' Schritt für Schritt auf der Gitarre! 🎶 In diesem Gitarren-Tutorial zeige ich dir alle Akkorde, Schlagmuster und Rhythmusvarianten, damit du den Song allein auf der Gitarre spielen kannst – ohne Playback oder Begleitung. Ich spiele den Song zunächst mit meinem eigenen Playback vor, damit du hörst, wie er komplett klingt, und erkläre danach alle Teile einzeln, damit du ihn selbst spielen kannst. 🎧 Hinweis: Das Playback wird nur für die Demonstration verwendet – du lernst den Song so, dass du ihn komplett allein auf der Gitarre spielen kannst.",
     contentLoc: "https://www.youtube.com/embed/eFcGadGwenQ",
@@ -38,7 +48,7 @@ const videoData = [
   },
   {
     loc: `${SITE_URL}/gitarrenunterricht/`,
-    title: "Like Ice In The Sunshine – New Mix – Guitar Lesson (Gitarren-Tutorial)",
+    title: "Like Ice In The Sunshine – Beagle Music – Guitar Lesson (Gitarren-Tutorial)",
     description:
       "In diesem Video zeige ich dir, wie du Like Ice In The Sunshine auf der Gitarre spielen kannst. Du lernst Schritt für Schritt die Akkorde, den Rhythmus und den Schlag. Ideal für Anfänger, Fortgeschrittente und alle, die diesen bekannten Popsong auf der Akustikgitarre spielen möchten.",
     contentLoc: "https://www.youtube.com/embed/Jk6ECVwJyZk",
@@ -85,7 +95,8 @@ const videoData = [
   <section>
     <h2>Gitarre Videoanleitung</h2>
     <p>
-      Lerne vier berühmte Klassiker auf der Gitarre:
+      Lerne 5 berühmte Klassiker auf der Gitarre:
+      <strong>Bossa Dorado</strong>, 
       <strong>Silence Is Golden</strong>, 
       <strong>The Lion Sleeps Tonight</strong>, 
       <strong>Catch The Wind</strong>,
