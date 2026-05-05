@@ -298,6 +298,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/kunden-login/bossa-dorado/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/shop/train45/`,
     changefreq: "weekly",
     lastmod: today,

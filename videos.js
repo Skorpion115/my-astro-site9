@@ -224,4 +224,13 @@ export const videos = [
     publication_date: "2026-04-19T10:00:00+02:00",
     duration: "167",
   },
+  {
+    loc: "/kunden-login/inhaltsverzeichnis/",
+    title: "🎸 Bossa Dorado Guitar Lesson – Gypsy Jazz Solo & Rhythm (Dorado Schmitt)",
+    description: "In diesem Video zeige ich dir, wie du den Klassiker 🎸 Bossa Dorado Guitar Lesson – Gypsy Jazz Solo & Rhythm (Dorado Schmitt)  spielen kannst. Learn how to play 'Bossa Dorado' on jazz guitar with this lesson.",
+    thumbnail_loc: "https://i.ytimg.com/vi/LYOEuto28l8/hqdefault.jpg",
+    content_loc: "https://www.youtube.com/embed/LYOEuto28l8",
+    publication_date: "2026-05-05T17:00:00+02:00",
+    duration: "878",
+  },
 ];
