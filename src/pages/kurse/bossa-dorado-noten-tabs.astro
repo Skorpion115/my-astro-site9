@@ -3,30 +3,34 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Lullaby In Blue – Noten für Orgel oder Keyboard kaufen";
+const pageTitle = "Bossa Dorado – Noten & Tabulatur kaufen";
 const description =
-  "Kaufe die Noten für ‚Lullaby In Blue‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Lullaby In Blue, Noten, Keyboard, Orgel PDF";
+  "Kaufe die Noten & Tabulaturen für ‚Bossa Dorado‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "Bossa Dorado, Noten & Tabulaturen, Gitarre, PDF";
 const pageUrl = getPageUrl(Astro);
 const returnUrl =
-  "https://www.musicstudio-ziebart.de/kunden-login/thanks-lullaby-in-blue/";
+  "https://www.musicstudio-ziebart.de/kurse/thanks-bossa-dorado/";
 
-const imageSrc = "/bilder/Lullaby_In_Blue_Vorschau.jpg";
-const imageAlt = "Lullaby In Blue – Vorschau";
-const price = "2.95";
+const imageSrc = "/bilder/bossa_dorado_vorschau.png";
+const imageAlt = "Bossa Dorado – Vorschau";
+const price = "4.95";
 
 const contentHtml = `
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für Keyboardspieler/Organisten, die den Song lernen möchten!
+    Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten zum Song „Lullaby In Blue“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Bossa Dorado“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
   </p>
   <ul>
-    <li>Keyboard/Orgel-Noten</li>
+    <li>Gitarren-Noten Solo Guitar</li>
+    <li>Gitarren-Noten Rhythmus Guitar</li>
+    <li>Bass-Noten</li>
+    <li>Drums-Noten</li>
     <li>Audioaufnahme mp3</li>
+    <li>Backing Track mp3</li>
   </ul>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -35,7 +39,10 @@ const contentHtml = `
     Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
   </p>
   <p>
-    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
   </p>
   <p>
     Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze

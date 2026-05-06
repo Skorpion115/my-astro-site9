@@ -27,6 +27,7 @@ const urlPath = rawPath.endsWith("/") ? rawPath : rawPath + "/";
 
 // Account-Bereich erkennen
 const isAccountArea = urlPath.startsWith("/kundenlogin/");
+const isThankYouPage = urlPath.startsWith("/kurse/thanks-");
 
 // Canonical URL sauber berechnen
 const canonicalUrl = href || `${Astro.site}${urlPath}`;
@@ -100,7 +101,7 @@ console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
     <meta name="DC.rights" content="Alle Rechte liegen beim Author" />
     <meta
       name="robots"
-      content={isAccountArea
+      content={isAccountArea || isThankYouPage
         ? "noindex, nofollow"
         : "max-snippet:-1, index, follow"}
     />

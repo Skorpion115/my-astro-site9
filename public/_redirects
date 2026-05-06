@@ -16,3 +16,5 @@
 /post-4/                      /webseite-erstellen/         301
 /banjo d-tuner/               /d-tuner/                    301
 /akkordeon-unterricht/        /akkordeonunterricht/        301
+/kunden-login/inhaltsverzeichnis /kurse/alle-kurse/        301
+/kunden-login/*                /kurse/                     301

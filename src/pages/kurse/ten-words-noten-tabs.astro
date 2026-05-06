@@ -3,29 +3,29 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Flint Hill Special – Tabulatur + Mastering mp3 + Backing Track kaufen";
+const pageTitle = "Ten Words – Noten & Tabulatur kaufen";
 const description =
-  "Kaufe die Noten & Tabulaturen für ‚Flint Hill Special‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Flint Hill Special, Noten & Tabulaturen, 5-string Banjo, PDF";
+  "Kaufe die Noten & Tabulaturen für ‚Ten Words‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "Ten Words, Noten & Tabulaturen, Gitarre, PDF";
 const pageUrl = getPageUrl(Astro);
 const returnUrl =
-  "https://www.musicstudio-ziebart.de/kunden-login/thanks-flint-hill-special/";
+  "https://www.musicstudio-ziebart.de/kurse/thanks-ten-words/";
 
-const imageSrc = "/bilder/Flint_Hill_Special_Vorschau.png";
-const imageAlt = "Flint Hill Special – Vorschau";
-const price = "2.95";
+// const imageSrc = "/bilder/Ten_Words_Vorschau.jpg";
+// const imageAlt = "Ten Words – Vorschau";
+const price = "5.95";
 
 const contentHtml = `
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für 5-string Banjo-Spieler, die den Song lernen möchten!
+    Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Flint Hill Special“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Ten Words“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
   </p>
   <ul>
-    <li>5-string Banjo-Noten</li>
+    <li>E-Gitarre-Noten</li>
     <li>Audioaufnahme mp3</li>
     <li>Backing Track</li>
   </ul>
@@ -34,6 +34,12 @@ const contentHtml = `
   </p>
   <p>
     Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+  </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
   </p>
   <p>
     Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
@@ -63,8 +69,6 @@ const contentHtml = `
     pageTitle={pageTitle}
     description={description}
     keywords={keywords}
-    imageSrc={imageSrc}
-    imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}

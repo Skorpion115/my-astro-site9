@@ -3,37 +3,42 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "What A Wonderful World – Noten & Tabulatur kaufen";
+const pageTitle = "In The Still Of The Night – Noten kaufen";
 const description =
-  "Kaufe die Noten & Tabulaturen für ‚What A Wonderful World‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "What A Wonderful World, Noten & Tabulaturen, Gitarre, PDF";
+  "Kaufe die Noten für ‚In The Still Of The Night‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "In The Still Of The Night, Noten, Keyboard, Orgel PDF";
 const pageUrl = getPageUrl(Astro);
 const returnUrl =
-  "https://www.musicstudio-ziebart.de/kunden-login/thanks-what-a-wonderful-world/";
+  "https://www.musicstudio-ziebart.de/kurse/thanks-in-the-still/";
 
-const imageSrc = "/bilder/What_A_Wonderful_World_Vorschau.png";
-const imageAlt = "What A Wonderful World – Vorschau";
-const price = "4.95";
+const imageSrc = "/bilder/In_The_Still_Vorschau.png";
+const imageAlt = "In The Still Of The Night – Vorschau";
+const price = "2.95";
 
 const contentHtml = `
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für Gitarristen, die den Song lernen möchten!
+    Perfekt für Keyboardspieler/Organisten, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „What A Wonderful World“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten zum Song „In The Still Of The Night“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
   </p>
   <ul>
-    <li>Gitarren-Noten</li>
+    <li>Keyboard/Orgel-Noten</li>
     <li>Audioaufnahme mp3</li>
-    <li>Backing Track mp3</li>
   </ul>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
     Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+  </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
   </p>
   <p>
     Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.

@@ -3,17 +3,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "City Of NewOrleans – Noten & Tabulatur kaufen";
+const pageTitle = "Silence Is Golden – komplettes Arrangement kaufen";
 const description =
-  "Kaufe die Noten & Tabulaturen für ‚City Of NewOrleans‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "City Of NewOrleans, Noten & Tabulaturen, Gitarre, PDF";
+  "Kaufe die Noten & Tabulaturen für ‚Silence Is Golden‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "Silence Is Golden, Noten & Tabulaturen, Gitarre, PDF";
 const pageUrl = getPageUrl(Astro);
 const returnUrl =
-  "https://www.musicstudio-ziebart.de/kunden-login/thanks-city-of-neworleans/";
+  "https://www.musicstudio-ziebart.de/kurse/thanks-silence-is-golden/";
 
-const imageSrc = "/bilder/City_Of_NewOrleans_Vorschau.png";
-const imageAlt = "City Of NewOrleans – Vorschau";
-const price = "2.95";
+const imageSrc = "/bilder/Silence_Is_Golden_Vorschau.jpg";
+const imageAlt = "Silence Is Golden – Vorschau";
+const price = "5.95";
 
 const contentHtml = `
   <p>
@@ -22,11 +22,16 @@ const contentHtml = `
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „City Of NewOrleans“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Silence Is Golden“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
   </p>
   <ul>
-    <li>Gitarren-Noten</li>
+    <li>Steelguitar-Noten</li>
+    <li>E-Guitar-Noten</li>
+    <li>Bass-Noten</li>
+    <li>Drums-Noten</li>
+    <li>Choir-Noten</li>
     <li>Audioaufnahme mp3</li>
+    <li>Backing Track</li>
   </ul>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -34,6 +39,13 @@ const contentHtml = `
   <p>
     Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
   </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
   <p>
     Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
   </p>

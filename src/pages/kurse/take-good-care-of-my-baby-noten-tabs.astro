@@ -3,37 +3,42 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "H-schisch – Noten kaufen";
+const pageTitle = "Take Good Care Of My Baby – Noten & Pattern kaufen";
 const description =
-  "Kaufe die Noten für ‚H-schisch‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "H-schisch, Noten, Keyboard, Orgel PDF";
+  "Kaufe die Noten & Tabulaturen für ‚Take Good Care Of My Baby‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "Take Good Care Of My Baby, Noten & Tabulaturen, Gitarre, PDF";
 const pageUrl = getPageUrl(Astro);
 const returnUrl =
-  "https://www.musicstudio-ziebart.de/kunden-login/thanks-h-schisch/";
+  "https://www.musicstudio-ziebart.de/kurse/thanks-take-good-care-of-my-baby/";
 
-const imageSrc = "/bilder/H_schisch_Vorschau.png";
-const imageAlt = "H-schisch – Vorschau";
-const price = "2.95";
+const imageSrc = "/bilder/Take_Good_Care_Vorschau.jpg";
+const imageAlt = "Take Good Care Of My Baby – Vorschau";
+const price = "5.95";
 
 const contentHtml = `
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für Keyboardspieler/Organisten, die den Song lernen möchten!
+    Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten zum Song „H-schisch“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Take Good Care Of My Baby“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
   </p>
   <ul>
-    <li>Keyboard/Orgel-Noten</li>
+    <li>Steelguitar-Noten</li>
     <li>Audioaufnahme mp3</li>
-    <li>Backing Track</li>
   </ul>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
     Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+  </p>
+   <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
   </p>
   <p>
     Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.

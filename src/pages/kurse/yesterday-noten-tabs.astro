@@ -3,17 +3,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Bossa Dorado – Noten & Tabulatur kaufen";
+const pageTitle = "Yesterday – Noten & Tabulatur kaufen";
 const description =
-  "Kaufe die Noten & Tabulaturen für ‚Bossa Dorado‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Bossa Dorado, Noten & Tabulaturen, Gitarre, PDF";
+  "Kaufe die Noten & Tabulaturen für ‚Yesterday‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "Yesterday, Noten & Tabulaturen, Gitarre, PDF";
 const pageUrl = getPageUrl(Astro);
 const returnUrl =
-  "https://www.musicstudio-ziebart.de/kunden-login/thanks-bossa-dorado/";
+  "https://www.musicstudio-ziebart.de/kurse/thanks-yesterday/";
 
-const imageSrc = "/bilder/bossa_dorado_vorschau.png";
-const imageAlt = "Bossa Dorado – Vorschau";
-const price = "4.95";
+const imageSrc = "/bilder/Yesterday_Vorschau.jpg";
+const imageAlt = "Yesterday – Vorschau";
+const price = "5.95";
 
 const contentHtml = `
   <p>
@@ -22,15 +22,12 @@ const contentHtml = `
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Bossa Dorado“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Yesterday“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
   </p>
   <ul>
-    <li>Gitarren-Noten Solo Guitar</li>
-    <li>Gitarren-Noten Rhythmus Guitar</li>
-    <li>Bass-Noten</li>
-    <li>Drums-Noten</li>
+    <li>Steelguitar-Noten</li>
+    <li>Strings-Noten</li>
     <li>Audioaufnahme mp3</li>
-    <li>Backing Track mp3</li>
   </ul>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -43,6 +40,9 @@ const contentHtml = `
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
   </p>
   <p>
     Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
