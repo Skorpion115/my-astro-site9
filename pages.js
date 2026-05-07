@@ -243,17 +243,17 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/black-mountain-rag/`,
+    loc: `${SITE_URL}/shop/black-mountain-rag-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/cripple-creek/`,
+    loc: `${SITE_URL}/shop/cripple-creek-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/dear-old-dixie/`,
+    loc: `${SITE_URL}/shop/dear-old-dixie-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -263,32 +263,32 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/largo/`,
+    loc: `${SITE_URL}/shop/largo-noten/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/klavierkonzert-nr-1/`,
+    loc: `${SITE_URL}/shop/klavierkonzert-nr-1-noten/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/nancy-rowland/`,
+    loc: `${SITE_URL}/shop/nancy-rowland-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/nocturne-opus9-no2/`,
+    loc: `${SITE_URL}/shop/nocturne-opus9-no2-noten/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/rose-room/`,
+    loc: `${SITE_URL}/shop/rose-room-notes-tabs/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/smile/`,
+    loc: `${SITE_URL}/shop/smile-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -303,7 +303,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/train45/`,
+    loc: `${SITE_URL}/shop/train45-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -313,7 +313,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/mondschein-sonate/`,
+    loc: `${SITE_URL}/shop/mondschein-sonate-noten/`,
     changefreq: "weekly",
     lastmod: today,
   },
