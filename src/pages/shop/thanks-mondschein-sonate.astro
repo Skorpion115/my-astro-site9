@@ -2,18 +2,18 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Download – Klavierkonzert Nr. 1 in Bbm – Klavier Solo";
-const description = "Download der Noten »Klavierkonzert Nr. 1 in Bbm«. Vielen Dank für deinen Kauf.";
-const keywords = "Klavierkonzert Nr. 1 in Bbm, Klavier Solo, Noten PDF";
+const pageTitle = "Download – Mondschein-Sonate - Ludwig van Beethoven – Klavier Solo";
+const description = "Download der Noten »Mondschein Sonate«. Vielen Dank für Ihren Kauf.";
+const keywords = "Mondschein Sonate, Ludwig van Beethoven, Klavier Solo, Noten PDF";
 const pageUrl = getPageUrl(Astro);
 const downloads = [
   {
-    label: "Klavierkonzert Nr. 1 in Bbm – Klavier Solo (PDF)",
-    url: "https://drive.google.com/uc?export=download&id=1oshmpp8kElCNmTQmHIcz894RIVADXAzu",
+    label: "Mondschein-Sonate Op. 27 No 2 – Klavier Solo (PDF)",
+    url: "/bilder/Mondschein.pdf",
   },
   {
-    label: "Klavierkonzert Nr. 1 in Bbm – Mastering (MP3)",
-    url: "https://drive.google.com/uc?export=download&id=1lXO4SESfdP84beZLvBLMZ3pi7-AQuBec",
+    label: "Mondschein-Sonate Op. 27 No 2 – Mastering (MP3)",
+    url: "https://drive.google.com/uc?export=download&id=1LH0K3yYBxqFnGHvuXSzwXTFwoaovoT5x",
   },
 ];
 ---
@@ -31,7 +31,7 @@ const downloads = [
   <h1>Vielen Dank für deinen Kauf!</h1>
 
   <p>
-    Du kannst deine <strong>Noten „Klavierkonzert Nr. 1 in Bbm – Klavier Solo“</strong> jetzt
+    Du kannst deine <strong>Noten „Mondschein-Sonate Op. 27 No 2 – Klavier Solo“</strong> jetzt
     herunterladen.
   </p>
 
@@ -67,6 +67,6 @@ const downloads = [
   </p>
 
   <p>
-    <a href="/" class="normal-links">← Zurück zur Startseite</a>
+    <a href="/kurse/alle-kurse/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
   </p>
 </BaseLayout>

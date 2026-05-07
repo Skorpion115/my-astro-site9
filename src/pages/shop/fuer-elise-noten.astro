@@ -2,11 +2,11 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Mondschein Sonate - Ludwig van Beethoven – Noten kaufen";
+const pageTitle = "Für Elise - Ludwig van Beethoven – Noten kaufen";
 const description =
-  "Klavier Solo zu »Mondschein Sonate« als PDF. Ideal für Klavierunterricht & Selbststudium. Sofort-Download nach Zahlung.";
+  "Klavier Solo zu »Für Elise« als PDF. Ideal für Klavierunterricht & Selbststudium. Sofort-Download nach Zahlung.";
 const keywords =
-  "Mondschein Sonate, Ludwig van Beethoven, Klavier Solo, Noten, PDF Download";
+  "Für Elise, Ludwig van Beethoven, Klavier Solo, Noten, PDF Download";
 const pageUrl = getPageUrl(Astro);
 
 // Produktdaten (sauber als Zahlen)
@@ -14,8 +14,8 @@ const priceGross = 2.95;
 
 
 // PayPal-Daten
-const itemName = "Mondschein Sonate – Klavier Solo (PDF)";
-const returnUrl = "https://www.musicstudio-ziebart.de/download/mondschein-sonate/";
+const itemName = "Für Elise – Klavier Solo (PDF)";
+const returnUrl = "https://www.musicstudio-ziebart.de/shop/fuer-elise-noten/";
 const paypalBusiness = "musikstudio.ziebart@gmail.com";
 ---
 <BaseLayout
@@ -32,13 +32,13 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   twitterUrl={pageUrl}
 >
   <img
-    src="/bilder/mondschein-sonate-vorschau.png"
-    alt="Mondschein Sonate – Vorschau"
+    src="/bilder/Fuer-Elise-Vorschau.png"
+    alt="Für Elise – Vorschau"
     class="product-image"
   />
 
   <p>
-    Hol dir die <strong>Hol dir die Noten zu der Mondschein Sonate - L. van Beethoven</strong>.
+    Hol dir die <strong>Hol dir die Noten für »Für Elise« - Ludwig van Beethoven</strong>.
     <br />
     Sofortiger Download nach Zahlung.
   </p>
@@ -46,13 +46,19 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   <ul>
     <li>✔ Klar notiertes Klavier Solo</li>
     <li>✔ Für Unterricht & Selbststudium</li>
-    <li>✔ Sofortiger Download nach Zahlung</li>
   </ul>
+
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
 
   <table class="price-table">
     <tr>
       <th>Produkt</th>
-      <td>Mondschein-Sonate Op. 27 No 2 – Klavier Solo (PDF) L. van Beethoven</td>
+      <td>Für Elise – Klavier Solo (PDF) Ludwig van Beethoven</td>
     </tr>
     <tr>
       <th>Gesamtpreis</th>
@@ -91,6 +97,6 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   </p>
 
   <p>
-    <a href="/kunden-login/inhaltsverzeichnis/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
+    <a href="/kurse/alle-kurse/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
   </p>
 </BaseLayout>

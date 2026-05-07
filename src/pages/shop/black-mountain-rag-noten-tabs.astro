@@ -2,19 +2,17 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Train 45 Banjo Solo – Tabulatur kaufen | Musicstudio Ziebart";
-const description =
-  "Banjosolo zu »Train 45« als PDF. Ideal für Bluegrass Banjo Picker. Sofort-Download nach Zahlung.";
-const keywords =
-  "Train 45, Banjo Solo, Bluegrass Banjo, Tabulatur, PDF Download";
+const pageTitle = "Black Mountain Rag Banjo Solo – Tabulatur kaufen | Musicstudio Ziebart";
+const description = "Banjosolo zu »Black Mountain Rag« als PDF. Ideal für Bluegrass Banjo Picker. Sofort-Download nach Zahlung.";
+const keywords = "Black Mountain Rag, Banjo Solo, Bluegrass Banjo, Tabulatur, PDF Download";
 const pageUrl = getPageUrl(Astro);
 
 // Produktdaten (sauber als Zahlen)
 const priceGross = 2.50;
 
 // PayPal-Daten
-const itemName = "Train 45 – Banjo Solo (PDF)";
-const returnUrl = "https://www.musicstudio-ziebart.de/download/train45/";
+const itemName = "Black Mountain Rag – Banjo Solo (PDF)";
+const returnUrl = "https://www.musicstudio-ziebart.de/shop/thanks-black-mountain-rag/";
 const paypalBusiness = "musikstudio.ziebart@gmail.com";
 ---
 <BaseLayout
@@ -31,13 +29,13 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   twitterUrl={pageUrl}
 >
   <img
-    src="/bilder/Train_45_Vorschau.png"
-    alt="Train 45 Vorschau"
+    src="/bilder/Black_Mountain_Rag_Vorschau.png"
+    alt="Black Mountain Rag Vorschau"
     class="product-image"
   />
 
   <p>
-    Hol dir die <strong>Tabulatur zu Train 45 Solo + Train 45 Mastering</strong> für dein Banjospiel.
+    Hol dir die <strong>Tabulatur zu Black Mountain Rag Solo + BackingTrack</strong> für dein Banjospiel.
     <br />
     Sofortiger Download nach Zahlung.
   </p>
@@ -45,16 +43,22 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   <ul>
     <li>✔ Klar notiertes Banjo Solo</li>
     <li>✔ Für Unterricht & Selbststudium</li>
-    <li>✔ Sofortiger Download nach Zahlung</li>
   </ul>
+
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
 
   <table class="price-table">
     <tr>
       <th>Produkt</th>
-      <td>Train 45 – Banjo Solo (PDF) + Train 45 Mastering</td>
+      <td>Black Mountain Rag – Banjo Solo (PDF) + BackingTrack</td>
     </tr>
     <tr>
-      <th>Gesamtpreis</th>
+      <th>Preis</th>
       <td><strong>{priceGross.toFixed(2)} €</strong></td>
     </tr>
   </table>
@@ -64,7 +68,7 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   </p>
 
   <!-- PayPal Button OHNE Komponente -->
-  <form
+  <form class="paypal-form"
     action="https://www.paypal.com/cgi-bin/webscr"
     method="post"
     target="_top"
@@ -78,7 +82,7 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
     <input type="hidden" name="no_shipping" value="1" />
     <input type="hidden" name="charset" value="utf-8" />
     <input type="hidden" name="lc" value="DE" />
-
+    
     <button type="submit" class="paypal-button">
       Jetzt mit PayPal kaufen
     </button>
@@ -91,6 +95,6 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   </p>
 
   <p>
-    <a href="/kunden-login/inhaltsverzeichnis/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
+    <a href="/kurse/alle-kurse/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
   </p>
 </BaseLayout>

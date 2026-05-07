@@ -4,10 +4,8 @@ import PaypalButton from "../../components/PaypalButton.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "Rose Room Noten & BackingTrack kaufen | Musicstudio Ziebart";
-const description =
-  "Gitarrensolo zu »Rose Room« als PDF. Ideal für Jazz-Gitarre. Sofort-Download nach Zahlung.";
-const keywords =
-  "Rose Room, Guitar Solo, Jazz Gitarre, Gitarrennoten, PDF Download";
+const description = "Gitarrensolo zu »Rose Room« als PDF. Ideal für Jazz-Gitarre. Sofort-Download nach Zahlung.";
+const keywords = "Rose Room, Guitar Solo, Jazz Gitarre, Gitarrennoten, PDF Download";
 const pageUrl = getPageUrl(Astro);
 
 // Produktdaten
@@ -47,8 +45,14 @@ const priceGross = "4,95";
   <ul>
     <li>✔ Klar notiertes Guitar Solo</li>
     <li>✔ Für Unterricht & Selbststudium</li>
-    <li>✔ Sofortiger Download nach Zahlung</li>
   </ul>
+
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
 
   <table class="price-table">
     <tr>
@@ -68,7 +72,7 @@ const priceGross = "4,95";
   <PaypalButton
     itemName="Rose Room – Guitar Solo (PDF)"
     amount={priceGross}
-    returnUrl="https://www.musicstudio-ziebart.de/download/rose-room/"
+    returnUrl="https://www.musicstudio-ziebart.de/shop/thanks-rose-room/"
   />
 
   <p class="vat-note">
@@ -78,6 +82,6 @@ const priceGross = "4,95";
   </p>
 
   <p>
-    <a href="/kunden-login/inhaltsverzeichnis/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
+    <a href="/kurse/alle-kurse/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
   </p>
 </BaseLayout>
