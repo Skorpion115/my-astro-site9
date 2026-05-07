@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getPageUrl } from "../utils/getPageUrl.js";
+const pageTitle = "Widerrufsbelehrung / Rückgabebedingungen";
+const description = "Widerrufsbelehrung";
+const keywords = "widerruf, rueckgabe, bedingungen";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  
+<h2>Widerrufsrecht bei digitalen Produkten</h2>
+
+<p>
+    Wir bieten digitale Produkte (z. B. Noten und TABs zum Download) an. Da diese Produkte unmittelbar nach dem Kauf bereitgestellt werden, besteht grundsätzlich ein Widerrufsrecht gemäß den gesetzlichen Bestimmungen.
+</p>
+
+<h2>Erlöschen des Widerrufsrechts</h2>
+<p>
+    Das Widerrufsrecht erlischt bei digitalen Inhalten, sobald der Kunde ausdrücklich zugestimmt hat, dass mit der Ausführung des Vertrags vor Ablauf der Widerrufsfrist begonnen wird und bestätigt hat, dass er dadurch sein Widerrufsrecht verliert.
+    </br>
+    Dies erfolgt in der Regel beim Kaufabschluss.
+</p>
+<h2>Rückgabe / Erstattung</h2>
+<p>
+    Eine Rückgabe oder Erstattung ist ausgeschlossen, sobald der Download des digitalen Produkts erfolgt ist.
+</p>
+<h2>Ausnahme bei fehlerhaften Dateien</h2>
+<p>
+    Sollte eine Datei beschädigt sein oder technische Fehler aufweisen, stellen wir selbstverständlich kostenlosen Ersatz zur Verfügung.
+</p>
+<h2>Kontakt</h2>
+<p>
+    Bei Fragen oder Problemen mit einem Produkt kontaktieren Sie uns bitte unter: postmaster@musicstudio-ziebart.de
+</p>
+<br>
+<p><a href="/kurse/alle-kurse/" class="normal-links">Zurück zum Kursangebot</a></p>
+</BaseLayout>
