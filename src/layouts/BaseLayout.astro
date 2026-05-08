@@ -14,10 +14,16 @@ const {
   ogDescription,
   ogUrl,
   ogType,
+  ogImage,
   twitterTitle,
   twitterDescription,
   twitterUrl,
 } = Astro.props;
+
+// Standard-Open-Graph-Bild als Fallback.
+// Wird verwendet, wenn eine Seite kein eigenes ogImage übergibt.
+// Wichtig für Google, Social Media Shares und Merchant Center.
+const defaultOgImage = "https://www.musicstudio-ziebart.de/bilder/default_share.png";
 
 // URL sauber holen
 const rawPath = new URL(Astro.request.url).pathname;
@@ -76,6 +82,11 @@ console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
 
     <meta property="og:url" content={finalOgUrl} />
     <meta property="og:type" content={ogType || "website"} />
+
+    <meta property="og:image" content={ogImage || defaultOgImage} />
+    <meta property="og:image:width" content="1200" />
+
+    <meta property="og:image:height" content="630" />
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={twitterTitle || pageTitle} />

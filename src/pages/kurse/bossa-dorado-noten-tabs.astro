@@ -14,6 +14,12 @@ const imageSrc = "/bilder/bossa_dorado_vorschau.png";
 const imageAlt = "Bossa Dorado – Vorschau";
 const price = "4.95";
 
+// Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage =
+  "https://www.musicstudio-ziebart.de/bilder/bossa_dorado_preview.png";
+
 const contentHtml = `
   <p>
     <strong>🎧 Hörprobe:</strong><br />
@@ -75,7 +81,7 @@ const contentHtml = `
 `;
 ---
 
-<BaseLayout
+<BaseLayout ogImage={ogImage}
   pageTitle={pageTitle}
   description={description}
   keywords={keywords}
