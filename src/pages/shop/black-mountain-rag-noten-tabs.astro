@@ -10,6 +10,13 @@ const pageUrl = getPageUrl(Astro);
 // Produktdaten (sauber als Zahlen)
 const priceGross = 2.50;
 
+// Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage =
+  "https://www.musicstudio-ziebart.de/bilder/black_mountain_rag_preview.png";
+
+
 // PayPal-Daten
 const itemName = "Black Mountain Rag – Banjo Solo (PDF)";
 const returnUrl = "https://www.musicstudio-ziebart.de/shop/thanks-black-mountain-rag/";
@@ -24,6 +31,7 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   ogDescription={description}
   ogUrl={pageUrl}
   ogType="product"
+  ogImage={ogImage}
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}

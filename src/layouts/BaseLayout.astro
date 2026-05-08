@@ -46,12 +46,12 @@ const finalTwitterUrl = twitterUrl || canonicalUrl;
 const nonce = Astro.props.nonce || "";
 
 // Debug (kannst du später rausnehmen)
-console.log("[SERVER] Astro nonce:", nonce);
-console.log(`[SERVER] Nonce IubendaScript läuft! ${nonce}`);
-console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
+// console.log("[SERVER] Astro nonce:", nonce);
+// console.log(`[SERVER] Nonce IubendaScript läuft! ${nonce}`);
+// console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
 ---
 
-<html lang="de">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -60,13 +60,13 @@ console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
     <link rel="icon" href="/favicon.ico" />
     <!--
     <link rel="apple-touch-icon" sizes="16x16" href="/apple-touch-icon.png" /> -->
+    <meta http-equiv="content-language" content="de" />
     <meta property="og:locale" content="de_DE" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <!-- Sitemap ist nicht standard -->
+    <!-- Sitemap ist nicht standard kann aber drin bleiben -->
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <meta name="generator" content={Astro.generator} />
-    <meta name="Language" content="de_DE" />
     <meta name="date" content={new Date().toISOString().split("T")[0]} />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
@@ -96,6 +96,10 @@ console.log(`[SERVER] Nonce GoogleScripts läuft! ${nonce}`);
     />
 
     <meta name="twitter:url" content={finalTwitterUrl} />
+    <meta
+      name="twitter:image"
+      content={ogImage || defaultOgImage}
+    />
     <meta
       name="google-site-verification"
       content="Zitul6WICKD7zrzgptxGVrh2GEhozasdEM_d1tGi2aw"
