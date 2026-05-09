@@ -12,6 +12,11 @@ const pageUrl = getPageUrl(Astro);
 // Produktdaten (sauber als Zahlen)
 const priceGross = 2.50;
 
+// Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/train_45_preview.png";
+
 // PayPal-Daten
 const itemName = "Train 45 – Banjo Solo (PDF)";
 const returnUrl = "https://www.musicstudio-ziebart.de/shop/train45/";
@@ -26,6 +31,7 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   ogDescription={description}
   ogUrl={pageUrl}
   ogType="product"
+  ogImage={ogImage}
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
@@ -35,6 +41,30 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
     alt="Train 45 Vorschau"
     class="product-image"
   />
+
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1XE5ZI3v9HD0QOTQ6XdRjge8R8TojXEmV/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=uo5ojnmRHPo"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Train 45 ansehen"
+    rel="noopener"
+  >
+    ▶️ Train 45 – Banjo Tutorial auf YouTube ansehen
+  </a>
+  </p>
+
 
   <p>
     Hol dir die <strong>Tabulatur zu Train 45 Solo + Train 45 Mastering</strong> für dein Banjospiel.

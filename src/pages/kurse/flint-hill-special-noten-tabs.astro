@@ -15,7 +15,36 @@ const imageSrc = "/bilder/Flint_Hill_Special_Vorschau.png";
 const imageAlt = "Flint Hill Special – Vorschau";
 const price = "2.95";
 
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/flint_hill_special_preview.png";
+
 const contentHtml = `
+
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1wm1MNi3-C03_88A45089bjo136fyS1wL/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=R75ZetEwmtw"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Flint Hill Special ansehen"
+    rel="noopener"
+  >
+    ▶️ Flint Hill Special – Banjo Tutorial auf YouTube ansehen
+  </a>
+  </p>
+
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für 5-string Banjo-Spieler, die den Song lernen möchten!
@@ -61,6 +90,7 @@ const contentHtml = `
   ogDescription={description}
   ogUrl={pageUrl}
   ogType="product"
+  ogImage={ogImage}
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
