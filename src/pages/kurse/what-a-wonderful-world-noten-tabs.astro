@@ -15,6 +15,11 @@ const imageSrc = "/bilder/What_A_Wonderful_World_Vorschau.png";
 const imageAlt = "What A Wonderful World – Vorschau";
 const price = "4.95";
 
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/what_a_wonderful_world_preview.png";
+
 const contentHtml = `
   <p>
     <strong>🎧 Hörprobe:</strong><br />
@@ -83,6 +88,7 @@ const contentHtml = `
   ogDescription={description}
   ogUrl={pageUrl}
   ogType="product"
+  ogImage={ogImage}
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
