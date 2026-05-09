@@ -10,6 +10,11 @@ const pageUrl = getPageUrl(Astro);
 // Produktdaten (sauber als Zahlen)
 const priceGross = 2.5;
 
+// Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/dear_old_dixie_preview.png";
+
 // PayPal-Daten
 const itemName = "Dear Old Dixie – Banjo Solo (PDF)";
 const returnUrl = "https://www.musicstudio-ziebart.de/shop/thanks-dear-old-dixie/";
@@ -25,6 +30,7 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   ogDescription={description}
   ogUrl={pageUrl}
   ogType="product"
+  ogImage={ogImage}
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
@@ -34,6 +40,29 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
     alt="Dear Old Dixie – Vorschau"
     class="product-image"
   />
+
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1pxojEDmRTBx8CZKYgE3u3wYgf2S5X1U8/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=QRUVEtA1vyo"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Flint Hill Special ansehen"
+    rel="noopener"
+  >
+    ▶️ Flint Hill Special – Banjo Tutorial auf YouTube ansehen
+  </a>
+  </p>
 
   <p>
     Hol dir die <strong>Tabulatur zu Dear Old Dixie Solo + BackingTrack + Mastering</strong> für
