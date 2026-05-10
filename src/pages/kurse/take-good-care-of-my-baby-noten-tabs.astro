@@ -15,7 +15,34 @@ const imageSrc = "/bilder/Take_Good_Care_Vorschau.jpg";
 const imageAlt = "Take Good Care Of My Baby – Vorschau";
 const price = "5.95";
 
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/take_goodCare_of_my_baby_preview.png";
+
 const contentHtml = `
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/18g2WPwbOY2IS5OZzG2t0f24IBQq-QKzi/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=nUC_b1L_IM4"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Take Good Care Of My Baby ansehen"
+    rel="noopener"
+  >
+    ▶️ Take Good Care Of My Baby – Guitar Tutorial auf YouTube ansehen
+  </a>
+  </p>
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
@@ -59,6 +86,7 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
