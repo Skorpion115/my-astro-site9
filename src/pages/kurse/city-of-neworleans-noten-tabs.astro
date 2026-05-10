@@ -15,7 +15,34 @@ const imageSrc = "/bilder/City_Of_NewOrleans_Vorschau.png";
 const imageAlt = "City Of NewOrleans – Vorschau";
 const price = "2.95";
 
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/city_of_neworleans_preview.png";
+
 const contentHtml = `
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1gpePJSakbeWxTVemqIbmCOMpOuFUh9oQ/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=L70MSOuUiG0"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu City Of NewOrleans ansehen"
+    rel="noopener"
+  >
+    ▶️ City Of NewOrleans – Guitar Tutorial auf YouTube ansehen
+  </a>
+  </p>
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
@@ -60,6 +87,7 @@ const contentHtml = `
   ogDescription={description}
   ogUrl={pageUrl}
   ogType="product"
+  ogImage={ogImage}
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
