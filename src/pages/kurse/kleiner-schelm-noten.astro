@@ -13,9 +13,37 @@ const returnUrl =
 
 const imageSrc = "/bilder/Kleiner_Schelm_Vorschau.jpg";
 const imageAlt = "Kleiner Schelm – Vorschau";
-const price = "2.95";
+const price = "4.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/kleiner_schelm_preview.png";
+
 
 const contentHtml = `
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1JIfAu3pjlYPAJMRsJos7dcL8qIXkOpqD/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=dRz-VMVUNlY"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Kleiner Schelm ansehen"
+    rel="noopener"
+  >
+    ▶️ Kleiner Schelm – Hammond Orgel Tutorial auf YouTube ansehen
+  </a>
+  </p>
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Keyboardspieler/Organisten, die den Song lernen möchten!
@@ -59,6 +87,7 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
