@@ -15,7 +15,34 @@ const returnUrl =
 // const imageAlt = "Ten Words – Vorschau";
 const price = "5.95";
 
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/ten_words_preview.png";
+
 const contentHtml = `
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1VC6dS8mLwb0mPzFkvUXNzemQ2wxZGqJP/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=fcHrj9ryvqo"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Ten Words ansehen"
+    rel="noopener"
+  >
+    ▶️ Ten Words – Guitar Tutorial auf YouTube ansehen
+  </a>
+  </p>
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
@@ -60,6 +87,7 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
