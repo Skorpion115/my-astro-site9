@@ -15,7 +15,35 @@ const imageSrc = "/bilder/Silence_Is_Golden_Vorschau.jpg";
 const imageAlt = "Silence Is Golden – Vorschau";
 const price = "5.95";
 
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/silence_is_golden_preview.png";
+
 const contentHtml = `
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1OsFtazOaWIKphqXaDHqeQGXZrJKt2RgP/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=OxBca9ZfFv8"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Silence Is Golden ansehen"
+    rel="noopener"
+  >
+    ▶️ Silence Is Golden – Gitarre Tutorial auf YouTube ansehen
+  </a>
+  </p>
+
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
@@ -66,6 +94,7 @@ const contentHtml = `
   ogDescription={description}
   ogUrl={pageUrl}
   ogType="product"
+  ogImage={ogImage}
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
