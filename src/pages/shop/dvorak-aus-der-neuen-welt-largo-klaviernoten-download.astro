@@ -10,12 +10,17 @@ const keywords =
 const pageUrl = getPageUrl(Astro);
 
 // Produktdaten (sauber als Zahlen)
-const priceGross = 2.95;
+const priceGross = 4.95;
+
+// Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/dvorak_aus_der_neuen_welt_largo_preview.png";
 
 
 // PayPal-Daten
 const itemName = "Aus der neuen Welt – Klavier Solo (PDF)";
-const returnUrl = "https://www.musicstudio-ziebart.de/shop/largo-noten/";
+const returnUrl = "https://www.musicstudio-ziebart.de/shop/dvorak-aus-der-neuen-welt-largo-klaviernoten-download/";
 const paypalBusiness = "musikstudio.ziebart@gmail.com";
 ---
 <BaseLayout
@@ -27,6 +32,7 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   ogDescription={description}
   ogUrl={pageUrl}
   ogType="product"
+  igImage={ogImage}
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
@@ -36,6 +42,29 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
     alt="Largo – Vorschau"
     class="product-image"
   />
+
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1pJepIFMXiLfmynzJQefV6mGy4rekv-gm/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=ytcQ-I1BTNk"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Aus der neuen Welt ansehen"
+    rel="noopener"
+  >
+    ▶️ Aus der neuen Welt – Klavier Solo auf YouTube ansehen
+  </a>
+  </p>
 
   <p>
     Hol dir die <strong>Noten zu Aus der neuen Welt II. Satz Klavier  Solo</strong> für dein Klavierspiel.
