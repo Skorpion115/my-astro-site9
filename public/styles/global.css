@@ -1422,7 +1422,7 @@ table.basis-table tbody tr.active {
 /* shop/rose-room.astro */
 
 .product-image {
-  max-width: 420px;
+  max-width: 800px;
   width: 100%;
   height: auto;
   margin: 1.5rem 0;

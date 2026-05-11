@@ -15,7 +15,34 @@ const imageSrc = "/bilder/Des_Interesse_Vorschau.png";
 const imageAlt = "Des - interesse – Vorschau";
 const price = "2.95";
 
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/des_interesse_preview.png";
+
 const contentHtml = `
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/17hXZruOOEf-6Y9bXY--L5ehfkonhwAfN/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=-mP9JFjJ6QA"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Des - interesse ansehen"
+    rel="noopener"
+  >
+    ▶️ Des - interesse – Hammond Orgel Tutorial auf YouTube ansehen
+  </a>
+  </p>
   <p>
     Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Keyboardspieler/Organisten, die den Song lernen möchten!
@@ -58,6 +85,7 @@ const contentHtml = `
   href={pageUrl}
   ogTitle={pageTitle}
   ogDescription={description}
+  ogImage={ogImage}
   ogUrl={pageUrl}
   ogType="product"
   twitterTitle={pageTitle}
