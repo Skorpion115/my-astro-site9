@@ -263,12 +263,12 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/largo-noten/`,
+    loc: `${SITE_URL}/shop/dvorak-klavierkonzert-nr-1-klaviernoten-download/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/klavierkonzert-nr-1-noten/`,
+    loc: `${SITE_URL}/shop/tschaikowsky-klavierkonzert-nr-1-klaviernoten-download/`,
     changefreq: "weekly",
     lastmod: today,
   },

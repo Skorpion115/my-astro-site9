@@ -12,6 +12,11 @@ const pageUrl = getPageUrl(Astro);
 // Produktdaten (sauber als Zahlen)
 const priceGross = 4.95;
 
+// Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/tschaikowsky_klavierkonzert_nr_1_klaviernoten_download_preview.png";
+
 
 // PayPal-Daten
 const itemName = "Klavierkonzert Nr. 1 in Bbm – Klavier Solo (PDF)";
@@ -26,6 +31,7 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
@@ -36,6 +42,29 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
     alt="Klavierkonzert Nr. 1 in Bbm – Vorschau"
     class="product-image"
   />
+
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1lXO4SESfdP84beZLvBLMZ3pi7-AQuBec/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=V1i1LwAFU-4"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Klavierkonzert Nr. 1 in Bbm ansehen"
+    rel="noopener"
+  >
+    ▶️ Klavierkonzert Nr. 1 in Bbm – Klavier Solo auf YouTube ansehen
+  </a>
+  </p>
 
   <p>
     Hol dir die <strong>Noten zu Klavierkonzert Nr. 1 in Bbm I. Satz - P. Tschaikowsky</strong> für zwei Hände. Ursprünglich ist das Stück für  vierhändiges Klavierspiel arrangiert, aber hier findest du die Noten für zwei Hände. Ich habe es umgeschrieben.
@@ -97,6 +126,6 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   </p>
 
   <p>
-    <a href="/kurse/inhaltsverzeichnis/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
+    <a href="/kurse/alle-kurse/" class="normal-links">← Zurück zum Inhaltsverzeichnis</a>
   </p>
 </BaseLayout>
