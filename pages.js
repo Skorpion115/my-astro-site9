@@ -273,6 +273,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/shop/fuer-elise-noten/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/shop/nancy-rowland-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
