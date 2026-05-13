@@ -10,7 +10,12 @@ const keywords =
 const pageUrl = getPageUrl(Astro);
 
 // Produktdaten (sauber als Zahlen)
-const priceGross = 2.95;
+const priceGross = 3.95;
+
+// Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/mondschein_sonate_beethoven_preview.png";
 
 
 // PayPal-Daten
@@ -25,6 +30,7 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
   href={pageUrl}
   ogTitle={pageTitle}
   ogDescription={description}
+  ogImage={ogImage}
   ogUrl={pageUrl}
   ogType="product"
   twitterTitle={pageTitle}
@@ -36,6 +42,29 @@ const paypalBusiness = "musikstudio.ziebart@gmail.com";
     alt="Mondschein Sonate – Vorschau"
     class="product-image"
   />
+
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1LH0K3yYBxqFnGHvuXSzwXTFwoaovoT5x/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=Ey4n8vqlX_o"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Mondschein Sonate ansehen"
+    rel="noopener"
+  >
+    ▶️ Mondschein Sonate – Klavier Solo auf YouTube ansehen
+  </a>
+  </p>
 
   <p>
     Hol dir die <strong>Hol dir die Noten zu der Mondschein Sonate - L. van Beethoven</strong>.
