@@ -4,6 +4,7 @@ import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "Bossa Dorado – Noten & Tabulatur kaufen";
+const heading = "Bossa Dorado - Noten & Tabulaturen kaufen";
 const description =
   "Kaufe die Noten & Tabulaturen für ‚Bossa Dorado‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "Bossa Dorado, Noten & Tabulaturen, Gitarre, PDF";
@@ -95,7 +96,7 @@ const contentHtml = `
   twitterUrl={pageUrl}
 >
   <ProductPage
-    pageTitle={pageTitle}
+    heading={heading}
     description={description}
     keywords={keywords}
     imageSrc={imageSrc}

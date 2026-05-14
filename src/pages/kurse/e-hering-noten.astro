@@ -4,6 +4,7 @@ import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "E-hering – Noten kaufen";
+const heading = "E-hering - Noten kaufen";
 const description =
   "Kaufe die Noten für ‚E-hering‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "E-hering, Noten, Keyboard, Orgel PDF";
@@ -94,7 +95,7 @@ const contentHtml = `
   twitterUrl={pageUrl}
 >
   <ProductPage
-    pageTitle={pageTitle}
+    heading={heading}
     description={description}
     keywords={keywords}
     imageSrc={imageSrc}

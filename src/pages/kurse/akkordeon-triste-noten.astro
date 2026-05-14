@@ -4,6 +4,7 @@ import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "L'accordeon Triste – Noten für Akkordeon kaufen";
+const heading = "L'accordeon Triste - Noten für Akkordeon kaufen";
 const description =
   "Kaufe die Noten für ‚L'accordeon Triste‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "L'accordeon Triste, Noten, Akkordeon, PDF";
@@ -93,7 +94,7 @@ const contentHtml = `
   twitterUrl={pageUrl}
 >
   <ProductPage
-    pageTitle={pageTitle}
+    heading={heading}
     description={description}
     keywords={keywords}
     imageSrc={imageSrc}

@@ -4,6 +4,7 @@ import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "Catch The Wind – Noten & Tabulatur + Bassnoten + Mundharmonika Solo kaufen";
+const heading = "Catch The Wind - Noten & Tabulaturen kaufen";
 const description =
   "Kaufe die Noten & Tabulatur für ‚Catch The Wind‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "Catch The Wind Noten, Catch The Wind Tabulatur, Gitarrennoten PDF, Donovan Catch The Wind";
@@ -94,7 +95,7 @@ const contentHtml = `
   twitterUrl={pageUrl}
 >
   <ProductPage
-    pageTitle={pageTitle}
+    heading={heading}
     description={description}
     keywords={keywords}
     imageSrc={imageSrc}

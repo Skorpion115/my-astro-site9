@@ -1,16 +1,15 @@
 ---
-const { pageTitle, imageSrc, imageAlt, contentHtml, price, returnUrl } = Astro.props;
+const { heading, imageSrc, imageAlt, contentHtml, price, returnUrl } = Astro.props;
 ---
 
 <article class="product-page">
-  <h2>{pageTitle}</h2>
   <img src={imageSrc} alt={imageAlt} class="product-image" />
   <div class="product-content" set:html={contentHtml}></div>
   <p>Preis: <strong>{price} €</strong></p>
   <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
     <input type="hidden" name="cmd" value="_xclick" />
     <input type="hidden" name="business" value="musikstudio.ziebart@gmail.com" />
-    <input type="hidden" name="item_name" value={pageTitle} />
+    <input type="hidden" name="item_name" value={heading} />
     <input type="hidden" name="amount" value={price} />
     <input type="hidden" name="currency_code" value="EUR" />
     <input type="hidden" name="no_shipping" value="1" />

@@ -4,6 +4,7 @@ import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "In The Still Of The Night – Noten kaufen";
+const heading = "In The Still Of The Night - Noten kaufen";
 const description =
   "Kaufe die Noten für ‚In The Still Of The Night‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "In The Still Of The Night, Noten, Keyboard, Orgel PDF";
@@ -94,7 +95,7 @@ const contentHtml = `
   twitterUrl={pageUrl}
 >
   <ProductPage
-    pageTitle={pageTitle}
+    heading={heading}
     description={description}
     keywords={keywords}
     imageSrc={imageSrc}

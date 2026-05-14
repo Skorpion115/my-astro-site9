@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Danke – Dein Download ist bereit";
+const description =
+  "Vielen Dank für deine Zahlung! Dein Noten- & Tabulaturblatt ‚A Horse With No Name‘ ist jetzt zum Download verfügbar.";
+const keywords = "A Horse With No Name, Noten, Tabulatur, Download Noten, PDF";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+  noindex={true}
+>
+  <h1>Danke für deine Zahlung!</h1>
+
+  <h2>Deine Downloads</h2>
+
+  <p><strong>Der Download startet sofort, wenn du auf eine Datei klickst.</strong></p>
+
+  <ul>
+    <li>
+      <a href="/downloads/A%20Horse%20With%20No%20Name.pdf" download class="cta-button">
+        📄 A Horse With No Name – Noten & Tabulatur
+      </a>
+    </li>
+    <li>
+      <a href="/downloads/A%20Horse%20With%20No%20Name%20-%20Bass.pdf" download class="cta-button">
+        📄 A Horse With No Name – Bass
+      </a>
+    </li>
+    <li>
+      <a href="/downloads/A%20Horse%20With%20No%20Name%20-%20Bongos.pdf" download class="cta-button">
+        📄 A Horse With No Name – Bongos
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+</BaseLayout>

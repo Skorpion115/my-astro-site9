@@ -3,7 +3,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Ten Words – Noten & Tabulatur kaufen";
+const pageTitle = "Ten Words – Tabulatur kaufen";
+const heading = "Ten Words - Tabulatur kaufen";
 const description =
   "Kaufe die Noten & Tabulaturen für ‚Ten Words‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "Ten Words, Noten & Tabulaturen, Gitarre, PDF";
@@ -94,7 +95,7 @@ const contentHtml = `
   twitterUrl={pageUrl}
 >
   <ProductPage
-    pageTitle={pageTitle}
+    heading={heading}
     description={description}
     keywords={keywords}
     price={price}
