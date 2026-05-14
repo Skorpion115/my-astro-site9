@@ -12,6 +12,9 @@ const pageUrl = getPageUrl(Astro);
 const returnUrl =
   "https://www.musicstudio-ziebart.de/kurse/thanks-ten-words/";
 
+const imageSrc = "/bilder/ten_words_vorschau.jpg";
+const imageAlt = "Ten Words – Vorschau";
+
 // const imageSrc = "/bilder/Ten_Words_Vorschau.jpg";
 // const imageAlt = "Ten Words – Vorschau";
 const price = "5.95";
@@ -98,6 +101,8 @@ const contentHtml = `
     heading={heading}
     description={description}
     keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
