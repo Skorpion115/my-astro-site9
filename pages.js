@@ -327,4 +327,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/kurse/vincent-don-mclean-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
