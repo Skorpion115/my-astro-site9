@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Danke – Dein Download ist bereit";
+const description =
+  "Vielen Dank für deine Zahlung! Dein Noten- & Tabulaturblatt ‚The A Team‘ ist jetzt zum Download verfügbar.";
+const keywords = "The A Team, Noten, Tabulatur, Download Noten, PDF";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+  noindex={true}
+>
+  <h1>Danke für deine Zahlung!</h1>
+
+  <h2>Deine Downloads</h2>
+
+  <p><strong>Der Download startet sofort, wenn du auf eine Datei klickst.</strong></p>
+
+  <ul>
+    <li>
+      <a href="/notes/The%20A%20Team%20-%20Guitar%20I.pdf" download  class="cta-button">
+        📄 The A Team – Noten & Tabulatur
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=14wUb8Gjs6u4_-QygGidhtq44SOypl2aY"  class="cta-button">
+        📄 The A Team – Guitar II
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1Y0URvJKCg_x4OYqIXEgPetejz4YV2qMu"  class="cta-button">
+        📄 The A Team – Solo Gitarre
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1oI9ebkduF_DguvPkwcxDsH-C_z6WVRLV"  class="cta-button">
+        📄 The A Team – Bass
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+</BaseLayout>
