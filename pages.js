@@ -342,4 +342,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/kurse/classical-gas-noten/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
