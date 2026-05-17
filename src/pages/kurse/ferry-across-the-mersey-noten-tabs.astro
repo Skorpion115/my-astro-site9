@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Ferry Across The Mersey - Gitarren Noten & Tabs";
+const heading = "Limp Biskit – Ferry Across The Mersey | Gitarren Noten & TABs";
+const description =
+  "Kaufe die Noten & Tabulaturen für ‚Ferry Across The Mersey‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "Ferry Across The Mersey, Noten & Tabulaturen, Gitarre, PDF";
+const pageUrl = getPageUrl(Astro);
+const returnUrl =
+  "https://www.musicstudio-ziebart.de/kurse/thanks-ferry-across-the-mersey/";
+
+const imageSrc = "/bilder/ferry_across_the_mersey_vorschau.png";
+const imageAlt = "Ferry Across The Mersey – Vorschau";
+const price = "9.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/ferry_across_the_mersey_preview.png";
+
+const contentHtml = `
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=08083BNaYcA"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Ferry Across The Mersey ansehen"
+    rel="noopener"
+  >
+    ▶️ Ferry Across The Mersey – auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>
+    Perfekt für Gitarristen, die den Song lernen möchten!
+  </p>
+  <p>
+    Sichere dir meine
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Ferry Across The Mersey“</strong>.
+  </p>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs + Komplettes Arrangement als PDF-Download.
+  </p>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Nach dem Kauf steht der Download sofort zur Verfügung.
+  </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>
