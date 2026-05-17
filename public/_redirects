@@ -16,7 +16,7 @@
 /post-4/                      /webseite-erstellen/         301
 /banjo d-tuner/               /d-tuner/                    301
 /akkordeon-unterricht/        /akkordeonunterricht/        301
-/kunden-login/inhaltsverzeichnis /kurse/alle-kurse/        301
+/kunden-login/inhaltsverzeichnis/ /kurse/alle-kurse/       301
 /kunden-login/*                /kurse/                     301
 /shop/largo/noten/            /shop/dvorak-aus-der-neuen-welt-largo-klaviernoten-download/ 301
 /shop/klavierkonzert-nr-1-noten/ /shop/tschaikowsky-klavierkonzert-nr-1-klaviernoten-download/ 301 
