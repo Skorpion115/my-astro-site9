@@ -337,4 +337,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/kurse/behind-blue-eyes-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
