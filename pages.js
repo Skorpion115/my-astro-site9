@@ -361,5 +361,10 @@ export const pages = [
     loc: `${SITE_URL}/kurse/father-and-son-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/kurse/hotel-california-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
   },    
 ];
