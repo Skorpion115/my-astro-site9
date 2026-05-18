@@ -356,5 +356,10 @@ export const pages = [
     loc: `${SITE_URL}/kurse/more-than-words-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
-  },  
+  },
+  {
+    loc: `${SITE_URL}/kurse/father-and-son-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },    
 ];
