@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "More Than Words - Extreme Gitarren Noten & Tabs";
+const heading = "Extreme – More Than Words | Gitarren Noten & TABs";
+const description =
+  "Kaufe die Noten & Tabulaturen für ‚More Than Words‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "More Than Words, Noten & Tabulaturen, Gitarre, PDF";
+const pageUrl = getPageUrl(Astro);
+const returnUrl =
+  "https://www.musicstudio-ziebart.de/kurse/thanks-more-than-words/";
+
+const imageSrc = "/bilder/more_than_words_vorschau.png";
+const imageAlt = "More Than Words – Vorschau";
+const price = "8.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/more_than_words_preview.png";
+
+const contentHtml = `
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=UrIiLvg58SY"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu More Than Words ansehen"
+    rel="noopener"
+  >
+    ▶️ More Than Words – auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>
+    Perfekt für Gitarristen, die den Song lernen möchten!
+  </p>
+  <p>
+    Sichere dir meine
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „More Than Words“</strong>.
+  </p>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs + Gesang als PDF-Download.
+  </p>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Nach dem Kauf steht der Download sofort zur Verfügung.
+  </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>
