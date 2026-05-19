@@ -3,7 +3,11 @@ const { heading, imageSrc, imageAlt, contentHtml, price, returnUrl } = Astro.pro
 ---
 
 <article class="product-page">
-  <img src={imageSrc} alt={imageAlt} class="product-image" />
+  <!--
+  <img src={imageSrc} alt={imageAlt} class="product-image" /> -->
+  {imageSrc && imageAlt && (
+    <img src={imageSrc} alt={imageAlt} class="product-image" />
+  )}
   <div class="product-content" set:html={contentHtml}></div>
   <p>Preis: <strong>{price} €</strong></p>
   <form class="paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
