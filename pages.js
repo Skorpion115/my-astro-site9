@@ -371,5 +371,10 @@ export const pages = [
     loc: `${SITE_URL}/kurse/europa-santana-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
-  },    
+  },
+  {
+    loc: `${SITE_URL}/kurse/moonflower-santana-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },      
 ];
