@@ -376,5 +376,10 @@ export const pages = [
     loc: `${SITE_URL}/kurse/stairway-to-heaven-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/kurse/all-along-the-watchtower-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
   },  
 ];
