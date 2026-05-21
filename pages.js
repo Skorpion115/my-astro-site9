@@ -381,5 +381,10 @@ export const pages = [
     loc: `${SITE_URL}/kurse/all-along-the-watchtower-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
-  },  
+  },
+  {
+    loc: `${SITE_URL}/kurse/sleepwalk-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
+  }, 
 ];
