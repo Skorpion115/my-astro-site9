@@ -1664,4 +1664,10 @@ input {
   border-radius: 8px;
 }
 
+/* Moonflower Vorschau*/
 
+.vorschau-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
