@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Danke – Dein Download ist bereit";
+const description = "Vielen Dank für deine Zahlung! Dein Noten- & Tabulaturblatt ‚In The Year 2525‘ ist jetzt zum Download verfügbar.";
+const keywords = "In The Year 2525, Noten, Tabulatur, Download Noten, PDF";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+  noindex={true}
+>
+  <h1>Danke für deine Zahlung!</h1>
+
+  <h2>Deine Downloads</h2>
+
+  <p><strong>Der Download startet sofort, wenn du auf eine Datei klickst.</strong></p>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=13p63C_yO_FWnWq73cmQ_08d07wC09NTb"  class="cta-button">
+        📄 In The Year 2525 – Guitar 1 als PDF
+      </a>
+    </li>
+    
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1cw-wNQ0spCByNBDNEGy1r4VPobIZ2Wwy"  class="cta-button">
+        📄 In The Year 2525 – Komplettes Arrangment als ZIP
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+</BaseLayout>
