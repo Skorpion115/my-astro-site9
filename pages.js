@@ -373,8 +373,8 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/moonflower-santana-noten-tabs/`,
+    loc: `${SITE_URL}/kurse/stairway-to-heaven-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
-  },      
+  },  
 ];

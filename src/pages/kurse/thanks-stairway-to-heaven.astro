@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Danke – Dein Download ist bereit";
+const description = "Vielen Dank für deine Zahlung! Dein Noten- & Tabulaturblatt ‚Stairway To Heaven‘ ist jetzt zum Download verfügbar.";
+const keywords = "Stairway To Heaven, Noten, Tabulatur, Download Noten, PDF";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+  noindex={true}
+>
+  <h1>Danke für deine Zahlung!</h1>
+
+  <h2>Deine Downloads</h2>
+
+  <p><strong>Der Download startet sofort, wenn du auf eine Datei klickst.</strong></p>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1oXmm8mMOD--LOBfOjY6VrV7oorhGbi4D"  class="cta-button" download  class="cta-button">
+        📄 Stairway To Heaven Guitar
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=18n8HX7RbiYEDLbTQ0KEgACiBs6Vp7Qk6"  class="cta-button" download  class="cta-button">
+        📄 Stairway To Heaven Komplettes Arrangment
+      </a>
+    </li>    
+  </ul>
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+</BaseLayout>
