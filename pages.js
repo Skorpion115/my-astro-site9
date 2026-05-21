@@ -386,5 +386,10 @@ export const pages = [
     loc: `${SITE_URL}/kurse/sleepwalk-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/kurse/the-wind-cries-mary-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
   }, 
 ];

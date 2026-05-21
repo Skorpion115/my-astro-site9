@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "The Wind Cries Mary - Jimi Hendrix Gitarren Noten & Tabs";
+const heading = "The Wind Cries Mary - Jimi Hendrix Gitarren Noten & TABs";
+const description = "Kaufe die Noten & Tabulaturen für ‚The Wind Cries Mary‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
+const keywords = "The Wind Cries Mary, Noten & Tabulaturen, Gitarre, PDF";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-the-wind-cries-mary/";
+const price = "5.95";
+const contentHtml = `
+  <br />
+  <img
+    src="/bilder/the_wind_cries_mary_vorschau.png"
+    alt="The Wind Cries Mary Jimi Hendrix Noten Vorschau"
+    class="vorschau-image"
+  />
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=Wc7B4i89008"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu The Wind Cries Mary ansehen"
+    rel="noopener"
+  >
+    ▶️ The Wind Cries Mary – Jimi Hendrix auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>
+    Perfekt für Gitarristen, die den Song lernen möchten!
+  </p>
+  <p>
+    Sichere dir meine
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „The Wind Cries Mary“</strong>.
+  </p>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs als PDF-Download.
+  </p>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Nach dem Kauf steht der Download sofort zur Verfügung.
+  </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+  <p>
+    <a href="/kurse/alle-kurse/#e-gitarren-kurse" class="cta-button">
+      Weitere E-Gitarrensolos entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    price={price}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>
