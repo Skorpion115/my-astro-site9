@@ -7,16 +7,13 @@ const pageTitle = "All Along The Watchtower - Jimi Hendrix Gitarren Noten & Tabs
 const heading = "All Along The Watchtower - Jimi Hendrix Gitarren Noten & TABs";
 const description = "Kaufe die Noten & Tabulaturen für ‚All Along The Watchtower‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "All Along The Watchtower, Noten & Tabulaturen, Gitarre, PDF";
+const imageSrc = "/bilder/all_along_the_watchtower_vorschau.png";
+const imageAlt = "All Along The Watchtower – Vorschau";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-all-along-the-watchtower/";
 const price = "8.95";
 const contentHtml = `
   <br />
-  <img
-    src="/bilder/all_along_the_watchtower_vorschau.png"
-    alt="All Along The Watchtower Jimi Hendrix Noten Vorschau"
-    class="vorschau-image"
-  />
   <p>
   <a
     href="https://www.youtube.com/watch?v=f44c3KYYtsg"
@@ -88,6 +85,8 @@ const contentHtml = `
     heading={heading}
     description={description}
     keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}

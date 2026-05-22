@@ -7,17 +7,13 @@ const pageTitle = "Europa - Santana Gitarren Noten & Tabs";
 const heading = "Europa - Santana Gitarren Noten & TABs";
 const description = "Kaufe die Noten & Tabulaturen für ‚Europa‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "Europa, Noten & Tabulaturen, Gitarre, PDF";
+const imageSrc = "/bilder/europa_santana_vorschau.png";
+const imageAlt = "Europa – Vorschau";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-europa-santana/";
 const price = "9.95";
 const contentHtml = `
   <br />
-  <img
-    src="/bilder/europa_santana_vorschau.png"
-    alt="Europa Santana Noten Vorschau"
-    class="vorschau-image"
-  />
-  
   <p>
   <a
     href="https://www.youtube.com/watch?v=Ot6pSrKT1oc"
@@ -89,6 +85,8 @@ const contentHtml = `
     heading={heading}
     description={description}
     keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}

@@ -7,16 +7,13 @@ const pageTitle = "Sleepwalk - Joe Satriani Gitarren Noten & Tabs";
 const heading = "Sleepwalk - Joe Satriani Gitarren Noten & TABs";
 const description = "Kaufe die Noten & Tabulaturen für ‚Sleepwalk‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "Sleepwalk, Noten & Tabulaturen, Gitarre, PDF";
+const imageSrc = "/bilder/sleepwalk_vorschau.png";
+const imageAlt = "Sleepwalk – Vorschau";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-sleepwalk/";
 const price = "5.95";
 const contentHtml = `
   <br />
-  <img
-    src="/bilder/sleepwalk_vorschau.png"
-    alt="Sleepwalk Joe Satriani Noten Vorschau"
-    class="vorschau-image"
-  />
   <p>
   <a
     href="https://www.youtube.com/watch?v=5c8nanTCPz0"
@@ -88,6 +85,8 @@ const contentHtml = `
     heading={heading}
     description={description}
     keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}

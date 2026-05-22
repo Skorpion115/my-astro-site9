@@ -7,16 +7,14 @@ const pageTitle = "Moonflower - Santana Gitarren Noten & Tabs";
 const heading = "Moonflower - Santana Gitarren Noten & TABs";
 const description = "Kaufe die Noten & Tabulaturen für ‚Moonflower‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "Moonflower, Noten & Tabulaturen, Gitarre, PDF";
+const imageSrc = "/bilder/moonflower_santana_vorschau.png";
+const imageAlt = "Moonflower – Vorschau";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-moonflower-santana/";
 const price = "9.95";
 const contentHtml = `
   <br />
-  <img
-    src="/bilder/moonflower_santana_vorschau.png"
-    alt="Moonflower Santana Noten Vorschau"
-    class="vorschau-image"
-  />
+  
   <p>
   <a
     href="https://www.youtube.com/watch?v=lRWEDKaSLp0"
@@ -88,6 +86,8 @@ const contentHtml = `
     heading={heading}
     description={description}
     keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}

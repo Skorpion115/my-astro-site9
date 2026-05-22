@@ -7,16 +7,14 @@ const pageTitle = "Stairway To Heaven - Led Zeppelin Gitarren Noten & Tabs";
 const heading = "Stairway To Heaven - Led Zeppelin Gitarren Noten & TABs";
 const description = "Kaufe die Noten & Tabulaturen für ‚Stairway To Heaven‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
 const keywords = "Stairway To Heaven, Noten & Tabulaturen, Gitarre, PDF";
+const imageSrc = "/bilder/stairway_to_heaven_led_zeppelin_vorschau.png";
+const imageAlt = "Stairway To Heaven – Vorschau";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-stairway-to-heaven/";
 const price = "8.95";
 const contentHtml = `
   <br />
-  <img
-    src="/bilder/stairway_to_heaven_led_zeppelin_vorschau.png"
-    alt="Stairway To Heaven Led Zeppelin Noten Vorschau"
-    class="vorschau-image"
-  />
+  
   <p>
   <a
     href="https://www.youtube.com/watch?v=QkF3oxziUI4"
@@ -88,6 +86,8 @@ const contentHtml = `
     heading={heading}
     description={description}
     keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
