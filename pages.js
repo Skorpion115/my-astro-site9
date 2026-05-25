@@ -401,5 +401,10 @@ export const pages = [
     loc: `${SITE_URL}/kurse/now-and-forever-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
-  }, 
+  },
+  {
+    loc: `${SITE_URL}/kurse/where-do-you-go-to-my-lovely-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
