@@ -20,13 +20,9 @@ const pageUrl = getPageUrl(Astro);
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
+      action="/danke-seite/"
     >
-      <p style="display:none">
-        <label>Bitte nicht ausfüllen: <input type="text" name="bot-field" /></label>
-      </p>
-      <input type="hidden" name="form-name" value="callback-form">
-      <input type="hidden" name="_next" value="/danke-seite/">
-
+      
       <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Namen eintragen" required />
