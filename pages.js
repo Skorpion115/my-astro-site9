@@ -407,4 +407,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/kurse/sixteen-tons-noten-tabs/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
