@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+const pageTitle = "Gitarre Lernmodule";
+const description =
+  "Lerne Gitarre mit strukturierten Lernmodulen: Strumming, Fingerstyle, Country und Blues – nach Stil und Level sortiert.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+>
+
+  <p>
+    Wähle deinen Lernweg und entwickle deine Gitarrenfähigkeiten Schritt für Schritt.
+    Alle Inhalte basieren auf praxisnahen Arrangements und rhythmischen Spieltechniken.
+  </p>
+
+  <!-- 🔷 Lernwege / Kategorien -->
+  <h2>Lernwege</h2>
+
+  <div class="card-grid">
+
+    <div class="basis-card">
+      <h3>🎸 Strumming & Rhythm Guitar</h3>
+      <p>Down- und Upstroke-Techniken für Pop, Country und Rock Begleitung.</p>
+      <a href="/arrangements/sixteen-tons/">
+        Jetzt lernen
+      </a>
+    </div>
+
+    <div class="basis-card">
+      <h3>🤠 Country Guitar</h3>
+      <p>Typische Country-Rhythmen und Begleitpatterns für Gitarristen.</p>
+      <a href="/arrangements/country-strumming-basics/">
+        Jetzt lernen
+      </a>
+    </div>
+
+    <div class="basis-card">
+      <h3>🎵 Fingerstyle Guitar</h3>
+      <p>Melodie- und Bassspiel mit Fingerpicking-Techniken.</p>
+      <a href="/arrangements/fingerstyle-blues-intermediate/">
+        Jetzt lernen
+      </a>
+    </div>
+
+    <div class="basis-card">
+      <h3>🎼 Blues Guitar</h3>
+      <p>Rhythmische Blues-Patterns und klassische Begleitformen.</p>
+      <a href="/arrangements/blues-guitar-basics/">
+        Jetzt lernen
+      </a>
+    </div>
+
+  </div>
+
+  <!-- 🔷 Optional: Erklärung -->
+  <h2>Wie funktioniert das Lernen?</h2>
+
+  <ul>
+    <li>Du wählst einen Stil (z. B. Country oder Blues)</li>
+    <li>Du lernst anhand eines konkreten Arrangements</li>
+    <li>Du arbeitest mit echten Songs im Stil – ohne komplizierte Theorie</li>
+  </ul>
+
+  <p>
+    Alle Arrangements sind nach Schwierigkeitsgrad aufgebaut und sofort spielbar.
+  </p>
+
+</BaseLayout>

@@ -1,0 +1,164 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Musik Lernbibliothek";
+const description = "Strukturierte Lernmodule für Gitarre, Keyboard, Jazz und mehr – nach Stil, Technik und Level sortiert.";
+const keywords = "Notenbücher, Musiknoten, Gitarrennoten, Download Noten";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+
+  <p>
+    Hier findest du alle Lernmodule nach Stil, Technik und Instrument sortiert.
+    Kein Abo, direkter Zugriff auf alle Inhalte.
+  </p>
+
+  <!-- Navigation statt Song-Inhaltsverzeichnis -->
+  <nav aria-label="Lernkategorien">
+    <ul>
+      <li><a href="/kurse/gitarre/">Gitarre Lernmodule</a></li>
+      <!--
+      <li><a href="/kurse/keyboard/">Keyboard Lernmodule</a></li>
+      <li><a href="/kurse/jazz/">Jazz Lernmodule</a></li>
+      <li><a href="/kurse/country/">Country Lernmodule</a></li> -->
+    </ul>
+  </nav>
+  <!--
+  <h2>Lernmodule Übersicht</h2>
+
+  <table class="basis-table">
+    <thead>
+      <tr>
+        <th>Lernmodul</th>
+        <th>Stil</th>
+        <th>Instrument</th>
+        <th>Level</th>
+        <th>Aktion</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Keyboard Rhythm Patterns</td>
+        <td>Jazz / Pop</td>
+        <td>Keyboard</td>
+        <td>Mittelstufe</td>
+        <td>
+          <a href="/arrangements/keyboard-rhythm-moderate/">
+            Öffnen
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Guitar Strumming Basics</td>
+        <td>Country / Pop</td>
+        <td>Gitarre</td>
+        <td>Beginner</td>
+        <td>
+          <a href="/arrangements/country-strumming-basics/">
+            Öffnen
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table> -->
+
+  <!-- Variante A gefaltet -->
+  <!--
+    <h2>Lernmodule Übersicht</h2> 
+
+  <div class="card-grid"> -->
+
+    <!-- Card 1 -->
+     <!--
+    <details class="basis-card">
+      <summary class="basis-header">
+        Keyboard Rhythm Patterns – Jazz / Pop (Mittelstufe)
+      </summary>
+
+      <div class="card-body">
+        <p><strong>Instrument:</strong> Keyboard</p>
+        <p><strong>Stil:</strong> Jazz / Pop</p>
+        <p><strong>Level:</strong> Mittelstufe</p>
+
+        <div class="card-actions">
+          <a href="/arrangements/keyboard-rhythm-moderate/">
+            Öffnen
+          </a>
+        </div>
+      </div>
+    </details> -->
+
+    <!-- Card 2 -->
+     <!--
+    <details class="basis-card">
+      <summary class="basis-header">
+        Guitar Strumming Basics – Country / Pop (Beginner)
+      </summary>
+
+      <div class="card-body">
+        <p><strong>Instrument:</strong> Gitarre</p>
+        <p><strong>Stil:</strong> Country / Pop</p>
+        <p><strong>Level:</strong> Beginner</p>
+
+        <div class="card-actions">
+          <a href="/arrangements/country-strumming-basics/">
+            Öffnen
+          </a>
+        </div>
+      </div>
+    </details> -->
+
+    <!-- Beispiel deine alte Einheit (gefaltet) -->
+     <!--
+    <details class="basis-card">
+      <summary class="basis-header">
+        Hammond Flip – Organ/Keyboard (Archiv)
+      </summary>
+
+      <div class="card-body">
+        <p><strong>Instrument:</strong> Organ/Keyboard</p>
+        <p><strong>Komponist:</strong> Klaus Wunderlich</p>
+
+        <div class="card-actions">
+          <a
+            href="https://drive.google.com/file/d/1t78ztmJQ1Qpx6NErVMyF7jJn0zm6cvoX/preview"
+            target="_blank"
+            rel="noopener"
+          >
+            Anhören
+          </a>
+
+          <a href="/arrangements/hammond-flip/">
+            Öffnen
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=244HlpB3JoA"
+            target="_blank"
+            rel="noopener"
+          >
+            YouTube
+          </a>
+        </div>
+      </div> 
+    </details> -->
+
+  </div>
+
+</BaseLayout>
