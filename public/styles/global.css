@@ -1234,7 +1234,7 @@ table.basis-table tbody tr.active {
   .basis-card {
     display: block;
   }
-}
+} 
 
 /* ANCHOR harmonielehre.astro*/
 
@@ -1683,6 +1683,10 @@ input {
 
 /* ANCHOR neue alle-kurse Seite */
 
+/* =========================
+   CARD GRID (modern layout)
+========================= */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1690,26 +1694,43 @@ input {
   margin-top: 20px;
 }
 
+/* =========================
+   BASIS CARD (modern component)
+========================= */
+
 .basis-card {
-  display: block;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
   padding: 16px;
-  background: #fff;
-  color: #111;
+  background: #ffffff;
+  color: #111111;
+  display: block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.basis-card h3 {
-  margin-top: 0;
-  font-size: 1.1rem;
+.basis-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
+/* Header inside card */
+.basis-header {
+  background-color: rebeccapurple;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Text inside card */
 .basis-card p {
   margin: 8px 0;
   color: #444;
   line-height: 1.5;
 }
 
+/* Links inside card */
 .basis-card a {
   display: inline-block;
   margin-top: 10px;
@@ -1717,4 +1738,44 @@ input {
   border: 1px solid #ccc;
   border-radius: 8px;
   text-decoration: none;
+  color: #111;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
+
+.basis-card a:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+/* =========================
+   TABLE (optional fallback)
+========================= */
+
+.basis-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.basis-table th,
+.basis-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.basis-table th {
+  background: #f7f7f7;
+  font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

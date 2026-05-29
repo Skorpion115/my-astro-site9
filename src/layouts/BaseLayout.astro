@@ -34,6 +34,7 @@ const urlPath = rawPath.endsWith("/") ? rawPath : rawPath + "/";
 // Account-Bereich erkennen
 const isAccountArea = urlPath.startsWith("/kundenlogin/");
 const isThankYouPage = urlPath.startsWith("/kurse/thanks-");
+const isDownloadPage = urlPath.startsWith("/download/");
 
 // Canonical URL sauber berechnen
 const canonicalUrl = href || `${Astro.site}${urlPath}`;
@@ -116,7 +117,7 @@ const nonce = Astro.props.nonce || "";
     <meta name="DC.rights" content="Alle Rechte liegen beim Author" />
     <meta
       name="robots"
-      content={isAccountArea || isThankYouPage
+      content={isAccountArea || isThankYouPage || isDownloadPage
         ? "noindex, nofollow"
         : "max-snippet:-1, index, follow"}
     />

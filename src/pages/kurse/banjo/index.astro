@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+const pageTitle = "Banjo Lernmodule";
+const description = "Lerne Banjo mit strukturierten Lernmodulen: Strumming, 3-Fingerstyle, Country und Blues.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+>
+
+  <p>
+    Hier findest du Bluegrass Banjo-Stücke.
+    Schwerpunkt: Melodie-Spiel mit 3-Fingerstyle gemischt mit Rolls und Alternate Picking.
+  </p>
+
+  <!-- 🔷 Lernwege / Kategorien -->
+  <h2>Rubriken</h2>
+
+  <div class="card-grid">
+
+    <div class="basis-card">
+      <h2>Bluegrass Banjo</h2>
+
+      <p>
+        Melodie-Spiel im Stil von Earl Scruggs.
+      </p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/flint-hill-special/">
+            Flint Hill Special – Earl Scruggs
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/dear-old-dixie/">
+            Dear Old Dixie – Earl Scruggs
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+
+    <!--
+    <div class="basis-card">
+      <h3>Jazz Organ</h3>
+
+      <p>Typischer Stil für die linke Hand von Harry Stoneham für Organisten oder Keyboardspieler.</p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/in-the-still-of-the-night/">
+            In The Still Of The Night – Harry Stoneham
+          </a>
+        </li>
+      </ul>
+    </div> -->
+
+  </div>
+
+  <!-- 🔷 Optional: Erklärung -->
+  <h2>Wie funktioniert das Lernen?</h2>
+
+  <ul>
+    <li>Du wählst einen Stil (z. B. Bluegrass Banjo)</li>
+    <li>Du lernst anhand eines konkreten Arrangements</li>
+    <li>Du arbeitest mit echten Songs – ohne komplizierte Theorie</li>
+  </ul>
+
+</BaseLayout>

@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Smile – Charlie Chaplin Gitarren Solo";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+>
+
+  <h1>Dein Download</h1>
+
+  <p>
+    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
+  </p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="/downloads/Smile2.pdf" download class="cta-button">
+        📄 Smile –  Gitarre 
+      </a>
+    </li>
+    <li>
+      <a href="/downloads/Smile-Bass.pdf" download class="cta-button">
+        📄 Smile – Bass Gitarre
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1HaZbTGFktoQHbDS2EgK7mQVG1E1FNKjk"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Smile – Backing Track
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1uffvgc9Jg8xIfPZbE9oHbFfiRemOFpq5"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Smile – Mastering mp3
+      </a>
+    </li>
+    
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Kurse zum selber lernen: Alle Lernmodule auf einen Blick
+    </a>
+  </p>
+
+</BaseLayout>

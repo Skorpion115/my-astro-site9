@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Flint Hill Special – Earl Scruggs";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+>
+
+  <h1>Dein Download</h1>
+
+  <p>
+    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
+  </p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="/downloads/Flint_Hill_Special.pdf" download class="cta-button">
+        📄 Flint Hill Special – Tabulatur
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1wm1MNi3-C03_88A45089bjo136fyS1wL"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Flint Hill Special – Mastering
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1rNSaLrsrPvAXyhOjobqAF-KZduuE8Cf1"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Flint Hill Special – Backing Track
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Kurse zum selber lernen: Alle Lernmodule auf einen Blick
+    </a>
+  </p>
+
+</BaseLayout>

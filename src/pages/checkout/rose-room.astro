@@ -3,49 +3,49 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Sixteen Tons – Guitar Arrangement Checkout";
-const heading = "Sixteen Tons – Guitar Arrangement";
-const description = "Sichere Zahlung für das Gitarren-Arrangement zu Sixteen Tons. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
-const keywords = "Sixteen Tons, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageTitle = "Rose Room – Charlie Christian Gitarren Solo";
+const heading = "Rose Room – Charlie Christian";
+const description = "Sichere Zahlung für das Jazz-Gitarren-Arrangement zu Rose Room. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Rose Room, Charlie Christian, Jazz Gitarre, Gitarren Solo, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/download/sixteen-tons/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/rose-room/";
 
-const imageSrc = "/bilder/sixteen_tons_vorschau.png";
-const imageAlt = "Sixteen Tons – Vorschau";
+const imageSrc = "/bilder/Anfang.jpg";
+const imageAlt = "Rose Room – Vorschau";
 const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
-const ogImage = "https://www.musicstudio-ziebart.de/bilder/sixteen_tons_preview.png";
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/rose_room_preview.png";
 
 const contentHtml = `
   <br />
   <p>
   <a
-    href="https://www.youtube.com/watch?v=jP7guTFBii4"
+    href="https://www.youtube.com/watch?v=__aCfS0Vd8U"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu Sixteen Tons ansehen"
+    aria-label="YouTube Video zu Rose Room ansehen"
     rel="noopener"
   >
-    ▶️ Sixteen Tons – Merl Travis auf YouTube ansehen
+    ▶️ Rose Room – Charlie Christian auf YouTube ansehen
   </a>
   </p>
 
   <p><strong>Digitales Produkt (PDF Download)</strong></p>
-  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Jazz Gitarren Tabs als PDF-Datei.</p>
   <p>Kein Versand physischer Produkte.</p>
 
   <p>
-    Perfekt für Gitarristen, die den Song lernen möchten!
+    Perfekt für Banjo-Picker, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Sixteen Tons“</strong>.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Rose Room“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs + Bass-Arrangement als PDF-Download.
+    Gitarren Noten & Tabs als PDF-Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -69,8 +69,8 @@ const contentHtml = `
   </p>
 
   <p>
-    <a href="/kurse/gitarre/" class="cta-button">
-      Weitere Gitarrenstücke entdecken
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
     </a>
   </p>
 `;

@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Dear Old Dixie – Earl Scruggs";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+>
+
+  <h1>Dein Download</h1>
+
+  <p>
+    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
+  </p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="/downloads/Dear_Old_Dixie.pdf" download class="cta-button">
+        📄 Dear Old Dixie – Tabulatur
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1MshwN0WKEZpunoC2pX1yrfP3B1nhgiBW"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Dear Old Dixie – Backing Track
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1pxojEDmRTBx8CZKYgE3u3wYgf2S5X1U8"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Dear Old Dixie – Mastering mp3
+      </a>
+    </li>
+    
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Kurse zum selber lernen: Alle Lernmodule auf einen Blick
+    </a>
+  </p>
+
+</BaseLayout>
