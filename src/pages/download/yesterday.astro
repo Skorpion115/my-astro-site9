@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Yesterday – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout pageTitle={pageTitle} description={description} ogType="article">
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="/downloads/Yesterday.pdf" download class="cta-button">
+        📄 Yesterday – Noten & Tabulatur
+      </a>
+    </li>
+    <li>
+      <a href="/downloads/Yesterday-Strings.pdf" download class="cta-button">
+        📄 Yesterday – Strings
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1MAQpVBZtTgjpD5-2jI0rRPijYT9PHh0_"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Yesterday – Mastering mp3
+      </a>
+    </li>
+  </ul>
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+</BaseLayout>
