@@ -183,7 +183,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/flint-hill-special-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/flint-hill-special/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -193,12 +193,12 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/hammond-flip-noten/`,
+    loc: `${SITE_URL}/checkout/hammond-flip/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/in-the-still-of-the-night-noten/`,
+    loc: `${SITE_URL}/checkout/in-the-still-of-the-night/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -209,6 +209,11 @@ export const pages = [
   },
   {
     loc: `${SITE_URL}/kurse/alle-kurse/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/kurse/musikbibliothek/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -228,7 +233,12 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/silence-is-golden-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/the-lion-sleeps-tonight/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/checkout/silence-is-golden/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -253,7 +263,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/dear-old-dixie-noten-tabs/`,
+    loc: `${SITE_URL}/Checkout/dear-old-dixie/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -288,12 +298,12 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/rose-room-notes-tabs/`,
+    loc: `${SITE_URL}/checkout/rose-room/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/smile-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/smile/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -408,7 +418,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/sixteen-tons-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/sixteen-tons/`,
     changefreq: "weekly",
     lastmod: today,
   },
