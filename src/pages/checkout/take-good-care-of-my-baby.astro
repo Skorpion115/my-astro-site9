@@ -3,35 +3,24 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Take Good Care Of My Baby – Bobby Vee Noten & Pattern kaufen";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚Take Good Care Of My Baby‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Take Good Care Of My Baby, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Take Good Care Of My Baby – Guitar Arrangement";
+const heading = "Take Good Care Of My Baby – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Take Good Care Of My Baby. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Take Good Care Of My Baby, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-take-good-care-of-my-baby/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/take-good-care-of-my-baby/";
 
 const imageSrc = "/bilder/Take_Good_Care_Vorschau.jpg";
-const imageAlt = "Take Good Care Of My Baby – Vorschau";
+const imageAlt = "Take_Good_Care_Vorschau";
 const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
-const ogImage = "https://www.musicstudio-ziebart.de/bilder/take_good_care_of_my_baby_preview.png";
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/take_good_care_of_my_baby.png"
 
 const contentHtml = `
-  <p>
-    <strong>🎧 Hörprobe:</strong><br />
-    Audioaufnahme aus dem enthaltenen Arrangement.
-  </p>
-
-  <iframe
-    src="https://drive.google.com/file/d/18g2WPwbOY2IS5OZzG2t0f24IBQq-QKzi/preview"
-    width="60%"
-    height="50"
-  ></iframe>
-
+  <br />
   <p>
   <a
     href="https://www.youtube.com/watch?v=nUC_b1L_IM4"
@@ -40,29 +29,32 @@ const contentHtml = `
     aria-label="YouTube Video zu Take Good Care Of My Baby ansehen"
     rel="noopener"
   >
-    ▶️ Take Good Care Of My Baby – Guitar Tutorial auf YouTube ansehen
+    ▶️ Take Good Care Of My Baby – Bobby Vee auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Take Good Care Of My Baby“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Take Good Care Of My Baby“</strong>.
   </p>
-  <ul>
-    <li>Steelguitar-Noten</li>
-    <li>Audioaufnahme mp3</li>
-  </ul>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs + Komplettes Arrangment als ZIP-Download.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
-   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -75,8 +67,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/e-gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -98,7 +91,7 @@ const contentHtml = `
   twitterUrl={pageUrl}
 >
   <ProductPage
-    pageTitle={pageTitle}
+    heading={heading}
     description={description}
     keywords={keywords}
     imageSrc={imageSrc}

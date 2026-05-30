@@ -248,7 +248,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/take-good-care-of-my-baby-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/take-good-care-of-my-baby/`,
     changefreq: "weekly",
     lastmod: today,
   },
