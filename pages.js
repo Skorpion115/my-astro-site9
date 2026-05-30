@@ -163,7 +163,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/catch-the-wind-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/catch-the-wind/`,
     changefreq: "weekly",
     lastmod: today,
   },

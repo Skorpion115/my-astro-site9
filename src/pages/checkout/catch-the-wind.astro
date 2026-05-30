@@ -3,14 +3,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Catch The Wind – Donovan Noten & Tabulatur + Bassnoten + Mundharmonika Solo kaufen";
-const heading = "Catch The Wind - Donovan Noten & Tabulaturen kaufen";
-const description =
-  "Kaufe die Noten & Tabulatur für ‚Catch The Wind‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Catch The Wind Noten, Donovan,Catch The Wind Tabulatur, Gitarrennoten PDF, Donovan Catch The Wind";
+const pageTitle = "Catch The Wind – Guitar Arrangement";
+const heading = "Catch The Wind – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Catch The Wind. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Catch The Wind, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-catch-the-wind/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/catch-the-wind/";
+
 const imageSrc = "/bilder/CatchTheWind_Vorschau.jpg";
 const imageAlt = "Catch The Wind – Vorschau";
 const price = "5.95";
@@ -21,17 +20,7 @@ const price = "5.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/catch_the_wind_preview.png";
 
 const contentHtml = `
-  <p>
-    <strong>🎧 Hörprobe:</strong><br />
-    Audioaufnahme aus dem enthaltenen Arrangement.
-  </p>
-
-  <iframe
-    src="https://drive.google.com/file/d/19jXw9-t0b-TLr_2xsYvPAVHdw5exWBzW/preview"
-    width="60%"
-    height="50"
-  ></iframe>
-
+  <br />
   <p>
   <a
     href="https://www.youtube.com/watch?v=ifJuoPeWBU8"
@@ -40,35 +29,36 @@ const contentHtml = `
     aria-label="YouTube Video zu Catch The Wind ansehen"
     rel="noopener"
   >
-    ▶️ Catch The Wind – Gitarre Tutorial auf YouTube ansehen
+    ▶️ Catch The Wind – Donovan auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Catch The Wind“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Catch The Wind“</strong>.
   </p>
-  <ul>
-    <li>Gitarren-Noten & Tabulatur</li>
-    <li>Bassnoten</li>
-    <li>Mundharmonika Solo</li>
-  </ul>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs + Bass-Arrangement als PDF-Download.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
   </p>
-  <p>
   <p>
     Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
   </p>
@@ -77,8 +67,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -93,8 +84,8 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
-  ogType="product"
   ogImage={ogImage}
+  ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
