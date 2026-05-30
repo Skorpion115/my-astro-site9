@@ -223,7 +223,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/like-ice-in-the-sunshine-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/like-ice-in-the-sunshine/`,
     changefreq: "weekly",
     lastmod: today,
   },
