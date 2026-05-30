@@ -168,7 +168,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/city-of-neworleans-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/city-of-neworleans/`,
     changefreq: "weekly",
     lastmod: today,
   },

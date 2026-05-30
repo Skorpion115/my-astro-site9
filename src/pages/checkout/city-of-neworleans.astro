@@ -3,18 +3,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "City Of NewOrleans – Arlo Guthrie Noten & Tabulatur kaufen";
-const heading = "City Of NewOrleans - Arlo Guthrie Noten & Tabulaturen kaufen";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚City Of NewOrleans‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "City Of NewOrleans, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "City Of NewOrleans – Guitar Arrangement";
+const heading = "City Of NewOrleans – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu City Of NewOrleans. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "City Of NewOrleans, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-city-of-neworleans/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/city-of-neworleans/";
 
 const imageSrc = "/bilder/City_Of_NewOrleans_Vorschau.png";
 const imageAlt = "City Of NewOrleans – Vorschau";
-const price = "2.95";
+const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
@@ -22,17 +20,7 @@ const price = "2.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/city_of_neworleans_preview.png";
 
 const contentHtml = `
-  <p>
-    <strong>🎧 Hörprobe:</strong><br />
-    Audioaufnahme aus dem enthaltenen Arrangement.
-  </p>
-
-  <iframe
-    src="https://drive.google.com/file/d/1gpePJSakbeWxTVemqIbmCOMpOuFUh9oQ/preview"
-    width="60%"
-    height="50"
-  ></iframe>
-
+  <br />
   <p>
   <a
     href="https://www.youtube.com/watch?v=L70MSOuUiG0"
@@ -41,29 +29,32 @@ const contentHtml = `
     aria-label="YouTube Video zu City Of NewOrleans ansehen"
     rel="noopener"
   >
-    ▶️ City Of NewOrleans – Guitar Tutorial auf YouTube ansehen
+    ▶️ City Of NewOrleans – Arlo Guthrie auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „City Of NewOrleans“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „City Of NewOrleans“</strong>.
   </p>
-  <ul>
-    <li>Gitarren-Noten</li>
-    <li>Audioaufnahme mp3</li>
-  </ul>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs + Gesangs- und Chornoten als PDF-Download. Das Stück ist schwierig dazu zu singen. Im Orginal spielt Arlo Guthrie eine Klavierbegleitung. Das was ich aufgeschrieben habe ist ein Studiomusiker gewesen. Das Stück ist in F#-Dur, also Capotaster auf dem 2. Bund setzen.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
-  p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -76,8 +67,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -92,8 +84,8 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
-  ogType="product"
   ogImage={ogImage}
+  ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}
