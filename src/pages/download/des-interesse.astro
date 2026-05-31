@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Des - interesse – Klaus Wunderlich";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout pageTitle={pageTitle} description={description} ogType="article">
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1vHo6savqUlDt-Jyfc7QEXll02XZGRuPr"  class="cta-button" class="cta-button">
+        📄 Des - interesse - Klaus Wunderlich
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=17hXZruOOEf-6Y9bXY--L5ehfkonhwAfN"
+        class="cta-button"
+        target="_blank"
+        rel="noopener">
+        🎵 Des - interesse – Mastering mp3
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Kurse zum selber lernen: Alle Lernmodule auf einen Blick
+    </a>
+  </p>
+</BaseLayout>

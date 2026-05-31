@@ -173,7 +173,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/des-interesse-noten/`,
+    loc: `${SITE_URL}/checkout/des-interesse/`,
     changefreq: "weekly",
     lastmod: today,
   },

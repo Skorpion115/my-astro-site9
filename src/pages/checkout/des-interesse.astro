@@ -3,18 +3,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Des - interesse – Klaus Wunderlich Noten kaufen";
-const heading = "Des - interesse - Klaus Wunderlich Noten kaufen";
-const description =
-  "Kaufe die Noten für ‚Des - interesse‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Des - interesse, Klaus Wunderlich, Noten, Keyboard, Orgel PDF";
+const pageTitle = "Des - interesse – Organ Style (Klaus Wunderlich)";
+const heading = "Des - interesse – Organ Style (Klaus Wunderlich)";
+const description = "Sichere Zahlung für das Keyboard-Arrangement zu Des - interesse. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Des - interesse, Organ Style, Klaus Wunderlich, Keyboard Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-des-interesse/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/des-interesse/";
 
 const imageSrc = "/bilder/Des_Interesse_Vorschau.png";
 const imageAlt = "Des - interesse – Vorschau";
-const price = "2.95";
+const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
@@ -22,17 +20,7 @@ const price = "2.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/des_interesse_preview.png";
 
 const contentHtml = `
-  <p>
-    <strong>🎧 Hörprobe:</strong><br />
-    Audioaufnahme aus dem enthaltenen Arrangement.
-  </p>
-
-  <iframe
-    src="https://drive.google.com/file/d/17hXZruOOEf-6Y9bXY--L5ehfkonhwAfN/preview"
-    width="60%"
-    height="50"
-  ></iframe>
-
+  <br />
   <p>
   <a
     href="https://www.youtube.com/watch?v=-mP9JFjJ6QA"
@@ -41,29 +29,32 @@ const contentHtml = `
     aria-label="YouTube Video zu Des - interesse ansehen"
     rel="noopener"
   >
-    ▶️ Des - interesse – Hammond Orgel Tutorial auf YouTube ansehen
+    ▶️ Des - interesse – Klaus Wunderlich auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Orgelnoten als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für Keyboardspieler/Organisten, die den Song lernen möchten!
+    Perfekt für Organisten, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten zum Song „Des - interesse“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten zum Song „Des - interesse“</strong>.
   </p>
-  <ul>
-    <li>Keyboard/Orgel-Noten</li>
-    <li>Audioaufnahme mp3</li>
-  </ul>
+  <p>
+    Orgel-Noten als PDF-Download + Mastering mp3.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -76,6 +67,12 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
+    </a>
+  </p>
 `;
 ---
 
@@ -86,8 +83,8 @@ const contentHtml = `
   href={pageUrl}
   ogTitle={pageTitle}
   ogDescription={description}
-  ogImage={ogImage}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}

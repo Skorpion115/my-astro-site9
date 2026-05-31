@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Des - interesse – Organ Style (Klaus Wunderlich)";
+const description = "Orgel-Arrangement im Stil von Klaus Wunderlich für fortgeschrittene Anfänger.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+
+  <p>Original gespielt von Klaus Wunderlich</p>
+
+  <p>
+    Dieses Arrangement vermittelt wie eine sehr schöne Melodie mit interessanten Harmonien. Klaus Wunderlich hatte sich vorgenommen für jeden Ton der Tonleiter ein Stück zu schreiben. Die ist sein Stück für den Ton Des. Es ist ein sehr schönes Stück wie ich finde. Ich habe dem Stück noch ein dezentes Schlagzeug hinzugefügt, damit es etwas mehr Groove bekommt. Außerdem habe ich den Bass mit einer richtigen Bassgitarre eingespielt und nicht diesen Pedalbass von einer Orgel verwendet. 
+    <br />
+    Fingersätze sind im PDF enthalten, damit du das Stück gut lernen kannst.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Melodiespiel mit interessanten Begleitung</li>
+    <li>Praxisnahes Spielgefühl</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Anfänger und Spieler, die ihren Horizont erweitern wollen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+<p>
+    <a href="/checkout/des-interesse/" class="cta-button">
+        Jetzt kaufen / herunterladen
+    </a>  
+</p>
+
+
+</BaseLayout>
