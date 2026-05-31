@@ -218,7 +218,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/kleiner-schelm-noten/`,
+    loc: `${SITE_URL}/checkout/kleiner-schelm/`,
     changefreq: "weekly",
     lastmod: today,
   },

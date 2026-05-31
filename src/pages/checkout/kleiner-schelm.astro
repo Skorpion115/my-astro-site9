@@ -3,37 +3,24 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Kleiner Schelm – Klaus Wunderlich Noten kaufen";
-const heading = "Kleiner Schelm - Klaus Wunderlich Noten kaufen";
-const description =
-  "Kaufe die Noten für ‚Kleiner Schelm‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Kleiner Schelm, Klaus Wunderlich, Noten, Keyboard, Orgel PDF";
+const pageTitle = "Kleiner Schelm – Organ Style (Klaus Wunderlich)";
+const heading = "Kleiner Schelm – Organ Style (Klaus Wunderlich)";
+const description = "Sichere Zahlung für das Keyboard-Arrangement zu Kleiner Schelm. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Kleiner Schelm, Organ Style, Klaus Wunderlich, Keyboard Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-kleiner-schelm/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/kleiner-schelm/";
 
 const imageSrc = "/bilder/Kleiner_Schelm_Vorschau.jpg";
 const imageAlt = "Kleiner Schelm – Vorschau";
-const price = "4.95";
+const price = "7.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/kleiner_schelm_preview.png";
 
-
 const contentHtml = `
-  <p>
-    <strong>🎧 Hörprobe:</strong><br />
-    Audioaufnahme aus dem enthaltenen Arrangement.
-  </p>
-
-  <iframe
-    src="https://drive.google.com/file/d/1JIfAu3pjlYPAJMRsJos7dcL8qIXkOpqD/preview"
-    width="60%"
-    height="50"
-  ></iframe>
-
+  <br />
   <p>
   <a
     href="https://www.youtube.com/watch?v=dRz-VMVUNlY"
@@ -42,29 +29,32 @@ const contentHtml = `
     aria-label="YouTube Video zu Kleiner Schelm ansehen"
     rel="noopener"
   >
-    ▶️ Kleiner Schelm – Klaus Wunderlich Tutorial auf YouTube ansehen
+    ▶️ Kleiner Schelm – Klaus Wunderlich auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Orgelnoten als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für Keyboardspieler/Organisten, die den Song lernen möchten!
+    Perfekt für Organisten, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten zum Song „Kleiner Schelm“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten zum Song „Kleiner Schelm“</strong>.
   </p>
-  <ul>
-    <li>Keyboard/Orgel-Noten</li>
-    <li>Audioaufnahme mp3</li>
-  </ul>
+  <p>
+    Orgel-Noten als PDF-Download + Mastering mp3.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -76,6 +66,12 @@ const contentHtml = `
     Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
+    </a>
   </p>
 `;
 ---
