@@ -228,7 +228,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/lullaby-in-blue-noten/`,
+    loc: `${SITE_URL}/checkout/lullaby-in-blue/`,
     changefreq: "weekly",
     lastmod: today,
   },
