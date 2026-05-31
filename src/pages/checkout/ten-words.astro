@@ -3,34 +3,24 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Ten Words – Joe Satriani Tabulatur kaufen";
-const heading = "Ten Words Jo Satriani - Tabulatur kaufen";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚Ten Words‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Ten Words, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Ten Words – Guitar Arrangement";
+const heading = "Ten Words – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Ten Words. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Ten Words, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-ten-words/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/ten-words/";
 
 const imageSrc = "/bilder/ten_words_vorschau.jpg";
-const imageAlt = "Ten Words – Vorschau";
-
-// const imageSrc = "/bilder/Ten_Words_Vorschau.jpg";
-// const imageAlt = "Ten Words – Vorschau";
+const imageAlt = "Ten Words Vorschau";
 const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
-const ogImage = "https://www.musicstudio-ziebart.de/bilder/ten_words_preview.png";
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/ten_words_preview.png"
 
 const contentHtml = `
   <br />
-  <p>
-    <strong>🎧 Hörprobe:</strong><br />
-    Audioaufnahme aus dem enthaltenen Arrangement.
-  </p>
-
   <p>
   <a
     href="https://www.youtube.com/watch?v=fcHrj9ryvqo"
@@ -39,30 +29,32 @@ const contentHtml = `
     aria-label="YouTube Video zu Ten Words ansehen"
     rel="noopener"
   >
-    ▶️ Ten Words – Guitar Tutorial auf YouTube ansehen
+    ▶️ Ten Words – Joe Satriani auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Ten Words“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Ten Words“</strong>.
   </p>
-  <ul>
-    <li>E-Gitarre-Noten</li>
-    <li>Audioaufnahme mp3</li>
-    <li>Backing Track</li>
-  </ul>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs zum downloaden.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -75,9 +67,10 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#e-gitarren-kurse" class="cta-button">
-      Weitere E-Gitarrensolos entdecken
+    <a href="/kurse/e-gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
     </a>
   </p>
 `;

@@ -253,7 +253,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/ten-words-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/ten-words/`,
     changefreq: "weekly",
     lastmod: today,
   },
