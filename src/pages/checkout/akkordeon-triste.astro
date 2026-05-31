@@ -3,67 +3,58 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "L'accordeon Triste – Noten für Akkordeon kaufen";
-const heading = "L'accordeon Triste - Noten für Akkordeon kaufen";
-const description =
-  "Kaufe die Noten für ‚L'accordeon Triste‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "L'accordeon Triste, Noten, Akkordeon, PDF";
+const pageTitle = "L'accordéon triste – Akkordeon Arrangement";
+const heading = "L'accordéon triste – Akkordeon Arrangement";
+const description = "Sichere Zahlung für das Akkordeon-Arrangement zu L'accordéon triste. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "L'accordéon triste, Akkordeon Arrangement, Akkordeon Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-akkordeon-triste/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/akkordeon-triste/";
 
 const imageSrc = "/bilder/Akkordeon_Triste_Vorschau.jpg";
-const imageAlt = "L'accordeon Triste – Vorschau";
-const price = "2.95";
+const imageAlt = "L'accordéon triste Vorschau";
+const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
-const ogImage = "https://www.musicstudio-ziebart.de/bilder/akkordeon_triste_preview.png";
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/akkordeon_triste_preview.png"
 
 const contentHtml = `
-  <p>
-    <strong>🎧 Hörprobe:</strong><br />
-    Audioaufnahme aus dem enthaltenen Arrangement.
-  </p>
-
-  <iframe
-    src="https://drive.google.com/file/d/1EXdv5njoxyPyRYDI9s40MBeRn1VFV7Sq/preview"
-    width="60%"
-    height="50"
-  ></iframe>
-
+  <br />
   <p>
   <a
     href="https://www.youtube.com/watch?v=Eo5gEGD5t40"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu L'accordeon Triste ansehen"
+    aria-label="YouTube Video zu L'accordéon triste ansehen"
     rel="noopener"
   >
-    ▶️ L'accordeon Triste – Akkordeon Tutorial auf YouTube ansehen
+    ▶️ L'accordéon triste – Sergio Castelli auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für Gitarristen, die den Song lernen möchten!
+    Perfekt für Akkordeon-Spieler, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „L'accordeon Triste“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „L'accordéon triste“</strong>.
   </p>
-  <ul>
-    <li>Akkordeon-Noten</li>
-    <li>Audioaufnahme mp3</li>
-  </ul>
+  <p>
+    Akkordeon-Noten mit Akkorden zum downloaden.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -76,6 +67,12 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
+    </a>
+  </p>
 `;
 ---
 
@@ -87,8 +84,8 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
-  ogType="product"
   ogImage={ogImage}
+  ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}

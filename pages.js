@@ -158,7 +158,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/akkordeon-triste-noten/`,
+    loc: `${SITE_URL}/checkout/akkordeon-triste/`,
     changefreq: "weekly",
     lastmod: today,
   },
