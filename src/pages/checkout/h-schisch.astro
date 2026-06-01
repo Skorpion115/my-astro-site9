@@ -3,18 +3,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "H-schisch – Klaus Wunderlich Noten kaufen";
-const heading = "H-schisch - Klaus Wunderlich Noten kaufen";
-const description =
-  "Kaufe die Noten für ‚H-schisch‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "H-schisch, Klaus Wunderlich, Noten, Keyboard, Orgel PDF";
+const pageTitle = "H - schisch – Organ Style (Klaus Wunderlich)";
+const heading = "H - schisch – Organ Style (Klaus Wunderlich)";
+const description = "Sichere Zahlung für das Keyboard-Arrangement zu H - schisch. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "H - schisch, Organ Style, Klaus Wunderlich, Keyboard Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-h-schisch/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/h-schisch/";
 
 const imageSrc = "/bilder/H_schisch_Vorschau.png";
-const imageAlt = "H-schisch – Vorschau";
-const price = "2.95";
+const imageAlt = "H - schisch – Vorschau";
+const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
@@ -22,6 +20,7 @@ const price = "2.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/h_schisch_preview.png";
 
 const contentHtml = `
+  <br />
   <p>
     <strong>🎧 Hörprobe:</strong><br />
     Audioaufnahme aus dem enthaltenen Arrangement.
@@ -34,37 +33,40 @@ const contentHtml = `
   ></iframe>
 
   <p>
+  <p>
   <a
     href="https://www.youtube.com/watch?v=dEih42vJn2M"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu H-schisch ansehen"
+    aria-label="YouTube Video zu H - schisch ansehen"
     rel="noopener"
   >
-    ▶️ H-schisch – Hammond Orgel Tutorial auf YouTube ansehen
+    ▶️ H - schisch – Klaus Wunderlich auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Orgelnoten als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für Keyboardspieler/Organisten, die den Song lernen möchten!
+    Perfekt für Organisten, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten zum Song „H-schisch“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten zum Song „H - schisch“</strong>.
   </p>
-  <ul>
-    <li>Keyboard/Orgel-Noten</li>
-    <li>Audioaufnahme mp3</li>
-    <li>Backing Track</li>
-  </ul>
+  <p>
+    Orgel-Noten als PDF-Download + BackingTrack + Mastering mp3.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -76,6 +78,12 @@ const contentHtml = `
     Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
+    </a>
   </p>
 `;
 ---

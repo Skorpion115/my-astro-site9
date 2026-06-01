@@ -188,7 +188,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/h-schisch-noten/`,
+    loc: `${SITE_URL}/checkout/h-schisch/`,
     changefreq: "weekly",
     lastmod: today,
   },
