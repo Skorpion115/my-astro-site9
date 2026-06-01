@@ -3,18 +3,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "What A Wonderful World – Louis Armstrong Noten & Tabulatur kaufen";
-const heading = "What A Wonderful World - Louis Armstrong Noten & Tabulatur kaufen";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚What A Wonderful World‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "What A Wonderful World, Louis Armstrong, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "What A Wonderful World – Louis Armstrong";
+const heading = "What A Wonderful World – Louis Armstrong";
+const description = "Sichere Zahlung für das Jazz-Gitarren-Arrangement zu What A Wonderful World. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "What A Wonderful World, Louis Armstrong, Jazz Gitarre, Gitarren Solo, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-what-a-wonderful-world/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/what-a-wonderful-world/";
 
-const imageSrc = "/bilder/What_A_Wonderful_World_Vorschau.png";
+const imageSrc = "/bilder//What_A_Wonderful_World_Vorschau.png";
 const imageAlt = "What A Wonderful World – Vorschau";
-const price = "5,95";
+const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
@@ -22,6 +20,7 @@ const price = "5,95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/what_a_wonderful_world_preview.png";
 
 const contentHtml = `
+  <br />
   <p>
     <strong>🎧 Hörprobe:</strong><br />
     Audioaufnahme aus dem enthaltenen Arrangement.
@@ -34,6 +33,7 @@ const contentHtml = `
   ></iframe>
 
   <p>
+  <p>
   <a
     href="https://www.youtube.com/watch?v=B8qxOtj05A4"
     class="normal-links"
@@ -41,30 +41,32 @@ const contentHtml = `
     aria-label="YouTube Video zu What A Wonderful World ansehen"
     rel="noopener"
   >
-    ▶️ What A Wonderful World – Louis Armstrong Tutorial auf YouTube ansehen
+    ▶️ What A Wonderful World – Louis Armstrong auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Jazz Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „What A Wonderful World“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „What A Wonderful World“</strong>.
   </p>
-  <ul>
-    <li>Gitarren-Noten</li>
-    <li>Audioaufnahme mp3</li>
-    <li>Backing Track mp3</li>
-  </ul>
+  <p>
+    Gitarren Noten & Tabs als PDF-Download.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -77,9 +79,10 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#jazz-guitar" class="cta-button">
-      Weitere Jazz Gitarrenstücke entdecken
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
     </a>
   </p>
 `;
@@ -93,8 +96,8 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
-  ogType="product"
   ogImage={ogImage}
+  ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
   twitterUrl={pageUrl}

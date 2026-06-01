@@ -313,7 +313,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/what-a-wonderful-world-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/what-a-wonderful-world/`,
     changefreq: "weekly",
     lastmod: today,
   },
