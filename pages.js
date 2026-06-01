@@ -178,7 +178,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/e-hering-noten/`,
+    loc: `${SITE_URL}/checkout/e-hering/`,
     changefreq: "weekly",
     lastmod: today,
   },
