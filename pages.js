@@ -278,7 +278,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/dvorak-klavierkonzert-nr-1-klaviernoten-download/`,
+    loc: `${SITE_URL}/checkout/dvořák-Largo-(From the New World)/`,
     changefreq: "weekly",
     lastmod: today,
   },

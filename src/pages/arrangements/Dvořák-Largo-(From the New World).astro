@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Antonín Dvořák - Largo from Symphony No. 9 'From the New World' Piano Solo";
+const description =
+  "Piano Solo im Stil von Antonín Dvořák für fortgeschrittene Anfänger.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>Dieses Stück ist ursprünglich von Antonín Dvořák komponiert worden zu vier Händen. Ich habe es für zwei Hände arrangiert.</p>
+
+  <p>
+    Es ist in Des-Dur geschrieben und hat ein langsames Tempo. Es ist ein sehr emotionales Stück, das die Schönheit der Melodie und die Tiefe der Harmonie zeigt. Es ist eine großartige Wahl für fortgeschrittene Anfänger, die ihre Fähigkeiten im Melodiespiel und in der Harmonielehre verbessern möchten.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Melodiespiel</li>
+    <li>Piano Solo</li>
+    <li>Praxisnahes Spielgefühl</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Spieler.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a href="/checkout/Dvořák-Largo-(From the New World)/" class="cta-button">
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>

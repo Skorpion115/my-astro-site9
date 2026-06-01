@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+const pageTitle = "Keyboard Lernmodule";
+const description =
+  "Lerne Gitarre mit strukturierten Lernmodulen: Strumming, Fingerstyle, Country und Blues – nach Stil und Level sortiert.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+>
+  <p>
+    Hier findest du Keyboard-Stücke und Übungen im Stil von Jazz, Pop und Easy
+    Listening. Schwerpunkt: Begleitpatterns, Melodie-Spiel und typische Sounds
+    wie Hammond und Orgel.
+  </p>
+
+  <!-- 🔷 Lernwege / Kategorien -->
+  <h2>Rubriken</h2>
+
+  <div class="card-grid">
+    <div class="basis-card">
+      <h2>Piano Klassik</h2>
+
+      <p>Auswahl an klassischen Piano-Stücken.</p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/Dvořák-Largo-(From the New World)/">
+            Largo from Symphony No. 9  – Antonín Dvořák 
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="basis-card">
+      <h3>Piano Popmusik</h3>
+
+      <p>
+        Eine Auswahl an populären Piano-Stücken.
+      </p>
+
+      
+    </div>
+  </div>
+
+  <!-- 🔷 Optional: Erklärung -->
+  <h2>Wie funktioniert das Lernen?</h2>
+
+  <ul>
+    <li>Du wählst einen Stil (z. B. Hammond Orgel Klassiker)</li>
+    <li>Du lernst anhand eines konkreten Arrangements</li>
+    <li>Du arbeitest mit echten Songs im Stil – ohne komplizierte Theorie</li>
+  </ul>
+</BaseLayout>
