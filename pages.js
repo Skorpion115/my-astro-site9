@@ -318,7 +318,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/bossa-dorado-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/bossa-dorado/`,
     changefreq: "weekly",
     lastmod: today,
   },

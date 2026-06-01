@@ -1,29 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Danke – Dein Download ist bereit";
-const description =
-  "Vielen Dank für deine Zahlung! Deine Noten- & Tabulatur ‚Bossa Dorado‘ ist jetzt zum Download verfügbar.";
-const keywords = "Bossa Dorado, Noten, Tabulatur, Download Noten, PDF";
-const pageUrl = getPageUrl(Astro);
+const pageTitle = "Download: Bossa Dorado – Dorado Schmitt Gitarren Solo";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
 <BaseLayout
   pageTitle={pageTitle}
   description={description}
-  keywords={keywords}
-  href={pageUrl}
-  ogTitle={pageTitle}
-  ogDescription={description}
-  ogUrl={pageUrl}
-  ogType="website"
-  twitterTitle={pageTitle}
-  twitterDescription={description}
-  twitterUrl={pageUrl}
-  noindex={true}
+  ogType="article"
 >
-  <h1>Danke für deine Zahlung!</h1>
+
+  <h1>Dein Download</h1>
+
+  <p>
+    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
+  </p>
 
   <h2>Deine Downloads</h2>
 
@@ -70,9 +62,18 @@ const pageUrl = getPageUrl(Astro);
     </li>
   </ul>
 
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
   <p>
-    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
-    E-Mail: <br />
-    <strong>postmaster@musicstudio-ziebart.de</strong>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Kurse zum selber lernen: Alle Lernmodule auf einen Blick
+    </a>
   </p>
+
 </BaseLayout>

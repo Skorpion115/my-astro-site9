@@ -3,25 +3,24 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Bossa Dorado – Dorado Schmitt Noten & Tabulatur kaufen";
-const heading = "Bossa Dorado - Dorado Schmitt Noten & Tabulaturen kaufen";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚Bossa Dorado‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Bossa Dorado, Dorado Schmitt, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Bossa Dorado – Dorado Schmitt Gitarren Solo";
+const heading = "Bossa Dorado – Dorado Schmitt";
+const description = "Sichere Zahlung für das Jazz-Gitarren-Arrangement zu Bossa Dorado. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Bossa Dorado, Dorado Schmitt, Jazz Gitarre, Gitarren Solo, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-bossa-dorado/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/bossa-dorado/";
+
 const imageSrc = "/bilder/bossa_dorado_vorschau.png";
 const imageAlt = "Bossa Dorado – Vorschau";
-const price = "4.95";
+const price = "5.95";
 
-// Open-Graph-Bild für diese Produktseite.
+//Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
-const ogImage =
-  "https://www.musicstudio-ziebart.de/bilder/bossa_dorado_preview.png";
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/bossa_dorado_preview.png";
 
 const contentHtml = `
+  <br />
   <p>
     <strong>🎧 Hörprobe:</strong><br />
     Audioaufnahme aus dem enthaltenen Arrangement.
@@ -34,6 +33,7 @@ const contentHtml = `
   ></iframe>
 
   <p>
+  <p>
   <a
     href="https://www.youtube.com/watch?v=LYOEuto28l8"
     class="normal-links"
@@ -41,53 +41,54 @@ const contentHtml = `
     aria-label="YouTube Video zu Bossa Dorado ansehen"
     rel="noopener"
   >
-    ▶️ Bossa Dorado – Guitar Tutorial auf YouTube ansehen
+    ▶️ Bossa Dorado – Dorado Schmitt auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Jazz Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
-    Perfekt für Gitarristen, die den Song lernen möchten!
+    Perfekt für Banjo-Picker, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Bossa Dorado“</strong>
-    für Gypsy Jazz Guitar und Jazz Guitar – speziell erstellt für Unterricht und Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Bossa Dorado“</strong>.
   </p>
-  
-  <ul>
-    <li>Gitarren-Noten Solo Guitar</li>
-    <li>Gitarren-Noten Rhythmus Guitar</li>
-    <li>Bass-Noten</li>
-    <li>Drums-Noten</li>
-    <li>Audioaufnahme mp3</li>
-    <li>Backing Track mp3</li>
-  </ul>
+  <p>
+    Gitarren Solo Noten & Tabs für Konzertgitarre + Rhythmus Gitarre für Westerngitarre + komplettes Arrangement als PDF Download + Backing Track und Mastering.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
   </p>
   <p>
     Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#jazz-guitar" class="cta-button">
-      Weitere Jazz Gitarrenstücke entdecken
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
     </a>
   </p>
 `;
 ---
 
-<BaseLayout ogImage={ogImage}
+<BaseLayout
   pageTitle={pageTitle}
   description={description}
   keywords={keywords}
@@ -95,6 +96,7 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
