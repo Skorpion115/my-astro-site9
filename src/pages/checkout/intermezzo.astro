@@ -1,0 +1,115 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Intermezzo – Organ Style (Klaus Wunderlich)";
+const heading = "Intermezzo – Organ Style (Klaus Wunderlich)";
+const description = "Sichere Zahlung für das Keyboard-Arrangement zu Intermezzo. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Intermezzo, Organ Style, Klaus Wunderlich, Keyboard Arrangement, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/intermezzo/";
+
+const imageSrc = "/bilder/intermezzo_Vorschau.png";
+const imageAlt = "Intermezzo – Vorschau";
+const price = "5.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/intermezzo_preview.png";
+
+const contentHtml = `
+  <br />
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1LUTGNnLkDNXUvSj8z_rZSB5X0ghuMqks/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=D3X3lxcn780"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Intermezzo ansehen"
+    rel="noopener"
+  >
+    ▶️ Intermezzo – Orgel Solo Tutorial auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Orgelnoten als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>
+    Perfekt für Organisten, die den Song lernen möchten!
+  </p>
+  <p>
+    Sichere dir meine
+    <strong>eigenen Noten zum Song „Intermezzo“</strong>.
+  </p>
+  <p>
+    Orgel-Noten als PDF-Download + Mastering mp3.
+  </p>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Nach dem Kauf steht der Download sofort zur Verfügung.
+  </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+   <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

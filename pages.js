@@ -273,7 +273,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/intermezzo-noten/`,
+    loc: `${SITE_URL}/checkout/intermezzo/`,
     changefreq: "weekly",
     lastmod: today,
   },
