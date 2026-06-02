@@ -323,7 +323,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/train45-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/train-45-noten-tabs/`,
     changefreq: "weekly",
     lastmod: today,
   },
