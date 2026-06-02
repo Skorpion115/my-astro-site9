@@ -333,7 +333,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/mondschein-sonate-noten/`,
+    loc: `${SITE_URL}/checkout/beethoven-moonlight-sonata/`,
     changefreq: "weekly",
     lastmod: today,
   },
