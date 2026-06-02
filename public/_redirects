@@ -50,4 +50,6 @@
 /shop/nocturne-opus9-no2-noten/ /checkout/chopin-nocturne-op-9-no-2/    301
 /shop/nancy-rowland-noten-tabs/ checkout/nancy-rowland/                 301
 /shop/cripple-creek-noten-tabs/ checkout/cripple-creek/                 301
-/shop/train45-noten-tabs/   checkout/train-45/                          301
+/shop/train45-noten-tabs/   /checkout/train-45/                         301
+/shop/black-mountain-rag-noten-tabs/    /checkout/black-mountain-rag/   301
+/kurse/alle-kurse/    /kurse/musikbibliothek/                           301

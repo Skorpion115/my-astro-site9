@@ -208,11 +208,6 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/alle-kurse/`,
-    changefreq: "weekly",
-    lastmod: today,
-  },
-  {
     loc: `${SITE_URL}/kurse/musikbibliothek/`,
     changefreq: "weekly",
     lastmod: today,
@@ -258,7 +253,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/black-mountain-rag-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/black-mountain-rag/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -323,7 +318,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/checkout/train-45-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/train-45/`,
     changefreq: "weekly",
     lastmod: today,
   },
