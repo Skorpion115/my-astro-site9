@@ -1,0 +1,114 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Nancy Rowland – Snuffy Jenkins";
+const heading = "Nancy Rowland – Snuffy Jenkins";
+const description = "Sichere Zahlung für das Bluegrass-Banjo-Arrangement zu Nancy Rowland. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Nancy Rowland, Snuffy Jenkins, Bluegrass Banjo, Banjo Arrangement, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/nancy-rowland/";
+
+// const imageSrc = "/bilder/Nancy_Rowland_Vorschau.jpg";
+const imageAlt = "Nancy Rowland – Vorschau";
+const price = "2.50";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/nancy_rowland_preview.png";
+
+const contentHtml = `
+  <br />
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/10BD_orSvPDHpAHCrgG1mr90J1CKk8NWZ/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=lFrx4fhty3A"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Nancy Rowland ansehen"
+    rel="noopener"
+  >
+    ▶️ Nancy Rowland – Snuffy Jenkins auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Bluegrass Banjo Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>
+    Perfekt für Banjo-Spieler, die den Song lernen möchten!
+  </p>
+  <p>
+    Sichere dir meine
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Nancy Rowland“</strong>.
+  </p>
+  <p>
+    Banjo Tabs als PDF-Download.
+  </p>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Nach dem Kauf steht der Download sofort zur Verfügung.
+  </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/banjo/" class="cta-button">
+      Weitere Bluegrass Banjo-Stücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

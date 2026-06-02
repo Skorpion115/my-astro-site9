@@ -293,7 +293,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/nancy-rowland-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/nancy-rowland/`,
     changefreq: "weekly",
     lastmod: today,
   },
