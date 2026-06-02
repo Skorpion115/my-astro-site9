@@ -298,7 +298,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/nocturne-opus9-no2-noten/`,
+    loc: `${SITE_URL}/checkout/chopin-nocturne-op-9-no-2/`,
     changefreq: "weekly",
     lastmod: today,
   },
