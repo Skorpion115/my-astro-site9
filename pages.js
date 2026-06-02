@@ -263,7 +263,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/cripple-creek-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/cripple-creek/`,
     changefreq: "weekly",
     lastmod: today,
   },
