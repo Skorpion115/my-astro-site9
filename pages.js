@@ -288,7 +288,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/fuer-elise-noten/`,
+    loc: `${SITE_URL}/checkout/beethoven-fur-elise/`,
     changefreq: "weekly",
     lastmod: today,
   },

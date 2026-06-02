@@ -1447,6 +1447,7 @@ table.basis-table tbody tr.active {
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
+  margin: 0.75rem 0;
 }
 
 .download-button:hover {
