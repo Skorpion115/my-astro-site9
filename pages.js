@@ -283,7 +283,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/shop/tschaikowsky-klavierkonzert-nr-1-klaviernoten-download/`,
+    loc: `${SITE_URL}/checkout/tchaikovsky-piano-concerto-no-1-in-b-flat-minor/`,
     changefreq: "weekly",
     lastmod: today,
   },
