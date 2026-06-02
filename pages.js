@@ -278,7 +278,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/checkout/dvořák-Largo-(From the New World)/`,
+    loc: `${SITE_URL}/checkout/dvorak-largo-from-the-new-world/`,
     changefreq: "weekly",
     lastmod: today,
   },
