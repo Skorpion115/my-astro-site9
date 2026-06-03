@@ -1144,24 +1144,6 @@ textarea {
   text-decoration: underline;
 }
 
-/* ANCHOR download.astro */
-
-#download {
-  display: block;
-  width: 96%;
-  margin: 7% auto;
-  padding: 1.25rem;
-  text-align: center;
-  font-style: normal;
-}
-
-#download article {
-  display: inline-block;
-  width: 96%;
-  vertical-align: top;
-} 
-
-
 /* ANCHOR harmonielehre.astro*/
 
 #harmonielehre {

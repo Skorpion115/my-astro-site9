@@ -70,6 +70,14 @@
 @media (max-width: 768px) {
   .download-table { display: none; }
   .download-cards { display: grid; grid-template-columns: 1fr; }
+  #download {
+    width: 100%;
+    padding: 1rem 0.75rem;
+  }
+  .download-card {
+    width: 100%;
+    max-width: 100%;
+  }
   #download article { padding: 0; }
 }
 
