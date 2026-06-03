@@ -80,3 +80,36 @@
 .lead { max-width: 70ch; margin: 0 auto 1rem auto; }
 
 .back-link { display:inline-block; margin-top:1rem; }
+
+/* Darkmode-specific styles for the download page */
+html.dark .download-table {
+  background: #1f1f1f;
+}
+
+html.dark .download-table th,
+html.dark .download-table td {
+  color: #e2e2e2;
+  border-color: #333;
+}
+
+html.dark .download-table thead {
+  background: linear-gradient(90deg,#3a4dcf,#4f62e5);
+}
+
+html.dark .download-card {
+  background: #1f1f1f;
+  color: #e2e2e2;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.45);
+}
+
+html.dark .download-card .header {
+  color: #f8f8f8;
+}
+
+html.dark .meta-row span {
+  color: #d7d7d7;
+}
+
+html.dark .card-actions a.btn.secondary {
+  background: #4b5563;
+}
