@@ -7,14 +7,14 @@ const keywords = "Download, Midi Files, Noten";
 const pageUrl = getPageUrl(Astro);
 
 const items = [
-  { id: 1, title: "Persischen Markt", composer: "Albert W. Ketelbey", instrument: "Keyboard", audio: "/Songs/Auf_einem_persischen_Markt.mp3", pdf: "/bilder/Auf_einem_persischen_Markt.pdf", zip: "/zip_download/PM.zip", size: "244 KB" },
-  { id: 2, title: "Barcarole", composer: "Offenbach", instrument: "Keyboard", audio: "/Songs/Barcarole.mid", pdf: "/bilder/Barcarole.pdf", zip: "/zip_download/Barcarole.zip", size: "259 KB" },
-  { id: 3, title: "Kleine Nachtmusik", composer: "Amadeus Mozart", instrument: "Keyboard", audio: "/Songs/Nachtmu.mid", pdf: "/bilder/Kleine_Nachtmusik.pdf", zip: "/zip_download/Nachtmusik.zip", size: "414 KB" },
-  { id: 4, title: "Morning", composer: "Eduard Grieg", instrument: "Keyboard", audio: "/Songs/Morning.mid", pdf: "/bilder/Morning.pdf", zip: "/zip_download/Morning.zip", size: "259 KB" },
-  { id: 5, title: "Swan Lake", composer: "Tschaikowsky", instrument: "Keyboard", audio: "/Songs/SwanLake.mid", pdf: "/bilder/SwanLake.pdf", zip: "/zip_download/SwanLake.zip", size: "334 KB" },
-  { id: 6, title: "Aloha Oe", composer: "Volkslied aus Hawai", instrument: "Keyboard", audio: "/Songs/Aloha.mid", pdf: "/bilder/Aloha_Oe.pdf", zip: "/zip_download/AlohaOe.zip", size: "109 KB" },
-  { id: 7, title: "Die Fledermaus", composer: "Johann Strauss", instrument: "Keyboard", audio: "/Songs/Fledermaus.mid", pdf: "/bilder/Flederm.pdf", zip: "/zip_download/Die_Fledermaus.zip", size: "443 KB" },
-  { id: 8, title: "Die Schlittschuhläufer", composer: "Emil Waldteufel", instrument: "Keyboard", audio: "/Songs/Schlitt.mid", pdf: "/bilder/Schlitt.pdf", zip: "/zip_download/Die_Schlitt.zip", size: "530 KB" },
+  { id: 1, title: "Persischen Markt", composer: "Albert W. Ketelbey", instrument: "Keyboard", audio: "/Songs/Auf_einem_persischen_Markt.mp3", pdf: "/bilder/Auf_einem_persischen_Markt.pdf", zip: "/zip_download/PM.zip" },
+  { id: 2, title: "Barcarole", composer: "Offenbach", instrument: "Keyboard", audio: "/Songs/Barcarole.mid", pdf: "/bilder/Barcarole.pdf", zip: "/zip_download/Barcarole.zip" },
+  { id: 3, title: "Kleine Nachtmusik", composer: "Amadeus Mozart", instrument: "Keyboard", audio: "/Songs/Nachtmu.mid", pdf: "/bilder/Kleine_Nachtmusik.pdf", zip: "/zip_download/Nachtmusik.zip" },
+  { id: 4, title: "Morning", composer: "Eduard Grieg", instrument: "Keyboard", audio: "/Songs/Morning.mid", pdf: "/bilder/Morning.pdf", zip: "/zip_download/Morning.zip" },
+  { id: 5, title: "Swan Lake", composer: "Tschaikowsky", instrument: "Keyboard", audio: "/Songs/SwanLake.mid", pdf: "/bilder/SwanLake.pdf", zip: "/zip_download/SwanLake.zip" },
+  { id: 6, title: "Aloha Oe", composer: "Volkslied aus Hawai", instrument: "Keyboard", audio: "/Songs/Aloha.mid", pdf: "/bilder/Aloha_Oe.pdf", zip: "/zip_download/AlohaOe.zip" },
+  { id: 7, title: "Die Fledermaus", composer: "Johann Strauss", instrument: "Keyboard", audio: "/Songs/Fledermaus.mid", pdf: "/bilder/Flederm.pdf", zip: "/zip_download/Die_Fledermaus.zip" },
+  { id: 8, title: "Die Schlittschuhläufer", composer: "Emil Waldteufel", instrument: "Keyboard", audio: "/Songs/Schlitt.mid", pdf: "/bilder/Schlitt.pdf", zip: "/zip_download/Die_Schlitt.zip" },
 ];
 ---
 
@@ -64,7 +64,7 @@ const items = [
               <td class="download-actions">
                 <a href={item.audio} target="_blank" rel="noopener" aria-label={`Anhören ${item.title}`}>anhören</a>
                 <a href={item.pdf} target="_blank" rel="noopener" class="secondary" aria-label={`Noten ansehen ${item.title}`}>ansehen</a>
-                <a href={item.zip} class="secondary" aria-label={`Download ${item.title}`}>download {item.size}</a>
+                <a href={item.zip} class="secondary" aria-label={`Download ${item.title}`}>download</a>
               </td>
             </tr>
           ))}
@@ -81,7 +81,7 @@ const items = [
             <div class="card-actions">
               <a class="btn" href={item.audio} target="_blank" rel="noopener">anhören</a>
               <a class="btn secondary" href={item.pdf} target="_blank" rel="noopener">ansehen</a>
-              <a class="btn secondary" href={item.zip}>download {item.size}</a>
+              <a class="btn secondary" href={item.zip}>download</a>
             </div>
           </article>
         ))}
