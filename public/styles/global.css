@@ -1159,83 +1159,8 @@ textarea {
   display: inline-block;
   width: 96%;
   vertical-align: top;
-}
+} 
 
-/* ANCHOR Neue Table CSS */
-/*
-
-table.basis-table {
-  border-collapse: collapse;
-  margin: 2rem 0;
-  min-width: 400px;
-  border-radius: 0.3rem 0.3rem 0 0;
-  font-weight: normal;
-  overflow: hidden;
-  text-align: left;
-}
-
-table.basis-table thead tr {
-  background-color: rebeccapurple;
-  color: white;
-}
-
-table.basis-table th,
-table.basis-table td {
-  padding: 0.75rem 1rem;
-}
-
-table.basis-table tbody tr {
-  border-bottom: 0.063rem solid #ccc;
-}
-
-table.basis-table tbody tr:last-of-type {
-  border-bottom: 0.125rem solid rebeccapurple;
-}
-
-table.basis-table tbody tr.active {
-  font-weight: bold;
-  color: rebeccapurple;
-} */
-
-/* ANCHOR basis-card CSS */
-/*
-.basis-card {
-  display: none;
-  width: 100%;
-  margin-bottom: 1.25rem;
-}
-
-.basis-header {
-  background-color: rebeccapurple;
-  color: white;
-  border-radius: 0.3rem 0.3rem 0 0;
-  padding: 0.6rem;
-  font-weight: bold;
-}
-
-.basis-card div {
-  padding: 0.6rem;
-  border-bottom: 0.06rem solid #ccc;
-}
-
-.basis-card div:last-of-type {
-  border-bottom: 0.125rem solid rebeccapurple;
-}
-
-.basis-card div>span {
-  color: rgb(218, 54, 54);
-  font-weight: bold;
-}
-
-@media screen and (max-width: 578px) {
-  table.basis-table {
-    display: none;
-  }
-
-  .basis-card {
-    display: block;
-  }
-} */ 
 
 /* ANCHOR harmonielehre.astro*/
 
@@ -1294,41 +1219,6 @@ table.basis-table tbody tr.active {
   width: 96%;
   vertical-align: top;
 }
-
-/* ANCHOR Neue basis-table CSS */
-/*
-table.basis-table {
-  border-collapse: collapse;
-  margin: 32px 0;
-  min-width: 400px;
-  border-radius: 5px 5px 0 0;
-  font-weight: normal;
-  overflow: hidden;
-  text-align: left;
-}
-
-table.basis-table thead tr {
-  background-color: rebeccapurple;
-  color: white;
-}
-
-table.basis-table th,
-table.basis-table td {
-  padding: 12px 16px;
-}
-
-table.basis-table tbody tr {
-  border-bottom: 0.06rem solid #ccc;
-}
-
-table.basis-table tbody tr:last-of-type {
-  border-bottom: 0.125rem solid rebeccapurple;
-}
-
-table.basis-table tbody tr.active {
-  font-weight: bold;
-  color: rebeccapurple;
-} */
 
 /* ANCHOR Footer1 */
 
@@ -1430,7 +1320,7 @@ table.basis-table tbody tr.active {
 }
 
 /* shop/rose-room.astro */
-
+/*
 .product-image {
   max-width: 800px;
   width: 100%;
@@ -1442,7 +1332,7 @@ table.basis-table tbody tr.active {
 .download-button {
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  background-color: #0070ba; /* PayPal-Blau */
+  background-color: #0070ba; 
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
@@ -1452,10 +1342,10 @@ table.basis-table tbody tr.active {
 
 .download-button:hover {
   background-color: #005ea6;
-}
+} */
 
 /* Paypal-buy-button */
-
+/*
 .paypal-buy-button {
   padding: 0.75rem 1.5rem;
   background-color: #0070ba;
@@ -1492,7 +1382,7 @@ table.basis-table tbody tr.active {
   color: #666;
   line-height: 1.4;
   margin-top: 0.5rem;
-}
+} */
 
 
 /* ==============================
