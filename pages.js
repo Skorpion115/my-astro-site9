@@ -343,7 +343,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/the-a-team-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/the-a-team/`,
     changefreq: "weekly",
     lastmod: today,
   },

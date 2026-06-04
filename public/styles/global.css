@@ -1653,3 +1653,50 @@ input {
   }
 }
 
+/* ANCHOR neue arrangmente Seite */
+
+/* =========================
+   INFO BOX (WICHTIG)
+========================= */
+
+.info-box {
+  background: #f5f7fb;
+  border-left: 4px solid #3b82f6;
+  padding: 12px 16px;
+  margin: 1rem 0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #1f2937;
+}
+
+/* =========================
+   SEKTIONEN
+========================= */
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   CTA BUTTON
+========================= */
+
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #16a34a;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #15803d;
+}

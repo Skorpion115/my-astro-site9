@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "The A Team – Ed Sheeran (Arrangement für Gitarre)";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält typische Strumming-Patterns und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <section>
+
+  <p>
+    Dieses Arrangement basiert auf einem selbst erarbeiteten Noten- und Tab-Arrangement für Akustikgitarre.
+    Du lernst die Begleitung im typischen Singer-Songwriter-Stil mit Fokus auf Rhythmus und Akkordspiel.
+  </p>
+
+  <p class="info-box">
+    Du erhältst ein vollständiges PDF mit Noten, Tabs und Spielhinweisen.  
+    Ein Video-Tutorial ist aktuell nicht enthalten.
+  </p>
+
+</section>
+
+<hr>
+
+<section>
+
+  <h2>Lernziel</h2>
+  <ul>
+    <li>Sicheres Spielen eines modernen Pop-Strumming-Patterns</li>
+    <li>Begleitung im Singer-Songwriter-Stil</li>
+    <li>Rhythmusgefühl und Akkordwechsel verbessern</li>
+  </ul>
+
+</section>
+
+<section>
+
+  <h2>Spieltechnik</h2>
+  <ul>
+    <li>Down- und Upstroke Strumming</li>
+    <li>Dynamisches Spiel (leise / laut)</li>
+    <li>gleichmäßiger Groove im 4/4 Takt</li>
+  </ul>
+
+</section>
+
+<section>
+
+  <h2>Originalsong</h2>
+
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
+
+  <a href="https://www.youtube.com/watch?v=UAWcs5H-qgQ" class="normal-links" target="_blank" rel="noopener">
+    ▶ The A Team – Ed Sheeran (Original Video)
+  </a>
+
+</section>
+
+<hr>
+
+<section>
+
+  <h2>Inhalt</h2>
+  <ul>
+    <li>PDF Noten & Tabs</li>
+    <li>Komplette Songstruktur</li>
+    <li>Spielhinweise & Akkordabläufe</li>
+  </ul>
+
+</section>
+
+<section class="cta">
+
+  <a href="/checkout/the-a-team/" class="cta-button">
+    Jetzt herunterladen
+  </a>
+
+</section>
+</BaseLayout>

@@ -3,17 +3,16 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "The A Team - Ed Sheeran Gitarren Noten & TABs kaufen";
-const heading = "Ed Sheeran – The A Team | Gitarren Noten & TABs kaufen";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚The A Team‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "The A Team, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "The A Team – Ed Sheeran (Guitar Arrangement)";
+const heading = "The A Team – Ed Sheeran (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu The A Team. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "The A Team, Ed Sheeran, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-the-a-team/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/the-a-team/";
 
 const imageSrc = "/bilder/the_a_team_vorschau.png";
 const imageAlt = "The A Team – Vorschau";
-const price = "6.95";
+const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
@@ -21,6 +20,7 @@ const price = "6.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/the_a_team_preview.png";
 
 const contentHtml = `
+  <br />
   <p>
   <a
     href="https://www.youtube.com/watch?v=UAWcs5H-qgQ"
@@ -29,7 +29,7 @@ const contentHtml = `
     aria-label="YouTube Video zu The A Team ansehen"
     rel="noopener"
   >
-    ▶️ The A Team – auf YouTube ansehen
+    ▶️ The A Team – Ed Sheeran auf YouTube ansehen
   </a>
   </p>
 
@@ -45,7 +45,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „The A Team“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden undTABs + Guitar II + Bass Noten als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Gesangsnoten + Komplettes Arrangement als PDF-Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -54,7 +54,7 @@ const contentHtml = `
     Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -67,8 +67,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
