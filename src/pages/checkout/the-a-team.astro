@@ -10,6 +10,12 @@ const keywords = "The A Team, Ed Sheeran, Guitar Arrangement, Gitarren Tabs, PDF
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/the-a-team/";
 
+
+const productId = "TAT-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+const transactionId = `TAT-${Date.now()}`;
+
 const imageSrc = "/bilder/the_a_team_vorschau.png";
 const imageAlt = "The A Team – Vorschau";
 const price = "5.95";
@@ -98,6 +104,8 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
+    transactionId={transactionId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

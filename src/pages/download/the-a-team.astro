@@ -3,12 +3,17 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const pageTitle = "Download: The A Team – Guitar Arrangement";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+
+const productId = "TAT-001";
 ---
 
 <BaseLayout
   pageTitle={pageTitle}
   description={description}
   ogType="article"
+  bodyAttributes={{
+    "data-product-id": "TAT-001"
+  }}
 >
 
   <h1>Dein Download</h1>
@@ -58,5 +63,7 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
     <li>Keine Abo-Falle</li>
     <li>Nur für dich persönlich lizenziert</li>
   </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
 
 </BaseLayout>
