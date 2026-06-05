@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: A Horse With No Name – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "AHWNN-001"
+  }}
+>
+
+  <h1>Dein Download</h1>
+
+  <p>
+    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
+  </p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="/downloads/A%20Horse%20With%20No%20Name.pdf" download class="cta-button">
+        📄 A Horse With No Name – Noten & Tabulatur
+      </a>
+    </li>
+    <li>
+      <a href="/downloads/A%20Horse%20With%20No%20Name%20-%20Bass.pdf" download class="cta-button">
+        📄 A Horse With No Name – Bass Noten
+      </a>
+    </li>
+    <li>
+      <a href="/downloads/A%20Horse%20With%20No%20Name%20-%20Bongos.pdf" download class="cta-button">
+        📄 A Horse With No Name – Bongos
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+
+</BaseLayout>

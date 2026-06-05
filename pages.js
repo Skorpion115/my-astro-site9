@@ -333,7 +333,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/a-horse-with-no-name-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/a-horse-with-no-name/`,
     changefreq: "weekly",
     lastmod: today,
   },

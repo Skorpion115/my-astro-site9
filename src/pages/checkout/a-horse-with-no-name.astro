@@ -3,18 +3,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "A Horse With No Name – America Gitarren + Choir Noten & Pattern + Bassnoten + Bongonoten kaufen";
-const heading = "A Horse With No Name - Noten & Tabulaturen kaufen";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚A Horse With No Name‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "A Horse With No Name, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "A Horse With No Name – America (Guitar Arrangement)";
+const heading = "A Horse With No Name – America (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu A Horse With No Name. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "A Horse With No Name, America, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-a-horse-with-no-name/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/a-horse-with-no-name/";
+
+
+const productId = "AHWNN-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/a_horse_with_no_name_vorschau.jpg";
 const imageAlt = "A Horse With No Name – Vorschau";
-const price = "9,95";
+const price = "7.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
@@ -22,6 +26,7 @@ const price = "9,95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/a_horse_with_no_name_preview.png";
 
 const contentHtml = `
+  <br />
   <p>
   <a
     href="https://www.youtube.com/watch?v=2OTc4ZOsSSI"
@@ -30,30 +35,32 @@ const contentHtml = `
     aria-label="YouTube Video zu A Horse With No Name ansehen"
     rel="noopener"
   >
-    ▶️ A Horse With No Name – Guitar Tutorial auf YouTube ansehen
+    ▶️ A Horse With No Name – America auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „A Horse With No Name“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „A Horse With No Name“</strong>.
   </p>
-  <ul>
-    <li>Gitarren + Choir Noten</li>
-    <li>Bass Noten</li>
-    <li>Bongo Noten</li>
-  </ul>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs + Gesangsnoten + Komplettes Arrangement als PDF-Download.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -66,8 +73,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -96,6 +104,8 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
+    transactionId={transactionId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

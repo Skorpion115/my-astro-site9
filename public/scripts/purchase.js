@@ -1,9 +1,16 @@
 (function () {
-  if (sessionStorage.getItem("purchase_tracked")) return;
+  const productId = document.body?.dataset?.productId;
 
-  const productId = document.body.dataset.productId;
+  if (!productId) {
+    console.warn("purchase.js: missing productId");
+    return;
+  }
 
-  const transactionId = productId + "-" + Date.now();
+  const storageKey = `purchase_tracked_${productId}`;
+
+  if (sessionStorage.getItem(storageKey)) return;
+
+  const transactionId = `${productId}-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
 
   window.dataLayer = window.dataLayer || [];
 
@@ -15,5 +22,5 @@
     product_id: productId,
   });
 
-  sessionStorage.setItem("purchase_tracked", "true");
+  sessionStorage.setItem(storageKey, "true");
 })();
