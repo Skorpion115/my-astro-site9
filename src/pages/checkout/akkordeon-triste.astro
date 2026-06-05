@@ -9,6 +9,7 @@ const description = "Sichere Zahlung für das Akkordeon-Arrangement zu L'accord�
 const keywords = "L'accordéon triste, Akkordeon Arrangement, Akkordeon Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/akkordeon-triste/";
+const productId = "AKKTR-001";
 
 const imageSrc = "/bilder/Akkordeon_Triste_Vorschau.jpg";
 const imageAlt = "L'accordéon triste Vorschau";
@@ -110,6 +111,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

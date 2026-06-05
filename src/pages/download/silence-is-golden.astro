@@ -5,7 +5,13 @@ const pageTitle = "Download: Silence Is Golden – Guitar Arrangement";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} description={description} ogType="article">
+<BaseLayout pageTitle={pageTitle} 
+  description={description} 
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "SILGN-001"
+  }}
+>
   <h1>Dein Download</h1>
 
   <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>

@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Gitarren-Arrangement zu Silence Is
 const keywords = "Silence Is Golden, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/silence-is-golden/";
-
+const productId = "SILGN-001";
 const imageSrc = "/bilder/Silence_Is_Golden_Vorschau.jpg";
 const imageAlt = "Silence Is Golden – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Jazz-Gitarren-Arrangement zu Rose 
 const keywords = "Rose Room, Charlie Christian, Jazz Gitarre, Gitarren Solo, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/rose-room/";
-
+const productId = "ROSER-001";
 const imageSrc = "/bilder/Anfang.jpg";
 const imageAlt = "Rose Room – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Gitarren-Arrangement zu Ten Words.
 const keywords = "Ten Words, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/ten-words/";
-
+const productId = "TENWRD-001";
 const imageSrc = "/bilder/ten_words_vorschau.jpg";
 const imageAlt = "Ten Words Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

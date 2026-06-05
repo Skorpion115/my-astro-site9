@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Bluegrass-Banjo-Arrangement zu Nan
 const keywords = "Nancy Rowland, Snuffy Jenkins, Bluegrass Banjo, Banjo Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/nancy-rowland/";
-
+const productId = "NANCY-001";
 // const imageSrc = "/bilder/Nancy_Rowland_Vorschau.jpg";
 const imageAlt = "Nancy Rowland – Vorschau";
 const price = "2.50";
@@ -110,5 +110,6 @@ const contentHtml = `
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
+    productId={productId}
   />
 </BaseLayout>

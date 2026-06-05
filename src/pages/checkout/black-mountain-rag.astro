@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Bluegrass-Banjo-Arrangement zu Bla
 const keywords = "Black Mountain Rag, Traditionell, Bluegrass Banjo, Banjo Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/black-mountain-rag/";
-
+const productId = "BMR-001";
 // const imageSrc = "/bilder/Nancy_Rowland_Vorschau.jpg";
 const imageAlt = "Black Mountain Rag – Vorschau";
 const price = "2.50";
@@ -102,6 +102,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

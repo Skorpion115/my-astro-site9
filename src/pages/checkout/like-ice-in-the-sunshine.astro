@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Gitarren-Arrangement zu Like Ice I
 const keywords = "Like Ice In The Sunshine, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/like-ice-in-the-sunshine/";
-
+const productId = "LIKE-001";
 const imageSrc = "/bilder/Like_Ice_Vorschau.jpg";
 const imageAlt = "Like Ice In The Sunshine – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

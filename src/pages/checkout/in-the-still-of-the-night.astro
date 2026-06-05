@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Keyboard-Arrangement zu In The Sti
 const keywords = "In The Still Of The Night, Harry Stoneham, Keyboard Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/in-the-still-of-the-night/";
-
+const productId = "ITSO-001";
 const imageSrc = "/bilder/In_The_Still_Vorschau.png";
 const imageAlt = "In The Still Of The Night – Vorschau";
 const price = "4.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

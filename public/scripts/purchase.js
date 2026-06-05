@@ -5,8 +5,7 @@
   const storageKey = `purchase_tracked_${productId}`;
   if (sessionStorage.getItem(storageKey)) return;
 
-  const transactionId =
-    `${productId}-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+  const transactionId = `${productId}-${Date.now()}`;
 
   window.dataLayer = window.dataLayer || [];
 

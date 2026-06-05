@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Bluegrass-Banjo-Arrangement zu Cri
 const keywords = "Cripple Creek, Traditionell, Bluegrass Banjo, Banjo Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/cripple-creek/";
-
+const productId = "CRIPPLE-001";
 // const imageSrc = "/bilder/Nancy_Rowland_Vorschau.jpg";
 const imageAlt = "Cripple Creek – Vorschau";
 const price = "2.50";
@@ -115,5 +115,6 @@ const contentHtml = `
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
+    productId={productId}
   />
 </BaseLayout>

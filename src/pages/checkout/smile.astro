@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Jazz-Gitarren-Arrangement zu Smile
 const keywords = "Smile, Charlie Chaplin, Jazz Gitarre, Gitarren Solo, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/smile/";
-
+const productId = "SMILE-001";
 const imageSrc = "/bilder/Smile_Vorschau.jpg";
 const imageAlt = "Smile – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

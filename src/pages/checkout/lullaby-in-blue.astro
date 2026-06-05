@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Keyboard-Arrangement zu Lullaby In
 const keywords = "Lullaby In Blue, Organ Style, Klaus Wunderlich, Keyboard Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/lullaby-in-blue/";
-
+const productId = "LULLAB-001";
 const imageSrc = "/bilder/Lullaby_In_Blue_Vorschau.jpg";
 const imageAlt = "Lullaby In Blue – Vorschau";
 const price = "7.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

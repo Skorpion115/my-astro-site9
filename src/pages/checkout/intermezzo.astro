@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Keyboard-Arrangement zu Intermezzo
 const keywords = "Intermezzo, Organ Style, Klaus Wunderlich, Keyboard Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/intermezzo/";
-
+const productId = "INTER-001";
 const imageSrc = "/bilder/intermezzo_Vorschau.png";
 const imageAlt = "Intermezzo – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

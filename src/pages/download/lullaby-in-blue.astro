@@ -5,7 +5,13 @@ const pageTitle = "Download: Lullaby In Blue – Klaus Wunderlich";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} description={description} ogType="article">
+<BaseLayout pageTitle={pageTitle} 
+  description={description} 
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "LULLAB-001"
+  }}
+>
   <h1>Dein Download</h1>
 
   <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>

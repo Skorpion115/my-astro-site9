@@ -13,8 +13,8 @@ const returnUrl = "https://www.musicstudio-ziebart.de/download/the-a-team/";
 
 const productId = "TAT-001";
 
-// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
-const transactionId = `TAT-${Date.now()}`;
+// 👉 WICHTIG: echte eindeutig Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/the_a_team_vorschau.png";
 const imageAlt = "The A Team – Vorschau";
@@ -105,7 +105,6 @@ const contentHtml = `
     price={price}
     returnUrl={returnUrl}
     productId={productId}
-    transactionId={transactionId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

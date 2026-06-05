@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Banjo-Arrangement zu Dear Old Dixi
 const keywords = "Dear Old Dixie, Earl Scruggs, Banjo Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/dear-old-dixie/";
-
+const productId = "DEAR-001";
 const imageSrc = "/bilder/Dear_Old_Dixie_Vorschau.png";
 const imageAlt = "Dear Old Dixie – Vorschau";
 const price = "5.95";
@@ -111,5 +111,6 @@ const contentHtml = `
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
+    productId={productId}
   />
 </BaseLayout>

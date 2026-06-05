@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Gitarren-Arrangement zu City Of Ne
 const keywords = "City Of NewOrleans, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/city-of-neworleans/";
-
+const productId = "CITY-001";
 const imageSrc = "/bilder/City_Of_NewOrleans_Vorschau.png";
 const imageAlt = "City Of NewOrleans – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

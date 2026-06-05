@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Keyboard-Arrangement zu Kleiner Sc
 const keywords = "Kleiner Schelm, Organ Style, Klaus Wunderlich, Keyboard Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/kleiner-schelm/";
-
+const productId = "SCHELM-001";
 const imageSrc = "/bilder/Kleiner_Schelm_Vorschau.jpg";
 const imageAlt = "Kleiner Schelm – Vorschau";
 const price = "7.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Keyboard-Arrangement zu H - schisc
 const keywords = "H - schisch, Organ Style, Klaus Wunderlich, Keyboard Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/h-schisch/";
-
+const productId = "HSCH-001";
 const imageSrc = "/bilder/H_schisch_Vorschau.png";
 const imageAlt = "H - schisch – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

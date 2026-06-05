@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Jazz-Gitarren-Arrangement zu Bossa
 const keywords = "Bossa Dorado, Dorado Schmitt, Jazz Gitarre, Gitarren Solo, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/bossa-dorado/";
-
+const productId = "BD-001";
 const imageSrc = "/bilder/bossa_dorado_vorschau.png";
 const imageAlt = "Bossa Dorado – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

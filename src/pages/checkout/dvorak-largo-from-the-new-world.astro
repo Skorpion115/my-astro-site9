@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Piano-Solo von Antonín Dvořák. 
 const keywords = "Antonín Dvořák, Largo, Symphony No. 9, From the New World, Piano, Solo, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/dvorak-largo-from-the-new-world/";
-
+const productId = "LARGO-001";
 // const imageSrc = "/bilder/dvorak_aus_der_neuen_welt_largo_vorschau.png";
 const imageAlt = "Antonín Dvořák - Largo from Symphony No. 9 'From the New World' – Vorschau";
 const price = "5.95";
@@ -115,5 +115,6 @@ const contentHtml = `
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
+    productId={productId}
   />
 </BaseLayout>
