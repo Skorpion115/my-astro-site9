@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Gitarren-Arrangement zu The Lion S
 const keywords = "The Lion Sleeps Tonight, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/the-lion-sleeps-tonight/";
-
+const productId = "LIONS-001";
 const imageSrc = "/bilder/The_Lion_Sleeps_Tonight-Vorschau.jpg";
 const imageAlt = "The Lion Sleeps Tonight – Vorschau";
 const price = "5.95";
@@ -110,6 +110,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

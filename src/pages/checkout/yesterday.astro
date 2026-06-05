@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Gitarren-Arrangement zu Yesterday.
 const keywords = "Yesterday, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/yesterday/";
-
+const productId = "YEST-001";
 const imageSrc = "/bilder/Yesterday_Vorschau.jpg";
 const imageAlt = "Yesterday – Vorschau";
 const price = "5.95";
@@ -111,5 +111,6 @@ const contentHtml = `
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
+    productId={productId}
   />
 </BaseLayout>

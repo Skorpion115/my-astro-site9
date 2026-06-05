@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Bluegrass-Banjo-Arrangement zu Tra
 const keywords = "Train 45, Traditionell, Bluegrass Banjo, Banjo Arrangement, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/train-45/";
-
+const productId = "TRAIN-001";
 // const imageSrc = "/bilder/Nancy_Rowland_Vorschau.jpg";
 const imageAlt = "Train 45 – Vorschau";
 const price = "2.50";
@@ -115,5 +115,6 @@ const contentHtml = `
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
+    productId={productId}
   />
 </BaseLayout>

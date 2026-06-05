@@ -9,7 +9,7 @@ const description = "Sichere Zahlung für das Jazz-Gitarren-Arrangement zu What 
 const keywords = "What A Wonderful World, Louis Armstrong, Jazz Gitarre, Gitarren Solo, PDF Download";
 const pageUrl = getPageUrl(Astro);
 const returnUrl = "https://www.musicstudio-ziebart.de/download/what-a-wonderful-world/";
-
+const productId = "WAWW-001";
 const imageSrc = "/bilder//What_A_Wonderful_World_Vorschau.png";
 const imageAlt = "What A Wonderful World – Vorschau";
 const price = "5.95";
@@ -111,5 +111,6 @@ const contentHtml = `
     price={price}
     returnUrl={returnUrl}
     contentHtml={contentHtml}
+    productId={productId}
   />
 </BaseLayout>
