@@ -3,14 +3,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Behind Blue Eyes - Limp Biskit Gitarren Noten & Tabs";
-const heading = "Limp Biskit – Behind Blue Eyes | Gitarren Noten & TABs";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚Behind Blue Eyes‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Behind Blue Eyes, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Behind Blue Eyes – Limp Bizkit (Guitar Arrangement)";
+const heading = "Behind Blue Eyes – Limp Bizkit (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Behind Blue Eyes. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Behind Blue Eyes, Limp Bizkit, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-behind-blue-eyes/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/behind-blue-eyes/";
+
+
+const productId = "BE-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/behind_blue_eyes_vorschau.png";
 const imageAlt = "Behind Blue Eyes – Vorschau";
@@ -22,6 +26,10 @@ const price = "6.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/behind_blue_eyes_preview.png";
 
 const contentHtml = `
+  <br />
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
   <p>
   <a
     href="https://www.youtube.com/watch?v=-0RQU0LyJqg"
@@ -30,7 +38,7 @@ const contentHtml = `
     aria-label="YouTube Video zu Behind Blue Eyes ansehen"
     rel="noopener"
   >
-    ▶️ Behind Blue Eyes – auf YouTube ansehen
+    ▶️ Behind Blue Eyes – Limp Bizkit auf YouTube ansehen
   </a>
   </p>
 
@@ -46,7 +54,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Behind Blue Eyes“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Gesangsnoten + Lead Sheet als PDF-Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -55,7 +63,7 @@ const contentHtml = `
     Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -68,8 +76,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -98,6 +107,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

@@ -5,11 +5,13 @@ const pageTitle = "Download: Lullaby In Blue – Klaus Wunderlich";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} 
-  description={description} 
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "LULLAB-001"
+    "data-product-id": "LULLAB-001",
+    "data-price": "7.95"
   }}
 >
   <h1>Dein Download</h1>
@@ -20,7 +22,11 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 
   <ul>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1QjSpbFosmxgN_jmABrIMuqvzhorzz57O"  class="cta-button" class="cta-button">
+      <a
+        href="https://drive.google.com/uc?export=download&id=1QjSpbFosmxgN_jmABrIMuqvzhorzz57O"
+        class="cta-button"
+        class="cta-button"
+      >
         📄 Lullaby In Blue - Klaus Wunderlich
       </a>
     </li>
@@ -49,4 +55,6 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       Kurse zum selber lernen: Alle Lernmodule auf einen Blick
     </a>
   </p>
+
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

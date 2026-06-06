@@ -5,11 +5,13 @@ const pageTitle = "Download: Intermezzo";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} 
-  description={description} 
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "INTER-001"
+    "data-product-id": "INTER-001",
+    "data-price": "5.95"
   }}
 >
   <h1>Dein Download</h1>
@@ -18,17 +20,19 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 
   <h2>Download</h2>
 
-   <ul>
+  <ul>
     <li>
       <a href="/downloads/Intermezzo-Orgel.pdf" download class="cta-button">
         🎵 Intermezzo – Noten
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1LUTGNnLkDNXUvSj8z_rZSB5X0ghuMqks"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1LUTGNnLkDNXUvSj8z_rZSB5X0ghuMqks"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Intermezzo – Mastering mp3
       </a>
     </li>
@@ -47,4 +51,6 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       Kurse zum selber lernen: Alle Lernmodule auf einen Blick
     </a>
   </p>
+
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

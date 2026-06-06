@@ -5,11 +5,13 @@ const pageTitle = "Download: City Of NewOrleans – Guitar Arrangement";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} 
-  description={description} 
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "CITY-001"
+    "data-product-id": "CITY-001",
+    "data-price": "5.95",
   }}
 >
   <h1>Dein Download</h1>
@@ -43,4 +45,6 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
     <li>Keine Abo-Falle</li>
     <li>Nur für dich persönlich lizenziert</li>
   </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

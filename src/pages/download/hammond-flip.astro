@@ -10,29 +10,33 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
   description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "HF-001"
+    "data-product-id": "HF-001",
+    "data-price": "7.95"
   }}
 >
-
   <h1>Dein Download</h1>
 
-  <p>
-    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
-  </p>
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
 
   <h2>Download</h2>
 
   <ul>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1_YgN8GnDYQUKsU6ZcuH_3eps6tlNPGmx"  class="cta-button" class="cta-button">
+      <a
+        href="https://drive.google.com/uc?export=download&id=1_YgN8GnDYQUKsU6ZcuH_3eps6tlNPGmx"
+        class="cta-button"
+        class="cta-button"
+      >
         📄 Hammond Flip - Klaus Wunderlich
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1t78ztmJQ1Qpx6NErVMyF7jJn0zm6cvoX"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1t78ztmJQ1Qpx6NErVMyF7jJn0zm6cvoX"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Hammond Flip – Play Along
       </a>
     </li>
@@ -52,4 +56,5 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
     </a>
   </p>
 
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

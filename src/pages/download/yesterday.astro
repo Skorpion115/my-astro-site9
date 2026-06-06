@@ -5,11 +5,13 @@ const pageTitle = "Download: Yesterday – Guitar Arrangement";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} 
-  description={description} 
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "YEST-001"
+    "data-product-id": "YEST-001",
+    "data-price": "5.95"
   }}
 >
   <h1>Dein Download</h1>
@@ -30,10 +32,12 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1MAQpVBZtTgjpD5-2jI0rRPijYT9PHh0_"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1MAQpVBZtTgjpD5-2jI0rRPijYT9PHh0_"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Yesterday – Mastering mp3
       </a>
     </li>
@@ -45,4 +49,6 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
     <li>Keine Abo-Falle</li>
     <li>Nur für dich persönlich lizenziert</li>
   </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

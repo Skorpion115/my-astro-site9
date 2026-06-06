@@ -10,15 +10,13 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
   description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "DEAR-001"
+    "data-product-id": "DEAR-001",
+    "data-price": "5.95"
   }}
 >
-
   <h1>Dein Download</h1>
 
-  <p>
-    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
-  </p>
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
 
   <h2>Download</h2>
 
@@ -29,22 +27,25 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1MshwN0WKEZpunoC2pX1yrfP3B1nhgiBW"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1MshwN0WKEZpunoC2pX1yrfP3B1nhgiBW"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Dear Old Dixie – Backing Track
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1pxojEDmRTBx8CZKYgE3u3wYgf2S5X1U8"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1pxojEDmRTBx8CZKYgE3u3wYgf2S5X1U8"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Dear Old Dixie – Mastering mp3
       </a>
     </li>
-    
   </ul>
 
   <h2>Hinweise</h2>
@@ -61,4 +62,5 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
     </a>
   </p>
 
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

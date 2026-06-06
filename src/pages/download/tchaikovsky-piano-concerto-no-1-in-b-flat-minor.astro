@@ -3,7 +3,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "Download – Klavierkonzert Nr. 1 in Bbm – Klavier Solo";
-const description = "Download der Noten »Klavierkonzert Nr. 1 in Bbm«. Vielen Dank für Ihren Kauf.";
+const description =
+  "Download der Noten »Klavierkonzert Nr. 1 in Bbm«. Vielen Dank für Ihren Kauf.";
 const keywords = "Klavierkonzert Nr. 1 in Bbm, Klavier Solo, Noten PDF";
 const pageUrl = getPageUrl(Astro);
 const downloads = [
@@ -28,14 +29,16 @@ const downloads = [
   ogUrl={pageUrl}
   noindex={true}
   bodyAttributes={{
-    "data-product-id": "PCONC-001"
+    "data-product-id": "PCONC-001",
+    "data-price": "5.95",
   }}
 >
   <h1>Vielen Dank für deinen Kauf!</h1>
 
   <p>
-    Du kannst deine <strong>Noten „Klavierkonzert Nr. 1 in Bbm – Klavier Solo“</strong> jetzt
-    herunterladen.
+    Du kannst deine <strong
+      >Noten „Klavierkonzert Nr. 1 in Bbm – Klavier Solo“</strong
+    > jetzt herunterladen.
   </p>
 
   <p>
@@ -65,11 +68,12 @@ const downloads = [
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
 
-  <p class="vat-note">
-    Rechnung mit auf Anfrage per E-Mail erhältlich.
-  </p>
+  <p class="vat-note">Rechnung mit auf Anfrage per E-Mail erhältlich.</p>
 
   <p>
-    <a href="/kurse/musikbibliothek/" class="normal-links">← Zurück zur Musikbibliothek</a>
+    <a href="/kurse/musikbibliothek/" class="normal-links"
+      >← Zurück zur Musikbibliothek</a
+    >
   </p>
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

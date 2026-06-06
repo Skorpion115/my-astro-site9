@@ -5,11 +5,13 @@ const pageTitle = "Download: Take Good Care Of My Baby – Guitar Arrangement";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} 
-  description={description} 
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "TAKEGC-001"
+    "data-product-id": "TAKEGC-001",
+    "data-price": "5.95"
   }}
 >
   <h1>Dein Download</h1>
@@ -25,18 +27,22 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1ABvwLJT44oSwGtwgv5pRN2VK3exhXbYS"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1ABvwLJT44oSwGtwgv5pRN2VK3exhXbYS"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Take Good Care Of My Baby – Komplettes Arrangment ZIP
-        </a>
+      </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=18g2WPwbOY2IS5OZzG2t0f24IBQq-QKzi"
+      <a
+        href="https://drive.google.com/uc?export=download&id=18g2WPwbOY2IS5OZzG2t0f24IBQq-QKzi"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Take Good Care Of My Baby – Mastering
       </a>
     </li>
@@ -48,4 +54,6 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
     <li>Keine Abo-Falle</li>
     <li>Nur für dich persönlich lizenziert</li>
   </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

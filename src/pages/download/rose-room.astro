@@ -10,15 +10,13 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
   description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "ROSER-001"
+    "data-product-id": "ROSER-001",
+    "data-price": "5.95"
   }}
 >
-
   <h1>Dein Download</h1>
 
-  <p>
-    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
-  </p>
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
 
   <h2>Download</h2>
 
@@ -29,7 +27,11 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       </a>
     </li>
     <li>
-      <a href="/downloads/Rose_Room_RhythGuitar.pdf" download class="cta-button">
+      <a
+        href="/downloads/Rose_Room_RhythGuitar.pdf"
+        download
+        class="cta-button"
+      >
         📄 Rose Room – Noten & Tabulatur Rhythmus Gitarre
       </a>
     </li>
@@ -39,22 +41,25 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1H2FHrduavM4X6sCkY8oj20Y4BlJzo_Xt"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1H2FHrduavM4X6sCkY8oj20Y4BlJzo_Xt"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Rose Room – Backing Track
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1zuALZWdEh62ylIP3JpZT-8GaGyHbRbHp"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1zuALZWdEh62ylIP3JpZT-8GaGyHbRbHp"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 Rose Room – Mastering mp3
       </a>
     </li>
-    
   </ul>
 
   <h2>Hinweise</h2>
@@ -71,4 +76,5 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
     </a>
   </p>
 
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

@@ -5,11 +5,13 @@ const pageTitle = "Download: Black Mountain Rag";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} 
-  description={description} 
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "BMR-001"
+    "data-product-id": "BMR-001",
+    "data-price": "2.50"
   }}
 >
   <h1>Dein Download</h1>
@@ -50,4 +52,6 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       Kurse zum selber lernen: Alle Lernmodule auf einen Blick
     </a>
   </p>
+
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

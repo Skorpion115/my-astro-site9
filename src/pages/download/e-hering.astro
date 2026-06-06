@@ -5,11 +5,13 @@ const pageTitle = "Download: E - hering – Klaus Wunderlich";
 const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
-<BaseLayout pageTitle={pageTitle} 
-  description={description} 
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "EHER-001"
+    "data-product-id": "EHER-001",
+    "data-price": "5.95"
   }}
 >
   <h1>Dein Download</h1>
@@ -25,18 +27,22 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=17rHxBSNWNZYvbKpMdQdGTpjtFLGjnESX"
+      <a
+        href="https://drive.google.com/uc?export=download&id=17rHxBSNWNZYvbKpMdQdGTpjtFLGjnESX"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 E-hering – Mastering mp3
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=156y2BbjH0WYX1kuDnmZI-zyNB4wOg4Gm"
+      <a
+        href="https://drive.google.com/uc?export=download&id=156y2BbjH0WYX1kuDnmZI-zyNB4wOg4Gm"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 E-hering – BackingTrack mp3
       </a>
     </li>
@@ -55,4 +61,6 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
       Kurse zum selber lernen: Alle Lernmodule auf einen Blick
     </a>
   </p>
+
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

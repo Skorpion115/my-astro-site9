@@ -10,29 +10,33 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
   description={description}
   ogType="article"
   bodyAttributes={{
-    "data-product-id": "ITSO-001"
+    "data-product-id": "ITSO-001",
+    "data-price": "4.95"
   }}
 >
-
   <h1>Dein Download</h1>
 
-  <p>
-    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
-  </p>
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
 
   <h2>Download</h2>
 
   <ul>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1R6Rp_dqlqdG7GAbJrr0Fh19fB2IfbZqO"  class="cta-button" class="cta-button">
+      <a
+        href="https://drive.google.com/uc?export=download&id=1R6Rp_dqlqdG7GAbJrr0Fh19fB2IfbZqO"
+        class="cta-button"
+        class="cta-button"
+      >
         📄 Hammond Flip - Klaus Wunderlich
       </a>
     </li>
     <li>
-      <a href="https://drive.google.com/uc?export=download&id=1JRSI4fQ63G2Kf_nAFT-m2Ve-Szgr8nK0"
+      <a
+        href="https://drive.google.com/uc?export=download&id=1JRSI4fQ63G2Kf_nAFT-m2Ve-Szgr8nK0"
         class="cta-button"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         🎵 In The Still Of The Night – Mastering mp3
       </a>
     </li>
@@ -52,4 +56,5 @@ const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
     </a>
   </p>
 
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>
