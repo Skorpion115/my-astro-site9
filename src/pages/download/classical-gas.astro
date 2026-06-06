@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Classical Gas – Mason Williams";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "CLAG-001",
+    "data-price": "6.95"
+  }}
+>
+
+  <h1>Dein Download</h1>
+
+  <p>
+    Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.
+  </p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="/notes/Classical%20Gas%20-%20Guitar%20Orchestr.pdf" download  class="cta-button">
+        📄 Classical Gas – Noten
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+
+</BaseLayout>

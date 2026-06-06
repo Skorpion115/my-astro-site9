@@ -3,14 +3,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Classical Gas - Mason Williams Gitarren Noten";
-const heading = "Mason Williams – Classical Gas | Gitarren Noten";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚Classical Gas‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Classical Gas, Noten, Gitarre, PDF";
+const pageTitle = "Classical Gas – Mason Williams";
+const heading = "Classical Gas – Mason Williams";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Classical Gas. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Classical Gas, Mason Williams, Guitar Arrangement, Gitarren Noten, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-classical-gas/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/classical-gas/";
+
+
+const productId = "CLASG-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/classical_gas_vorschau.png";
 const imageAlt = "Classical Gas – Vorschau";
@@ -22,15 +26,19 @@ const price = "6.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/classical_gas_preview.png";
 
 const contentHtml = `
+  <br />
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
   <p>
   <a
     href="https://www.youtube.com/watch?v=3NE6X4IQNA4"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu Classical Gas ansehen"
+    aria-label="YouTube Video zu Behind Blue Eyes ansehen"
     rel="noopener"
   >
-    ▶️ Classical Gas – auf YouTube ansehen
+    ▶️ Classical Gas – Mason Williams auf YouTube ansehen
   </a>
   </p>
 
@@ -43,7 +51,7 @@ const contentHtml = `
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten zum Song „Classical Gas“</strong>.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Classical Gas“</strong>.
   </p>
   <p>
     Gitarren-Noten als PDF-Download.
@@ -68,8 +76,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -98,6 +107,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

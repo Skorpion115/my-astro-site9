@@ -353,7 +353,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/classical-gas-noten/`,
+    loc: `${SITE_URL}/checkout/classical-gas/`,
     changefreq: "weekly",
     lastmod: today,
   },
