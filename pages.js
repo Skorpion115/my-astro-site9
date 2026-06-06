@@ -338,7 +338,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/vincent-don-mclean-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/vincent/`,
     changefreq: "weekly",
     lastmod: today,
   },

@@ -3,18 +3,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Vincent - Don McLean Gitarren Noten & TABs kaufen";
-const heading = "Don McLean – Vincent | Gitarren Noten & TABs kaufen";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚Vincent‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Vincent, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Vincent – Don McLean (Guitar Arrangement)";
+const heading = "Vincent – Don McLean (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Vincent. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Vincent, Don McLean, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-vincent/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/vincent/";
+
+
+const productId = "VINC-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/vincent_vorschau.png";
 const imageAlt = "Vincent – Vorschau";
-const price = "6.95";
+const price = "7.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
@@ -22,6 +26,10 @@ const price = "6.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/vincent_preview.png";
 
 const contentHtml = `
+  <br />
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
   <p>
   <a
     href="https://www.youtube.com/watch?v=oxHnRfhDmrk"
@@ -30,29 +38,32 @@ const contentHtml = `
     aria-label="YouTube Video zu Vincent ansehen"
     rel="noopener"
   >
-    ▶️ Vincent – Guitar Tutorial auf YouTube ansehen
+    ▶️ Vincent – Don McLean auf YouTube ansehen
   </a>
   </p>
+
+  <p><strong>Digitales Produkt (PDF Download)</strong></p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
   <p>
-    Nach der Zahlung erhältst du sofortigen Zugriff auf die PDF Downloads. <br />
     Perfekt für Gitarristen, die den Song lernen möchten!
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Vincent“</strong> – speziell erstellt für den Unterricht und das Selbststudium.
+    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Vincent“</strong>.
   </p>
-  <ul>
-    <li>Gitarren Noten & TABs</li>
-    <li>Lead Sheet</li>
-  </ul>
+  <p>
+    Gitarren-Noten mit Akkorden und TABs + Gesangsnoten als PDF-Download.
+  </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
   <p>
-    Nach der erfolgreichen PayPal-Zahlung erhältst du sofort Zugriff auf die Downloads.
+    Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -65,8 +76,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -95,6 +107,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>
