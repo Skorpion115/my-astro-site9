@@ -3,14 +3,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Ferry Across The Mersey - Gary & The Pacemakers Gitarren Noten & Tabs";
-const heading = "Limp Biskit – Ferry Across The Mersey | Gitarren Noten & TABs";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚Ferry Across The Mersey‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Ferry Across The Mersey, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Ferry Across The Mersey – Gerry & The Pacemakers (Guitar Arrangement)";
+const heading = "Ferry Across the Mersey – Gerry And The Pacemakers (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Behind Blue Eyes. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Behind Blue Eyes, Limp Bizkit, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-ferry-across-the-mersey/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/ferry-across-the-mersey/";
+
+
+const productId = "FERRY-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/ferry_across_the_mersey_vorschau.png";
 const imageAlt = "Ferry Across The Mersey – Vorschau";
@@ -22,6 +26,10 @@ const price = "9.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/ferry_across_the_mersey_preview.png";
 
 const contentHtml = `
+  <br />
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
   <p>
   <a
     href="https://www.youtube.com/watch?v=08083BNaYcA"
@@ -30,7 +38,7 @@ const contentHtml = `
     aria-label="YouTube Video zu Ferry Across The Mersey ansehen"
     rel="noopener"
   >
-    ▶️ Ferry Across The Mersey – auf YouTube ansehen
+    ▶️ Ferry Across The Mersey – Gerry & The Pacemakers auf YouTube ansehen
   </a>
   </p>
 
@@ -46,7 +54,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Ferry Across The Mersey“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs + Komplettes Arrangement als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Gesangsnoten + komplettes Arrangment als PDF-Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -55,7 +63,7 @@ const contentHtml = `
     Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -68,8 +76,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -98,6 +107,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>
