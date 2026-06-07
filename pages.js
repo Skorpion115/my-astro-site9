@@ -368,7 +368,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/father-and-son-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/father-and-son/`,
     changefreq: "weekly",
     lastmod: today,
   },

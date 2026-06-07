@@ -3,29 +3,36 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Father And Son - Cat Stevens Gitarren Noten & Tabs";
-const heading = "Father And Son - Cat Stevens Gitarren Noten & TABs";
-const description = "Kaufe die Noten & Tabulaturen für ‚Father And Son‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Father And Son, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Father And Soun – Cat Stevens (Guitar Arrangement)";
+const heading = "Father And Son – Cat Stevens (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Father And Son. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Behind Blue Eyes, Limp Bizkit, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-father-and-son/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/father-and-son/";
+
+
+const productId = "FAS-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/father_and_son_vorschau.png";
 const imageAlt = "Father And Son – Vorschau";
-const price = "9.95";
+const price = "8.95";
 
-//Open-Graph-Bild für diese Produktseite.
-// Wird von Google, Social Media und Merchant Center
-// als Hauptbild für Vorschau und Produktdarstellung verwendet.
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/father_and_son_preview.png";
 
 const contentHtml = `
+  <br />
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
   <p>
   <a
     href="https://www.youtube.com/watch?v=P6zaCV4niKk"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu Father And Son ansehen"
+    aria-label="YouTube Video zu More Than Words ansehen"
     rel="noopener"
   >
     ▶️ Father And Son – Cat Stevens auf YouTube ansehen
@@ -44,7 +51,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Father And Son“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs + Komplettes Arrangement als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Gesangsnoten + komplette Arrangment als PDF-Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -53,7 +60,7 @@ const contentHtml = `
     Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -66,8 +73,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -96,6 +104,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>
