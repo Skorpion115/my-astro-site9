@@ -403,7 +403,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/in-the-year-2525-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/in-the-year-2525/`,
     changefreq: "weekly",
     lastmod: today,
   },
