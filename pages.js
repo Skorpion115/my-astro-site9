@@ -358,12 +358,12 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/ferry-across-the-mersey-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/ferry-across-the-mersey/`,
     changefreq: "weekly",
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/more-than-words-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/more-than-words/`,
     changefreq: "weekly",
     lastmod: today,
   },

@@ -3,14 +3,18 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "More Than Words - Extreme Gitarren Noten & Tabs";
-const heading = "Extreme – More Than Words | Gitarren Noten & TABs";
-const description =
-  "Kaufe die Noten & Tabulaturen für ‚More Than Words‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "More Than Words, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "More Than Words – Extreme (Guitar Arrangement)";
+const heading = "More Than Words – Extrem (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu More Than Words. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Behind Blue Eyes, Limp Bizkit, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl =
-  "https://www.musicstudio-ziebart.de/kurse/thanks-more-than-words/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/more-than-words/";
+
+
+const productId = "MTW-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/more_than_words_vorschau.png";
 const imageAlt = "More Than Words – Vorschau";
@@ -22,6 +26,10 @@ const price = "8.95";
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/more_than_words_preview.png";
 
 const contentHtml = `
+  <br />
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
   <p>
   <a
     href="https://www.youtube.com/watch?v=UrIiLvg58SY"
@@ -46,7 +54,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „More Than Words“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs + Gesang als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Gesangsnoten als PDF-Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -55,7 +63,7 @@ const contentHtml = `
     Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -68,8 +76,9 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -98,6 +107,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>
