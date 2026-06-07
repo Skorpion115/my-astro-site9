@@ -3,7 +3,8 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 import { getPageUrl } from "../../../utils/getPageUrl.js";
 
 const pageTitle = "E-Gitarre Lernmodule";
-const description = "Lerne E-Gitarre mit strukturierten Lernmodulen: Strumming, Fingerstyle, Country und Blues – nach Stil und Level sortiert.";
+const description =
+  "Lerne E-Gitarre mit strukturierten Lernmodulen: Strumming, Fingerstyle, Country und Blues – nach Stil und Level sortiert.";
 const pageUrl = getPageUrl(Astro);
 ---
 
@@ -16,23 +17,20 @@ const pageUrl = getPageUrl(Astro);
   ogUrl={pageUrl}
   ogType="website"
 >
-
   <p>
-    Wähle deinen Lernweg und entwickle deine E-Gitarrenfähigkeiten Schritt für Schritt.
-    Alle Inhalte basieren auf praxisnahen Arrangements und rhythmischen Spieltechniken.
+    Wähle deinen Lernweg und entwickle deine E-Gitarrenfähigkeiten Schritt für
+    Schritt. Alle Inhalte basieren auf praxisnahen Arrangements und rhythmischen
+    Spieltechniken.
   </p>
 
   <!-- 🔷 Lernwege / Kategorien -->
   <h2>Lernwege</h2>
 
   <div class="card-grid">
-
     <div class="basis-card">
-      <h3>🎸 Strumming & Rhythm Guitar</h3>
+      <h3>🎸 Strumming & Rhythm E-Guitar</h3>
 
-      <p>
-        Down- und Upstroke-Techniken für Pop Begleitung.
-      </p>
+      <p>Down- und Upstroke-Techniken für Pop Begleitung.</p>
 
       <ul>
         <li>
@@ -40,21 +38,22 @@ const pageUrl = getPageUrl(Astro);
             Take Good Care Of My Baby – Bobby Vee
           </a>
         </li>
-        
+        <li>
+          <a href="/arrangements/hotel-california/">
+            Hotel California – Eagles
+          </a>
+        </li>
       </ul>
     </div>
 
-    
     <div class="basis-card">
       <h3>🎸 E-Gitarren Solos</h3>
 
       <p>E-Gitarren Solos für E-Gitarristen.</p>
-      
+
       <ul>
         <li>
-          <a href="/arrangements/ten-words/">
-            Ten Words – Joe Satriani
-          </a>
+          <a href="/arrangements/ten-words/"> Ten Words – Joe Satriani </a>
         </li>
       </ul>
     </div>
@@ -74,7 +73,6 @@ const pageUrl = getPageUrl(Astro);
         Jetzt lernen
       </a>
     </div> -->
-
   </div>
 
   <!-- 🔷 Optional: Erklärung -->
@@ -87,7 +85,7 @@ const pageUrl = getPageUrl(Astro);
   </ul>
 
   <p>
-    Alle Arrangements sind nach Schwierigkeitsgrad aufgebaut und sofort spielbar.
+    Alle Arrangements sind nach Schwierigkeitsgrad aufgebaut und sofort
+    spielbar.
   </p>
-
 </BaseLayout>

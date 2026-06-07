@@ -3,23 +3,25 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Hotel California - Eagles Gitarren Noten & Tabs";
-const heading = "Hotel California - Eagles Gitarren Noten & TABs";
-const description = "Kaufe die Noten & Tabulaturen für ‚Hotel California‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Hotel California, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Hotel California – Guitar Arrangement";
+const heading = "Hotel California – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Take Good Care Of My Baby. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Hotel California, Eagles, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-hotel-california/";
-
+const returnUrl = "https://www.musicstudio-ziebart.de/download/hotel-california/";
+const productId = "HOTEL-001";
 const imageSrc = "/bilder/hotel_california_vorschau.png";
-const imageAlt = "Hotel California – Vorschau";
+const imageAlt = "Hotel California Vorschau";
 const price = "9.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
-const ogImage = "https://www.musicstudio-ziebart.de/bilder/hotel_california_preview.png";
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/hotel_california_preview.png"
 
 const contentHtml = `
+  <br />
+  
   <p>
   <a
     href="https://www.youtube.com/watch?v=dLl4PZtxia8"
@@ -44,7 +46,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Hotel California“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs + Gitarren Solo + Bass Noten als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Komplettes Arrangment als PDF Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -53,7 +55,7 @@ const contentHtml = `
     Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -68,7 +70,7 @@ const contentHtml = `
   </p>
 
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/musikbibliothek/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -97,6 +99,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

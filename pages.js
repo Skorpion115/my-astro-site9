@@ -373,7 +373,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/hotel-california-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/hotel-california/`,
     changefreq: "weekly",
     lastmod: today,
   },
