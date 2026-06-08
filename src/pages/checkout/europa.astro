@@ -3,26 +3,34 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Europa - Santana Gitarren Noten & Tabs";
-const heading = "Europa - Santana Gitarren Noten & TABs";
-const description = "Kaufe die Noten & Tabulaturen für ‚Europa‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Europa, Noten & Tabulaturen, Gitarre, PDF";
-const imageSrc = "/bilder/europa_santana_vorschau.png";
-const imageAlt = "Europa – Vorschau";
+const pageTitle = "Europa – Guitar Arrangement";
+const heading = "Europa – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Europa. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Europa , Carlos Santana, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-europa-santana/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/europa/";
+const productId = "EUR-001";
+const imageSrc = "/bilder/europa_santana_vorschau.png";
+const imageAlt = "Europa Vorschau";
 const price = "9.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/europa_santana_preview.webp"
+
 const contentHtml = `
   <br />
+  
   <p>
   <a
     href="https://www.youtube.com/watch?v=Ot6pSrKT1oc"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu Europa ansehen"
+    aria-label="YouTube Video zu Ten Words ansehen"
     rel="noopener"
   >
-    ▶️ Europa – Santana auf YouTube ansehen
+    ▶️ Europa – Carlos Santana auf YouTube ansehen
   </a>
   </p>
 
@@ -35,10 +43,10 @@ const contentHtml = `
   </p>
   <p>
     Sichere dir meine
-    <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Europa“</strong>.
+    <strong>eigenen Noten- &amp; Tabulaturblätter + komplettes Arrangment zum Song „Europa“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs + komplettes Arrangement als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs zum downloaden.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -47,7 +55,7 @@ const contentHtml = `
     Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -60,9 +68,10 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#e-gitarren-kurse" class="cta-button">
-      Weitere E-Gitarrensolos entdecken
+    <a href="/kurse/e-gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
     </a>
   </p>
 `;
@@ -76,6 +85,7 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
@@ -89,6 +99,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>

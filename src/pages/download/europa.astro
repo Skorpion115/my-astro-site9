@@ -1,0 +1,76 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Europa – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "EUR-001",
+    "data-price": "9.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1VwubHEilLW62QXcx7y-yHVYMNRqnHgL8"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Europa Guitar
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1BuVrm1GzhuVB9dUjstnab3wMgK1S6XyY"
+        class="cta-button"
+      >
+        📄 Europa – Organ Noten
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=18xsh6nLLJgFuJWCkZKNp6XFnuyInrpfG"
+        class="cta-button"
+      >
+        📄 Europa – Strings Noten
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1yxJlrAg1kVuzU8cuscbLhiO2u7F1OGEM"
+        class="cta-button"
+      >
+        📄 Europa – Bass Noten
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=17uv7XOCg6YCzPCs2r5eI5qb6k4M-lu5H"
+        class="cta-button"
+      >
+        📄 Europa – Drums Noten
+      </a>
+    </li>
+  </ul>
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

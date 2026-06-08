@@ -383,7 +383,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/europa-santana-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/europa/`,
     changefreq: "weekly",
     lastmod: today,
   },
