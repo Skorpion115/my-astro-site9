@@ -408,7 +408,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/now-and-forever-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/now-and-forever/`,
     changefreq: "weekly",
     lastmod: today,
   },
