@@ -348,7 +348,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/behind-blue-eyes-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/behind-blue-eyes/`,
     changefreq: "weekly",
     lastmod: today,
   },
@@ -374,6 +374,11 @@ export const pages = [
   },
   {
     loc: `${SITE_URL}/checkout/hotel-california/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
+    loc: `${SITE_URL}/checkout/flor-de-luna/`,
     changefreq: "weekly",
     lastmod: today,
   },
