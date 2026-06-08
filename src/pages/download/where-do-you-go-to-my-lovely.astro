@@ -1,32 +1,24 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Danke – Dein Download ist bereit";
-const description = "Vielen Dank für deine Zahlung! Dein Noten- & Tabulaturblatt ‚Where Do You Go To My Lovely‘ ist jetzt zum Download verfügbar.";
-const keywords = "Where Do You Go To My Lovely, Noten, Tabulatur, Download Noten, PDF";
-const pageUrl = getPageUrl(Astro);
+const pageTitle = "Download: Where Do You Go To My Lovely – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
 ---
 
 <BaseLayout
   pageTitle={pageTitle}
   description={description}
-  keywords={keywords}
-  href={pageUrl}
-  ogTitle={pageTitle}
-  ogDescription={description}
-  ogUrl={pageUrl}
-  ogType="website"
-  twitterTitle={pageTitle}
-  twitterDescription={description}
-  twitterUrl={pageUrl}
-  noindex={true}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "WDY-001",
+    "data-price": "7.95",
+  }}
 >
-  <h1>Danke für deine Zahlung!</h1>
+  <h1>Dein Download</h1>
 
-  <h2>Deine Downloads</h2>
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
 
-  <p><strong>Der Download startet sofort, wenn du auf eine Datei klickst.</strong></p>
+  <h2>Download</h2>
 
   <ul>
     <li>
@@ -54,10 +46,13 @@ const pageUrl = getPageUrl(Astro);
       </a>
     </li>
   </ul>
+  <h2>Hinweise</h2>
 
-  <p>
-    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
-    E-Mail: <br />
-    <strong>postmaster@musicstudio-ziebart.de</strong>
-  </p>
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
 </BaseLayout>

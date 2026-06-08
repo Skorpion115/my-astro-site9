@@ -3,24 +3,30 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Where Do You Go To My Lovely - Peter Sarstedt Gitarren Noten & Tabs";
-const heading = "Where Do You Go To My Lovely - Peter Sarstedt Gitarren Noten & TABs";
-const description = "Kaufe die Noten & Tabulaturen für ‚Where Do You Go To My Lovely‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Where Do You Go To My Lovely, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "Where Do You Go To My Lovely – Peter Sarstedt (Guitar Arrangement)";
+const heading = "Where Do You Go To My Lovely – Peter Sarstedt (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu In The Year 2525. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Where Do You Go To My Lovely, Peter Sarstedt, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-where-do-you-go-to-my-lovely/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/where-do-you-go-to-my-lovely/";
+
+
+const productId = "WDY-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
 
 const imageSrc = "/bilder/where_do_you_go_to_my_lovely_vorschau.png";
 const imageAlt = "Where Do You Go To My Lovely – Vorschau";
 const price = "7.95";
 
-//Open-Graph-Bild für diese Produktseite.
-// Wird von Google, Social Media und Merchant Center
-// als Hauptbild für Vorschau und Produktdarstellung verwendet.
 const ogImage = "https://www.musicstudio-ziebart.de/bilder/where_do_you_go_to_my_lovely_preview.png";
 
 const contentHtml = `
   <br />
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
   <p>
   <a
     href="https://www.youtube.com/watch?v=j_t8iWyH3r4"
@@ -45,7 +51,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Where Do You Go To My Lovely“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs + komplettes Arrangement als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Gesangsnoten + Bass Noten + Lead Sheet als PDF-Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -69,7 +75,7 @@ const contentHtml = `
   </p>
 
   <p>
-    <a href="/kurse/alle-kurse/#gitarren-kurse" class="cta-button">
+    <a href="/kurse/gitarre/" class="cta-button">
       Weitere Gitarrenstücke entdecken
     </a>
   </p>
@@ -98,6 +104,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>
