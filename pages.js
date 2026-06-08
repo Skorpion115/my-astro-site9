@@ -388,7 +388,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/stairway-to-heaven-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/stairway-to-heaven/`,
     changefreq: "weekly",
     lastmod: today,
   },

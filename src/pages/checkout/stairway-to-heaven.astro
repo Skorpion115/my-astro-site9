@@ -3,15 +3,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Stairway To Heaven - Led Zeppelin Gitarren Noten & Tabs";
-const heading = "Stairway To Heaven - Led Zeppelin Gitarren Noten & TABs";
-const description = "Kaufe die Noten & Tabulaturen für ‚Stairway To Heaven‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "Stairway To Heaven, Noten & Tabulaturen, Gitarre, PDF";
-const imageSrc = "/bilder/stairway_to_heaven_led_zeppelin_vorschau.png";
-const imageAlt = "Stairway To Heaven – Vorschau";
+const pageTitle = "Stairway To Heaven – Guitar Arrangement";
+const heading = "Stairway To Heaven – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Stairway To Heaven. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Hotel California, Eagles, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-stairway-to-heaven/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/stairway-to-heaven/";
+const productId = "STH-001";
+const imageSrc = "/bilder/stairway_to_heaven_led_zeppelin_vorschau.png";
+const imageAlt = "Stairway To Heaven Vorschau";
 const price = "8.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/stairway_to_heaven_led_zeppelin_preview.webp"
+
 const contentHtml = `
   <br />
   
@@ -20,7 +27,7 @@ const contentHtml = `
     href="https://www.youtube.com/watch?v=QkF3oxziUI4"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu Stairway To Heaven ansehen"
+    aria-label="YouTube Video zu Hotel California ansehen"
     rel="noopener"
   >
     ▶️ Stairway To Heaven – Led Zeppelin auf YouTube ansehen
@@ -39,7 +46,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „Stairway To Heaven“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs + komplettes Arrangement als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Komplettes Arrangment als PDF Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -48,7 +55,7 @@ const contentHtml = `
     Nach dem Kauf steht der Download sofort zur Verfügung.
   </p>
   <p>
-    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF und MP3 zur Verfügung.
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
   </p>
   <p>
     <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
@@ -61,9 +68,10 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#e-gitarren-kurse" class="cta-button">
-      Weitere E-Gitarrensolos entdecken
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
     </a>
   </p>
 `;
@@ -77,6 +85,7 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
@@ -90,6 +99,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>
