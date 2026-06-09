@@ -393,7 +393,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/all-along-the-watchtower-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/all-along-the-watchtower/`,
     changefreq: "weekly",
     lastmod: today,
   },

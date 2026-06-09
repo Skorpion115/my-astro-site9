@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "All Along The Watchtower – Guitar Arrangement";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält Begleitung, Gitarrensolos und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>Original gespielt von Jimi Hendrix</p>
+
+  <p>
+    Dieses Arrangement vermittelt typische Rhythmus-Techniken mit Down- und
+    Upstroke-Patterns.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Strumming Patterns</li>
+    <li>Rhythmische Begleitung</li>
+    <li>Mit Gesangs</li>
+    <li>Gitarrensolo</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Spieler, die ihren Rhythmus verbessern
+    wollen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a href="/checkout/all-along-the-watchtower/" class="cta-button">
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>

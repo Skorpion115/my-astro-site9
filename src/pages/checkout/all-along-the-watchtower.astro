@@ -3,17 +3,22 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "All Along The Watchtower - Jimi Hendrix Gitarren Noten & Tabs";
-const heading = "All Along The Watchtower - Jimi Hendrix Gitarren Noten & TABs";
-const description = "Kaufe die Noten & Tabulaturen für ‚All Along The Watchtower‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "All Along The Watchtower, Noten & Tabulaturen, Gitarre, PDF";
-const imageSrc = "/bilder/all_along_the_watchtower_vorschau.png";
-const imageAlt = "All Along The Watchtower – Vorschau";
+const pageTitle = "All Along The Watchtower – Guitar Arrangement";
+const heading = "All Along The Watchtower – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Stairway To Heaven. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "All Along The Watchtower, Jimi Hendrix, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-all-along-the-watchtower/";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/all-along-the-watchtower/";
+const productId = "AATW-001";
+const imageSrc = "/bilder/all_along_the_watchtower_vorschau.png";
+const imageAlt = "All Along The Watchtower Vorschau";
 const price = "8.95";
+
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/all_along_the_watchtower_preview.png"
+
 const contentHtml = `
   <br />
+  
   <p>
   <a
     href="https://www.youtube.com/watch?v=f44c3KYYtsg"
@@ -38,7 +43,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „All Along The Watchtower“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs + Komplettes Arrangment als PDF Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -60,9 +65,10 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#e-gitarren-kurse" class="cta-button">
-      Weitere E-Gitarrensolos entdecken
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
     </a>
   </p>
 `;
@@ -76,6 +82,7 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
@@ -89,6 +96,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>
