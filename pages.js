@@ -398,7 +398,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/sleepwalk-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/sleepwalk/`,
     changefreq: "weekly",
     lastmod: today,
   },
