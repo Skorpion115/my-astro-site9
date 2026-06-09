@@ -14,5 +14,9 @@
   },
   "devDependencies": {
     "@astrojs/netlify": "^7.0.12"
+  },
+  "engines": {
+    "node": "22.22.3",
+    "npm": "10.9.8"
   }
 }
