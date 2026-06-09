@@ -427,4 +427,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/checkout/a-whiter-shade-of-pale/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
