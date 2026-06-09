@@ -403,7 +403,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/kurse/the-wind-cries-mary-noten-tabs/`,
+    loc: `${SITE_URL}/checkout/the-wind-cries-mary/`,
     changefreq: "weekly",
     lastmod: today,
   },

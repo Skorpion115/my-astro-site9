@@ -3,25 +3,28 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "The Wind Cries Mary - Jimi Hendrix Gitarren Noten & Tabs";
-const heading = "The Wind Cries Mary - Jimi Hendrix Gitarren Noten & TABs";
-const description = "Kaufe die Noten & Tabulaturen für ‚The Wind Cries Mary‘ direkt hier. Nach der Zahlung erhältst du Zugriff auf die Downloads.";
-const keywords = "The Wind Cries Mary, Noten & Tabulaturen, Gitarre, PDF";
+const pageTitle = "The Wind Cries Mary – Guitar Arrangement";
+const heading = "The Wind Cries Mary – Guitar Arrangement";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu The Wind Cries Mary. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "The Wind Cries Mary, Jimi Hendrix, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/kurse/thanks-the-wind-cries-mary/";
-
+const returnUrl = "https://www.musicstudio-ziebart.de/download/the-wind-cries-Mary/";
+const productId = "TWCM-001";
 const imageSrc = "/bilder/the_wind_cries_mary_vorschau.png";
-const imageAlt = "The Wind Cries Mary – Vorschau";
-
+const imageAlt = "The Wind Cries Mary Vorschau";
 const price = "5.95";
+
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/all_along_the_watchtower_preview.png"
+
 const contentHtml = `
   <br />
+  
   <p>
   <a
     href="https://www.youtube.com/watch?v=Wc7B4i89008"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu The Wind Cries Mary ansehen"
+    aria-label="YouTube Video zu All Along The Watchtower ansehen"
     rel="noopener"
   >
     ▶️ The Wind Cries Mary – Jimi Hendrix auf YouTube ansehen
@@ -40,7 +43,7 @@ const contentHtml = `
     <strong>eigenen Noten- &amp; Tabulaturblätter zum Song „The Wind Cries Mary“</strong>.
   </p>
   <p>
-    Gitarren-Noten mit Akkorden und TABs als PDF-Download.
+    Gitarren-Noten mit Akkorden und TABs als PDF Download.
   </p>
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
@@ -62,9 +65,10 @@ const contentHtml = `
     E-Mail: <br />
     <strong>postmaster@musicstudio-ziebart.de</strong>
   </p>
+
   <p>
-    <a href="/kurse/alle-kurse/#e-gitarren-kurse" class="cta-button">
-      Weitere E-Gitarrensolos entdecken
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
     </a>
   </p>
 `;
@@ -78,6 +82,7 @@ const contentHtml = `
   ogTitle={pageTitle}
   ogDescription={description}
   ogUrl={pageUrl}
+  ogImage={ogImage}
   ogType="product"
   twitterTitle={pageTitle}
   twitterDescription={description}
@@ -91,6 +96,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
+    productId={productId}
     contentHtml={contentHtml}
   />
 </BaseLayout>
