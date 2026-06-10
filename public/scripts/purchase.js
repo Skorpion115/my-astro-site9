@@ -6,14 +6,24 @@
 
   if (!productId || !priceRaw || isNaN(value)) return;
 
-  const storageKey = `purchase_tracked_${productId}`;
+  const sessionKey = `valid_purchase_${productId}`;
+  const localKey = `purchase_done_${productId}`;
 
-  // const transactionId = `${productId}-${Date.now()}`;
+  // 🔴 1. HARTE DUPLIKAT-SPERRE (global)
+  if (localStorage.getItem(localKey) === "1") {
+    return;
+  }
+
+  // 🔴 2. CHECK: echter Kauf erlaubt?
+  const isValidPurchase = sessionStorage.getItem(sessionKey) === "1";
+
+  if (!isValidPurchase) {
+    return;
+  }
 
   const transactionId = `${productId}-${crypto.randomUUID()}`;
 
   window.dataLayer = window.dataLayer || [];
-
   window.dataLayer.push({ ecommerce: null });
 
   window.dataLayer.push({
@@ -24,5 +34,9 @@
     product_id: productId,
   });
 
-  sessionStorage.setItem(storageKey, "true");
+  // 🔴 permanent markieren (verhindert JEGLICHE Doppelzählung)
+  localStorage.setItem(localKey, "1");
+
+  // 🔴 session Flag verbrauchen
+  sessionStorage.removeItem(sessionKey);
 })();
