@@ -9,11 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.4.5",
+    "astro": "^6.4.6",
     "xmlbuilder2": "^4.0.3"
   },
   "devDependencies": {
-    "@astrojs/netlify": "^7.0.12"
+    "@astrojs/netlify": "^7.0.13"
   },
   "engines": {
     "node": "22.22.3",
