@@ -2,8 +2,9 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Musikbibliothek - Noten Downloads";
-const description = "Musikbibliothek -  Noten Downloads für Gitarre, Keyboard, Jazz und mehr – nach Stil, Technik und Level sortiert.";
+const pageTitle = "Musikbibliothek - Noten PDF Downloads";
+const description =
+  "Musikbibliothek -  Noten PDF Downloads für Gitarre, Keyboard, Jazz und mehr – nach Stil, Technik und Level sortiert.";
 const keywords = "Notenbücher, Musiknoten, Gitarrennoten, Download Noten";
 const pageUrl = getPageUrl(Astro);
 ---
@@ -21,23 +22,75 @@ const pageUrl = getPageUrl(Astro);
   twitterDescription={description}
   twitterUrl={pageUrl}
 >
+  <p>
+    Entdecke eine große Sammlung an Gitarrennoten, Tabs und Musikarrangements
+    zum sofortigen Download. Alle Inhalte stehen dir direkt nach dem Kauf als
+    PDF zur Verfügung – ohne Abo und ohne Wartezeit.
+  </p>
 
   <p>
-    Hier findest du alle Lernmodule nach Stil, Technik und Instrument sortiert.
-    Kein Abo, direkter Zugriff auf alle Inhalte.
+    Wähle dein Instrument, deinen Stil oder deinen Lieblingssong und starte
+    sofort mit dem Spielen.
   </p>
+
+  <h2>Sofortiger Zugriff auf alle Inhalte</h2>
+
+  <p>
+    Nach dem Kauf stehen dir alle Noten und Tabs direkt als PDF-Download zur
+    Verfügung. Kein Abo, keine Registrierung nötig, kein Warten.
+  </p>
+
+  <ul>
+    <li>Sofortiger Download nach Kauf</li>
+    <li>PDF-Dateien für Gitarre, Klavier & mehr</li>
+    <li>Originalgetreue Arrangements</li>
+    <li>Ideal für Anfänger & Fortgeschrittene</li>
+  </ul>
+
+  <h2>Wähle dein Instrument</h2>
+
+  <p>Finde schnell die passenden Noten & Tabs:</p>
 
   <!-- Navigation statt Song-Inhaltsverzeichnis -->
   <nav aria-label="Lernkategorien">
     <ul>
-      <li><a href="/kurse/gitarre/" class="cta-button">Akustik Gitarre Lernmodule</a></li>
-      <li><a href="/kurse/e-gitarre/" class="cta-button">E-Gitarre Lernmodule</a></li>
-      <li><a href="/kurse/jazzguitar/" class="cta-button">Jazz Gitarre Lernmodule</a></li>
-      <li><a href="/kurse/piano/" class="cta-button">Piano Lernmodule</a></li>   
-      <li><a href="/kurse/keyboard/" class="cta-button">Keyboard / Orgel Lernmodule</a></li>
-      <li><a href="/kurse/banjo/" class="cta-button">Banjo Lernmodule</a></li>
-      <li><a href="/kurse/akkordeon/" class="cta-button">Akkordeon Lernmodule</a></li>
+      <li>
+        <a href="/kurse/gitarre/" class="cta-button"
+          >Akustik Gitarrennoten & Tabs</a>
+      </li>
+      <li>
+        <a href="/kurse/e-gitarre/" class="cta-button">E-Gitarren Tabs</a>
+      </li>
+      <li>
+        <a href="/kurse/jazzguitar/" class="cta-button">Jazz Gitarren Tabs</a>
+      </li>
+      <li><a href="/kurse/piano/" class="cta-button">Klaviernoten</a></li>
+      <li>
+        <a href="/kurse/keyboard/" class="cta-button">Keyboard / Orgelnoten</a>
+      </li>
+      <li><a href="/kurse/banjo/" class="cta-button">Banjo Tabs</a></li>
+      <li><a href="/kurse/akkordeon/" class="cta-button">Akkordeonnoten</a></li>
     </ul>
   </nav>
 
+  <h2>Warum unsere Musikbibliothek?</h2>
+
+  <ul>
+    <li>Direkter Download ohne Wartezeit</li>
+    <li>Strukturiert nach Songs und Stilrichtungen</li>
+    <li>Perfekt für Selbststudium und Unterricht</li>
+    <li>Regelmäßig neue Songs verfügbar</li>
+  </ul>
+
+  <h2>Jetzt starten</h2>
+
+  <p>
+    Wähle deinen Song und lade dir deine Noten & Tabs direkt als PDF herunter.
+  </p>
+
+  <p>
+    Musikbibliothek für Gitarrennoten, Klaviernoten und Tabs als PDF Download.
+    Sofort verfügbar, ohne Abo und ohne Registrierung. Ideal für Musiker, die
+    direkt losspielen möchten.
+  </p>
 </BaseLayout>
