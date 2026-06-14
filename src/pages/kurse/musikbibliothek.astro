@@ -1,9 +1,12 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
+import { songs } from "../../data/songs";
+import SongSearch from "../../components/SongSearch.astro";
 
 const pageTitle = "Musikbibliothek – Noten, Tabs & Lernmaterialien";
-const description = "Musikbibliothek mit Noten, Tabs und Lernmaterialien für Gitarre, Klavier, Keyboard und mehr. Sofort als PDF verfügbar.";
+const description =
+  "Musikbibliothek mit Noten, Tabs und Lernmaterialien für Gitarre, Klavier, Keyboard und mehr. Sofort als PDF verfügbar.";
 const keywords = "Notenbücher, Musiknoten, Gitarrennoten, Download Noten";
 const pageUrl = getPageUrl(Astro);
 ---
@@ -21,25 +24,51 @@ const pageUrl = getPageUrl(Astro);
   twitterDescription={description}
   twitterUrl={pageUrl}
 >
+  <div class="song-search">
+    <input
+      id="songSearch"
+      type="text"
+      placeholder="Song suchen..."
+      autocomplete="off"
+    />
+
+    <p id="songCount" style="margin-top: 8px;"></p>
+    <p id="noResults" style="display:none; color:#999;">Kein Song gefunden</p>
+
+    <ul id="songList">
+      {
+        songs.map((song) => (
+          <li data-title={song.title.toLowerCase()}>
+            <a href={song.url}>{song.title}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  
+  <SongSearch songs={songs} />
 
   <p>
-    Hier findest du strukturierte Lernmodule, Noten und Tabs für Gitarre, Klavier und weitere Instrumente.
-    Alle Inhalte stehen dir digital zur Verfügung und sind sofort abrufbar.
+    In die Suchmaschine bitte nur den Titel eingeben nicht die Künstler!
   </p>
 
   <p>
-    Ideal für Unterricht, Selbststudium und musikalische Weiterentwicklung.
+    Hier findest du strukturierte Lernmodule, Noten und Tabs für Gitarre,
+    Klavier und weitere Instrumente. Alle Inhalte stehen dir digital zur
+    Verfügung und sind sofort abrufbar.
   </p>
+
+  <p>Ideal für Unterricht, Selbststudium und musikalische Weiterentwicklung.</p>
 
   <h2>Digitale Lerninhalte für Musiker</h2>
 
   <p>
-   Die Musikbibliothek enthält eine Sammlung aus Noten, Tabs und Lernmaterialien, die sowohl im Unterricht als auch im Selbststudium verwendet werden können.
+    Die Musikbibliothek enthält eine Sammlung aus Noten, Tabs und
+    Lernmaterialien, die sowohl im Unterricht als auch im Selbststudium
+    verwendet werden können.
   </p>
 
-  <p>
-    Die Inhalte sind klar strukturiert und sofort digital verfügbar.
-  </p>
+  <p>Die Inhalte sind klar strukturiert und sofort digital verfügbar.</p>
 
   <h2>Für Unterricht und eigenes Lernen geeignet</h2>
 
@@ -53,7 +82,8 @@ const pageUrl = getPageUrl(Astro);
   <h2>Jetzt Musikbibliothek entdecken</h2>
 
   <p>
-    Wähle dein Instrument und starte mit den passenden Lerninhalten und Noten zu deinen Lieblingssongs.
+    Wähle dein Instrument und starte mit den passenden Lerninhalten und Noten zu
+    deinen Lieblingssongs.
   </p>
 
   <h2>Sofortiger Zugriff auf alle Inhalte</h2>
@@ -79,7 +109,8 @@ const pageUrl = getPageUrl(Astro);
     <ul>
       <li>
         <a href="/kurse/gitarre/" class="cta-button"
-          >Akustik Gitarrennoten & Tabs</a>
+          >Akustik Gitarrennoten & Tabs</a
+        >
       </li>
       <li>
         <a href="/kurse/e-gitarre/" class="cta-button">E-Gitarren Tabs</a>
@@ -108,7 +139,8 @@ const pageUrl = getPageUrl(Astro);
   <h2>Jetzt starten</h2>
 
   <p>
-    Wähle deinen Song und greife sofort auf die passenden Noten, Tabs und Lernmaterialien zu.
+    Wähle deinen Song und greife sofort auf die passenden Noten, Tabs und
+    Lernmaterialien zu.
   </p>
 
   <p>
