@@ -29,4 +29,7 @@ pnpm-debug.log*
 .idea/
 
 # Dateien ausschließen
-*mp4
+*.mp4
+*.mov
+*.wav
+*.zip
