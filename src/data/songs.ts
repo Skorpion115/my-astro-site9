@@ -54,6 +54,7 @@ export const songs = [
   { title: "Hey Jude", url: "/checkout/hey-jude/" },
   { title: "Let It Be", url: "/checkout/let-it-be/" },
   { title: "Circle Of Life", url: "/checkout/circle-of-live/" },
+  { title: "Ballade Pour Adeline", url: "/checkout/ballade-pour-adeline/" },
   { title: "Hammond Flip", url: "/checkout/hammond-flip/" },
   { title: "Lullaby In Blue", url: "/checkout/lullaby-in-blue/" },
   { title: "Kleiner Schelm", url: "/checkout/kleiner-schelm/" },
