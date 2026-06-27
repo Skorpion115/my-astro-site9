@@ -1,0 +1,1082 @@
+---
+import AccountLayout from "../../../layouts/AccountLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+// Hier die fehlende Variable definieren
+const pageUrl = getPageUrl(Astro);
+const pageTitle = "Meine schönsten Klavierstücke";
+const description = "Geschützter Songbook-Bereich";
+---
+
+<AccountLayout
+  pageTitle="Meine schönsten Klavierstücke"
+  description="Geschütztes Songbook 2"
+  href={pageUrl}
+>
+  <link rel="stylesheet" href="/styles/songbook_2.css" />
+
+  <div class="songbook-hero">
+    <img src="/images/klavier.webp" alt="The Big Guitar Songbook Cover" />
+    <div class="hero-overlay">
+      <h1 id="top">{pageTitle}</h1>
+      <p>Klavierstücke • Noten • Play-Alongs</p>
+    </div>
+  </div>
+
+  <p>
+    <a
+      href="/kundenlogin/account/"
+      class="normal-links"
+      aria-label="Zurück zum Schülerbereich"
+    >
+      Zurück zum Schülerbereich
+    </a>
+  </p>
+
+  <!-- Logout-Button -->
+  <div class="logout-container">
+    <button class="auth-logout">Logout</button>
+  </div>
+
+  <main>
+    <!-- ======================== -->
+    <!-- SONGBOOK LAYOUT -->
+    <!-- ======================== -->
+    <p>
+      Rechts im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
+      auf der linken Seite angezeigt. Ganz rechts ist so ein blauer ovaler
+      Button. Mit diesem Button kann man die website wieder ganz nach oben
+      scrollen.
+    </p>
+    <p>
+      Wenn einem ein Song gefällt dann downloaden und ausdrucken. Bei dem ausdrucken Toner sparend einstellen. Das bringt nur graue Notenlinien nicht so schwarze. Dann in eine Plastikhülle stecken und in einem Ordner abheften.
+    </p>
+
+    <div class="lesson-layout">
+      <!-- Linke Spalte -->
+      <div class="notes-column">
+        <!-- Linke Spalte: Noten + Audio -->
+        <div class="notes">
+          <section id="arabesque" class="song">
+            <h2>Arabesque Nr. 1</h2>
+            <img 
+              src="/images/achille-claude-debussy.jpg" 
+              alt="Achille Claude Debussy"
+              width="306"
+              height="242" 
+              class="song-image"
+            />
+            <p class="pdf-download">
+              <a href="/notes/Arabesque_Nr-1.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1VcjhaoAztL0ORt1yxID4QSI92wrGg1Ox/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1VcjhaoAztL0ORt1yxID4QSI92wrGg1Ox"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Arabesque_Nr-1.pdf"
+              title="Arabesque Nr. 1 – Noten"></iframe>
+            <p>
+            🎹 Debussy am Klavier – echte Dokumente Debussy hat um 1913
+            sogenannte Klavierrollen (Piano Rolls) aufgenommen – für das
+            Reproduktionsklavier Welte-Mignon. Das bedeutet: Er spielte auf
+            einem speziellen Klavier. Sein Spiel wurde mechanisch aufgezeichnet.
+            Diese Rollen konnten später wieder abgespielt werden. Moderne
+            Rekonstruktionen erlauben uns heute, sein Spiel zu hören. Und ja –
+            darunter befinden sich auch Werke wie die Deux Arabesques (L. 66).
+            Das heißt: 👉 Man kann heute tatsächlich hören, wie Debussy selbst
+            phrasiert und rubato gespielt hat.
+          </p>
+          <p>Mittelschwer</p>  
+          </section>
+          <section id="reverie" class="song">
+            <h2>REVERIE L68</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1fApPgdY4gqSx5IyoStyMpQkArNMOjB02/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/10fsjeXyPmisOLnaHqnJ7x7tcgNeqZlKd/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=10fsjeXyPmisOLnaHqnJ7x7tcgNeqZlKd"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1fApPgdY4gqSx5IyoStyMpQkArNMOjB02"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>REVERIE ist französisch und heißt soviel wie 'Tagtraum'.</p>
+            <p>Schwierig</p>
+          </section>
+          <section id="aus-der-neuen-welt" class="song">
+            <h2>Aus der neuen Welt 9. SYMPHONIE Opus 95 II. Largo</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1lOoewWZj3YlU24gfcXG2DDYO7V88XFLc/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://www.youtube.com/watch?v=ytcQ-I1BTNk" target="_blank" 
+                rel="noopener"
+                >▶ Play Video</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1lOoewWZj3YlU24gfcXG2DDYO7V88XFLc"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>
+            Antonin Dvorak hat die Symphonie natürlich für Orchester geschrieben. Er hat es aber auch für Klavier zu vier Händen geschrieben. Ich habe die Originalnoten und habe es zu zwei Händen geschrieben. Allerdings nur den II. Satz das Largo. Herr Dvorák ging damals auf eine Reise für 2 Jahren nach Amerika und hörte sich die Musik der Einheimischen an. Dann kam er darauf das die Lieder meistens auf einer Dur Pentatonik basierten. So schrieb er dann später die Symphonie "Aus der neuen Welt".
+          </p>
+          </section>
+          <section id="nocturne-opus9-nr2" class="song">
+            <h2>Nocturne Opus 9 Nr. 2</h2>
+            <img 
+              src="/images/frederic-chopin.jpg" 
+              alt="Frederic Chopin"
+              width="304"
+              height="386" 
+              class="song-image"
+            />
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1bUa1tmwC6ItsCDHr29QD-lwwNadL89KL/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/14Hx_9XBP4k8P506c0gTK3FwIj8SInqcp/preview"
+                >▶ Play Along Interpretin: Tiffany Poon</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=14Hx_9XBP4k8P506c0gTK3FwIj8SInqcp"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1bUa1tmwC6ItsCDHr29QD-lwwNadL89KL"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>
+            Das ist eines seiner berühmtesten Stücke von Frederic Chopin. Ich würde sagen: mittelschwer.
+          </p>
+          </section>
+          <section id="3-morceaux-opus9" class="song">
+            <h2>3 Morceaux Opus 9 - Pyotr Ilyich Tchaikovsky</h2>
+            <img 
+              src="/images/tschaikowsky-308x428.jpg" 
+              alt="P.Tschaikowsky"
+              width="309"
+              height="428" 
+              class="song-image"
+            />
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1Ui1pbSmfiLjK71jFEX-1vlfzDUiD7Xvd/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1WDbBppe7pNnUWwhRwvzVs7oNcsx7Gt0l/preview"
+                >▶ Play Along Interpret: Alexander Lyulko</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1WDbBppe7pNnUWwhRwvzVs7oNcsx7Gt0l"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Ui1pbSmfiLjK71jFEX-1vlfzDUiD7Xvd"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>
+            Mittelschwer
+            </p>
+          <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/5ZsEqPwrYkc?start=42"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="dumka" class="song">
+            <h2>Dumka in Cm Opus 59- Pyotr Ilyich Tchaikovsky</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1lupMcWoPbbaOhlFeaBsOCyA7TPLCpgvL/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/147Km3zCIFg5dxK7tCOlQC1aeAbqTJouk/preview"
+                >▶ Play Along Interpret: Pletnev</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=147Km3zCIFg5dxK7tCOlQC1aeAbqTJouk"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1lupMcWoPbbaOhlFeaBsOCyA7TPLCpgvL"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/cmwGv2Cnrf8?start=42"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <p>
+            Schwierig. Tschaikowsky hat die Dumka für seine Schwester geschrieben. Es ist eine russische Dorfszene. Es fängt mit einem langsamen melanchlischen Thema an. Dann kommt ein schneller Teil mit einem russischen Tanz. Und dann kommt wieder das langsame Thema.
+          </p>
+          </section>
+          <section id="autumn-song" class="song">
+            <h2>The Seasons, Op. 37a X. October Autumn Song</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1QrATomvkUnqiJ3_YLQuu6ZK0oE5NOAiB/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1stf6Sd55c15enb4mlyvvgPAQqWV4PSju/preview"
+                >▶ Play Along Oktober Interpret: Bruce Liu</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://www.youtube.com/watch?v=FnQgBOvgg6I"
+                target="_blank"
+                rel="nooper"
+                >▶ YouTube Video Oktober Interpret: Bruce Liu</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1EDL6Yi9hCG29evIBABDSrolrQw8KPAeT/preview"
+                >▶ Play Along Juni Interpret: Richter</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1oF2gYvl7YS2fY5LX9nhyIn4Zzzg0cRwP/preview"
+                >▶ Play Along November Interpret: Pletnev</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1GAvtnv5-TpKH1OtmQByeF35wsY9ZPrTU/preview"
+                >▶ Play Along Dezember Interpret: Pletnev</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=19tgJ1VFRZUctP8jAyxyk8YSrxqASTJnK"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Juni herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1QrATomvkUnqiJ3_YLQuu6ZK0oE5NOAiB"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Oktober herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1lsMi5nPnpldNhlYgSYoC2EsejMZ_4TNC"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 November herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1yEkkS_zcgx0AFEzJl-4RvG5ewIY3TXXZ"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Dezember herunterladen
+              </a>
+            </p>
+            <p>
+            Die Jahreszeiten bestehen aus 12 Songs. Für jeden Monat ein Lied. Dies ist der X. Song und steht für Oktober. Grad: Mittelschwer.
+          </p>
+          </section>
+          <section id="klavierkonzert-op10-nr2" class="song">
+            <h2>Klavierkonzert Op. 10 Nr. 2</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1oshmpp8kElCNmTQmHIcz894RIVADXAzu/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1lXO4SESfdP84beZLvBLMZ3pi7-AQuBec/preview"
+                >▶ Play Along Interpret: Reuel</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1lXO4SESfdP84beZLvBLMZ3pi7-AQuBec"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1oshmpp8kElCNmTQmHIcz894RIVADXAzu"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/V1i1LwAFU-4?start=42"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <p>
+            Schwierig
+          </p>
+          <section id="six-morceaux" class="song">
+            <h2>Six Morceaux Op.19</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/12I92It_imBZlmVXHoQbvFJs1S5guZMvK/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1QjecFJuDMQxwRcRngvyk_8Xm0ygd2f6H/preview"
+                >▶ Play Along Interpret: Pletnev</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1QjecFJuDMQxwRcRngvyk_8Xm0ygd2f6H"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=12I92It_imBZlmVXHoQbvFJs1S5guZMvK"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/xYF1V_ga1jo"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <p>
+            Mittelschwer. Es sind 6 Stücke von Tschaikowsky. Es fängt mit einem langsamen Stück an. Dann kommt ein schneller Teil. Dann kommt wieder ein langsamer Teil. Es ist eine gute Übung um zwischen langsam und schnell zu wechseln. Komboniert 1873. Jedes Stück ist einem anderen Menschen gewidmet.
+          </p>
+          </section>
+          <section id="fuer-elise" class="song">
+            <h2>Für Elise - Ludwig van Beethoven</h2>
+            <img 
+              src="/images/Beethoven.png" 
+              alt="Ludwig van Beethoven"
+              width="300"
+              height="169" 
+              class="song-image"
+            />
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/FQ4JLNCUEoHOVmyxvxeAcqYaiZqmADWV/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/18OPOgkvSY5Yu80N94V2VrXdE78wdBvz0/preview"
+                >▶ Play Along Interpret: Lang Lang</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=18OPOgkvSY5Yu80N94V2VrXdE78wdBvz0"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=FQ4JLNCUEoHOVmyxvxeAcqYaiZqmADWV"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Mittelschwer</p>
+          </section>
+          <section id="mondscheinsonate" class="song">
+            <h2>Mondschein-Sonate Op. 27 No. 2 - Ludwig van Beethoven</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/10aYjXjYybSzpaLhwAmYGX50E7hmswC4G/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1LH0K3yYBxqFnGHvuXSzwXTFwoaovoT5x/preview"
+                >▶ Play Along Interpret: Yundi Li 2014</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1LH0K3yYBxqFnGHvuXSzwXTFwoaovoT5x"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=14sgXBdjo0dpOdbsj5GgPzpPlmyQt6ITp"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Schwierig</p>
+          </section>
+          <section id="sonata-facile-allegro" class="song">
+            <h2>Sonata Facile KV 545 - Wolfgang Amadeus Mozart</h2>
+            <img 
+              src="/images/wolfgang-amadeus-mozart.jpg" 
+              alt="Wolfgang Amadeus Mozart"
+              width="312"
+              height="445" 
+              class="song-image"
+            />
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1a6mDU5oogfcYpb7gK7pHD1DeJ1QQ82NY/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1kMomvedowPsSbUIRxf8kmVs_ZSklUOXl/preview"
+                >▶ Play Along I. ALLEGRO</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/17IAGe6zaFCMQyvxArSYQvEfSe4Nb-EIb/preview"
+                >▶ Play Along II. ANDANTE Interpret: Grigory Sokolov</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/13ZwiOMvSAUfBRe82CF0aJn3wvFgbYsOG/preview"
+                >▶ Play Along III. RONDO Interpret: Albert Guinovart</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1kMomvedowPsSbUIRxf8kmVs_ZSklUOXl"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1a6mDU5oogfcYpb7gK7pHD1DeJ1QQ82NY"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Mittelschwer</p>
+            <p>Das RONDO finde ich am schwierigsten da es sehr schnell gespielt wird. Am bekanntesten ist der I. Satz das ALLEGRO. Man sollte das Thema vom ALLEGRO mit Fingerpedal spielen! Später kann man dann doch das Sustainpedal verwenden obwohl Wolfgang Amadeus Mozart über keine Sustainpedal verfügte.
+            </p>
+          </section>
+          <section id="praeludium-bmv-927" class="song">
+            <h2>PRAELUDIUM BMV 927 - Johann Sebastian Bach</h2>
+            <img 
+              src="/images/johann-sebastian-bach.jpg" 
+              alt="Johann Sebastian Bach"
+              width="301"
+              height="386" 
+              class="song-image"
+            />
+            <p class="pdf-download">
+              <a
+                href="/bilder/BMV_927.pdf"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://www.youtube.com/watch?v=vxX0WiQhSUE"
+                target="_blank"
+                rel="noopener"
+                >▶ Play Video</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="/bilder/BMV_927.pdf"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>
+              Das PRAELUDIUM kann man gut nutzen um seine Schnelligkeit zu verbessern. Am besten auswendig spielen. Das erfordert viel Übung! Aber wer will den schon üben?
+            </p>
+          </section>
+          <section id="ballade-pour-adeline" class="song">
+            <h2>Ballade Pour Adeline</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1iVSg3er-VJkzpbwmLBbWQoAIuhySPyKw/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1vx8aV-wzMp9mCIOsHu2BKXCj-cpBZhAW/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1vx8aV-wzMp9mCIOsHu2BKXCj-cpBZhAW"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1iVSg3er-VJkzpbwmLBbWQoAIuhySPyKw"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="memory" class="song">
+            <h2>Memory</h2>
+            <img 
+              src="/images/andrew-lloyed-webber.jpg" 
+              alt="Andrew Lloyd Webber"
+              width="299"
+              height="203" 
+              class="song-image"
+            />
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1dnEeePT37kd4cQA7wNsZ8F8SJwLoJb1c/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1JxEXNoSh2fjU8mpTGgGOtN8AeY0rcVy1/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1JxEXNoSh2fjU8mpTGgGOtN8AeY0rcVy1"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1dnEeePT37kd4cQA7wNsZ8F8SJwLoJb1c"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Mittelschwer</p>
+          </section>
+          <section id="forrest-gump" class="song">
+            <h2>Forrest Gump</h2>
+            <img 
+              src="/images/alan-silvestri.jpg" 
+              alt="Alan Silvestri"
+              width="300"
+              height="199" 
+              class="song-image"
+            />
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1-7rxZOIioUlymdhDLZx9QGRPCTPwalGW/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1xS0jaQRQc9b29pasyL987VYoYrrQTBIy/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1xS0jaQRQc9b29pasyL987VYoYrrQTBIy"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1-7rxZOIioUlymdhDLZx9QGRPCTPwalGW"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>
+              Musik zu einem Hollywood Streifen. Es fängt an wie ein Glockenspiel und wird dann immer tiefer. Ein sehr schönes Stück von Alan Silvestri. Dieser amerikanischer Komponist schreibt im Jahr ca. 8 Songs für Hollywood Filme. Schwierigkeitgrad: Mittelschwer.
+            </p>
+          </section>
+          <section id="once-open-a-time-in-the-west" class="song">
+            <h2>Once Open A Time In The West</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1uQ8L0C_BoZA_hO5Rjz0ACQVvINAxqda2/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/14nk5xiPpdTKVvq3KmAIlNaJqfaCa37yU/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=14nk5xiPpdTKVvq3KmAIlNaJqfaCa37yU"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1uQ8L0C_BoZA_hO5Rjz0ACQVvINAxqda2"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="circle-of-life" class="song">
+            <h2>Circle Of Life</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1gKJfTK7J1oy55laLZZcwszUgZb-HjRdH/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1eP_Uuf5Iq8vH17lxafP7MTue_Dffj3WN/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1eP_Uuf5Iq8vH17lxafP7MTue_Dffj3WN"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=169jUaaAcPTdJV8GdLfhLBmOy7h3KCgzB"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1gKJfTK7J1oy55laLZZcwszUgZb-HjRdH"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Schwierigkeitsgrad: Mittelschwer</p>
+          </section>
+          <section id="hey-jude" class="song">
+            <h2>Hey Jude</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1yfvERlL01uxCdkkGYAZoSQdtemCV5aHm/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1ylPR23-yMpTCkqBxViiBMzxEvoma3JV7/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ylPR23-yMpTCkqBxViiBMzxEvoma3JV7"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1AMAq0u9473QehbnsG43y1tcxv_WUhR3w"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1yfvERlL01uxCdkkGYAZoSQdtemCV5aHm"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Schwierigkeitsgrad: Mittelschwer</p>
+          </section>
+          <section id="let-it-be" class="song">
+            <h2>Let It Be</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/17Zt1bTyqZDYZF8ARhlwYJirpe63Y0Ozl/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1LRUI1NkyGeIqEC3CLYW-cciwoZGFPlXT/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1LRUI1NkyGeIqEC3CLYW-cciwoZGFPlXT"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=12yut_fu3ylur8gRvtf7zBzFDfEZN1QZm"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=17Zt1bTyqZDYZF8ARhlwYJirpe63Y0Ozl"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Schwierigkeitsgrad: Leicht</p>
+          </section>
+          <section id="the-long-and-winding-road" class="song">
+            <h2>The Long And Winding Road</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1DfW3EAFOvF5OkB-G96LMJgI6DDm4vDiO/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1_oJcGDXtWgXZrnwb3K8wqM0idkXFbxjH/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_oJcGDXtWgXZrnwb3K8wqM0idkXFbxjH"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1nmHY3cVETicU12mT9GkUQGOVJuK2-lmd"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1z9EEEkEF21t9EDp2DI81gIXm-KEf544-"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1DfW3EAFOvF5OkB-G96LMJgI6DDm4vDiO"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Mittelschwer</p>
+          </section>
+          <section id="imagine" class="song">
+            <h2>Imagine</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1x6roFs1P8w5ca5UuhMZ6Cl9235E8k4K2/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1J8iHJ6WI2EsP-32nSKJbB7uLk_C-sl-7/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1J8iHJ6WI2EsP-32nSKJbB7uLk_C-sl-7"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=19q90gGy3t-TNh2yqyEHn3_cP89takU16"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1x6roFs1P8w5ca5UuhMZ6Cl9235E8k4K2"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Leicht</p>
+          </section>
+          <section id="mad-world" class="song">
+            <h2>Mad World</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1ydPs3Q1105-FmoeeXPxMs33cpSba6UUz/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1WozzhiN9wT03zNZsaoj0Y61JX8XLg2Q2/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1WozzhiN9wT03zNZsaoj0Y61JX8XLg2Q2"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ydPs3Q1105-FmoeeXPxMs33cpSba6UUz"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Leicht</p>
+          </section>
+          <section id="if-i-never-sing-another-song" class="song">
+            <h2>If I Never Sing Another Song</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1tc_CX9y1eFVCnlGN7UkJsJjnBOgGaZec/preview"
+              >
+                ⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1LGuylsXLeTkKeEwe44e0q5Tz1v7n84nS/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1LGuylsXLeTkKeEwe44e0q5Tz1v7n84nS"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1tc_CX9y1eFVCnlGN7UkJsJjnBOgGaZec"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p>Mittelschwer</p>
+            <p>
+              Diesen Song hat Udo Jürgens damals für Sammy Davis Junior geschrieben. Er selbst durfte diesen Song nie selber spielen.
+            </p>
+          </section>
+        </div>
+        <!-- class notes -->
+      </div>
+      <!-- class notes-column -->
+      <!-- Rechte Spalte: Inhaltsverzeichnis -->
+      <aside class="content">
+        <h3>Inhaltsverzeichnis</h3>
+        <h4>Romantik</h4>
+        <a href="#arabesque">Arabesque Nr. 1 - Achille Claude Debussy</a>
+        <a href="#reverie">REVERIE L68 - Achille Claude Debussy</a>
+        <a href="#aus-der-neuen-welt">Aus der neuen Welt 9.SYMPHONIE Opus 95 Largo - Antonin Dovorak</a>
+        <a href="#nocturne-opus9-nr2">Nocturne Opus 9 Nr. 2 - Frederic Chopin</a>
+        <a href="#3-morceaux-opus9">3 Morceaux Opus 9 - Pyotr Ilyich Tchaikovsky</a>
+        <a href="#dumka">Dumka - Russische Dorfszence Opus 59 - Pyotr Ilyich Tchaikovsky</a>
+        <a href="#autumn-song">The Seasons, Op. 37a No. 10 - P. Tschaikowsky</a>
+        <a href="#klavierkonzert-op10-nr2">Klavierkonzert Op. 10 Nr. 2 - Frederic Chopin</a>
+        <a href="#six-morceaux">Six Morceaux Op.19 - Pyotr Ilyich Tchaikovsky</a>
+        <h4>Klassik</h4>
+        <a href="#fuer-elise">Für Elise - Ludwig van Beethoven</a>
+        <a href="#mondscheinsonate">Mondschein-Sonate Op 27 No. 2 - Ludwig van Beethoven</a>
+        <a href="#sonata-facile-allegro">Sonata Facile KV 545 - Wolfgang Amadeus Mozart</a>
+        <h4>Barock</h4>
+        <a href="#praeludium-bmv-927">PRAELUDIUM BMV 927 - Johann Sebastian Bach</a>
+        <h4>Musical / Ballade</h4>
+        <a href="#ballade-pour-adeline">Ballade Pour Adeline - Richard Clayderman</a>
+        <a href="#memory">Memory - Andrew Lloyed Webber</a>
+        <h4>Film Musik</h4>
+        <a href="#forrest-gump">Forrest Gump (Feather Theme)- Alan Silvestri</a>
+        <a href="#once-open-a-time-in-the-west">Once Open A Time In The West - Ennio Morricone</a>
+        <h4>Popmusik</h4>
+        <a href="#circle-of-life">Circle Of Life - Elton John</a>
+        <a href="#hey-jude">Hey Jude - Beatles</a>
+        <a href="#let-it-be">Let It Be - Beatles</a>
+        <a href="#the-long-and-winding-road">The Long And Winding Road - Beatles</a>
+        <a href="#imagine">Imagine - John Lennon</a>
+        <a href="#mad-world">Mad World - Gary Jules</a>
+        <h4>Jazzmusik</h4>
+        <a href="#if-i-never-sing-another-song">If I Never Sing Another Song - Jamie Cullum</a>
+      </aside>
+      <a href="#top" class="scroll-top" aria-label="Zurück nach oben">⬆</a>
+    </div>
+    <!-- class lesson-layout -->
+  </main>
+  <script src="/scripts/scroll-offset.js" defer></script>
+</AccountLayout>

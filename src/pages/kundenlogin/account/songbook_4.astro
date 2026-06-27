@@ -1,0 +1,1396 @@
+---
+import AccountLayout from "../../../layouts/AccountLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+// Hier die fehlende Variable definieren
+const pageUrl = getPageUrl(Astro);
+const pageTitle = "My E-Guitar Collection";
+const description = "Geschützter Songbook-Bereich";
+---
+
+<AccountLayout
+  pageTitle="My E-Guitar Collection"
+  description="Geschütztes Songbook 2"
+  href={pageUrl}
+>
+  <link rel="stylesheet" href="/styles/songbook_2.css" />
+
+  <div class="songbook-hero">
+    <img
+      src="/images/Gretchgitarre.webp"
+      alt="The Big E-Guitar Songbook Cover"
+    />
+    <div class="hero-overlay">
+      <h1 id="top">{pageTitle}</h1>
+      <p>E-Gitarren Stücke • Noten & Tabs • Play-Alongs</p>
+    </div>
+  </div>
+
+  <p>
+    <a
+      href="/kundenlogin/account/"
+      class="normal-links"
+      aria-label="Zurück zum Schülerbereich"
+    >
+      Zurück zum Schülerbereich
+    </a>
+  </p>
+
+  <!-- Logout-Button -->
+  <div class="logout-container">
+    <button class="auth-logout">Logout</button>
+  </div>
+
+  <main>
+    <!-- ======================== -->
+    <!-- SONGBOOK LAYOUT -->
+    <!-- ======================== -->
+    <p>
+      Recht im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann auf
+      der linken Seite angezeigt. Ganz rechts ist so ein blauer ovaler Button.
+      Mit diesem Button kann man die website wieder ganz nach oben scrollen.
+    </p>
+
+    <div class="lesson-layout">
+      <!-- Linke Spalte -->
+      <div class="notes-column">
+        <!-- Linke Spalte: Noten + Audio -->
+        <div class="notes">
+          <section id="all-along-the-watchtower" class="song">
+            <h2>All Along The Watchtower</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1aYVP-9fWXtTOBkOIjHOJap01LyHgj73M/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1UF2B44OeZVDeuztRuWF1xtfW7eKC6PDh/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1UF2B44OeZVDeuztRuWF1xtfW7eKC6PDh"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1aYVP-9fWXtTOBkOIjHOJap01LyHgj73M"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/f44c3KYYtsg"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="angel" class="song">
+            <h2>Angel - Jimi Hendrix</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1fozhDNsXYr4jNYby3CSG4qaJ4r5EB3MR/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1JNqW3TVDgUQbSq0R2C-9caDw1Aw47Nr9/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1JNqW3TVDgUQbSq0R2C-9caDw1Aw47Nr9"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1fozhDNsXYr4jNYby3CSG4qaJ4r5EB3MR"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/hYngN-BZRhI"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="if-6-was-9" class="song">
+            <h2>If 6 Was 9</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1DbTTDD6fRMKUXucJfIKCOmdYXCzwlIUT/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1OH2pxd7LdJi-lsSg-h2YmSOkpwAgdlK0/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1OH2pxd7LdJi-lsSg-h2YmSOkpwAgdlK0"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1gG9A2GsO1fqhmPZXRIFpoIaRsfbZhzsK"
+                >▶ + Bass Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1DbTTDD6fRMKUXucJfIKCOmdYXCzwlIUT"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="little-wing" class="song">
+            <h2>Little Wing</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1TGXhgj3AwZ738iqKj5_wk7wk4H8Up5uR/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1F_ZxRZY71viQaEWrKQWsbcxIQL116qjd/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1F_ZxRZY71viQaEWrKQWsbcxIQL116qjd"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=123lwHDHT2GauamHuSeYyWjIMr6Xcrjc0"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1TGXhgj3AwZ738iqKj5_wk7wk4H8Up5uR"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten Guitar, Bass & Drums herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/gRP3Ti_0ffg"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="hey-joe" class="song">
+            <h2>Hey Joe</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1FwPldMs7a630HH7GT2UK1KavRjW4IGvL/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1oxyWIXcDwkF9JW8cH8YnczYG9PVdtkkZ/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1oxyWIXcDwkF9JW8cH8YnczYG9PVdtkkZ"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1HcwEXkWRsaPapV_eORm2ID3TX-y-kciN"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1FwPldMs7a630HH7GT2UK1KavRjW4IGvL"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/G5Lvc1a76dU"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="purple-haze" class="song">
+            <h2>Purple Haze</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1uCqBiNqmTWnqp6BIv4VsJJ954-ShISOt/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1yF0WfCsUfZ7lyX1nnF-TsBpq8X6RRHOc/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1yF0WfCsUfZ7lyX1nnF-TsBpq8X6RRHOc"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1EjgHyO5_T009qvQ8RXWmRcHFHyq0gBeV"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1uCqBiNqmTWnqp6BIv4VsJJ954-ShISOt"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten Guitar, Bass & Drums herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/zSsjtiky9xI"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="the-wind-cries-mary" class="song">
+            <h2>The Wind Cries Mary</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1pvYR3LORi8bjTmkZziGcpLK1IcL4jUSt/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1ypEzy57SSCrWOcL4N9eZz-7I0zsfANqj/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ypEzy57SSCrWOcL4N9eZz-7I0zsfANqj"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1pvYR3LORi8bjTmkZziGcpLK1IcL4jUSt"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten Guitar, Bass & Drums herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/Wc7B4i89008"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+
+          <section id="all-you-need-is-love" class="song">
+            <h2>All You Need Is Love</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1Sw2nnL3f51sz4uNZPW9KYrDFO_buy7ad/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1Xrlh0BEM9SkFppr6kcPNQsYg_fHkibKC/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Xrlh0BEM9SkFppr6kcPNQsYg_fHkibKC"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1nHGg_lb0se4zhDHeWv-e5e7ihsrrjbOP"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1GSGhDuWs5K_lh0KAyEF76IvjrS16lFmS"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="come-together" class="song">
+            <h2>Come Together</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1EKNAFyeQPgiXxkqVlLxR2-H0IUosm2kM/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1G-FxeCR1LyLAaHF8lJxeCMn5fnfe-S7d/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1G-FxeCR1LyLAaHF8lJxeCMn5fnfe-S7d"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1M-eXj8a8uv6v0qa8er85GLdwDoiJwUf2"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1EKNAFyeQPgiXxkqVlLxR2-H0IUosm2kM"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="get-back" class="song">
+            <h2>Get Back</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1zdZIV1jtWqeMjinkb4M4xbOhsihFXfnh/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1hmx9_z7klKKhHjSiC1dbYTX-2IXNEo4Y/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1hmx9_z7klKKhHjSiC1dbYTX-2IXNEo4Y"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1pfN6iKKsh-1TkSQL8qnimp4ZQ3CdBqi-"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1zdZIV1jtWqeMjinkb4M4xbOhsihFXfnh"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/oI8Aw0IGM1I"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="baker-street" class="song">
+            <h2>Baker Street</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1VAR-EEdZb2P9y1cIxduG7X8jjYXARw6R/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1Q-gzH2uoMKQVi36xPPDQ5m25sex_CL0k/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Q-gzH2uoMKQVi36xPPDQ5m25sex_CL0k"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1RjcZC0fC-RVML57ggKt3HjvYllctsOHk"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1VAR-EEdZb2P9y1cIxduG7X8jjYXARw6R"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/Fo6aKnRnBxM"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="high-5" class="song">
+            <h2>High 5</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1WvwchEwTLXxN7QG_4WbsPd5XVwcT5x8z/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/11E_wuNOxd5OjLttt16-Z_RT-ukCmtmH5/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=11E_wuNOxd5OjLttt16-Z_RT-ukCmtmH5"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1gL8sdUhXI2zlY3XYHCDnHgEA4Q_YFvu-"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1WvwchEwTLXxN7QG_4WbsPd5XVwcT5x8z"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/2_901yVKIGE"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="europa" class="song">
+            <h2>Europa</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1wLjK1J0hiskUHGxUVkJNyURirFLSLnJ0/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1c8zgFmFd-R9ic5NQOhsAnKYZb5EAEicY/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1c8zgFmFd-R9ic5NQOhsAnKYZb5EAEicY"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=11moJOYRk2wXLQeb-Riot9wBHGzbK26JN"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1wLjK1J0hiskUHGxUVkJNyURirFLSLnJ0"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/SVI7ZDDQXKA"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="moonflower" class="song">
+            <h2>Moonflower</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1eoV9NbQVEkx2vNn3fN3jhWLjDfEfk22-/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1XzxpK8z0DpHOHPvrFYViybIuM76BR9fs/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1XzxpK8z0DpHOHPvrFYViybIuM76BR9fs"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1o7ypMqQ_2JnNKCP4kR7g8UWFB2DICCuz"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1eoV9NbQVEkx2vNn3fN3jhWLjDfEfk22-"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/bQWOhPPYJkQ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+           <section id="she's-not-there" class="song">
+            <h2>She's Not There</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/16it3bamEeh7cyFq_AgLFQxQYgz_pCdvI/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1aNLlYtYdbfdzkNF9jkdL8IkjZtG6_0Ns/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1aNLlYtYdbfdzkNF9jkdL8IkjZtG6_0Ns"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Vv54mS3hUPQJ60HLdAtAd_96zAQYwurZ"
+                >▶ Bass Noten downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=16it3bamEeh7cyFq_AgLFQxQYgz_pCdvI"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/yRNvFPvN7LQ"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="message-in-a-bottle" class="song">
+            <h2>Message In A Bottle</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/10udvuk7BiNofckQm1jFGt_lBTdvEAdMY/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1bRaQRqY7-NFBZ2HkFRZSjvGJ1s2MIQNT/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1bRaQRqY7-NFBZ2HkFRZSjvGJ1s2MIQNT"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=10udvuk7BiNofckQm1jFGt_lBTdvEAdMY"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/MbXWrmQW-OE"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          
+          <section id="take-good-care-of-my-baby" class="song">
+            <h2>Take Good Care Of My Baby</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1GSGhDuWs5K_lh0KAyEF76IvjrS16lFmS/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1ZFpf760L5VRlUhBSn3MIQ0Ij8114ar-S/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ZFpf760L5VRlUhBSn3MIQ0Ij8114ar-S"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ABvwLJT44oSwGtwgv5pRN2VK3exhXbYS"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1GSGhDuWs5K_lh0KAyEF76IvjrS16lFmS"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/NbEkJk-Ud58"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="santeria" class="song">
+            <h2>Santeria</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1cGkLqRLbh0YLWjK-j4XK2dFcHyX5ft04/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1V4aeZznc8bj56HQyWJjXGwtVuQHRBKVw/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1V4aeZznc8bj56HQyWJjXGwtVuQHRBKVw"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1sYAHF0cHaX2FF1G4yvL4VAlSKEXSJCv4"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1cGkLqRLbh0YLWjK-j4XK2dFcHyX5ft04"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/pxZKDKahvvM"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="southern-man" class="song">
+            <h2>Southern Man</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1G6Yp4tke8Ac_Sfr3Qqi70bWgytJnNNjz/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/15-8SbQGU4BQMhBpMHHYsEz5HPY8HEpv4/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=15-8SbQGU4BQMhBpMHHYsEz5HPY8HEpv4"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1eizBTJ2dxEqKrQkgNF1EZyDj3GRq-mqz"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1G6Yp4tke8Ac_Sfr3Qqi70bWgytJnNNjz"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/QkF3oxziUI4"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="stairway-to-heaven" class="song">
+            <h2>Stairway To Heaven</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1oXmm8mMOD--LOBfOjY6VrV7oorhGbi4D/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/12vdePoy75AaE-uj2-pZ_k7uJJT3gJNiv/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=12vdePoy75AaE-uj2-pZ_k7uJJT3gJNiv"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=18n8HX7RbiYEDLbTQ0KEgACiBs6Vp7Qk6"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1oXmm8mMOD--LOBfOjY6VrV7oorhGbi4D"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/QkF3oxziUI4"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="sultan-of-swing" class="song">
+            <h2>Sultan Of Swing - Dire Straits</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1VOPJgn8uVfkM6EeDo8p9itsU6_FroLRH/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1hRcP6TrWDhFG6iafzd_tnUIJH7Io7opQ/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1hRcP6TrWDhFG6iafzd_tnUIJH7Io7opQ"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1VOPJgn8uVfkM6EeDo8p9itsU6_FroLRH"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/h0ffIJ7ZO4U"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="sleepwalk" class="song">
+            <h2>Sleepwalk</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1lV4LxwpfiPdKEmTI-VQVf2X99GPpzsxc/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1YxynQu1iR96gSso7PaRConWgaslDwdcL/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1YxynQu1iR96gSso7PaRConWgaslDwdcL"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ukqvGw4Z--qmVVga3jnZPfhlmcCpWrc_"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1lV4LxwpfiPdKEmTI-VQVf2X99GPpzsxc"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Tab herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/5c8nanTCPz0"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="ten-words" class="song">
+            <h2>Ten Words</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1Jtbo2Z_wgxuEzaFH-oSRG_v6odpK6q4T/preview"
+                >⬇ Tab Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1qOK0uBVYixUAwysHQYBbzfOIz80M7WYv/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1qOK0uBVYixUAwysHQYBbzfOIz80M7WYv"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1OkxTSKDodYBm0-zWKd9xh8a3neg2BLj6"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Jtbo2Z_wgxuEzaFH-oSRG_v6odpK6q4T"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Tab herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/rsTXN6KK3Mg"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="under-the-bridge" class="song">
+            <h2>Under The Bridge - Red Hot Chili Peppers</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1kizKWe3hilbfry7hsD4tybxSPgZogEpQ/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1V2yFZ2oc3U8RRj8NZOmm3iMUtI3QRa-c/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1V2yFZ2oc3U8RRj8NZOmm3iMUtI3QRa-c"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1kizKWe3hilbfry7hsD4tybxSPgZogEpQ"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/GLvohMXgcBo"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="talk-to-your-daughter" class="song">
+            <h2>Talk To Your Daughter</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1EjW3eVRJtaCmwJNUr19MCoQRUCeETo9l/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1euUlHaXeO41Og088X68d_ssAAIp2LDc0/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1euUlHaXeO41Og088X68d_ssAAIp2LDc0"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=16h13GLvpnbYuHJHqL_MJvyfV5QRvz0pu"
+                >▶ Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1EjW3eVRJtaCmwJNUr19MCoQRUCeETo9l"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/wDYE_duXedA"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="red-house" class="song">
+            <h2>Red House</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1kfG9NvZCZXZwL0qxyN-zK-unMC318CfQ/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1_ci0Xvqs1JqFowlrqxOsNlNfx5o5FtsB/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_ci0Xvqs1JqFowlrqxOsNlNfx5o5FtsB"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1bOjmdDBuq1oO8ZDvcgf_Lk-CxTrsRfFr"
+                >▶ Bass Noten downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_ci0Xvqs1JqFowlrqxOsNlNfx5o5FtsB"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="the-loner" class="song">
+            <h2>The Loner</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1OpfcVy2RZEISJ6vZyCPjy9M9SLxJN6-M/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1f_RY85hahz5ecsbmvT2roEqzNff2SHn2/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1f_RY85hahz5ecsbmvT2roEqzNff2SHn2"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1OpfcVy2RZEISJ6vZyCPjy9M9SLxJN6-M"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/6gcPdeL4Dnc"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+           <section id="enter-sandman" class="song">
+            <h2>Enter Sandman</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/17QVXErhxxeOPd-Cxa0tClBlPpjksYUD2/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1YwNdOY8LKZIbBBFFclidjthl8jHgdS3-/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1YwNdOY8LKZIbBBFFclidjthl8jHgdS3-"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=17UBxvg_nlcsOMLKDommd2sdj3UAi-HBC"
+                >▶ Bassnoten downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=17QVXErhxxeOPd-Cxa0tClBlPpjksYUD2"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/CD-E-LDc384"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="nothing-else-matters" class="song">
+            <h2>Nothing Else Matters - Metallica</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1qoXZe3C9AMAVCujJTnTYtxnxbSn-XZli/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1rduWoISS9qPdhwY7L8RsamyCehffZRmy/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1rduWoISS9qPdhwY7L8RsamyCehffZRmy"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1qoXZe3C9AMAVCujJTnTYtxnxbSn-XZli"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/tAGnKpE4NCI"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="the-unforgiven" class="song">
+            <h2>The Unforgiven - Metallica</h2>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1_j7pmW6A5GD70jAA6b9mM95VUENDUPNj/preview"
+                >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1cEafUploqDGgP0qvZc48fuvTuIdAC05h/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1cEafUploqDGgP0qvZc48fuvTuIdAC05h"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_j7pmW6A5GD70jAA6b9mM95VUENDUPNj"
+                target="_blank"
+                rel="noopener"
+              >
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/Ckom3gf57Yw"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          
+        </div>
+        <!-- class notes -->
+      </div>
+      <!-- class notes-column -->
+      <!-- Rechte Spalte: Inhaltsverzeichnis -->
+      <aside class="content">
+        <h3>Inhaltsverzeichnis</h3>
+        <h4>Popmusik</h4>
+        <a href="#all-along-the-watchtower">All Along The Watchtower - Jimi Hendrix</a>
+        <a href="#angel">Angel - Jimi Hendrix</a>
+        <a href="#hey-joe">Hey Joe - Jimi Hendrix</a>
+        <a href="#if-6-was-9">If 6 was 9 - Jimi Hendrix</a>
+        <a href="#little-wing">Little Wing - Jimi Hendrix</a>
+        <a href="#purple-haze">Purple Haze - Jimi Hendrix</a>
+        <a href="#the-wind-cries-mary">The Wind Cries Mary - Jimi Hendrix</a>
+        <a href="#all-you-need-is-love">All You Need Is Love - Beatles</a>
+        <a href="#come-together">Come Together - Beatles</a>
+        <a href="#get-back">Get Back - Beatles</a>
+        <a href="#baker-street">Baker Steet - Gerry Rafferty</a>
+        <a href="#high-5">High 5 - Peter Fischer</a>
+        <a href="#europa">Europa - Santana</a>
+        <a href="#moonflower">Moonflower - Santana</a>
+        <a href="#she's-not-there">She's Not There - Santana</a>
+        <a href="#message-in-a-bottle">Message In A Bottle - The Police</a>
+        <a href="#take-good-care-of-my-baby">Take Good Care Of My Baby - Bobby Vee</a>
+        <a href="#santeria">Santeria - Sublime</a>
+        <a href="#southern-man">Southern Man - Grosby, Stills, Nash & Young</a>
+        <a href="#stairway-to-heaven">Stairway To Heaven - Led Zeppelin</a>
+        <a href="#sultan-of-swing">Sultan Of Swing - Dire Straits</a>
+        <a href="#sleepwalk">Sleepwalk - Joe Satriani</a>
+        <a href="#ten-words">Ten Words - Joe Satriani</a>
+        <a href="#under-the-bridge">Under The Bridge - Red Hot Chili Peppers</a>
+        <h4>Blues</h4>
+        <a href="#talk-to-your-daughter">Talk To Your Daughter - Robbon Ford</a>
+        <a href="#red-house">Red House - Jimi Hendrix</a>
+        <a href="#the-loner">The Loner - Gary Moore</a>
+        <h4>Heavy Metal</h4>
+        <a href="#enter-sandman">Enter Sandman - Metallica</a>
+        <a href="#nothing-else-matters">Nothing Else Matters - Metallica</a>
+        <a href="#the-unforgiven">The Unforgiven - Metallica</a>
+      </aside>
+      <a href="#top" class="scroll-top" aria-label="Zurück nach oben">⬆</a>
+    </div>
+    <!-- class lesson-layout -->
+  </main>
+  <script src="/scripts/scroll-offset.js" defer></script>
+</AccountLayout>

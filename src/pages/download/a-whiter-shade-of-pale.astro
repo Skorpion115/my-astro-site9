@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: A Whiter Shade Of Pale – Orgel Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "PALE-001",
+    "data-price": "8.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1PnIEHg7FC5gbN4fJMTRQmv9wqQ5FJel7"
+        class="cta-button"
+      >
+        📄 A Whiter Shade Of Pale – Orgel Noten
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1x6XBfrYeSi8sBNOljBSU5aRW82syNQQX"
+        class="cta-button"
+      >
+        📄 A Whiter Shade Of Pale – Bass Noten
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1SjyjwhAXk1ExpjDaS4c5ddo69HaCpWJ9"
+        class="cta-button"
+      >
+        📄 A Whiter Shade Of Pale – Noten für die Drums
+      </a>
+    </li>
+  </ul>
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

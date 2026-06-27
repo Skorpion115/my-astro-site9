@@ -1,0 +1,484 @@
+/* ============================= */
+/* 1. BASIS                      */
+/* ============================= */
+body {
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* ============================= */
+/* ACCOUNT HEADER & NAVIGATION   */
+/* ============================= */
+
+/* ============================= */
+/* ACCOUNT HEADER & NAVIGATION   */
+/* ============================= */
+
+.account-header {
+  background: #0077cc;
+  padding: 1rem 2rem;
+  color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Desktop Navigation */
+.account-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.account-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.account-nav a:hover {
+  color: #ffeb3b;
+}
+
+.account-nav a.active,
+.account-nav a.active:hover {
+  background: #ffeb3b;
+  color: #000;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+
+/* ============================= */
+/* HAMBURGER BUTTON              */
+/* ============================= */
+
+.nav-toggle {
+  display: none; /* Desktop unsichtbar */
+  width: 30px;
+  height: 22px;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3000; /* über dem Panel */
+}
+
+.nav-toggle span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: white;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.nav-toggle span:nth-child(1) { top: 0; }
+.nav-toggle span:nth-child(2) { top: 9px; }
+.nav-toggle span:nth-child(3) { bottom: 0; }
+
+/* Hamburger → X Animation */
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+/* ============================= */
+/* MOBILE (Off-Canvas Menü)      */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .account-nav {
+    position: fixed;
+    top: 0px;  /* Start direkt unter dem Header */
+    right: 0;
+    height: calc(100vh - 70px); /* Höhe = gesamte Viewport-Höhe minus Header */
+    width: 150px;
+    background: #005fa3;
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    gap: 1.0rem;
+    transform: translateX(100%); /* komplett nach rechts ausblenden */
+    transition: transform 0.5s ease; /* von 0.3s → 0.5s */
+    z-index: 2000;
+  }
+
+  .account-nav.active {
+    transform: translateX(0); /* Menü fährt in den Viewport */
+  }
+}
+/* ============================= */
+/* 2. LAYOUT                     */
+/* ============================= */
+
+.lesson-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* ============================= */
+/* 3. SONG-BEREICH (LINKS)       */
+/* ============================= */
+
+.notes-column {
+  flex: 2;
+}
+
+.song {
+  margin-bottom: 3rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.song:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.song h2 {
+  margin-bottom: 1rem;
+}
+
+/* PDF Anzeige */
+.song iframe {
+  width: 100%;
+  height: 92vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+
+/* ============================= */
+/* 4. LINKS & DOWNLOADS          */
+/* ============================= */
+
+.pdf-download {
+  margin-bottom: 0.5rem;
+}
+
+.pdf-download a,
+.audio-links a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+.audio-links {
+  margin-top: 0.5rem;
+}
+
+.audio-links a {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.pdf-download a:hover,
+.audio-links a:hover {
+  text-decoration: underline;
+  color: #d93025;
+}
+
+/* ============================= */
+/* 5. INHALTSVERZEICHNIS (RECHTS)*/
+/* ============================= */
+
+.content {
+  flex: 1;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h3,
+.content h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.content a {
+  display: block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.content a:hover {
+  color: #d93025;
+}
+
+/* ============================= */
+/* 6. LOGOUT BUTTON              */
+/* ============================= */
+
+.logout-container {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.auth-logout {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-logout:hover {
+  background-color: #005fa3;
+  transform: translateY(-1px);
+}
+
+.auth-logout:active {
+  background-color: #004d80;
+  transform: translateY(0);
+}
+
+/* ============================= */
+/* 7. RESPONSIVE + STICKY        */
+/* ============================= */
+
+/* Desktop / Tablet: rechte Spalte bleibt sticky */
+@media (min-width: 361px) {
+  .content {
+    position: sticky;
+    top: 1rem;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+  }
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  .song iframe {
+    height: 80vh;
+  }
+
+  .lesson-layout {
+    gap: 1rem;
+  }
+}
+
+/* Kleine Smartphones */
+@media (max-width: 400px) {
+  .song iframe {
+    height: 68vh;
+  }
+
+  .lesson-layout {
+    gap: 0.5rem;
+  }
+}
+
+/* Sehr kleine Smartphones */
+@media (max-width: 360px) {
+  .song iframe {
+    height: 60vh;
+  }
+
+  .content {
+    position: static;
+    margin-top: 1rem;
+    max-height: none;
+  }
+}
+
+/* ================= Hero Header ================= */
+.songbook-hero {
+  position: relative;
+  width: 100%;
+  height: clamp(420px, 55vh, 720px); /* Dynamische Höhe */
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+/* Bild direkt sichtbar mit sanftem Zoom */
+.songbook-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%; /* Fokus leicht nach oben */
+  display: block;
+  opacity: 1;                 /* sofort sichtbar */
+  transform: scale(1.05);     /* leichter Cinematic Zoom */
+  transition: transform 1.4s ease-out; /* nur Zoom animieren */
+}
+
+/* Optional: sanfter Zoom beim Hover */
+.songbook-hero:hover img {
+  transform: scale(1.08);     /* kleiner Zoom-Effekt beim Hover */
+}
+
+/* Dunkler Verlauf über dem Bild */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  /*
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.75)
+  ); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Titel */
+.hero-overlay h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Untertitel / Beschreibung */
+.hero-overlay p {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.4rem);
+  opacity: 0.95;
+}
+
+/* ============================= */
+/* DARK MODE SONGBOOK           */
+/* ============================= */
+/*
+html.dark body {
+  background-color: #1e1e1e;
+}
+
+html.dark .song {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .content {
+  background-color: #2a2a2a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+html.dark .audio-links a,
+html.dark .pdf-download a,
+html.dark .content a {
+  color: #4da3ff;
+}
+
+html.dark .pdf-download a:hover,
+html.dark .content a:hover {
+  color: #ff6b6b;
+} */
+
+/* Fixiertes Floating Button */
+
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #1a73e8;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.scroll-top:hover {
+  background: #d93025;
+}
+
+/* PDF Noten Download Link */
+
+.pdf-link a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #5269e9;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* ANCHOR Videos Einstellungen */
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;    /* verhindert Überschreiten der Wrapper-Breite */
+}
+
+.video-container-wrapper {
+  width: 100%;
+  max-width: 560px;   /* maximale Breite für normale Videos */
+  margin: 0 auto;     /* zentrieren */
+  padding: 0 0.5rem;
+  display: block;
+}
+
+.video-container iframe {
+  position: absolute !important; /* erzwingt Position */
+  top: 0;
+  left: 0;
+  width: 100% !important;  /* erzwingt volle Breite des Containers */
+  height: 100% !important; /* erzwingt volle Höhe */
+  max-width: 100% !important;
+  max-height: 100% !important;
+  border: 0;
+}
+
+.video-container-wrapper.thumbnail {
+  max-width: 280px; /* halbe Größe */
+}

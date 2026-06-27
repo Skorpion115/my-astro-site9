@@ -1,0 +1,109 @@
+# ==============================
+# INSTRUMENTEN / UNTERRICHT
+# ==============================
+
+/klarinette/                  /klarinettenunterricht/      301
+/saxophon/                    /saxophonunterricht/         301
+/e-gitarre/                  /e-gitarrenunterricht/       301
+/banjo/                      /banjounterricht/            301
+/keyboard/                   /keyboardunterricht/         301
+/akkordeon/                  /akkordeonunterricht/        301
+/querfloeten-unterricht/     /querfloetenunterricht/      301
+/musikunterricht/            /unterricht/                 301
+/klavier/                    /klavierunterricht/          301
+/e-bass/                     /e-bassunterricht/           301
+
+/webseite%20erstellen/       /webseite-erstellen/         301
+/webseite erstellen/         /webseite-erstellen/         301
+/post-4/                     /webseite-erstellen/         301
+
+/banjo d-tuner/             /d-tuner/                    301
+/akkordeon-unterricht/      /akkordeonunterricht/        301
+
+
+# ==============================
+# LOGIN / SYSTEM
+# ==============================
+
+/kunden-login/*             /kurse/alle-kurse/           301
+
+
+# ==============================
+# SHOP ALT → NEU (SPEZIALFÄLLE)
+# ==============================
+
+/shop/dear-old-dixie-noten-tabs/   /checkout/dear-old-dixie/   301
+/shop/dear-old-dixie/               /checkout/dear-old-dixie/   301
+/shop/rose-room-noten-tabs/        /checkout/rose-room/        301
+/shop/rose-room/                    /checkout/rose-room/       301
+/shop/smile-noten-tabs/            /checkout/smile/            301
+/shop/smile/                        /checkout/smile/           301
+/shop/intermezzo-noten/            /checkout/intermezzo/      301
+
+/shop/train45-noten-tabs/          /checkout/train-45/        301
+/shop/black-mountain-rag-noten-tabs/ /checkout/black-mountain-rag/ 301
+
+/shop/mondschein-sonate-noten/     /checkout/beethoven-moonlight-sonata/ 301
+/shop/nocturne-opus9-no2-noten/    /checkout/chopin-nocturne-op-9-no-2/ 301
+/shop/nancy-rowland-noten-tabs/     /checkout/nancy-rowland/    301
+/shop/cripple-creek-noten-tabs/     /checkout/cripple-creek/    301
+/shop/black-mountain-rag-noten-tabs/    /checkout/black-mountain-rag/   301
+/shop/train45-noten-tabs/           /checkout/train-45/         301
+/shop/nocturne-opus9-no2/           /checkout/chopin-nocturne-op-9-no-2/    301
+/shop/klavierkonzert-nr-1/          /checkout/tschaikovsky-piano-concerto-no-1-in-b-flat-minor/ 301
+/shop/dvorak-aus-der-neuen-welt-largo-klaviernoten-download/    /checkout/dvorak-largo-from-the-new-world/  301
+/shop/klavierkonzert-nr-1/          /checkout/tschaikovsky-piano-concerto-no-1-in-b-flat-minor/ 301
+/shop/black-mountain-rag/           /checkout/black-mountain-rag/   301
+/shop/intermezzo/                   /checkout/intermezzo/           301
+
+
+
+# ==============================
+# KURSE → CHECKOUT (TABS)
+# ==============================
+
+/kurse/:slug-noten-tabs/    /checkout/:slug/    301
+
+
+# ==============================
+# KURSE → CHECKOUT (NOTEN)
+# ==============================
+
+/kurse/:slug-noten/         /checkout/:slug/    301
+
+
+# ==============================
+# EINZELFÄLLE (ÜBERSCHREIBUNGEN)
+# ==============================
+
+/kurse/moonflower-santana-noten-tabs/   /checkout/flor-de-luna/ 301
+/kurse/vincent-don-mclean-noten-tabs/   /checkout/vincent/      301
+/kurse/behind-blue-eyes-noten-tabs/     /checkout/behind-blue-eyes/ 301
+/kurse/in-the-year-2525-noten-tabs/     /checkout/in-the-year-2525/ 301
+/kurse/now-and-forever-noten-tabs/      /checkout/now-and-forever/ 301
+/kurse/where-do-you-go-to-my-lovely-noten-tabs/ /checkout/where-do-you-go-to-my-lovely/ 301
+
+/kurse/stairway-to-heaven-noten-tabs/   /checkout/stairway-to-heaven/ 301
+
+
+# ==============================
+# CHECKOUT ALT-FÄLLE
+# ==============================
+
+/kurse/the-a-team-noten-tabs/           /checkout/the-a-team/    301
+/kurse/a-horse-with-no-name-noten-tabs/ /checkout/a-horse-with-no-name/ 301
+/kurse/classical-gas-noten/            /checkout/classical-gas/ 301
+/kurse/father-and-son-noten-tabs/      /checkout/father-and-son/ 301
+/kurse/ferry-across-the-mersey-noten-tabs/ /checkout/ferry-across-the-mersey/ 301
+/kurse/hotel-california-noten-tabs/    /checkout/hotel-california/ 301
+/kurse/all-along-the-watchtower-noten-tabs/ /checkout/all-along-the-watchtower/ 301
+/kurse/the-wind-cries-mary-noten-tabs/ /checkout/the-wind-cries-mary/ 301
+/kurse/sleepwalk-noten-tabs/           /checkout/sleepwalk/ 301
+
+
+# ==============================
+# GENERELLE ALT-SEITEN
+# ==============================
+
+/kurse/alle-kurse/        /kurse/musikbibliothek/      301
+/kunden-login/inhaltsverzeichnis/ /kurse/alle-kurse/ 301

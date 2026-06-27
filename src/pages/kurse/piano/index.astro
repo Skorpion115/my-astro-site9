@@ -1,0 +1,116 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+const pageTitle = "Keyboard Lernmodule";
+const description =
+  "Lerne Gitarre mit strukturierten Lernmodulen: Strumming, Fingerstyle, Country und Blues – nach Stil und Level sortiert.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+>
+  <p>
+    Hier findest du Keyboard-Stücke und Übungen im Stil von Jazz, Pop und Easy
+    Listening. Schwerpunkt: Begleitpatterns, Melodie-Spiel und typische Sounds
+    wie Hammond und Orgel.
+  </p>
+
+  <!-- 🔷 Lernwege / Kategorien -->
+  <h2>Rubriken</h2>
+
+  <div class="card-grid">
+    <div class="basis-card">
+      <h2>🎹 Piano Klassik</h2>
+
+      <p>Auswahl an klassischen Piano-Stücken.</p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/dvorak-largo-from-the-new-world/">
+            Largo from Symphony No. 9  – Antonín Dvořák 
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/tchaikovsky-piano-concerto-no-1-in-b-flat-minor/">
+            Piano Concerto No. 1 in B-Flat Minor – Pjotr Iljitsch Tschaikowsky
+          </a>
+        </li>
+         <li>
+          <a href="/arrangements/beethoven-fur-elise/">
+            Für Elise – Ludwig van Beethoven
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/beethoven-moonlight-sonata/">
+            Moonlight Sonata – Ludwig van Beethoven
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/chopin-nocturne-op-9-no-2/">
+            Frédéric Chopin – Nocturne in E-flat Major, Op. 9 No. 2
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="basis-card">
+      <h3>🎹 Piano Popmusik</h3>
+
+      <p>
+        Eine Auswahl an populären Piano-Stücken.
+      </p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/imagine/">
+            Imagine – John Lennon 
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/mad-world/">
+            Mad World – Gary Jules 
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/the-long-and-winding-road/">
+            The Long And Winding Road – The Beatles 
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/hey-jude/">
+            Hey Jude – The Beatles 
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/let-it-be/">
+            Let It Be – The Beatles 
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/circle-of-life/">
+            Circle Of Life – Elton John 
+          </a>
+        </li>
+      </ul>
+
+      
+    </div>
+  </div>
+
+  <!-- 🔷 Optional: Erklärung -->
+  <h2>Wie funktioniert das Lernen?</h2>
+
+  <ul>
+    <li>Du wählst einen Stil (z. B. Hammond Orgel Klassiker)</li>
+    <li>Du lernst anhand eines konkreten Arrangements</li>
+    <li>Du arbeitest mit echten Songs im Stil – ohne komplizierte Theorie</li>
+  </ul>
+</BaseLayout>

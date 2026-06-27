@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "A Whiter Shade Of Pale – Procol Harum";
+const description = "A Whiter Shade Of Pale - Procol Harum";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>Orginal gespielt von Procol Harum</p>
+
+  <p>
+    Dieses Arrangement ist eine der berühmtesten Stücke von Procol Harum.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Orgelnoten</li>
+    <li>Gesangsnoten</li>
+    <li>Bassnoten & Tabs</li>
+    <li>Drumsnoten</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>Für fortgeschrittene Spieler, die ihren Horizont erweitern wollen.</p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a href="/checkout/a-whiter-shade-of-pale/" class="cta-button">
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>

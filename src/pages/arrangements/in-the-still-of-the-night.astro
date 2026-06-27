@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "In The Still Of The Night – Harry Stoneham";
+const description = "Orgel-Arrangement im Stil von Harry Stonehamfür fortgeschrittene Anfänger.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+
+  <p>Original gespielt von Harry Stoneham komponiert von Cole Porter</p>
+
+  <p>
+    Dieses Arrangement vermittelt wie die linke Hand die 4-stimmige Melodie unterstützt.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Vierstimmiges Melodiespiel</li>
+    <li>Rhythmische Begleitung</li>
+    <li>Praxisnahes Spielgefühl</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Anfänger und Spieler, die ihren Rhythmus verbessern wollen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+<p>
+    <a href="/checkout/in-the-still-of-the-night/" class="cta-button">
+        Jetzt kaufen / herunterladen
+    </a>  
+</p>
+
+
+</BaseLayout>

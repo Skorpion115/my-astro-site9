@@ -1,0 +1,79 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Vincent – Don McLean (Arrangement für Gitarre)";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält typische Strumming-Patterns und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <section>
+
+  <p>
+    Dieses Arrangement basiert auf einem selbst erarbeiteten Noten- und Tab-Arrangement für Akustikgitarre.
+    Du lernst die Begleitung die vorwiegend aus zerlegten Akkorden besteht.
+  </p>
+
+  <p class="info-box">
+    Du erhältst ein vollständiges PDF mit Noten, Tabs und Spielhinweisen.  
+    Ein Video-Tutorial ist aktuell nicht enthalten.
+  </p>
+
+</section>
+
+<hr>
+
+<section>
+
+  <h2>Lernziel</h2>
+  <ul>
+    <li>Sicheres Spielen von zerlegten Akkordmustern</li>
+    <li>Rhythmusgefühl und Akkordwechsel verbessern</li>
+  </ul>
+
+</section>
+
+<section>
+
+  <h2>Spieltechnik</h2>
+  <ul>
+    <li>Zerlegt Akkorde spielen</li>
+    <li>Dynamisches Spiel (leise / laut)</li>
+    <li>gleichmäßiger Groove im 4/4 Takt</li>
+  </ul>
+
+</section>
+
+<hr>
+
+<section>
+
+  <h2>Inhalt</h2>
+  <ul>
+    <li>PDF Noten & Tabs</li>
+    <li>Zusätzliche Grifftabellen</li>
+    <li>Komplette Songstruktur</li>
+    <li>Spielhinweise & Akkordabläufe</li>
+    <li>Gesangsnoten</li>
+  </ul>
+
+</section>
+
+<section class="cta">
+
+  <a href="/checkout/vincent/" class="cta-button">
+    Jetzt herunterladen
+  </a>
+
+</section>
+</BaseLayout>

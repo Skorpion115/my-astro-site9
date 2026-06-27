@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: What A Wonderful World – Louis Armstrong";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "WAWW-001",
+    "data-price": "5.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1eaq6xvust8FULXYFKsf_BbY6rg6mKxeo"
+        class="cta-button"
+      >
+        📄 What A Wonderful World – Guitar
+      </a>
+    </li>
+     <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1zHAVhliuV6hI6YuNgNcRZcvppJUR0-d3"
+        class="cta-button"
+      >
+        📄 What A Wonderful World – Bass
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1Z1ixHDHz3CrLaVn4CTnBYsAiG2jCDRzV"
+        class="cta-button"
+      >
+        📄 What A Wonderful World – Drums
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1XVWDMNSSyJTGAZEhzE9BbXxPIi_8FPrb"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        🎵 What A Wonderful World – Mastering
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1iktdguTt2UE1zIrjcbcFnCHq3pScNf8G"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        🎵 What A Wonderful World – Backing Track
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Kurse zum selber lernen: Alle Lernmodule auf einen Blick
+    </a>
+  </p>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

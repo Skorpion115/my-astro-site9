@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Hey There Delilah – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "HTD-001",
+    "data-price": "7.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="/notes/Hey%20There%20Delilah%20-%20Plain%20White%20Ts.pdf"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        📄 Hey There Delilah – Gitarrennoten
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1lNqy2Y4COd17pg6RmeuMM6_ej3Nxlu74"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        📄 Hey There Delilah – Lead Sheet als ZIP
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

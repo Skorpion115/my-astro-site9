@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Catch The Wind – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "CTW-001",
+    "data-price": "5.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="/downloads/Catch_The_Wind_Guitar.pdf"
+        download
+        class="cta-button"
+      >
+        📄 Catch The Wind – Noten & Tabulatur
+      </a>
+    </li>
+    <li>
+      <a href="/downloads/Catch_The_Wind_Bass.pdf" download class="cta-button">
+        📄 Catch The Wind – Bass
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=19jXw9-t0b-TLr_2xsYvPAVHdw5exWBzW"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        🎵 Catch The Wind – Mastering
+      </a>
+    </li>
+  </ul>
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

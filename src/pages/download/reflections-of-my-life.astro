@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Reflections Of My Life – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "ROML-001",
+    "data-price": "7.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="/notes/Reflections%20Of%20My%20Life%20-%20Guitar.pdf"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Reflections Of My Life - Guitar
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1BkaAMG6LrRyPS7zt2i-9Y_sq0xZ4wpT1"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Reflections Of My Life - Komplettes Arrangement als ZIP
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

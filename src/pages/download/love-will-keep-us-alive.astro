@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Love Will Keep Us Alive – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "LWKUA-001",
+    "data-price": "7.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="/notes/Love%20Will%20Keep%20Us%20Alive%20-%20Guitar.pdf"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Love Will Keep Us Alive - Guitar
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=18ro_ovQ3W1WJIC2YHIsQ38ifxjChelJE"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Love Will Keep Us Alive - Komplettes Arrangement als ZIP
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

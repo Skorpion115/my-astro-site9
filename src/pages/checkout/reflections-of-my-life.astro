@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Reflections Of My Life – Marmalade (Guitar Arrangement)";
+const heading = "Reflections Of My Life – Marmalade (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Reflections Of My Life. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Reflections Of My Life - Marmalade, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/refelections-of-my-life/";
+const productId = "ROML-001";
+const imageSrc = "/bilder/reflections_of_my_life_vorschau.png";
+const imageAlt = "Reflections Of My Life Vorschau";
+const price = "7.95";
+
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/reflections:of_my_life_preview.png"
+
+const contentHtml = `
+  <br />
+  
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=xw9o_4KLREA"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Reflections Of My Life ansehen"
+    rel="noopener"
+  >
+    ▶️ Reflections Of My Life – Marmalade auf YouTube ansehen
+  </a>
+  </p>
+  <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält alle wichtigen Stimmen: Guitar, Gesangsmelodie – exakt auf das Original abgestimmt.</p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
+  <ul>
+    <li>Guitar Patterns + Griffbilder</li>
+    <li>E-Gitarren Solo</li>
+    <li>Gesangsmelodie + Text + Chor</li>
+    <li>Strings Noten</li>
+    <li>Bass Noten</li>
+    <li>Drums Noten</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht oder als Band Arrangement.
+  </p>
+  <p>
+    Keine vereinfachten Internet-Tabs – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
+  </p>
+
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    productId={productId}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

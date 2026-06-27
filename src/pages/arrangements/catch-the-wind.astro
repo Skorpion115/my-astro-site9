@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Catch The Wind – Guitar Arrangement";
+const description = "Gitarren-Arrangement im Folk-Rhythmus-Stil für fortgeschrittene Anfänger. Enthält typische Strumming-Patterns und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+
+  <p>Original gespielt von Donovan</p>
+
+  <p>
+    Dieses Arrangement vermittelt typische Rhythmus-Techniken mit
+    Down- und Upstroke-Patterns.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Strumming Patterns (Folk Style)</li>
+    <li>Rhythmische Begleitung</li>
+    <li>Bass Noten & TABs</li>
+    <li>Gesang</li>
+    <li>Mundharmonika-Solo</li>
+    <li>Mit Lernvideo auf YouTube</li>
+    <li>Catch The Wind - Mastering mp3</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Anfänger und Spieler, die ihren Rhythmus verbessern wollen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+<p>
+    <a href="/checkout/catch-the-wind/" class="cta-button">
+        Jetzt kaufen / herunterladen
+    </a>  
+</p>
+
+
+</BaseLayout>

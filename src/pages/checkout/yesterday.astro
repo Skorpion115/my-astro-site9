@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Yesterday – Beatles (Guitar Arrangement)";
+const heading = "Yesterday – Beatles (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Yesterday. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Yesterday, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/yesterday/";
+const productId = "YEST-001";
+const imageSrc = "/bilder/Yesterday_Vorschau.jpg";
+const imageAlt = "Yesterday – Vorschau";
+const price = "5.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/yesterday_preview.png";
+
+const contentHtml = `
+  <br />
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1MAQpVBZtTgjpD5-2jI0rRPijYT9PHh0_/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=Jla_18ar1aE"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Yesterday ansehen"
+    rel="noopener"
+  >
+    ▶️ Yesterday – Beatles auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält alle wichtigen Stimmen: Guitar, Gesangsmelodie – exakt auf das Original abgestimmt.</p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
+  <ul>
+    <li>Guitar Noten & Tabs</li>
+    <li>Gesangsmelodie + Text</li>
+    <li>Strings Noten</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht.
+  </p>
+  <p>
+    Keine vereinfachten Internet-Tabs – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
+  </p>
+
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+    productId={productId}
+  />
+</BaseLayout>

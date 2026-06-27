@@ -1,0 +1,780 @@
+---
+import AccountLayout from "../../../layouts/AccountLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+// Hier die fehlende Variable definieren
+const pageUrl = getPageUrl(Astro);
+const pageTitle = "My Jazz Guitar Collection";
+const description = "Geschützter Songbook-Bereich";
+---
+
+<AccountLayout
+  pageTitle="My Jazz Guitar Collection"
+  description="Geschütztes Songbook 5"
+  href={pageUrl}
+>
+  <link rel="stylesheet" href="/styles/songbook_2.css" />
+
+  <div class="songbook-hero">
+    <img src="/images/jazzguitar.webp" alt="The Jazz Guitar Collection" />
+    <div class="hero-overlay">
+      <h1 id="top">{pageTitle}</h1>
+      <p>Jazz Gitarren Stücke • Noten & Tabs • Play-Alongs</p>
+    </div>
+  </div>
+  
+  <p>
+    <a
+      href="/kundenlogin/account/"
+      class="normal-links"
+      aria-label="Zurück zum Schülerbereich"
+    >
+      Zurück zum Schülerbereich
+    </a>
+  </p>
+
+  <!-- Logout-Button -->
+  <div class="logout-container">
+    <button class="auth-logout">Logout</button>
+  </div>
+
+  <main>
+    <!-- ======================== -->
+    <!-- SONGBOOK LAYOUT -->
+    <!-- ======================== -->
+    <p>
+      Recht im Inhaltsverzeichnis die Titel auswählen. Die Noten werden dann
+      auf der linken Seite angezeigt. Ganz rechts ist so ein blauer ovaler
+      Button. Mit diesem Button kann man die website wieder ganz nach oben
+      scrollen.
+    </p>
+
+
+    <div class="lesson-layout">
+      <!-- Linke Spalte -->
+      <div class="notes-column">
+        <!-- Linke Spalte: Noten + Audio -->
+        <div class="notes">
+          <section id="rose-room" class="song">
+            <h2>Rose Room - Charlie Christian</h2>
+            <img 
+                src="/images/Charlie-Christian-1941.jpg" 
+                alt="Charlie Christian"
+                width="348"
+                height="476" 
+                class="song-image"
+              />
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1dgIAZYebkFhFNlx4kGz9LsGx2-nWsKpM/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/155_Ji0iFSFKAkeEHK8xL44p-uImeTfv7/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=155_Ji0iFSFKAkeEHK8xL44p-uImeTfv7"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1dLA_Josn8d8wYLs95ueOz1Z4H7gxLVnP"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1dgIAZYebkFhFNlx4kGz9LsGx2-nWsKpM"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1RI45csrN6b2BTLTQCC-g8S88d8tSUelD"
+                target="_blank"
+                rel="noopener">
+                📄 Rhythmus Gitarre herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/__aCfS0Vd8U"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <p>
+              Das Video kann man vergrößern, indem man auf das kleine Quadrat in der rechten unteren Ecke klickt. Es öffnet sich dann in einem neuen Tab und man kann es in voller Größe anschauen.
+            </p>
+          </section>
+          <section id="so-what" class="song">
+            <h2>So What</h2>
+            <img 
+                src="/images/miles-davis.jpg" 
+                alt="Miles Davis"
+                width="289"
+                height="228" 
+                class="song-image"
+              />
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1xhdfe7B0EeWZ3njk1-V_x0Nv5x4esAy_/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1_jkwfQZm7St_o1nmWeUtVYuPSjMuWlHP/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_jkwfQZm7St_o1nmWeUtVYuPSjMuWlHP"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1xhdfe7B0EeWZ3njk1-V_x0Nv5x4esAy_"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/Uq1o6w5nHUQ"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="after-hours" class="song">
+            <h2>After Hours - Ronny Jordan</h2>
+            <img 
+                src="/images/ronny-jordan.webp" 
+                alt="Ronny Jordan"
+                width="386"
+                height="264" 
+                class="song-image"
+              />
+            <p class="pdf-download">
+              <a
+                href="/downloads/After_Hours-Ronny_Jordan.pdf"
+              >
+                🎵 Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1vfftR9mgqANqbR7-4SIEVUjNzS1bKrK-/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1vfftR9mgqANqbR7-4SIEVUjNzS1bKrK-"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1XhQktET7I1NfpwpGC3GlLcJqqKQkXXnN"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="/downloads/After_Hours-Ronny_Jordan.pdf"
+                download
+                class="normal-links"
+              >
+                🎵 Noten & Tabulatur herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/tqAzABJfVp4"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="blues-in-c" class="song">
+            <h2>Blues In C</h2>
+            <img 
+                src="/images/Barney_Kessel.jpg" 
+                alt="Barney Kessel"
+                width="303"
+                height="440" 
+                class="song-image"
+              />
+            <p><b>Barney Kessel</b> ist ein amerikanischer Gitarrist und Komponist, der sich besonders in der Jazzszene einen Namen gemacht hat. <br>
+            Das Stück ist aus dem Album "Blues In C" das 1959 veröffentlicht wurde.
+            </p>
+            <p class="pdf-download">
+              <a
+                href="/downloads/Blues_In_C-Barney_Kessel.pdf"
+                class="normal-links"
+              >
+                🎵 Noten & Tabulatur
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1ZXC5WpbzoZio90BHf74tWsCcK9ff4EyT/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ZXC5WpbzoZio90BHf74tWsCcK9ff4EyT"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1NSMT9NakrMRSxDagurLCMm78KStPhdZo"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="/downloads/Blues_In_C-Barney_Kessel.pdf"
+                download
+                class="normal-links"
+              >
+                🎵 Noten & Tabulatur herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/a0HE9iMonJ0"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="bossa-dorado" class="song">
+            <h2>Bossa Dorado</h2>
+            <img 
+                src="/images/Dorado_Schmitt_302x441.jpg" 
+                alt="Dorado Schmitt"
+                width="302"
+                height="441" 
+                class="song-image"
+              />
+            <p>Bossa Dorado ist ein beliebtes Stück in der Jazzszene und eignet sich hervorragend für Play-along Sessions. <b>Dorado Schmitt</b> (geb. 29. Mai 1956 in Saint Avold) ist ein französischer Musiker (Sologitarre, auch Geige und Gesang) des Swing Manauche oder Zigeuner Jazz. <br>
+            Das Stück ist aus dem Album "Parisienne" zu deutsch "Pariserin" das 1995 veröffentlicht wurde.
+            </p>
+            <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1s2QSPskM0KAVRmRuQjgEkftCBnX7ERHN/preview"
+                class="normal-links"
+              >
+                🎵 Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1s2QSPskM0KAVRmRuQjgEkftCBnX7ERHN/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1s2QSPskM0KAVRmRuQjgEkftCBnX7ERHN"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1UBMkv5IlQAy294cj-BhWfIU-QL-E4yel"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1T9-ECbxpqXpu7SnWu7kR7AarzkhPCDgG"
+                class="normal-links"
+              >
+                🎵 Noten Melody herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1qoKvWWFNzatf0Voyd8l-FDnl0t2bMDq3"
+                class="normal-links"
+              >
+                🎵 Noten Chords herunterladen
+              </a>
+            </p>
+            
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/LYOEuto28l8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <!--
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://drive.google.com/file/d/1cWERTIDH4mkZq5_tVC2tkjBcQeHJZwZx/preview"
+                  title="Bossa Dorado Video (Google Drive)"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div> -->
+          </section>
+          <section id="minor-blues-jazz-guitar-vamp" class="song">
+            <h2>Minor Blues Jazz Guitar Vamp</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1ojlE4WYpsPTa51gEezRRm0C2vRxAsJp5/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1AZes6j-D_NMgxiTpQLw9Fs470agx8-K1/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1AZes6j-D_NMgxiTpQLw9Fs470agx8-K1"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1fl0-wqACBisw0w7P_PrHaXScPrAY6-3J"
+                download
+                class="normal-links"
+              >
+                🎵 Noten & Tabulatur herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/cMBVBw7c5rk"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="nature-boy" class="song">
+            <h2>Nature Boy - Nat King Cole</h2>
+            <img 
+                src="/images/Nat_King_Cole_1947.jpg" 
+                alt="Nat King Cole"
+                width="299"
+                height="366" 
+                class="song-image"
+              />
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1Rw90CdEh84fiICgB7gzIYUzbVypq1m-t/preview"
+              >⬇ Noten Vorschau Chord
+              </a>
+            </p>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1xAOcheMubTlvTI5DoFNkVzXmw1xQkpDu/preview"
+              >⬇ Noten Vorschau Gitarrensolo
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/15A6rgBTtAncmzEFkJXMCV53ZYYOSMVY6/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=15A6rgBTtAncmzEFkJXMCV53ZYYOSMVY6"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Rw90CdEh84fiICgB7gzIYUzbVypq1m-t"
+                download
+                class="normal-links"
+              >
+                🎵 Noten & Tabulatur für Chords herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1xAOcheMubTlvTI5DoFNkVzXmw1xQkpDu"
+                download
+                class="normal-links"
+              >
+                🎵 Noten & Tabulatur für Gitarrensolo herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/b_kS0_dN4Yw"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="relaxation" class="song">
+            <h2>Relaxation - Les Paul</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1g_d7AaTwSdm7CuMz28bM2u8pSQo5qyHX/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1mQLxw3rpRgKqALAEYHTDCTj1pit9rs4p/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1mQLxw3rpRgKqALAEYHTDCTj1pit9rs4p"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1g_d7AaTwSdm7CuMz28bM2u8pSQo5qyHX"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+          <section id="wondering-around" class="song">
+            <h2>Wondering Around - Les Paul</h2>
+            <img 
+                src="/images/Les-Paul.jpg" 
+                alt="Les Paul"
+                width="148"
+                height="148" 
+                class="song-image"
+              />
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/19ejYjT9TdXeepKrhmR5wt63ygFNrBQDt/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1kATz6IGydA26H97J-IVBVLjZudHHTbAP/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1kATz6IGydA26H97J-IVBVLjZudHHTbAP"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ZuL8pB0kFW5C1OA-VilS3M9iNVaZsH2H"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1mU9Q9USwU1d6AO2wfrTkH_w9XpNS7G8J"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=19ejYjT9TdXeepKrhmR5wt63ygFNrBQDt"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+          </section>
+
+          <section id="don't-get-around-much-anymore" class="song">
+            <h2>Don't Get Around Much Anymore - Duke Ellington</h2>
+            <img 
+                src="/images/Duke-Ellington.jpg" 
+                alt="Duke Ellington"
+                width="299"
+                height="228" 
+                class="song-image"
+              />
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1ajIOJXLFPfo8AZ3f33z_42SNNMhxhgHB/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1fS7bcgef20qsb63LbyDiNB-BYkFHWudZ/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1q1vEhCKbQC8UB1ey04c-VBQnpaPQ4kiB"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1ajIOJXLFPfo8AZ3f33z_42SNNMhxhgHB"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/DNNtEkreDiQ"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+            
+          <section id="smile" class="song">
+            <h2>Smile</h2>
+            <img 
+                src="/images/charlie-chaplin.jpg" 
+                alt="Charlie Chaplin"
+                width="300"
+                height="453" 
+                class="song-image"
+              />
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/16SeHUykSpWg4Ceo4PXJ_j8_veLiBTG2i/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1uffvgc9Jg8xIfPZbE9oHbFfiRemOFpq5/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1uffvgc9Jg8xIfPZbE9oHbFfiRemOFpq5"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=16SeHUykSpWg4Ceo4PXJ_j8_veLiBTG2i"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=14ASOxbaLfiikqDqOMaeMGlicFg_cFie3"
+                target="_blank"
+                rel="noopener">
+                📄 Bass Noten herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/gVWldWICw6U"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="moonlight-in-vermont" class="song">
+            <h2>Moonlight In Vermount</h2>
+            <p class="pdf-download">
+              <a
+                href="/downloads/Moonlight%20In%20Vermont.pdf"
+                class="normal-links"
+              >
+                🎵 Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1ZQiXnDW8oWQ2nghlJDfn3rP8siG78FMB/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ZQiXnDW8oWQ2nghlJDfn3rP8siG78FMB"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a
+                href="/downloads/Moonlight%20In%20Vermont.pdf"
+                download
+                class="normal-links"
+              >
+                🎵 Noten & Tabulatur herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/8nt2UpByNLU"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="what-a-wonderful-world" class="song">
+            <h2>What A Wonderful World</h2>
+              <img 
+                src="/images/louis-armstrong.jpg" 
+                alt="Louis Armstrong"
+                width="300"
+                height="300" 
+                class="song-image"
+              />
+              <p class="pdf-download">
+              <a
+                href="https://drive.google.com/file/d/1eaq6xvust8FULXYFKsf_BbY6rg6mKxeo/preview"
+                class="normal-links"
+              >
+                🎵 Noten Vorschau
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1XVWDMNSSyJTGAZEhzE9BbXxPIi_8FPrb/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1XVWDMNSSyJTGAZEhzE9BbXxPIi_8FPrb"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1iktdguTt2UE1zIrjcbcFnCHq3pScNf8G"
+                >▶ Backing Track downloaden</a
+              >
+            </div>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/file/d/1eaq6xvust8FULXYFKsf_BbY6rg6mKxeo"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/B8qxOtj05A4"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>
+          <section id="chord-progression-exercise" class="song">
+            <h2>Akkordfolge Übungen</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/file/d/1X86UbE4Ane32x3D9XZUD5LXoUQmlDlNz/preview"
+              >⬇ Noten Vorschau
+              </a>
+            </p>
+            <p class="pdf-link">
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1X86UbE4Ane32x3D9XZUD5LXoUQmlDlNz"
+                target="_blank"
+                rel="noopener">
+                📄 Noten herunterladen
+              </a>
+            </p>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/x5kDGjnp2no"
+                  title="YouTube video player"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </section>                                                      
+                 
+        </div> <!-- class notes -->
+      </div> <!-- class notes-column -->
+      <!-- Rechte Spalte: Inhaltsverzeichnis -->
+      <aside class="content">
+        <h3>Inhaltsverzeichnis</h3>
+        <h4>Jazz Guitar Solo</h4>
+        <a href="#rose-room">Rose Room - Charlie Christian</a>
+        <a href="#so-what">So What - Miles Davis</a>
+        <a href="#after-hours">After Hours - Ronny Jordan</a>
+        <a href="#blues-in-c">Blues In C - Barney Kessel</a>
+        <a href="#bossa-dorado">Bossa Dorado - Dorado Schmitt</a>
+        <a href="#minor-blues-jazz-guitar-vamp">Minor Blues Jazz Guitar Vamp</a>
+        <a href="#nature-boy">Nature Boy - Nat King Cole</a>
+        <a href="#relaxation">Relaxation - Les Paul</a>
+        <a href="#wondering-around">Wondering Around - Les Paul</a>
+        <h4>Jazz Guitar Melodic Style</h4>
+        <a href="#don't-get-around-much-anymore">Don't Get Around Much Anymore - Duke Ellington</a>
+        <a href="#smile">Smile - Charlie Chaplin</a>
+        <a href="#moonlight-in-vermont">Moonlight In Vermont - Alex Farran</a>
+        <a href="#what-a-wonderful-world">What A Wonderful World - Louis Armstrong</a>
+        <h4>Akkordfolge Übungen</h4>
+        <a href="#chord-progression-exercise">Akkordfolge Übungen</a>
+      </aside>
+      <a href="#top" class="scroll-top" aria-label="Zurück nach oben">⬆</a>
+    </div> <!-- class lesson-layout -->
+  </main>
+  
+  <script src="/scripts/scroll-offset.js" defer></script>
+</AccountLayout>

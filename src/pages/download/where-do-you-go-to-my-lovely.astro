@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Where Do You Go To My Lovely – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "WDY-001",
+    "data-price": "7.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1MZlvjPLjadSpC0oesgG1f0UCCzYIkimk"  
+        class="cta-button">
+          📄 Where Do You Go To My Lovely – Guitar als PDF Download
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1hFy5i2i06lTn2J47FFgOz_hA9FiA7mcT"  
+        class="cta-button">
+          📄 Where Do You Go To My Lovely – Strings als PDF Download
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1H85QO9w2JcEv5ZZZC-xprYDQ9KdWLumR"  
+        class="cta-button">
+          📄 Where Do You Go To My Lovely – Bass als PDF Download
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1iUm-b7dSLQfmdOGaMxgyO8dSCZ2Vnx2q"  
+        class="cta-button">
+          📄 Where Do You Go To My Lovely – Lead Sheet als PDF Download
+      </a>
+    </li>
+  </ul>
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

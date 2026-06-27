@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Ludwig van Beethoven - Moonlight Sonata Piano Solo";
+const description =
+  "Piano Solo Moonlight Sonata für fortgeschrittene Anfänger.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>
+    Dieses Stück hat Ludwig van Beethoven 1801 komponiert und ist eines seiner bekanntesten Werke. Es ist ein wunderschönes und emotionales Stück, das oft von Pianisten gespielt wird. Es ist in drei Sätzen geschrieben, wobei der erste Satz, "Adagio sostenuto", am bekanntesten ist.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Melodiespiel</li>
+    <li>Piano Solo</li>
+    <li>Genaue Pedalisierung</li>
+    <li>Fingersätze</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>Für fortgeschrittene Klavierspieler.</p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a
+      href="/checkout/beethoven-moonlight-sonata/"
+      class="cta-button"
+    >
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>

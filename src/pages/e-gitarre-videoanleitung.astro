@@ -1,0 +1,127 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import YouTube from "../components/YouTube.astro";
+import "../styles/lite-yt-embed.css";
+const pageTitle = "Weiterführende Lektionen für E-Gitarre";
+const description = "Lerne das Stück Ten Words 🎸 von Jo Satriani.";
+const keywords = "e-gitarrenunterricht für rockgitarre, ten words - joe satriani, e gitarrenlehrer in nuernberg";
+const SITE_URL = import.meta.env.SITE_URL || "https://www.musicstudio-ziebart.de";
+const pageUrl = `${SITE_URL}/e-gitarre-videoanleitung/`;
+
+// RDFa-Markup für das Video nur auf dieser Seite
+// Video-Daten
+const videoData = [
+  {
+    loc: `${SITE_URL}/e-gitarre-videoanleitung/`, // URL der Seite, auf der das Video eingebettet ist
+    title: "Joe Satriani - Ten Words Guitar Lesson+Tab",
+    description: "Lerne das Gitarrenstück 'Ten Words' von Joe Satriani mit dieser detaillierten Gitarrenstunde. Falls jemand das Stück lernen möchte mir eine E-Mail schreiben. Ich helfe dann weiter!",
+    contentLoc: "https://www.youtube.com/embed/fcHrj9ryvqo", // URL des eingebetteten Videos
+    thumbnailLoc: "https://i.ytimg.com/vi/fcHrj9ryvqo/hqdefault.jpg", // URL des Vorschaubildes
+    publicationDate: "2025-04-21T14:00:00+02:00", // Veröffentlichungsdatum im ISO 8601 Format
+    duration: "PT3M59S",
+  },
+  {
+    loc: `${SITE_URL}/e-gitarre-videoanleitung/`, // URL der Seite, auf der das Video eingebettet ist
+    title: "Take Good Care Of My Baby - Bobby Vee Cover",
+    description: "Lerne das Gitarrenstück 'Take Good Care Of My Baby' von Bobby Vee mit dieser detaillierten Gitarrenstunde. Das steht rechts unten auf YouTube ansehen. Darauf klicken dann kann man unten bei der Videobeschreibung die Tabulatur downloaden",
+    contentLoc: "https://www.youtube.com/embed/nUC_b1L_IM4", // URL des eingebetteten Videos
+    thumbnailLoc: "https://i.ytimg.com/vi/nUC_b1L_IM4/hqdefault.jpg", // URL des Vorschaubildes
+    publicationDate: "2025-01-04T14:00:00+02:00", // Veröffentlichungsdatum im ISO 8601 Format
+    duration: "PT17M52S", // Dauer des Videos im ISO 8601 Format
+  },
+  {
+    loc: `${SITE_URL}/e-gitarre-videoanleitung/`, // URL dessen Seite, auf der das Video eingebettet ist
+    title: "Christmas Time Is Here – Jazzguitar Lesson (Jazz Gitarren-Tutorial)",
+    description: "Lerne das leichte Jazzgitarrenstück 'Christmas Time Is Here' mit diesem Video. Die Tabulatur kann man unten in der Viedeobeschreibung downloaden.",
+    contentLoc: "https://www.youtube.com/embed/5StMXBTQGpw", // URL des eingebetteten Videos
+    thumbnailLoc: "https://i.ytimg.com/vi/5StMXBTQGpw/hqdefault.jpg", // URL des Vorschaubildes
+    publicationDate: "2025-12-03T14:00:00+02:00", // Veröffentlichungsdatum im ISO 8601 Format
+    duration: "PT00M58S", // Dauer des Videos im ISO 8601 Format
+  },
+  {
+    loc: `${SITE_URL}/e-gitarre-videoanleitung/`, // URL dessen Seite, auf der das Video eingebettet ist
+    title: "Smile (Charlie Chaplin) – Jazz Guitar Lesson | Melodic Style",
+    description: "Lerne das leichte Jazzgitarrenstück 'Smile (Charlie Chaplin)' mit diesem Video. Die Tabulatur kann man unten in der YouTube Viedeobeschreibung downloaden.",
+    contentLoc: "https://www.youtube.com/embed/gVWldWICw6U", // URL des eingebetteten Videos
+    thumbnailLoc: "https://i.ytimg.com/vi/gVWldWICw6U/hqdefault.jpg", // URL des Vorschaubildes
+    publicationDate: "2025-12-31T14:00:00+02:00", // Veröffentlichungsdatum im ISO 8601 Format
+    duration: "PT00M714S", // Dauer des Videos im ISO 8601 Format
+  },
+  {
+    loc: `${SITE_URL}/e-gitarre-videoanleitung/`, // URL dessen Seite, auf der das Video eingebettet ist
+    title: "🎸 Rose Room – Charlie Christian Guitar Solo (Jazz Guitar Lesson & Transcription)",
+    description: "Lerne das Jazzgitarrenstück 'Rose Room (Charlie Christian)' mit diesem Video. Die Tabulatur kann man unten in der YouTube Viedeobeschreibung downloaden.",
+    contentLoc: "https://www.youtube.com/embed/__aCfS0Vd8U", // URL des eingebetteten Videos
+    thumbnailLoc: "https://i.ytimg.com/vi/__aCfS0Vd8U/hqdefault.jpg", // URL des Vorschaubildes
+    publicationDate: "2025-12-19T14:00:00+02:00", // Veröffentlichungsdatum im ISO 8601 Format
+    duration: "PT00M1734S", // Dauer des Videos im ISO 8601 Format
+  },
+];
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <br />
+  <!-- RDFa-Markup Struktur für das VideoObject -->
+
+  {
+    videoData.map((video) => (
+      <div vocab="http://schema.org/" typeof="VideoObject">
+        <meta property="name" content={video.title} />
+        <meta property="description" content={video.description} />
+        <meta property="thumbnailUrl" content={video.thumbnailLoc} />
+        <meta property="uploadDate" content={video.publicationDate} />
+        <meta property="duration" content={video.duration} />
+        <meta property="embedUrl" content={video.contentLoc} />
+
+        <div class="video-container-wrapper">
+          <div class="video-container">
+            <lite-youtube
+              videoid={video.contentLoc.split("/").pop()}
+              style={"background-image: url('" + video.thumbnailLoc + "');"}
+            >
+              <a
+                href={video.contentLoc}
+                class="lty-playbtn"
+                title={video.title}
+              >
+                <span class="lyt-visually-hidden">
+                  Play Video: {video.title}
+                </span>
+              </a>
+            </lite-youtube>
+          </div>
+          <h2>{video.title}</h2>
+          <p>
+            {video.description}
+            {video.title.includes("Smile") && (
+              <>
+                <a href="/shop/smile/" target="_blank" class="normal-links">
+                  <br />Tabulatur kaufen
+                </a>
+              </>
+            )}
+            {video.title.includes("Rose Room") && (
+              <>
+                <a href="/shop/rose-room/" target="_blank" class="normal-links">
+                  <br />Tabulatur kaufen
+                </a>
+              </>
+            )}
+          </p>
+        </div>
+      </div>
+    ))
+  }
+  <YouTube />
+</BaseLayout>

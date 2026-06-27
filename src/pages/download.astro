@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getPageUrl } from "../utils/getPageUrl.js";
+const pageTitle = "Download für Noten und GM Files";
+const description = "Midi Files und Noten bekannter Werke komplett zu downloaden! 🎼";
+const keywords = "Download, Midi Files, Noten";
+const pageUrl = getPageUrl(Astro);
+
+const items = [
+  { id: 1, title: "Persischen Markt", composer: "Albert W. Ketelbey", instrument: "Keyboard", audio: "/Songs/Auf_einem_persischen_Markt.mp3", pdf: "/bilder/Auf_einem_persischen_Markt.pdf", zip: "/zip_download/PM.zip" },
+  { id: 2, title: "Barcarole", composer: "Offenbach", instrument: "Keyboard", audio: "/Songs/Barcarole.mid", pdf: "/bilder/Barcarole.pdf", zip: "/zip_download/Barcarole.zip" },
+  { id: 3, title: "Kleine Nachtmusik", composer: "Amadeus Mozart", instrument: "Keyboard", audio: "/Songs/Nachtmu.mid", pdf: "/bilder/Kleine_Nachtmusik.pdf", zip: "/zip_download/Nachtmusik.zip" },
+  { id: 4, title: "Morning", composer: "Eduard Grieg", instrument: "Keyboard", audio: "/Songs/Morning.mid", pdf: "/bilder/Morning.pdf", zip: "/zip_download/Morning.zip" },
+  { id: 5, title: "Swan Lake", composer: "Tschaikowsky", instrument: "Keyboard", audio: "/Songs/SwanLake.mid", pdf: "/bilder/SwanLake.pdf", zip: "/zip_download/SwanLake.zip" },
+  { id: 6, title: "Aloha Oe", composer: "Volkslied aus Hawai", instrument: "Keyboard", audio: "/Songs/Aloha.mid", pdf: "/bilder/Aloha_Oe.pdf", zip: "/zip_download/AlohaOe.zip" },
+  { id: 7, title: "Die Fledermaus", composer: "Johann Strauss", instrument: "Keyboard", audio: "/Songs/Fledermaus.mid", pdf: "/bilder/Flederm.pdf", zip: "/zip_download/Die_Fledermaus.zip" },
+  { id: 8, title: "Die Schlittschuhläufer", composer: "Emil Waldteufel", instrument: "Keyboard", audio: "/Songs/Schlitt.mid", pdf: "/bilder/Schlitt.pdf", zip: "/zip_download/Die_Schlitt.zip" },
+];
+---
+
+<link rel="stylesheet" href="/styles/download.css" slot="head" />
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <section id="download">
+    <h2>GM Midi Files mit Noten zum Downloaden</h2>
+
+    <article>
+      <p class="lead">
+        Hier können Sie die Titel anhören, die Noten ansehen oder als ZIP
+        herunterladen. Auf den Noten ist meist nur die erste Stimme angegeben.
+        Die Aufnahmen sind eigene Produktionen.
+      </p>
+
+      <!-- Desktop Tabelle -->
+      <table class="download-table" role="table" aria-label="Downloads">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Titel</th>
+            <th>Komponist</th>
+            <th>Instrument</th>
+            <th>Aktionen</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items.map(item => (
+            <tr>
+              <td>{item.id}</td>
+              <td>{item.title}</td>
+              <td>{item.composer}</td>
+              <td>{item.instrument}</td>
+              <td class="download-actions">
+                <a href={item.audio} target="_blank" rel="noopener" aria-label={`Anhören ${item.title}`}>anhören</a>
+                <a href={item.pdf} target="_blank" rel="noopener" class="secondary" aria-label={`Noten ansehen ${item.title}`}>ansehen</a>
+                <a href={item.zip} class="secondary" aria-label={`Download ${item.title}`}>download</a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <!-- Mobile Kartenansicht -->
+      <div class="download-cards">
+        {items.map(item => (
+          <article class="download-card" aria-labelledby={`d-${item.id}`}>
+            <div id={`d-${item.id}`} class="header">{item.title}</div>
+            <div class="meta-row"><span>Komponist:</span> {item.composer}</div>
+            <div class="meta-row"><span>Instrument:</span> {item.instrument}</div>
+            <div class="card-actions">
+              <a class="btn" href={item.audio} target="_blank" rel="noopener">anhören</a>
+              <a class="btn secondary" href={item.pdf} target="_blank" rel="noopener">ansehen</a>
+              <a class="btn secondary" href={item.zip}>download</a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <p>
+        Auf allen diesen Werken besteht keine GEMA-Pflicht mehr — sie sind frei.
+      </p>
+      <p>
+        <a href="/" class="normal-links back-link">home</a>
+      </p>
+    </article>
+  </section>
+</BaseLayout>

@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: The Lion Sleeps Tonight – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "LIONS-001",
+    "data-price": "5.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="/downloads/The_Lion_Sleeps_Tonight-Guitar.pdf"
+        download
+        class="cta-button"
+      >
+        📄 The Lion Sleeps Tonight – Guitar
+      </a>
+    </li>
+    <li>
+      <a
+        href="/downloads/The_Lion_Sleeps_Tonight-Bass.pdf"
+        download
+        class="cta-button"
+      >
+        📄 The Lion Sleeps Tonight – Bass
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=166R3_UaVG6yn5Ezs80jgEiMdoSE2pZ_I"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        📄 Komplettes Arrangement als ZIP
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1-mo63I6v5hePqOrrbJqEz6w1PaiI8NH0"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        🎵 The Lion Sleeps Tonight – Play Along
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

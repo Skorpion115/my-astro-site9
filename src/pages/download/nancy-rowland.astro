@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Nancy Rowland – Snuffy Jenkins Banjo Solo";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "NANCY-001",
+    "data-price": "2.50"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="/downloads/Nancy_Rowland_-_Snuffy_Jenkins.pdf"
+        download
+        class="cta-button"
+      >
+        📄 Nancy Rowland – Banjo
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=10BD_orSvPDHpAHCrgG1mr90J1CKk8NWZ"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        🎵 Nancy Rowland – Mastering mp3
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Kurse zum selber lernen: Alle Lernmodule auf einen Blick
+    </a>
+  </p>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

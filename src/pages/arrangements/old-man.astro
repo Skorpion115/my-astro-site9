@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Old Man – Neil Young (Arrangement für Gitarre)";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält spezielle Anschlagstechnik und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <section>
+
+  <p>
+    Dieses Arrangement basiert auf einem selbst erarbeiteten Noten- und Tab-Arrangement für Akustikgitarre. Du lernst die Begleitung die aus Strumming Pattern besteht.
+  </p>
+
+  <p class="info-box">
+    Du erhältst ein vollständiges PDF mit Noten, Tabs und Spielhinweisen.  
+    Ein Video-Tutorial ist aktuell nicht enthalten.
+  </p>
+
+</section>
+
+<hr>
+
+<section>
+
+  <h2>Lernziel</h2>
+  <ul>
+    <li>Sicheres Spielen mit Strumming Pattern</li>
+    <li>Rhythmusgefühl und Akkordwechsel verbessern</li>
+  </ul>
+
+</section>
+
+<section>
+
+  <h2>Spieltechnik</h2>
+  <ul>
+    <li>Auf und Abschlag</li>
+    <li>gleichmäßiger Groove im 4/4 Takt</li>
+  </ul>
+
+</section>
+
+<hr>
+
+<section>
+
+  <h2>Inhalt</h2>
+  <ul>
+    <li>Guitar Noten & Tabs</li>
+    <li>Grifftabellen enthalten</li>
+    <li>Komplette Songstruktur</li>
+    <li>Gesangsnoten + Text + Chor</li>
+    <li>Bass Noten</li>
+  </ul>
+
+</section>
+
+<section class="cta">
+
+  <a href="/checkout/old-man/" class="cta-button">
+    Kaufen / Jetzt herunterladen
+  </a>
+
+</section>
+</BaseLayout>

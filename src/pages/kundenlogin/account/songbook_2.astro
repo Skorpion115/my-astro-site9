@@ -1,0 +1,1263 @@
+---
+import AccountLayout from "../../../layouts/AccountLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+import AdditionalSongs from "../../../components/Songs/AdditionalSongs.astro";
+
+// Hier die fehlende Variable definieren
+const pageUrl = getPageUrl(Astro);
+const pageTitle = "The Big Guitar Songbook";
+const description = "Geschützter Songbook-Bereich";
+---
+
+<AccountLayout
+  pageTitle="The Big Guitar Songbook"
+  description="Geschütztes Songbook 2"
+  href={pageUrl}
+>
+
+      <link rel="stylesheet" href="/styles/songbook_2.css" />
+
+      <div class="songbook-hero">
+        <img src="/images/songbook-cover.jpg" alt="The Big Guitar Songbook Cover" />
+        <div class="hero-overlay">
+          <h1 id="top">{pageTitle}</h1>
+          <p>Premium Arrangements • Noten • Tabs • Play-Alongs</p>
+        </div>
+      </div>
+      <p>Habe mich bei den Noten streng an die Orginalaufnahmen gehalten!</p>
+      <p>
+        <a
+          href="/kundenlogin/account/"
+          class="normal-links"
+          aria-label="Zurück zum Schülerbereich"
+        >
+          Zurück zum Schülerbereich
+        </a>
+      </p>
+
+  <!-- Logout-Button -->
+  <div class="logout-container">
+    <button class="auth-logout">Logout</button>
+  </div>
+    </p>
+
+    <div class="lesson-layout">
+      <!-- Linke Spalte -->
+      <div class="notes-column">
+        <!-- Grid Spalte -->
+        <!-- Linke Spalte: Noten + Audio -->
+        <div class="notes">
+          <section id="horse-with-no-name" class="song">
+            <h2>A Horse With No Name</h2>
+            <p class="pdf-download">
+              <a href="/notes/a-horse-with-no-name.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1T3OteHiFfySNE0kv98e4WTFYPm4JaH6R/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1T3OteHiFfySNE0kv98e4WTFYPm4JaH6R"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1x3G1BbGAizvK-x2l79oUGCcgh6vB8t5i"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/a-horse-with-no-name.pdf"
+              title="A Horse With No Name – Noten"></iframe>
+              <h2>🎥 YouTube-Video</h2>
+            <div class="video-container-wrapper thumbnail">
+              <div class="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/2OTc4ZOsSSI"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <p>
+              Das Video kann man vergrößern, indem man auf das kleine Quadrat in der rechten unteren Ecke klickt. Es öffnet sich dann in einem neuen Tab und man kann es in voller Größe anschauen.
+            </p>
+          </section>
+
+          <section id="mad-world" class="song">
+            <h2>Mad World</h2>
+            <p class="pdf-download">
+              <a href="/notes/mad-world.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1WozzhiN9wT03zNZsaoj0Y61JX8XLg2Q2/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1WozzhiN9wT03zNZsaoj0Y61JX8XLg2Q2"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/mad-world.pdf"
+              title="Mad World – Noten"
+              loading="lazy"
+            >
+            </iframe>
+          </section>
+          <section id="take-my-hand" class="song">
+            <h2>Take My Hand</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Take%20My%20Hand%20-%20Rhythmusguitar.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1EYUZ_BfbuX00hvxhwxUdXIWupX8ZoRXG/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1EYUZ_BfbuX00hvxhwxUdXIWupX8ZoRXG"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ax1xOXvbViB-dd2fcCR6T3JenoUqva0w"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Take%20My%20Hand%20-%20Rhythmusguitar.pdf"
+              title="Take My Hand – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="while-my-guitar-gently-weeps" class="song">
+            <h2>While My Guitar Gently Weeps</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/While%20My%20Guitar%20-%20Rhythmus%20Guitar.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1op1xRvCbZVoW1u7e36dyvUikG_0dRGcF/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1op1xRvCbZVoW1u7e36dyvUikG_0dRGcF"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1XGGUpQjyT4Ez84RKeSfZn0F5m1YjcIN0"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/While%20My%20Guitar%20-%20Rhythmus%20Guitar.pdf"
+              title="While My Guitar Gently Weeps – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="across-the-universe" class="song">
+            <h2>Across The Universe</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Across%20The%20Universe%20-%20Guitar.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1fpun_nVITS4wy1vDvsOTF3N91S9bt_0Z/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1fpun_nVITS4wy1vDvsOTF3N91S9bt_0Z"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_z45wrLKFVuy3xieTlSWW87W9I0SceOM"
+                >▶ + Bass Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Across%20The%20Universe%20-%20Guitar.pdf"
+              title="Across The Universe – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="do-you-want-to-know-a-secret" class="song">
+            <h2>Do You Want To Know A Secret?</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Do%20You%20Want%20To%20Know%20A%20Secret%20-%20Beatles.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1Ogzaue8MOV5oyISfb2k3QXXWw8sWDXwe/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Ogzaue8MOV5oyISfb2k3QXXWw8sWDXwe"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1gLsya2vZ3bIUyxxOedAuYmB9U9ELfjqB"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Do%20You%20Want%20To%20Know%20A%20Secret%20-%20Beatles.pdf"
+              title="Do You Want To Know A Secret – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="eleanor-rigby" class="song">
+            <h2>Eleanor Rigby</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Eleanor%20Rigby%20-%20Steel%20Guitar.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1v8n599BHJy46xdQmjvK-LhEe9lo_TW9_/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1v8n599BHJy46xdQmjvK-LhEe9lo_TW9_"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1AUd2f7FFsN7dqIlZ9hO_bmxzJVW4GT3w"
+                >▶ + Bass Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Eleanor%20Rigby%20-%20Steel%20Guitar.pdf"
+              title="Eleanor Rigby – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="in-my-life" class="song">
+            <h2>In My Life</h2>
+            <p class="pdf-download">
+              <a href="/notes/In%20My%20Life%20-%20Gitarre.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1VR5Z3LO9pKRvMiZHZ3L_r1Gf2dKfDqUV/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1VR5Z3LO9pKRvMiZHZ3L_r1Gf2dKfDqUV"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1NK7ozTWp1R11AahgfqZ00dX6CGfAUqPi"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/In%20My%20Life%20-%20Gitarre.pdf"
+              title="In My Life – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="no-reply" class="song">
+            <h2>No Reply</h2>
+            <p class="pdf-download">
+              <a href="/notes/No%20Reply.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1Uq6wSzztzf-8dzs4ljtobrnOyhw0jy0U/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Uq6wSzztzf-8dzs4ljtobrnOyhw0jy0U"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1q3wTEb1OqLOhaM8a9CbO6VeCsYui62-F"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/No%20Reply.pdf"
+              title="No Reply – Noten"
+              loading="lazy"></iframe>
+          </section>
+
+          <section id="with-a-little-help-from-my-friends" class="song">
+            <h2>With A Little Help From My Friends</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/With%20A%20Little%20Help%20From%20My%20Friends.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1yFaxWbMQ17KQFDyE_CI6Ld4yRT3nc3b9/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1yFaxWbMQ17KQFDyE_CI6Ld4yRT3nc3b9"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=11z31BiCF2edm_z72FJVH2N6Q6drNiHkz"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/With%20A%20Little%20Help%20From%20My%20Friends.pdf"
+              title="With A Little Help From My Friends – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="gentle-on-my-mind" class="song">
+            <h2>Gentle On My Mind</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Gentle%20On%20My%20Mind%20-%20Orginal%20Guitar.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1SueCAuNQJYCDLX0wD1qKsPvsWFhzmoXQ/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1SueCAuNQJYCDLX0wD1qKsPvsWFhzmoXQ"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1dUfJRPTrdPcJD5cJ8w3WzJGcDmbM42ng"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Gentle%20On%20My%20Mind%20-%20Orginal%20Guitar.pdf"
+              title="Gentle On My Mind – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="the-night-they-drove-old-dixie-down" class="song">
+            <h2>The Night They Drove Old Dixie Down</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/The%20Night%20They%20Drove%20Old%20Dixie.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1TIyNA4CW3ulHSCgxmVpGPIJ8MM9HdQs2/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1TIyNA4CW3ulHSCgxmVpGPIJ8MM9HdQs2"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/The%20Night%20They%20Drove%20Old%20Dixie.pdf"
+              title="The Night They Drove Old Dixie Down – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="vincent" class="song">
+            <h2>Vincent</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/uc?export=download&id=1zv-PpF8L6I6IX-eEnWc2M3jH7w6e8xcp">
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1tw0_X2RfcdQDkGzK3tJzZRchwK5By5hG/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1tw0_X2RfcdQDkGzK3tJzZRchwK5By5hG"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1PtpXwiMLhetgHhGLikV4b8PsNago-7MW"
+                >▶ Lead Sheet downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Vincent.pdf"
+              title="Vincent – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="1-2-3-4-I-Love-You" class="song">
+            <h2>1,2,3,4 (I Love You)</h2>
+            <p class="pdf-download">
+              <a href="/notes/1-2-3-4-I-Love-You.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/15BydMAV6Hwd8nmBJeA7ygkqQWR1qG_4c/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=15BydMAV6Hwd8nmBJeA7ygkqQWR1qG_4c"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1y_T0MD8mZo8y3AwmrV0OBCwI1DjO_wwS"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/1-2-3-4-I-Love-You.pdf"
+              title="1,2,3,4 (I Love You) – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="heart-of-gold" class="song">
+            <h2>Heart Of Gold</h2>
+            <p class="pdf-download">
+              <a href="/notes/Heart%20Of%20Gold.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/15lqe8sLjp6lNMC1Ddqp6mYR8BDuaCYKw/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=15lqe8sLjp6lNMC1Ddqp6mYR8BDuaCYKw"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1xzuHqjActqbBBbRo3JnFoL2GeSi0k8JV"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Heart%20Of%20Gold.pdf"
+              title="Heart Of Gold – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="hey-hey-my-my" class="song">
+            <h2>Hey Hey My My</h2>
+            <p class="pdf-download">
+              <a href="/notes/Hey%20Hey%20My%20My.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1GvsPYo8biUL9MzvjsVmir91HH6Z5B68o/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1GvsPYo8biUL9MzvjsVmir91HH6Z5B68o"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Hey%20Hey%20My%20My.pdf"
+              title="Hey Hey My My – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="old-man" class="song">
+            <h2>Old Man</h2>
+            <p class="pdf-download">
+              <a href="/notes/Old%20Man%20-%20Neil%20Young.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1JSpicEK49IG2VsWYPqFbUYWJyUmlJwMj/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1JSpicEK49IG2VsWYPqFbUYWJyUmlJwMj"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1V02o0NC7bEQ2zyOr9v4NgAUOPsIkQfB4"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Old%20Man%20-%20Neil%20Young.pdf"
+              title="Old Man – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="hey-there-delilah" class="song">
+            <h2>Hey There Delilah</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Hey%20There%20Delilah%20-%20Plain%20White%20Ts.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1kVVqLZhZ737cWB99xdY3fYttwVWoa0zA/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1kVVqLZhZ737cWB99xdY3fYttwVWoa0zA"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1lNqy2Y4COd17pg6RmeuMM6_ej3Nxlu74"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Hey%20There%20Delilah%20-%20Plain%20White%20Ts.pdf"
+              title="Hey There Delilah – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="no-no-never" class="song">
+            <h2>No No Never</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/No%20No%20Never%20-%20Texas%20Lightning.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1asq5MeOWtJ-8Ldvto53NdXtjpV2MD9sv/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1asq5MeOWtJ-8Ldvto53NdXtjpV2MD9sv"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1xPl7EoVNhwdo6-pk1XF1Ihj6_hDDmM_q"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/No%20No%20Never%20-%20Texas%20Lightning.pdf"
+              title="No No Never – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="hotel-california" class="song">
+            <h2>Hotel California</h2>
+            <p class="pdf-download">
+              <a href="/notes/Hotel_California_Guitar_2.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1pHZGuOhAcuZ_m2-JXgYRokiH-mbK00rm/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1pHZGuOhAcuZ_m2-JXgYRokiH-mbK00rm"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1v75KY6b8XUqLa61BJKHpy8hx4ziIHdnL"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Hotel_California_Guitar_2.pdf"
+              title="Hotel California – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="i-take-a-lot-of-pride" class="song">
+            <h2>I Take A Lot Of Pride In What I Am</h2>
+            <p class="pdf-download">
+              <a href="/notes/I_Take_A_Lot.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1DGlLYVtJFAc9cI_mgvczXDkGqO57wz8H/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1DGlLYVtJFAc9cI_mgvczXDkGqO57wz8H"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1pzg7SEY9cJlTzK0QyddP4WQIezqRtsrg"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/I_Take_A_Lot.pdf"
+              title="I Take A Lot Of Pride In What I Am – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="city-of-neworleans" class="song">
+            <h2>City Of NewOrleans</h2>
+            <p class="pdf-download">
+              <a href="/downloads/City_Of_NewOrleans.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1toIgALL5hp4bdzBeP3Hcnmy1QkXKrpOq/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1toIgALL5hp4bdzBeP3Hcnmy1QkXKrpOq"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1P28gmiGgXjVXr77cvRqGG3bZntd-yStM"
+                >▶ Lead Sheet downloaden</a
+              >
+            </div>
+            <iframe
+              src="/downloads/City_Of_NewOrleans.pdf"
+              title="City Of NewOrleans – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="harvest-moon" class="song">
+            <h2>Harvest Moon</h2>
+            <p class="pdf-download">
+              <a href="/notes/Harvest%20Moon%20-%20Guitar%2001.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/165-m08XZjA2_YJA-iChZmuluWS_SDutF/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=165-m08XZjA2_YJA-iChZmuluWS_SDutF"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1TmVpdZmrM7TS7xqlXLhVN2AHjssxOsf7"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Harvest%20Moon%20-%20Guitar%2001.pdf"
+              title="Harvest Moon – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="kathys-song" class="song">
+            <h2>Kathy's Song</h2>
+            <p class="pdf-download">
+              <a href="/notes/Kathy's%20Song.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1NLYwkf4TMUtwDHI5_QHc6MT-TI92qxRo/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1NLYwkf4TMUtwDHI5_QHc6MT-TI92qxRo"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1RbnutxNqAxAozJL5vkA_3XVuggbvOP7g"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Kathy's%20Song.pdf"
+              title="Kathy's Song – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="mrs-robinson" class="song">
+            <h2>Mrs. Robinson</h2>
+            <p class="pdf-download">
+              <a href="/notes/Mrs_Robinson.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1U4dS-86LBnzdtRdDx9zveySB3Kq-wP1k/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1U4dS-86LBnzdtRdDx9zveySB3Kq-wP1k"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1RbwFakdzCzSx6H1G675vzIGKiPBiClb-"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Mrs_Robinson.pdf"
+              title="Mrs. Robinson – Noten"
+              loading="lazy"></iframe>
+              <h2>🎥 YouTube-Video</h2>
+          <div class="video-container-wrapper thumbnail">
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/CwIlYKbqIPg"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          </section>
+          <section id="scarborough-fair" class="song">
+            <h2>Scarborough Fair</h2>
+            <p class="pdf-download">
+              <a href="/notes/Scarborough%20Fair.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1CxjuCona34ljibYrOHMDSQJL2gpcuA3h/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1CxjuCona34ljibYrOHMDSQJL2gpcuA3h"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1tRg-ALAt9Qq-WtsmkETfsHCkPbaz6LdT"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Scarborough%20Fair.pdf"
+              title="Scarborough Fair – Noten"
+              loading="lazy"></iframe>
+          </section>
+
+          <section id="the-boxer" class="song">
+            <h2>The Boxer</h2>
+            <p class="pdf-download">
+              <a href="/notes/The%20Boxer%20-%20Guitar.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1PNeigNH2ZW_d56QpU3AVvvJRWgdOkC0e/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1PNeigNH2ZW_d56QpU3AVvvJRWgdOkC0e"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Bdp-RtLj16rMJ7W8gzEdP_YPEHIgv5og"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/The%20Boxer%20-%20Guitar.pdf"
+              title="The Boxer – Noten"
+              loading="lazy"></iframe>
+          </section>
+
+          <AdditionalSongs />
+
+          <section id="shame" class="song">
+            <h2>Shame</h2>
+            <p class="pdf-download">
+              <a href="/notes/Shame.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1HcAhhynVyLzjZnoYGqEE6sJ9stdiMbLv/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1HcAhhynVyLzjZnoYGqEE6sJ9stdiMbLv"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1TTSJgnB3pVol_POYrnr9JL05rJRoY1RS"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe src="/notes/Shame.pdf" title="Shame – Noten" loading="lazy"
+            ></iframe>
+          </section>
+          <section id="the-a-team" class="song">
+            <h2>The A Team</h2>
+            <p class="pdf-download">
+              <a href="/notes/The%20A%20Team%20-%20Guitar%20I.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1Je44pI1Pyf7Vr7H6p8TaskOrLgrjVPAZ/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Je44pI1Pyf7Vr7H6p8TaskOrLgrjVPAZ"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1--NZvM9bWHtVLaD4iZlXDOFws3LsYtMW"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/The%20A%20Team%20-%20Guitar%20I.pdf"
+              title="The A Team – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="in-the-year-2525" class="song">
+            <h2>In The Year 2525</h2>
+            <p class="pdf-download">
+              <a href="https://drive.google.com/uc?export=download&id=13p63C_yO_FWnWq73cmQ_08d07wC09NTb"
+              > ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/19wTfXI-FdKC1q0qEcnaFo0GRbdf71Q6w/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=19wTfXI-FdKC1q0qEcnaFo0GRbdf71Q6w"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=14Lm_XXIcCUPOM66FXKIgHA57UpYwCU_B"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/In%20The%20Year%202525%20-%20Guitar.pdf"
+              title="In The Year 2525 – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="more-than-words" class="song">
+            <h2>More Than Words</h2>
+            <p class="pdf-download">
+              <a href="/notes/More%20Than%20Words.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/13EsXGlgEYJWNN7on-jFjf9c-nEJSzSVx/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=13EsXGlgEYJWNN7on-jFjf9c-nEJSzSVx"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/More%20Than%20Words.pdf"
+              title="More Than Words – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="we-are-the-people" class="song">
+            <h2>We Are The People</h2>
+            <p class="pdf-download">
+              <a href="/notes/We%20Are%20The%20People.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1ZM73-2nl2JFKbjN76O8TwkiMCnOIZt2J/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ZM73-2nl2JFKbjN76O8TwkiMCnOIZt2J"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1o-KMPEyZxsebiX7rRtGCrnPpdAGDdIq4"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/We%20Are%20The%20People.pdf"
+              title="We Are The People – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="classical-gas" class="song">
+            <h2>Classical Gas</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Classical%20Gas%20-%20Guitar%20Orchestr.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1GdpOBmuERNAudCOojUKmETbSOr61edwX/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1N1biKh_eg83J61dej0sx0SHnA_DPiN2z/preview"
+                >▶ Play Along ohne Orchester</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1GdpOBmuERNAudCOojUKmETbSOr61edwX"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Git-QFTL4lzflrD4oeHkOJGGQy_u2FpI"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Classical%20Gas%20-%20Guitar%20Orchestr.pdf"
+              title="Classical Gas – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="ueber-den-wolken" class="song">
+            <h2>Über den Wolken</h2>
+            <p class="pdf-download">
+              <a href="/notes/Über%20den%20Wolken%20-%20Guitar.pdf" download>
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1J3k5zkl8neakZfsV0wl4v2lSe8klzrqJ/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1J3k5zkl8neakZfsV0wl4v2lSe8klzrqJ"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=15Q1sme9_zu70qCb5fNG2ysKOBO7DJDzi"
+                >▶ Komplettes Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Über%20den%20Wolken%20-%20Guitar.pdf"
+              title="Über den Wolken – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="ain't-no-sunshine" class="song">
+            <h2>Ain't No Sunshine</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Ain't%20No%20Sunshine%20-%20Nylon%20Guitar.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/1JU5CisUT_eOiYVm4bzEuG7qUWWsy4E7u/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1JU5CisUT_eOiYVm4bzEuG7qUWWsy4E7u"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1UuVbSGj54YIHtNVIQmMhQ5Szs-4kg8yJ"
+                >▶ + Backing Track + Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Ain't%20No%20Sunshine%20-%20Nylon%20Guitar.pdf"
+              title="Ain't No Sunshine – Noten"
+              loading="lazy"></iframe>
+          </section>
+          <section id="going-up-the-country" class="song">
+            <h2>Going Up The Country</h2>
+            <p class="pdf-download">
+              <a
+                href="/notes/Going%20Up%20The%20Country%20-%20Guitar.pdf"
+                download
+              >
+                ⬇ Noten als PDF herunterladen
+              </a>
+            </p>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/file/d/10o7R9M7mdo-CafeTayyCnOCQfB6T9TzZ/preview"
+                >▶ Play Along</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=10o7R9M7mdo-CafeTayyCnOCQfB6T9TzZ"
+                >▶ Audio downloaden</a
+              >
+            </div>
+            <div class="audio-links">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1sKUezvObLHpMZxbWlzaJi6x81jLUqHEl"
+                >▶ + Bass Arrangment downloaden</a
+              >
+            </div>
+            <iframe
+              src="/notes/Going%20Up%20The%20Country%20-%20Guitar.pdf"
+              title="Going Up The Country – Noten"
+              loading="lazy"></iframe>
+          </section>
+
+          <!-- Weitere Songs hier unten einfügen -->
+        </div>
+      </div>
+
+      <!-- Rechte Spalte: Inhaltsverzeichnis -->
+      <aside class="content">
+        <h3>Inhaltsverzeichnis</h3>
+        <h4>🎸 Popmusik</h4>
+        <a href="#horse-with-no-name">A Horse With No Name - America</a>
+        <a href="#behind-blue-eyes">Behind Blue Eyes - Limp Biskit</a>
+        <a href="#i-follow-rivers">I Follow Rivers - Triggerfinger</a>
+        <a href="#mad-world">Mad World - Gary Jules</a>
+        <a href="#here-comes-the-sun">Here Comes The Sun - George Harrison</a>
+        <a href="#while-my-guitar-gently-weeps">While My Guitar Gently Weeps - George Harrison</a>
+        <a href="#real-love">Real Love - John Lennon</a>
+        <a href="#across-the-universe">Across The Universe - Beatles</a>
+        <a href="#and-I-love-her">And I Love Her - Beatles</a>
+        <a href="#do-you-want-to-know-a-secret">Do You Want To Know A Secret? - Beatles</a>
+        <a href="#eleanor-rigby">Eleanor Rigby - Beatles</a>
+        <a href="#if-i-fell">If I Fell - Beatles</a>
+        <a href="#i-will-be-back">I'll Be Back - Beatles</a>
+        <a href="#in-my-life">In My Life - Beatles</a>
+        <a href="#no-reply">No Reply - Beatles</a>
+        <a href="#with-a-little-help-from-my-friends">With A Little Help From My Friends - Beatles</a>
+        <a href="#1-2-3-4-I-Love-You">1,2,3,4 (I Love You) - Plain White T's</a>
+        <a href="#ferry-across-the-mersey">Ferry 'Cross The Mersey - Gary And The Pacemakers</a>
+        <a href="#like-ice-in-the-sunshine">Like Ice In The Sunshine - Beagle Music</a>
+        <a href="#heart-of-gold">Heart Of Gold - Neil Young</a>
+        <a href="#hey-hey-my-my">Hey Hey My My - Neil Young</a>
+        <a href="#old-man">Old Man - Neil Young</a>
+        <a href="#harvest-moon">Harvest Moon - Neil Young</a>
+        <a href="#homeward-bound">Homeward Bound - Simon & Garfunkel</a>
+        <a href="#kathys-song">Kathy's Song - Simon & Garfunkel</a>
+        <a href="#mrs-robinson">Mrs. Robinson - Simon & Garfunkel</a>
+        <a href="#scarborough-fair">Scarborough Fair - Simon & Garfunkel</a>
+        <a href="#the-boxer">The Boxer - Simon & Garfunkel</a>
+        <a href="#father-and-son">Father And Son - Cat Stevens</a>
+        <a href="#reflections-of-my-life">Reflections Of My Life - Marmalade</a>
+        <a href="#shame">Shame - Robie Williams</a>
+        <a href="#silence-is-golden">Silence Is Golden - The Tremeloes</a>
+        <a href="#tears-in-heaven">Tears In Heaven - Eric Clapton</a>
+        <a href="#the-a-team">The A Team - Ed Sheeran</a>
+        <a href="#the-girl-from-ipanema">The Girl From Ipanema - Bebel Gilberto</a>
+        <a href="#the-lion-sleeps-tonight">The Lion Sleeps Tonight - Tokens</a>
+        <a href="#hey-there-delilah">Hey There Delilah - Plain White T's</a>
+        <a href="#hotel-california">Hotel California - Eagles</a>
+        <a href="#love-will-keep-us-alive">Love Will Keep Us Alive - Eagles</a>
+        <a href="#in-the-year-2525">In The Year 2525 - Zager & Evans</a>
+        <a href="#more-than-words">More Than Words - Extrem</a>
+        <a href="#you-keep-me-hanging-on">You Keep Me Hanging On - Vanilla Fudge</a>
+        <a href="#where-to-you-go-to-my-lovely">Where Do You Go To My Lovely - Peter Sarstedt</a>
+        <a href="#wenn-sie-tanzt">Wenn sie tanzt - Max Giesinger</a>
+        <a href="#we-are-the-people">We Are The People - Empire Of The Sun</a>
+        <h4>🎸 Country & Western</h4>
+        <a href="#maybe">Maybe - Thom Pace</a>
+        <a href="#sixteen-tons">Sixteen Tons - Merl Travis</a>
+        <a href="#ruby">Ruby - Kenny Rogers</a>
+        <a href="#take-my-hand">Take My Hand - Smokestack - Lightning</a>
+        <a href="#no-no-never">No No Never - Texas Lightning</a>
+        <a href="#i-take-a-lot-of-pride">I Take A Lot Of Pride In What I Am - Merle Haggard</a>
+        <h4>🎸 Folk / Singer-Songwriter</h4>
+        <a href="#catch-the-wind">Catch The Wind - Donovan</a>
+        <a href="#city-of-neworleans">City Of NewOrleans - Arlo Guthrie</a>
+        <a href="#gentle-on-my-mind">Gentle On My Mind - Glenn Campell</a>
+        <a href="#mr-bo-jangles">Mr. Bo Jangles - Jim Croce</a>
+        <a href="#now-and-forever">Now And Forever - Richard Marx</a>
+        <a href="#the-night-they-drove-old-dixie-down">The Night They Drove Old Dixie Down - Joan Baez</a>
+        <a href="#vincent">Vincent - Don Mc Lean</a>
+        <h4>🎸 Klassik</h4>
+        <a href="#classical-gas">Classical Gas - Mason Williams</a>
+        <h4>🎸 Liedermacher / Chanson</h4>
+        <a href="#ueber-den-wolken">Über den Wolken - Reinhard Mey</a>
+        <h4>🎸 Blues</h4>
+        <a href="#ain't-no-sunshine">Ain't No Sunshine - Bill Withers</a>
+        <a href="#going-up-the-country">Going Up The Country - Canned Heat</a>
+        <!-- Weitere Songs hier hinzufügen -->
+      </aside>
+    </div>
+    <a href="#top" class="scroll-top" aria-label="Zurück nach oben">⬆</a>
+    
+  </main>
+  
+  <script src="/scripts/scroll-offset.js" defer></script>
+</AccountLayout>

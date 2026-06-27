@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Imagine – John Lennon";
+const heading = "Imagine – John Lennon";
+const description = "Sichere Zahlung für das Stück Imagine. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Imagine - John Lennon, Piano, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/imagine/";
+const productId = "IMAG-001";
+const imageSrc = "/bilder/imagine_vorschau.png";
+const imageAlt = "/bilder/imagine_vorschau.png";
+const price = "7.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/imagine_preview.png";
+
+const contentHtml = `
+  <br />
+  
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=Ts0XSyWpMnU"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Imagine ansehen"
+    rel="noopener"
+  >
+    ▶️ Imagine – John Lennon auf YouTube ansehen
+  </a>
+  </p>
+  <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält Piano Begleitung – exakt auf das Original abgestimmt.</p>
+
+  <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
+  <ul>
+    <li>Piano Noten</li>
+    <li>Gesang + Text</li>
+    <li>Bassnoten</li>
+    <li>Drums Noten</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht oder als Band Arrangement nutzbar.
+  </p>
+  <p>
+    Keine vereinfachten Internet-Noten – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
+  </p>
+  
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+    productId={productId}
+  />
+</BaseLayout>

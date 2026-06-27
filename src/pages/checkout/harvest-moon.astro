@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Harvest Moon – Neil Young (Guitar Arrangement)";
+const heading = "Harvest Moon – Neil Young (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Harvest Moon. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Harvest Moon - Neil Young, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/harvest-moon/";
+const productId = "HM-001";
+const imageSrc = "/bilder/harvest_moon_vorschau.png";
+const imageAlt = "Harvest Moon Vorschau";
+const price = "7.95";
+
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/harvest_moon_preview.png"
+
+const contentHtml = `
+  <br />
+  
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=n2MtEsrcTTs"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Harvest Moon ansehen"
+    rel="noopener"
+  >
+    ▶️ Harvest Moon – Neil Young auf YouTube ansehen
+  </a>
+  </p>
+  <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält alle wichtigen Stimmen: Guitar I, Guitar II, Gesangsmelodie + Chorgesang – exakt auf das Original abgestimmt.</p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
+  <ul>
+    <li>Steel Guitar I  Tabs</li>
+    <li>Nylon Gitar II Tabs</li>
+    <li>Gesangsmelodie + Text + Chor</li>
+    <li>Mundharmonika Solo</li>
+    <li>Bass Noten</li>
+    <li> Brush Drums Noten</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht oder als Band Arrangement.
+  </p>
+  <p>
+    Keine vereinfachten Internet-Tabs – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
+  </p>
+
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    productId={productId}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

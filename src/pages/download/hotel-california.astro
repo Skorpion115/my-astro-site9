@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Hotel California – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "TAKEGC-001",
+    "data-price": "5.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=10nERjWm4X0ELS06CEELPNI_YhcI0A5y7"
+        class="cta-button"
+      >
+        📄 Hotel California – Guitar 1
+      </a>
+    </li>
+    <li>
+      <a
+        href="/notes/Hotel_California_Guitar_2.pdf"
+        download
+        class="cta-button"
+      >
+        📄 Hotel California Guitar 2
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1EVRXv_kZYkxZF4khbqYnuXWCnbUKe5Gu"
+        class="cta-button"
+      >
+        📄 Hotel California – Guitar Solo
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1phuU-stLxFayQjPSAtcY2nHzNLFokxpq"
+        class="cta-button"
+      >
+        📄 Hotel California – Bass Noten
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1CEdCsFVCPJOpwS6Z5EJHjM23dc5wN5qk"
+        class="cta-button"
+      >
+        📄 Hotel California – Lead Sheet
+      </a>
+    </li>
+  </ul>
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

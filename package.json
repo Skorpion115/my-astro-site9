@@ -1,0 +1,22 @@
+{
+  "name": "my-astro-site9",
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node sitemap.js",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^6.4.8",
+    "xmlbuilder2": "^4.0.3"
+  },
+  "devDependencies": {
+    "@astrojs/netlify": "^7.0.13"
+  },
+  "engines": {
+    "node": "22.22.3",
+    "npm": "10.9.8"
+  }
+}

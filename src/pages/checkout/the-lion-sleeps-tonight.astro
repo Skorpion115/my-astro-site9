@@ -1,0 +1,119 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "The Lion Sleeps Tonight – The Tokens (Guitar Arrangement)";
+const heading = "The Lion Sleeps Tonight – The Tokens (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu The Lion Sleeps Tonight. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "The Lion Sleeps Tonight, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/the-lion-sleeps-tonight/";
+const productId = "LIONS-001";
+const imageSrc = "/bilder/The_Lion_Sleeps_Tonight-Vorschau.jpg";
+const imageAlt = "The Lion Sleeps Tonight – Vorschau";
+const price = "5.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/the_lion_sleeps_tonight_preview.png";
+
+const contentHtml = `
+  <br />
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1-mo63I6v5hePqOrrbJqEz6w1PaiI8NH0/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=eFcGadGwenQ"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu The Lion Sleeps Tonight ansehen"
+    rel="noopener"
+  >
+    ▶️ The Lion Sleeps Tonight – The Tremeloes auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält alle wichtigen Stimmen: Guitar, Bass, Gesangsmelodie, chorgesang und Klarinetten Solo – exakt auf das Original abgestimmt.</p>
+
+  <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
+  <ul>
+    <li>Guitar Noten</li>
+    <li>Gesangsmelodie + Text</li>
+    <li>Chorgesang</li>
+    <li>Klarinetten Solo vollständig ausgeschrieben</li>
+    <li>Bassline</li>
+    <li> Drums Noten</li>
+    <li>Full Score (Gesamtpartitur)</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht oder für Band-Arrangements.
+  </p>
+  <p>
+    Keine vereinfachten Internet-Tabs – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
+  </p>
+  
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    productId={productId}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

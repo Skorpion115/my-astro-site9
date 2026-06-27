@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Download: The Long And Winding Road – Beatles";
+const description = "Download der Noten »The Long And Winding Road«. Vielen Dank für Ihren Kauf.";
+const keywords = "The Long And Winding Road, Klavier Begleitung, Noten PDF";
+const pageUrl = getPageUrl(Astro);
+const downloads = [
+  {
+    label: "The Long And Winding Road – Klavier Noten (PDF)",
+    url: "https://drive.google.com/uc?export=download&id=1DfW3EAFOvF5OkB-G96LMJgI6DDm4vDiO",
+  },
+  {
+    label: "The Long And Winding Road – Komplettes Arrangement als ZIP",
+    url: "https://drive.google.com/uc?export=download&id=1z9EEEkEF21t9EDp2DI81gIXm-KEf544-",
+  },
+  {
+    label: "The Lond And Winding Road – Backing Track",
+    url: "https://drive.google.com/uc?export=download&id=1JnijD5bgFfCvYvXrY1KrSV6_Lo5gLysC",
+  },
+];
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  noindex={true}
+  bodyAttributes={{
+    "data-product-id": "TLAWR-001",
+    "data-price": "7.95"
+  }}
+>
+  <h1>Vielen Dank für deinen Kauf!</h1>
+
+  <p>
+    Du kannst deine <strong>Noten „The Long And Winding Road – Klavier Begleitung“</strong> jetzt
+    herunterladen.
+  </p>
+
+  <p>
+    👉 <strong>Wichtig:</strong> Bitte speichere die Datei direkt auf deinem Gerät
+    ab.
+  </p>
+
+  <hr />
+  <ul>
+    {
+      downloads.map((file) => (
+        <li>
+          <a href={file.url} download class="download-button">
+            👉 {file.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <hr />
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail:
+    <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p class="vat-note">
+    Rechnung mit auf Anfrage per E-Mail erhältlich.
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="normal-links">← Zurück zur Musikbibliothek</a>
+  </p>
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

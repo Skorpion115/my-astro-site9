@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Nancy Rowland – Snuffy Jenkins";
+const description = "Bluegrass 3-Fingerstyle von Nancy Rowland für fortgeschrittene Anfänger.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>Komponist: Snuffy Jenkins</p>
+
+  <p>
+    Snuffy Jenkins war ein legendärer Banjo-Spieler, der den Bluegrass-Stil maßgeblich geprägt hat. Dieses Stück ist ein klassisches Beispiel für seinen 3-Fingerstyle, der sowohl rhythmisch als auch melodisch anspruchsvoll ist.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Bluegrass 3-Fingerstyle</li>
+    <li>Rhythmisch anspruchsvoll</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für Anfänger, die ihr erstes Stück im Bluegrass-Stil lernen wollen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a href="/checkout/nancy-rowland/" class="cta-button">
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>

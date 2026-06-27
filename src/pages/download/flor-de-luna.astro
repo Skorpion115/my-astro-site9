@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Flor d’Luna (Moonflower) – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "FDL-001",
+    "data-price": "9.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1eoV9NbQVEkx2vNn3fN3jhWLjDfEfk22-"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Flor d’Luna (Moonflower) Guitar
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1WAKFzDgj2v7zUu2eEm8VnWJrY0fqIBnz"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Moonflower ossia Takt 68
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1o7ypMqQ_2JnNKCP4kR7g8UWFB2DICCuz"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        🎵 Moonflower Backing Track
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1XzxpK8z0DpHOHPvrFYViybIuM76BR9fs"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        🎵 Moonflower Mastering
+      </a>
+    </li>
+  </ul>
+  <p>
+    Moonflower oassia Takt 68 dient zu Vereinfachung. Diese komplizierte Stelle spielt Carlos Santana bei Auftritten auch nicht. Sie existiert nur auf dem Studio Album. Das Album heißt übrigens "Moonflower". Der Song heißt "Flor d’Luna". Übersetzung: Blume des Mondes. Die Sprache ist spanisch.
+  </p>
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

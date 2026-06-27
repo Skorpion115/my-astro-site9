@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Schülerbereich">
+  <article class="account-page">
+    <!-- LOGIN-BEREICH -->
+      
+    <section id="login-box">
+      <h1>🔐 Schülerbereich</h1>
+      <p class="normal-links">Bitte Passwort eingeben:</p>
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Passwort"
+        autocomplete="off"
+      />
+      <button id="login-btn">Login</button>
+
+      <p id="error" class="error hidden">❌ Falsches Passwort</p>
+    </section>
+
+    <!-- GESCHÜTZTER BEREICH -->
+    <section id="content" class="hidden">
+      <h1>🎸 Willkommen im geschützten Bereich</h1>
+
+      <!-- Optionaler Logout-Button -->
+      <button class="auth-logout" onclick="logout()">Logout</button>
+
+      <!-- Geschützter Content -->
+      <nav class="account-nav">
+        <a href="/kundenlogin/account/songbook_2/" class="normal-links">
+          📘 Songbooks
+        </a>
+      </nav>
+      <p>Hier findest du exklusive Inhalte, die nur für eingeloggte Schüler zugänglich sind. Viel Spaß beim Stöbern!</p>
+      <p>Auf Songbooks oben klicken und dann gehts weiter!</p>
+      <hr />
+    </section>
+
+    <!-- Login Script -->
+     
+    <script src="/scripts/login.js" defer></script>
+  </article>
+</BaseLayout>

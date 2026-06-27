@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Sixteen Tons – Guitar Arrangement";
+const description =
+  "Gitarren-Arrangement im Country-Rhythmus-Stil für fortgeschrittene Anfänger. Enthält typische Strumming-Patterns und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+
+  <p>Original komponiert von Merle Travis</p>
+
+  <p>
+    Dieses Arrangement vermittelt typische Country-Rhythmus-Techniken mit
+    Down- und Upstroke-Patterns.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Strumming Patterns (Country Style)</li>
+    <li>Rhythmische Begleitung</li>
+    <li>Praxisnahes Spielgefühl</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Anfänger und Spieler, die ihren Rhythmus verbessern wollen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a href="/checkout/sixteen-tons/" class="cta-button">
+        Jetzt kaufen / herunterladen
+    </a>  
+  </p>
+
+</BaseLayout>

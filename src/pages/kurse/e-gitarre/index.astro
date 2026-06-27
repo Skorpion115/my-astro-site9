@@ -1,0 +1,145 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+const pageTitle = "E-Gitarre Lernmodule";
+const description =
+  "Lerne E-Gitarre mit strukturierten Lernmodulen: Strumming, Fingerstyle, Country und Blues – nach Stil und Level sortiert.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+>
+  <p>
+    Wähle deinen Lernweg und entwickle deine E-Gitarrenfähigkeiten Schritt für
+    Schritt. Alle Inhalte basieren auf praxisnahen Arrangements und rhythmischen
+    Spieltechniken.
+  </p>
+
+  <!-- 🔷 Lernwege / Kategorien -->
+  <h2>Lernwege</h2>
+
+  <div class="card-grid">
+    <div class="basis-card">
+      <h3>🎸 Strumming & Rhythm E-Guitar</h3>
+
+      <p>
+        Down- und Upstroke-Techniken für Pop Begleitung. Es sind auch
+        Zupftechniken dabei.
+      </p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/take-good-care-of-my-baby/">
+            Take Good Care Of My Baby – Bobby Vee
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/all-you-need-is-love/">
+            All You Need Is Love – Beatles
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/come-together/">
+            Come Together – Beatles
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/with-a-little-help-from-my-friends/">
+            With A Little Help From My Friends – Beatles
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/reflections-of-my-life/">
+            Reflections Of My Life – Marmalade
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/hotel-california/">
+            Hotel California – Eagles
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/love-will-keep-us-alive/">
+            Love Will Keep Us Alive – Eagles
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/stairway-to-heaven/">
+            Stairway To Heaven – Led Zeppelin
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/all-along-the-watchtower/">
+            All Along The Watchtower – Jimi Hendrix
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/the-wind-cries-mary/">
+            The Wind Cries Mary – Jimi Hendrix
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="basis-card">
+      <h3>🎸 E-Gitarren Solos</h3>
+
+      <p>E-Gitarren Solos für E-Gitarristen.</p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/ten-words/"> Ten Words – Joe Satriani </a>
+        </li>
+        <li>
+          <a href="/arrangements/sleepwalk/"> Sleepwalk – Joe Satriani </a>
+        </li>
+        <li>
+          <a href="/arrangements/flor-de-luna/">
+            Flor d’Luna (Moonflower) – Santana
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/europa/"> Europa – Carlos Santana </a>
+        </li>
+      </ul>
+    </div>
+    <!--
+    <div class="basis-card">
+      <h3>🎵 Fingerstyle Guitar</h3>
+      <p>Melodie- und Bassspiel mit Fingerpicking-Techniken.</p>
+      <a href="/arrangements/fingerstyle-blues-intermediate/">
+        Jetzt lernen
+      </a>
+    </div>
+
+    <div class="basis-card">
+      <h3>🎼 Blues Guitar</h3>
+      <p>Rhythmische Blues-Patterns und klassische Begleitformen.</p>
+      <a href="/arrangements/blues-guitar-basics/">
+        Jetzt lernen
+      </a>
+    </div> -->
+  </div>
+
+  <!-- 🔷 Optional: Erklärung -->
+  <h2>Wie funktioniert das Lernen?</h2>
+
+  <ul>
+    <li>Du wählst einen Stil (z. B. Strumming & Rhythm Guitar)</li>
+    <li>Du lernst anhand eines konkreten Arrangements</li>
+    <li>Du arbeitest mit echten Songs im Stil – ohne komplizierte Theorie</li>
+  </ul>
+
+  <p>
+    Alle Arrangements sind nach Schwierigkeitsgrad aufgebaut und sofort
+    spielbar.
+  </p>
+</BaseLayout>

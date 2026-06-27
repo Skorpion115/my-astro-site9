@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Download: Hey Jude – The Beatles";
+const description = "Download der Noten »Hey Jude«. Vielen Dank für Ihren Kauf.";
+const keywords = "Hey Jude, Klavier Begleitung, Noten PDF";
+const pageUrl = getPageUrl(Astro);
+const downloads = [
+  {
+    label: "Hey Jude – Klavier Noten (PDF)",
+    url: "https://drive.google.com/uc?export=download&id=1yfvERlL01uxCdkkGYAZoSQdtemCV5aHm",
+  },
+  {
+    label: "Hey Jude – Komplettes Arrangement als ZIP",
+    url: "https://drive.google.com/uc?export=download&id=1AMAq0u9473QehbnsG43y1tcxv_WUhR3w",
+  },
+];
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  noindex={true}
+  bodyAttributes={{
+    "data-product-id": "JUDE-001",
+    "data-price": "7.95"
+  }}
+>
+  <h1>Vielen Dank für deinen Kauf!</h1>
+
+  <p>
+    Du kannst deine <strong>Noten „Hey Jude – Klavier Begleitung“</strong> jetzt
+    herunterladen.
+  </p>
+
+  <p>
+    👉 <strong>Wichtig:</strong> Bitte speichere die Datei direkt auf deinem Gerät
+    ab.
+  </p>
+
+  <hr />
+  <ul>
+    {
+      downloads.map((file) => (
+        <li>
+          <a href={file.url} download class="download-button">
+            👉 {file.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <hr />
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail:
+    <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p class="vat-note">
+    Rechnung mit auf Anfrage per E-Mail erhältlich.
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="normal-links">← Zurück zur Musikbibliothek</a>
+  </p>
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

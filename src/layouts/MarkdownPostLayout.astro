@@ -1,0 +1,43 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+// Automatisch die vollständige URL generieren
+const pageUrl = new URL(Astro.url.pathname, Astro.site).toString();
+
+// Fallback für das Bild, falls es nicht existiert
+const imageUrl = frontmatter.image?.url || '/default-image.jpg';  // Beispiel-Fallback
+const imageAlt = frontmatter.image?.alt || 'Standardbild';  // Beispiel-Fallback
+---
+
+<BaseLayout>
+  <Fragment slot="head">
+    <title>{frontmatter.title}</title>
+
+    <link rel="canonical" href={pageUrl} />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:description" content={frontmatter.description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={pageUrl} />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={frontmatter.title} />
+    <meta name="twitter:description" content={frontmatter.description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+  </Fragment>
+
+  <div class="blog-post">
+    <h1>{frontmatter.title}</h1>
+    <p><em>{frontmatter.description}</em></p>
+    <p>Veröffentlicht am: {new Date(frontmatter.pubDate).toLocaleDateString('de-DE')}</p>
+    <p>Geschrieben von {frontmatter.author}</p>
+    <img src={imageUrl} alt={imageAlt} />
+    
+    <slot />
+  </div>
+</BaseLayout>

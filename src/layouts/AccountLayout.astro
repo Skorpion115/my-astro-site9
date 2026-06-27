@@ -1,0 +1,95 @@
+---
+const { pageTitle, description, href } = Astro.props;
+const { url } = Astro;
+const currentPath = url.pathname;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content={description} />
+    <link rel="canonical" href={href} />
+  </head>
+
+  <body>
+
+    <!-- LOGIN-BEREICH -->
+    <section id="login-box">
+      <h1>🔐 Schülerbereich</h1>
+      <p class="normal-links">Bitte Passwort eingeben:</p>
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Passwort"
+        autocomplete="off"
+      />
+      <button id="login-btn">Login</button>
+
+      <p id="error" class="error hidden">❌ Falsches Passwort</p>
+    </section>
+
+    <!-- GESCHÜTZTER BEREICH -->
+    <section id="content" style="display: none;">
+
+    <header class="account-header">
+      <div class="nav-wrapper">
+
+        <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="account-nav">
+          <a 
+            href="/kundenlogin/account/songbook_2/"
+            class={currentPath.includes("songbook_2") ? "active" : ""}
+          >
+            Guitar
+          </a>
+
+          <a 
+            href="/kundenlogin/account/songbook_3/"
+            class={currentPath.includes("songbook_3") ? "active" : ""}
+          >
+            Piano
+          </a>
+
+          <a 
+            href="/kundenlogin/account/songbook_4/"
+            class={currentPath.includes("songbook_4") ? "active" : ""}
+          >
+            E-Guitar
+          </a>
+
+          <a 
+            href="/kundenlogin/account/songbook_5/"
+            class={currentPath.includes("songbook_5") ? "active" : ""}
+          >
+            Jazz Guitar
+          </a>
+
+          <a 
+            href="/kundenlogin/account/"
+            class={currentPath === "/kundenlogin/account/" ? "active" : ""}
+          >
+            Zurück
+          </a>
+        </nav>
+
+      </div>
+    </header>
+
+
+    <section id="content" class="hidden">
+      <slot />
+    </section>
+    
+    /<script src="/scripts/account-menu.js" is:inline></script>
+    <script src="/scripts/login.js" defer></script>
+  </body>
+</html>

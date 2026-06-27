@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Beethoven – Moonlight Sonata – Piano Solo";
+const heading = "Beethoven – Moonlight Sonata – Piano Solo";
+const description = "Sichere Zahlung für das Piano-Solo von Beethoven. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Beethoven, Moonlight Sonata, Piano, Solo, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/beethoven-moonlight-sonata/";
+const productId = "MLS-001";
+// const imageSrc = "/bilder/dvorak_aus_der_neuen_welt_largo_vorschau.png";
+const imageAlt = "Ludwig van Beethoven – Moonlight Sonata – Vorschau";
+const price = "5.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/mondschein_sonate_beethoven_preview.png";
+
+const contentHtml = `
+  <br />
+  <img
+    src="/bilder/mondschein-sonate-vorschau.png"
+    alt="Mondschein Sonate – Vorschau"
+    class="product-image"
+  />
+  <p>
+    <strong>🎧 Hörprobe:</strong><br />
+    Audioaufnahme aus dem enthaltenen Arrangement.
+  </p>
+
+  <iframe
+    src="https://drive.google.com/file/d/1LH0K3yYBxqFnGHvuXSzwXTFwoaovoT5x/preview"
+    width="60%"
+    height="50"
+  ></iframe>
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=Ey4n8vqlX_o"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Largo ansehen"
+    rel="noopener"
+  >
+    ▶️ Moonlight Sonata – Beethoven auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält Piano Solo – exakt auf das Original abgestimmt.</p>
+
+  <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
+  <ul>
+    <li>Piano Noten</li>
+    <li>Mastering mp3</li>
+    <li>Pedalisierung</li>
+    <li>Fingersätze</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht.
+  </p>
+  <p>
+    Keine vereinfachten Internet-Noten – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
+  </p>
+  
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    productId={productId}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

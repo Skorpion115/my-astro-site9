@@ -1,0 +1,99 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Silence Is Golden – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "SILGN-001",
+    "data-price": "5.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+  <ul>
+    <li>
+      <a
+        href="/downloads/Silence_Is_Golden-SteelGuitar.pdf"
+        download
+        class="cta-button"
+      >
+        📄 Silence Is Golden – SteelGuitar
+      </a>
+    </li>
+    <li>
+      <a
+        href="/downloads/Silence_Is_Golden-E-Guitar.pdf"
+        download
+        class="cta-button"
+      >
+        📄 Silence Is Golden – E-Guitar
+      </a>
+    </li>
+    <li>
+      <a
+        href="/downloads/Silence_Is_Golden-Choir.pdf"
+        download
+        class="cta-button"
+      >
+        📄 Silence Is Golden – Choir
+      </a>
+    </li>
+    <li>
+      <a
+        href="/downloads/Silence_Is_Golden-Bass.pdf"
+        download
+        class="cta-button"
+      >
+        📄 Silence Is Golden – Bass
+      </a>
+    </li>
+    <li>
+      <a
+        href="/downloads/Silence_Is_Golden-Drums.pdf"
+        download
+        class="cta-button"
+      >
+        📄 Silence Is Golden – Drums
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1To1TjuzE46wN2Alaa2QyPb5Z5cNGLs7q"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        🎵 Silence Is Golden – BackingTrack
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1OsFtazOaWIKphqXaDHqeQGXZrJKt2RgP"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        🎵 Silence Is Golden – Mastering
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

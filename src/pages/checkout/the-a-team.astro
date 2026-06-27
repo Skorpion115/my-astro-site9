@@ -1,0 +1,111 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "The A Team – Ed Sheeran (Guitar Arrangement)";
+const heading = "The A Team – Ed Sheeran (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu The A Team. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "The A Team, Ed Sheeran, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/the-a-team/";
+
+
+const productId = "TAT-001";
+
+// 👉 WICHTIG: echte eindeutig Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
+
+const imageSrc = "/bilder/the_a_team_vorschau.png";
+const imageAlt = "The A Team – Vorschau";
+const price = "5.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/the_a_team_preview.png";
+
+const contentHtml = `
+  <br />
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=UAWcs5H-qgQ"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu The A Team ansehen"
+    rel="noopener"
+  >
+    ▶️ The A Team – Ed Sheeran auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält alle wichtigen Stimmen: Guitar I, Guitar II, Bass, Gesangsmelodie und Solo – exakt auf das Original abgestimmt.</p>
+
+  <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
+  <ul>
+    <li>Guitar I (Lead – TAB + Noten)</li>
+    <li>Guitar II (Rhythmus & Harmonie)</li>
+    <li>Gesangsmelodie + Text</li>
+    <li>Gitarrensolo vollständig ausgeschrieben</li>
+    <li>Bassline</li>
+    <li>Full Score (Gesamtpartitur)</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht oder für Band-Arrangements.
+  </p>
+  <p>
+    Keine vereinfachten Internet-Tabs – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
+  </p>
+  
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    imageSrc={imageSrc}
+    imageAlt={imageAlt}
+    price={price}
+    returnUrl={returnUrl}
+    productId={productId}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

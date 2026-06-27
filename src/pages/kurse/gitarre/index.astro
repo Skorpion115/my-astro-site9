@@ -1,0 +1,215 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../../utils/getPageUrl.js";
+
+const pageTitle = "Gitarre Lernmodule";
+const description =
+  "Lerne Gitarre mit strukturierten Lernmodulen: Strumming, Fingerstyle, Country und Blues – nach Stil und Level sortiert.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="website"
+>
+
+  <p>
+    Wähle deinen Lernweg und entwickle deine Gitarrenfähigkeiten Schritt für Schritt.
+    Alle Inhalte basieren auf praxisnahen Arrangements und rhythmischen Spieltechniken.
+  </p>
+
+  <!-- 🔷 Lernwege / Kategorien -->
+  <h2>Lernwege</h2>
+
+  <p>
+    Echte Akustik Gitarren Heros!
+  </p>
+
+  <div class="card-grid">
+
+    <div class="basis-card">
+      <h3>🎸 Strumming & Rhythm Guitar</h3>
+
+      <p>
+        Down- und Upstroke-Techniken für Pop und Folk Begleitung.
+      </p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/the-lion-sleeps-tonight/">
+            The Lion Sleeps Tonight – The Tokens
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/silence-is-golden/">
+            Silence Is Golden – The Tremeloes
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/catch-the-wind/">
+            Catch The Wind – Donovan
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/yesterday/">
+            Yesterday – Beatles
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/like-ice-in-the-sunshine/">
+            Like Ice In The Sunshine – Beagle Music
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/the-a-team/">
+            The A Team – Ed Sheeran
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/a-horse-with-no-name/">
+            A Horse With No Name – America
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/ferry-across-the-mersey/">
+            Ferry Across The Mersey – Gerry & The Pacemakers
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/father-and-son/">
+            Father And Son – Cat Stevens
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/in-the-year-2525/">
+            In The Year 2525 – Zager & Evans
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/where-do-you-go-to-my-lovely/">
+            Where Do You Go To My Lovely – Peter Sarstedt
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/heart-of-gold/">
+            Heart Of Gold – Neil Young
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/old-man/">
+            Old Man – Neil Young
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/harvest-moon/">
+            Harvest Moon – Neil Young
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/i-love-you/">
+            1234 (I Love You) – Plain White T's
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    
+    <div class="basis-card">
+      <h3>🤠 Country Guitar</h3>
+
+      <p>Typische Country-Rhythmen und Begleitpatterns für Gitarristen.</p>
+
+      <ul>
+        <li>
+          <a href="/arrangements/sixteen-tons/">
+            Sixteen Tons – Merle Travis
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/maybe/">
+            Maybe – Thom Pace
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/ruby/">
+            Ruby – Kenny Rogers
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="basis-card">
+      <h3>🎵 Fingerstyle Guitar</h3>
+      <p>Melodie- und Bassspiel mit Fingerpicking-Techniken.</p>
+      <ul>
+        <li>
+          <a href="/arrangements/city-of-neworleans/">
+            City Of NewOrleans – Arlo Guthrie
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/vincent/">
+            Vincent – Don McLean
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/behind-blue-eyes/">
+            Behind Blue Eyes – Limp Bizkit
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/more-than-words/">
+            More Than Words – Extreme
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/now-and-forever/">
+            Now And Forever – Richard Marx
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/ueber-den-wolken/">
+            Über den Wolken – Reinhard Mey
+          </a>
+        </li>
+        <li>
+          <a href="/arrangements/hey-there-delilah/">
+            Hey There Delilah – Plain White T's
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="basis-card">
+      <h3>🎼 Classical Guitar</h3>
+      <p>Klassische Musik für Konzertgitarre</p>
+      <ul>
+        <li>
+          <a href="/arrangements/classical-gas/">
+            Classical Gas – Mason Williams
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 🔷 Optional: Erklärung -->
+  <h2>Wie funktioniert das Lernen?</h2>
+
+  <ul>
+    <li>Du wählst einen Stil (z. B. Strumming & Rhythm Guitar)</li>
+    <li>Du lernst anhand eines konkreten Arrangements</li>
+    <li>Du arbeitest mit echten Songs im Stil – ohne komplizierte Theorie</li>
+  </ul>
+
+  <p>
+    Alle Arrangements sind nach Schwierigkeitsgrad aufgebaut und sofort spielbar.
+  </p>
+
+</BaseLayout>
