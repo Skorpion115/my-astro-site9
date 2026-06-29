@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Memory - Andrew Lloyd Webber";
+const description =
+  "Memory für fortgeschrittene Anfänger.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>
+    Diese Melodie stammt aus dem Musical Cats.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Klaviernoten</li>
+    <li>Fingersätze</li>
+    <li>Pedalisierung</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>Für fortgeschrittene Anfänger.</p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a
+      href="/checkout/memory/"
+      class="cta-button"
+    >
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>
