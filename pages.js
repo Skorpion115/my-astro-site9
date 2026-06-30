@@ -343,7 +343,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/checkout/my-heart-will-goes-on/`,
+    loc: `${SITE_URL}/checkout/my-heart-will-go-on/`,
     changefreq: "weekly",
     lastmod: today,
   },
