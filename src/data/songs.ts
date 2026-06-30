@@ -57,6 +57,7 @@ export const songs = [
   { title: "Ballade Pour Adeline", url: "/checkout/ballade-pour-adeline/" },
   { title: "Forrest Gump", url: "/checkout/forrest-gump/" },
   { title: "Memory", url: "/checkout/memory/" },
+  { title: "Once Upon A Time In The West", url: "/checkout/once-upon-a- time-in-the-west/" },
   { title: "Hammond Flip", url: "/checkout/hammond-flip/" },
   { title: "Lullaby In Blue", url: "/checkout/lullaby-in-blue/" },
   { title: "Kleiner Schelm", url: "/checkout/kleiner-schelm/" },
