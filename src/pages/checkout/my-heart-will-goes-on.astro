@@ -3,35 +3,35 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "Once Upon A Time In The West – Ennio Morricone";
-const heading = "Once Upon A Time In The West – Ennio Morricone";
-const description = "Sichere Zahlung für das Stück Once Upon A Time In The West. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
-const keywords = "Once Upon A Time In The West - Ennio Morricone, Piano, PDF Download";
+const pageTitle = "My Heart Will Goes On – Celine Dion";
+const heading = "My Heart Will Goes On – Celine Dion";
+const description = "Sichere Zahlung für das Stück My Heart Will Goes On. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "My Heart Will Goes On - Celine Dion, Piano, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/download/once-upon-a-time-in-the-west/";
-const productId = "OUAT-001";
-const imageSrc = "/bilder/once_upon_a_time_in_the_west_vorschau.png";
-const imageAlt = "Once Upon a Time in the West – Notenbild";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/my-heart-will-goes-on/";
+const productId = "MHWGO-001";
+const imageSrc = "/bilder/my_heart_will_goes_on_vorschau.png";
+const imageAlt = "My Heart Will Goes On – Notenbild";
 const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
-const ogImage = "https://www.musicstudio-ziebart.de/bilder/once_upon_a_time_in_the_west_preview.png";
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/my-heart-will-goes-on_preview.png";
 
 const contentHtml = `
   <br />
   <p>
-    <strong>🎧 Hörprobe:</strong><br />
-    Audioaufnahme aus dem enthaltenen Arrangement.
+  <a
+    href="https://www.youtube.com/watch?v=9bFHsd3o1w0"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu My Heart Will Goes On ansehen"
+    rel="noopener"
+  >
+    ▶️ My Heart Will Goes On – Celine Dion auf YouTube ansehen
+  </a>
   </p>
-
-  <iframe
-    src="https://drive.google.com/file/d/14nk5xiPpdTKVvq3KmAIlNaJqfaCa37yU/preview"
-    width="60%"
-    height="50"
-  ></iframe>
-  
   
   <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
   <p>Enthält Piano Begleitung – exakt auf das Original abgestimmt.</p>
@@ -39,7 +39,8 @@ const contentHtml = `
   <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
   <ul>
     <li>Piano Noten</li>
-    <li>Fingersätze</li>
+    <li>Noten für Altflöte</li>
+    <li>Noten für Flöte</li>
     <li>Pedalisierung</li>
   </ul>
   <p>

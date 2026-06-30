@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Download: My Heart Will Goes On – Celine Dion";
+const description = "Download der Noten »My Heart Will Goes On«. Vielen Dank für Ihren Kauf.";
+const keywords = "My Heart Will Goes On, Klavier Solo, Noten PDF";
+const pageUrl = getPageUrl(Astro);
+const downloads = [
+  {
+    label: "My Heart Will Goes On – Klavier Noten (PDF)",
+    url: "https://drive.google.com/uc?export=download&id=1dusGSToKEohslwLjangT8Z22x3kCq3cr",
+  },
+  {
+    label: "My Heart Will Goes On – Altflöte Noten (PDF)",
+    url: "https://drive.google.com/uc?export=download&id=1DJiB48isrpFRe_wrNY7IYRLq6ZVTGKqX",
+  },
+  {
+    label: "My Heart Will Goes On – Flöten Noten (PDF)",
+    url: "https://drive.google.com/uc?export=download&id=1tKfVCuEmN3Qk9lj8sqFjXojrXFLkMwoV",
+  },
+];
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  noindex={true}
+  bodyAttributes={{
+    "data-product-id": "MHWGO-001",
+    "data-price": "5.95"
+  }}
+>
+  <h1>Vielen Dank für deinen Kauf!</h1>
+
+  <p>
+    Du kannst deine <strong>Noten „My Heart Will Goes On – Klavier Solo“</strong> jetzt
+    herunterladen.
+  </p>
+
+  <p>
+    👉 <strong>Wichtig:</strong> Bitte speichere die Datei direkt auf deinem Gerät
+    ab.
+  </p>
+
+  <hr />
+  <ul>
+    {
+      downloads.map((file) => (
+        <li>
+          <a href={file.url} download class="download-button">
+            👉 {file.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <hr />
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail:
+    <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p class="vat-note">
+    Rechnung mit auf Anfrage per E-Mail erhältlich.
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="normal-links">← Zurück zur Musikbibliothek</a>
+  </p>
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>
