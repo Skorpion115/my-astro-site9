@@ -59,6 +59,7 @@ export const songs = [
   { title: "Memory", url: "/checkout/memory/" },
   { title: "Once Upon A Time In The West", url: "/checkout/once-upon-a- time-in-the-west/" },
   { title: "My Heart Will Go On", url: "/checkout/my-heart-will-go-on/" },
+  { title: "Over The Rainbow", url: "/checkout/over-the-rainbow/" },
   { title: "Hammond Flip", url: "/checkout/hammond-flip/" },
   { title: "Lullaby In Blue", url: "/checkout/lullaby-in-blue/" },
   { title: "Kleiner Schelm", url: "/checkout/kleiner-schelm/" },
