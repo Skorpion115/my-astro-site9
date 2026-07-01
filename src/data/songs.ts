@@ -54,6 +54,7 @@ export const songs = [
   { title: "Hey Jude", url: "/checkout/hey-jude/" },
   { title: "Let It Be", url: "/checkout/let-it-be/" },
   { title: "Circle Of Life", url: "/checkout/circle-of-live/" },
+  { title: "Can You Feel The Love Tonight", url: "/checkout/can-you-feel-the-love-tonight/" },
   { title: "Ballade Pour Adeline", url: "/checkout/ballade-pour-adeline/" },
   { title: "Forrest Gump", url: "/checkout/forrest-gump/" },
   { title: "Memory", url: "/checkout/memory/" },
