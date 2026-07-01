@@ -3,58 +3,52 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import ProductPage from "../../components/ProductPage.astro";
 import { getPageUrl } from "../../utils/getPageUrl.js";
 
-const pageTitle = "1,2,3,4 (I Love You) – Plain White T's (Guitar Arrangement)";
-const heading = "1,2,3,4 (I Love You) – Plain White T's (Guitar Arrangement)";
-const description = "Sichere Zahlung für das Gitarren-Arrangement zu 1, 2, 3, 4 (I Love You). Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
-const keywords = "1,2,3,4 (I Love You), Plain White T's, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageTitle = "If I Never Sing Another Song – Jamie Cullum";
+const heading = "If I Never Sing Another Song – Jamie Cullum";
+const description = "Sichere Zahlung für das Stück If I Never Sing Another Song. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "If I Never Sing Another Song - Jamie Cullum, Piano, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/download/i-love-you/";
-
-
-const productId = "ILY-001";
-
-// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
-// const transactionId = `TAT-${Date.now()}`;
-
-const imageSrc = "/bilder/i_love_you_vorschau.png";
-const imageAlt = "I Love You – Vorschau";
-const price = "7.95";
+const returnUrl = "https://www.musicstudio-ziebart.de/download/if-i-never-sing-another-song/";
+const productId = "IINSAS-001";
+const imageSrc = "/bilder/if_i_never_sing_another_song_vorschau.png";
+const imageAlt = "If I Never Sing Another Song – Notenbild";
+const price = "5.95";
 
 //Open-Graph-Bild für diese Produktseite.
 // Wird von Google, Social Media und Merchant Center
 // als Hauptbild für Vorschau und Produktdarstellung verwendet.
-const ogImage = "https://www.musicstudio-ziebart.de/bilder/i_love_you_preview.png";
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/if_i_never_sing_another_song_preview.png";
 
 const contentHtml = `
   <br />
   <p>
   <a
-    href="https://www.youtube.com/watch?v=m6pW_q1PvH0"
+    href="https://www.youtube.com/watch?v=EJONH8qXhKo"
     class="normal-links"
     target="_blank"
-    aria-label="YouTube Video zu 1,2,3,4 (I Love You) ansehen"
+    aria-label="YouTube Video zu If I Never Sing Another Song ansehen"
     rel="noopener"
   >
-    ▶️ 1,2,3,4 (I Love You) – Plain White T's auf YouTube ansehen
+    ▶️ If I Never Sing Another Song – Jamie Cullum auf YouTube ansehen
   </a>
   </p>
-
+  
+  
   <p><strong>Originalgetreues, vollständig ausgearbeitetes Song-Arrangement zum sofortigen Download.</strong></p>
-  <p>Enthält alle wichtigen Stimmen: Guitar I, Guitar II, Gesangsmelodie und Solo – exakt auf das Original abgestimmt.</p>
+  <p>Enthält Piano Solo – exakt auf das Original abgestimmt.</p>
 
   <p>Kein vereinfachtes Tutorial, sondern eine vollständige, spielbare Transkription des Originals.</p>
   <ul>
-    <li>Guitar I + II Noten & Tabs</li>
-    <li>Gesangsmelodie + Text</li>
-    <li>Gitarrensolo vollständig ausgeschrieben</li>
-    <li>Lead Sheet</li>
+    <li>Piano Noten</li>
+    <li>Fingersätze</li>
+    <li>Pedalisierung</li>
   </ul>
   <p>
     Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
-    Ideal zum Üben, Spielen im Unterricht oder für Band-Arrangements.
+    Ideal zum Üben, Spielen im Unterricht oder als Band Arrangement nutzbar.
   </p>
   <p>
-    Keine vereinfachten Internet-Tabs – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
+    Keine vereinfachten Internet-Noten – dieses Arrangement ist vollständig ausgearbeitet und originalgetreu transkribiert.
   </p>
   
   <ul>
@@ -67,7 +61,6 @@ const contentHtml = `
   <p class="small">
     Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
   </p>
- 
   <p>
     Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
   </p>
@@ -78,8 +71,8 @@ const contentHtml = `
   </p>
 
   <p>
-    <a href="/kurse/gitarre/" class="cta-button">
-      Weitere Gitarrenstücke entdecken
+    <a href="/kurse/musikbibliothek/" class="cta-button">
+      Weitere Musikstücke entdecken
     </a>
   </p>
 `;
@@ -107,7 +100,7 @@ const contentHtml = `
     imageAlt={imageAlt}
     price={price}
     returnUrl={returnUrl}
-    productId={productId}
     contentHtml={contentHtml}
+    productId={productId}
   />
 </BaseLayout>

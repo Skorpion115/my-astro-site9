@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "If I Never Sing Another Song - Jamie Cullum";
+const description =
+  "If I Never Sing Another Song für fortgeschrittene Anfänger.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>
+    Diese Melodie ist ein Klassiker von Jamie Cullum.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Klaviernoten</li>
+    <li>Gesang + Text</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>Für fortgeschrittene Anfänger.</p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a
+      href="/checkout/if-i-never-sing-another-song/"
+      class="cta-button"
+    >
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>
