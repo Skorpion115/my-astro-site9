@@ -548,6 +548,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/checkout/while-my-guitar-gently-weeps/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/checkout/all-you-need-is-love/`,
     changefreq: "weekly",
     lastmod: today,
