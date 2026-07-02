@@ -15,6 +15,7 @@ export const songs = [
   { title: "Harvest Moon", url: "/checkout/harvest-moon/" },
   { title: "1,2,3,4 (I Love You)", url: "/checkout/i-love-you/" },
   { title: "While My Guitar Gently Weeps", url: "/checkout/while-my-guitar-gently-weeps/" },
+  { title: "I Follow Rivers", url: "/checkout/i-follow-rivers/" },
   { title: "Sixteen Tons", url: "/checkout/sixteen-tons/" },
   { title: "Maybe", url: "/checkout/maybe/" },
   { title: "Ruby", url: "/checkout/ruby/" },
