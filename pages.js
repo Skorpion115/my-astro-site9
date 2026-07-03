@@ -553,7 +553,7 @@ export const pages = [
     lastmod: today,
   },
   {
-    loc: `${SITE_URL}/checkout/i'll-be-back/`,
+    loc: `${SITE_URL}/checkout/ill-be-back/`,
     changefreq: "weekly",
     lastmod: today,
   },
