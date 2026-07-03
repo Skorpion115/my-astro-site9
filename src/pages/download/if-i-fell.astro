@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: If I Fell – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "IIF-001",
+    "data-price": "9.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="/notes/If%20I%20Fell%20-%20Beatles.pdf" download
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        📄 If I Fell – Rhythmusguitar
+      </a>
+    </li>
+   
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1ix9uQndSrNHxuzvHHCVT6ox_jtbeuCeL"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        📄 If I Fell – Komplettes Arrangement ZIP
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>
