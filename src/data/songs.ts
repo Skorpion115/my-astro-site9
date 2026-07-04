@@ -21,6 +21,7 @@ export const songs = [
   { title: "Sixteen Tons", url: "/checkout/sixteen-tons/" },
   { title: "Maybe", url: "/checkout/maybe/" },
   { title: "Ruby", url: "/checkout/ruby/" },
+  { title: "Gentle On My Mind", url: "/checkout/gentle-on-my-mind/" },
   { title: "City Of NewOrleans", url: "/checkout/city-of-neworleans/" },
   { title: "Vincent", url: "/checkout/vincent/" },
   { title: "Behind Blue Eyes", url: "/checkout/behind-blue-eyes/" },
