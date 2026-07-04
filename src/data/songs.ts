@@ -30,6 +30,7 @@ export const songs = [
   { title: "Hey There Delilah", url: "/checkout/hey-there-delilah/" },
   { title: "Classical Gas", url: "/checkout/classical-gas/" },
   { title: "Take Good Care Of My Baby", url: "/checkout/take-good-care-of-my-baby/" },
+  { title: "Do You Want To Know A Secret?", url: "/checkout/do-you-want-to-know-a-secret/" },
   { title: "All You Need Is Love", url: "/checkout/all-you-need-is-love/" },
   { title: "Come Together", url: "/checkout/come-together/" },
   { title: "With A Little Help From My Friends", url: "/checkout/with-a-little-help-from-my-friends/" },
