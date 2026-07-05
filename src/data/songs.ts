@@ -54,6 +54,7 @@ export const songs = [
   { title: "Für Elise", url: "/checkout/beethoven-fur-elise/" },
   { title: "Moonlight Sonata", url: "/checkout/beethoven-moonlight-sonata/" },
   { title: "Nocturne in E-flat Major, Opus. 9 No. 2", url: "/checkout/chopin-nocturne-op-9-no-2/" },
+  { title: "Arabesque No. 1", url: "/checkout/arabesque-nr-1/" },
   { title: "Imagine", url: "/checkout/imagine/" },
   { title: "Mad World", url: "/checkout/mad-world/" },
   { title: "The Long And Winding Road", url: "/checkout/the-long-and-winding-road/" },
