@@ -29,6 +29,7 @@ export const songs = [
   { title: "Now And Forever", url: "/checkout/now-and-forever/" },
   { title: "Über den Wolken", url: "/checkout/ueber-den-wolken/" },
   { title: "Hey There Delilah", url: "/checkout/hey-there-delilah/" },
+  { title: "Here Comes The Sun", url: "/checkout/here-comes-the-sun/" },
   { title: "Classical Gas", url: "/checkout/classical-gas/" },
   { title: "Take Good Care Of My Baby", url: "/checkout/take-good-care-of-my-baby/" },
   { title: "Do You Want To Know A Secret?", url: "/checkout/do-you-want-to-know-a-secret/" },

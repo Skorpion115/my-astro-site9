@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Here Comes The Sun – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "HCTS-001",
+    "data-price": "5.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=15H_qZcPSNVMYwehqUdgxuIkej1TL54FI"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Here Comes The Sun - Rhythmusguitar
+      </a>
+    </li>
+   
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1m8kscMvEoY036uuJMGVNIEsZ44eXNWTL"
+        class="cta-button"
+        target="_blank"
+        rel="noopener"
+      >
+        📄 Here Comes The Sun – Komplettes Arrangement ZIP
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>
