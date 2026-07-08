@@ -448,6 +448,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/checkout/mrs-robinson/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/checkout/hotel-california/`,
     changefreq: "weekly",
     lastmod: today,
