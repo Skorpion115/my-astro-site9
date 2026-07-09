@@ -40,6 +40,7 @@ export const songs = [
   { title: "All You Need Is Love", url: "/checkout/all-you-need-is-love/" },
   { title: "Come Together", url: "/checkout/come-together/" },
   { title: "With A Little Help From My Friends", url: "/checkout/with-a-little-help-from-my-friends/" },
+  { title: "Get Back", url: "/checkout/get-back/" },
   { title: "Reflections Of My Life", url: "/checkout/reflections-of-my-life/" },
   { title: "Hotel California", url: "/checkout/hotel-california/" },
   { title: "Love Will Keep Us Alive", url: "/checkout/love-will-keep-us-alive/" },
