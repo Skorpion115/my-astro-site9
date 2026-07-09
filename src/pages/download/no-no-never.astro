@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: No No Never – Texas Lightning (Guitar Arrangement)";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "NNN-001",
+    "data-price": "7.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1d97HNDHX2My0RSiQZCx1uU7IL3ThjbZi"  
+        class="cta-button">
+          📄 No No Never – Texas Lightning – Guitar, Banjo, Bass und Drums als PDF Download
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>
