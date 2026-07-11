@@ -26,6 +26,7 @@ export const songs = [
   { title: "Gentle On My Mind", url: "/checkout/gentle-on-my-mind/" },
   { title: "The Night They Drove Old Dixie Down", url: "/checkout/the-night-they-drove-old-dixie-down/" },
   { title: "No No Never", url: "/checkout/no-no-never/" },
+   { title: "Mr. Bojangles", url: "/checkout/mr-bojangles/" },
   { title: "City Of NewOrleans", url: "/checkout/city-of-neworleans/" },
   { title: "Vincent", url: "/checkout/vincent/" },
   { title: "Behind Blue Eyes", url: "/checkout/behind-blue-eyes/" },
