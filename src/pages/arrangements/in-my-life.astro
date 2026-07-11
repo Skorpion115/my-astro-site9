@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "In My Life – The Beatles (Guitar Arrangement)";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält typische Strumming-Patterns und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+
+  <p>Original gesungen von The Beatles</p>
+
+  <p>
+    Dieses Arrangement vermittelt Rhythmus-Techniken mit
+    Down- und Upstroke-Patterns.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Nylon Guitar Noten</li>
+    <li>Gesangsnoten + Text + Choir</li>
+    <li>Guitar II Noten</li>
+    <li>Klavier-Noten</li>
+    <li>Bassnoten</li>
+    <li>Drums Noten</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Anfänger und Spieler, die ihren Rhythmus verbessern wollen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a href="/checkout/in-my-life/" class="cta-button">
+        Jetzt kaufen / herunterladen
+    </a>  
+  </p>
+
+</BaseLayout>

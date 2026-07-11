@@ -1716,3 +1716,14 @@ section {
     display: none;
     color: #999;
   }
+
+  /* checkout In My Life über Google Drive*/
+
+  .pdf-preview {
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}

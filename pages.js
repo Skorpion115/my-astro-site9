@@ -603,6 +603,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/checkout/in-my-life/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/checkout/i-follow-rivers/`,
     changefreq: "weekly",
     lastmod: today,
