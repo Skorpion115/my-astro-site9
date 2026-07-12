@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Going Up The Country – Canned Heat (Guitar Arrangement)";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "GUTC-001",
+    "data-price": "6.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1b0OlZ9h_JcqgHIKklKpXJGt5c5mjfHZA"  
+        class="cta-button">
+          📄 Going Up The Country – E-Guitar Download PDF
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1sKUezvObLHpMZxbWlzaJi6x81jLUqHEl"  
+        class="cta-button">
+          📄 Going Up The Country – Canned Heat – Komplettes Arrangement
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

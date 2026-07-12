@@ -652,4 +652,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/checkout/going-up-the-country/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
