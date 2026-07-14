@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Shame – Robbie Williams & Gary Barlow (Guitar Arrangement)";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält typische Strumming-Patterns und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+
+  <p>Original gesungen von Robbie Williams und Gary Barlow</p>
+
+  <p>
+     "Shame" ist ein Klassiker des Pop-Musik. Robbie Williams und Gary Barlow schrieben den Song in den späten 1990er Jahren. Dieses Arrangement bietet eine authentische Umsetzung für das Fingerpicking.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Steel Guitar Noten & Tabs</li>
+    <li>Gesangsnoten + Text + Choir</li>
+    <li>Strings Noten</li>
+    <li>Bass Noten & Tabs</li>
+    <li>Bongo Noten</li>
+    <li>Drums Noten</li>
+    <li>Full Score (Gesamtpartitur)</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Anfänger und Spieler, die ihren Rhythmus verbessern wollen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a href="/checkout/shame/" class="cta-button">
+        Jetzt kaufen / herunterladen
+    </a>  
+  </p>
+
+</BaseLayout>
