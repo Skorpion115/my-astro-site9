@@ -47,6 +47,7 @@ export const songs = [
   { title: "Come Together", url: "/checkout/come-together/" },
   { title: "With A Little Help From My Friends", url: "/checkout/with-a-little-help-from-my-friends/" },
   { title: "Get Back", url: "/checkout/get-back/" },
+  { title: "Baker Street", url: "/checkout/baker-street/" },
   { title: "Reflections Of My Life", url: "/checkout/reflections-of-my-life/" },
   { title: "Hotel California", url: "/checkout/hotel-california/" },
   { title: "Love Will Keep Us Alive", url: "/checkout/love-will-keep-us-alive/" },
