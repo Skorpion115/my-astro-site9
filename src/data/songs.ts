@@ -17,6 +17,7 @@ export const songs = [
   { title: "While My Guitar Gently Weeps", url: "/checkout/while-my-guitar-gently-weeps/" },
   { title: "I'll Be Back", url: "/checkout/ill-be-back/" },
   { title: "If I Fell", url: "/checkout/if-i-fell/" },
+   { title: "Across The Universe", url: "/checkout/across-the-universe/" },
   { title: "In My Life", url: "/checkout/in-my-life/" },
   { title: "I Follow Rivers", url: "/checkout/i-follow-rivers/" },
   { title: "Mrs. Robinson", url: "/checkout/mrs-robinson/" },
