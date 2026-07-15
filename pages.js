@@ -632,6 +632,11 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+   {
+    loc: `${SITE_URL}/checkout/eleanor-rigby/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
   {
     loc: `${SITE_URL}/checkout/i-follow-rivers/`,
     changefreq: "weekly",

@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Eleanor Rigby – The Beatles (Guitar Arrangement)";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "ER-001",
+    "data-price": "5.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1AWD3IPAaA53c9iFrAWczdzM2IwvM7nTB"  
+        class="cta-button">
+          📄 Eleanor Rigby – The Beatles Steel Guitar Download PDF
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1AUd2f7FFsN7dqIlZ9hO_bmxzJVW4GT3w"  
+        class="cta-button">
+          📄 Eleanor Rigby - Gesang, Bass
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>
