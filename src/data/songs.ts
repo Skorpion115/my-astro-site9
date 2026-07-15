@@ -13,6 +13,7 @@ export const songs = [
   { title: "Heart Of Gold", url: "/checkout/heart-of-gold/" },
   { title: "Old Man", url: "/checkout/old-man/" },
   { title: "Harvest Moon", url: "/checkout/harvest-moon/" },
+  { title: "Hey Hey My My", url: "/checkout/hey-hey-my-my/" },
   { title: "1,2,3,4 (I Love You)", url: "/checkout/i-love-you/" },
   { title: "While My Guitar Gently Weeps", url: "/checkout/while-my-guitar-gently-weeps/" },
   { title: "I'll Be Back", url: "/checkout/ill-be-back/" },

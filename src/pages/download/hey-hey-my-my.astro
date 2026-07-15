@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Hey Hey My My – Neil Young (Guitar Arrangement)";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "HHMM-001",
+    "data-price": "5.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1jMVb0ki0wybXKoVD461kK1GUmc6n39v6"  
+        class="cta-button">
+          📄 Hey Hey My My – Neil Young Steel Guitar Download PDF
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1-pxYEHaoor8Y0GSCF1ZTMNaUHDlITGJo"  
+        class="cta-button">
+          📄 Hey Hey My My – Neil Young - Mundharmonika Solo + Lead Sheet
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>
