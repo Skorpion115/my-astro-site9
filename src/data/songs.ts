@@ -23,6 +23,7 @@ export const songs = [
   { title: "In My Life", url: "/checkout/in-my-life/" },
   { title: "I Follow Rivers", url: "/checkout/i-follow-rivers/" },
   { title: "Mrs. Robinson", url: "/checkout/mrs-robinson/" },
+  { title: "We Are The People", url: "/checkout/we-are-the-people/" },
   { title: "Sixteen Tons", url: "/checkout/sixteen-tons/" },
   { title: "Maybe", url: "/checkout/maybe/" },
   { title: "Ruby", url: "/checkout/ruby/" },
