@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: The Girl From Ipanema – Bebel Gilberto (Guitar Arrangement)";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "GFI-001",
+    "data-price": "8.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1Jmc7CXO5kzI17AIp6SazVFknsOL0Birv"  
+        class="cta-button">
+          📄 The Girl From Ipanema – Bebel Gilberto Nylon Guitar Download PDF
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1p2cYS4rsCkDZMGd8eo83WaEj5GnsMtf2"  
+        class="cta-button">
+          📄 The Girl From Ipanema – Bass Noten
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1XCwdjsaoz4prfmU_Nvle7VIzI3QQ8UbK"  
+        class="cta-button">
+          📄 The Girl From Ipanema – Drums Noten
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

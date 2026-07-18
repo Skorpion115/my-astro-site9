@@ -24,6 +24,7 @@ export const songs = [
   { title: "I Follow Rivers", url: "/checkout/i-follow-rivers/" },
   { title: "Mrs. Robinson", url: "/checkout/mrs-robinson/" },
   { title: "We Are The People", url: "/checkout/we-are-the-people/" },
+  { title: "The Girl From Ipanema", url: "/checkout/the-girl-from-ipanema/" },
   { title: "Sixteen Tons", url: "/checkout/sixteen-tons/" },
   { title: "Maybe", url: "/checkout/maybe/" },
   { title: "Ruby", url: "/checkout/ruby/" },

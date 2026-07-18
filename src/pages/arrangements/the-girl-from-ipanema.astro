@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "The Girl From Ipanema – Bebel Gilberto (Guitar Arrangement)";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält typische Strumming-Patterns und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>Bekannt in der Interpretation von Bebel Gilberto</p>
+
+  <p>The Girl From Ipanema ist eine weltberühmter Bossa Nova.</p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Nylon Guitar Noten</li>
+    <li>Gesangsnoten</li>
+    <li>Bass Noten & Tabs</li>
+    <li>Drums Noten</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>
+    Für fortgeschrittene Anfänger und Spieler, die ihren Bossa Nove Rhythmus verbessern
+    wollen. Es ist ein richtiges Lernstück für Bossa Nova mit einer Konzertgitarre gespielt. Sie dient nur zur Begleitung. Die Melodie wird von Bebel Gilberto dazu wunderschön gesungen.
+  </p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a href="/checkout/the-girl-from-ipanema/" class="cta-button">
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>

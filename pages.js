@@ -658,6 +658,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/checkout/the-girl-from-ipanema/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/checkout/all-you-need-is-love/`,
     changefreq: "weekly",
     lastmod: today,
