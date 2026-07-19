@@ -43,6 +43,7 @@ export const songs = [
   { title: "Here Comes The Sun", url: "/checkout/here-comes-the-sun/" },
   { title: "The Sound Of Silence", url: "/checkout/the-sound-of-silence/" },
   { title: "The Boxer", url: "/checkout/the-boxer/" },
+  { title: "Homeward Bound", url: "/checkout/homeward-bound/" },
   { title: "Shame", url: "/checkout/shame/" },
   { title: "Ain't No Sunshine", url: "/checkout/aint-no-sunshine/" },
   { title: "Classical Gas", url: "/checkout/classical-gas/" },

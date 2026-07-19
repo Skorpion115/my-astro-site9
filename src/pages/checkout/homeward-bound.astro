@@ -1,0 +1,116 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Homeward Bound – Simon & Garfunkel (Guitar Arrangement)";
+const heading = "Homeward Bound – Simon & Garfunkel (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Homeward Bound. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Homeward Bound, Simon & Garfunkel, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/homeward-bound/";
+const productId = "HB";
+const price = "7.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/homeward_bound_preview.png";
+
+const contentHtml = `
+  <br />
+
+  <p class="pdf-download">
+    <a
+      href="https://drive.google.com/file/d/1Kjai_AOzzjgWbgPGiTfmC371FtxsExzd/preview"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ⬇ Noten Vorschau
+    </a>
+  </p>
+
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=JKCVAXhVMkY"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu The Girl From Ipanema ansehen"
+    rel="noopener"
+  >
+    ▶️ Homeward Bound – Simon & Garfunkel auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Vollständig ausgearbeitetes Gitarren-Arrangement zum sofortigen Download.</strong></p>
+
+  <p>Enthält ausgearbeitete Parts für Steel Guitar, Gesangsmelodie, passend zur bekannten Aufnahme.</p>
+
+  <p>Das Arrangement ist für Gitarristen gedacht, die den bekannten Song möglichst nah am Originalstil spielen möchten. Es enthält eine detailliert ausgearbeitete Gitarrenfassung mit Tabs und Spielhinweisen.</p>
+
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>
+    Keine vereinfachte Lernversion, sondern ein ausführlich ausgearbeitetes Arrangement für Gitarristen.
+  </p>
+
+  <ul>
+    <li>Steel Guitar Noten & Tabs</li>
+    <li>Gesangsnoten als Orientierung</li>
+  </ul>
+  
+  <p>Dieses Arrangement bietet eine vollständig ausgearbeitete, spielbare Gitarrenfassung des Songs. Ideal zum Üben oder Spielen im Unterricht.</p>
+
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    price={price}
+    productId={productId}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>
