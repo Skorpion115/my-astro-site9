@@ -1,0 +1,134 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Scarborough Fair – Simon & Garfunkel (Guitar Arrangement)";
+const heading = "Scarborough Fair – Simon & Garfunkel (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Scarborough Fair. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Scarborough Fair, Simon & Garfunkel, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/scarborough-fair/";
+
+
+const productId = "SF-001";
+
+// 👉 WICHTIG: echte eindeutige Transaktions-ID (nicht statisch!)
+// const transactionId = `TAT-${Date.now()}`;
+
+// const imageSrc = "/bilder/behind_blue_eyes_vorschau.png";
+// const imageAlt = "Scarborough Fair – Vorschau";
+const price = "6.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/scarborough_fair_preview.png";
+
+const contentHtml = `
+<p class="pdf-download">
+    <a
+      href="https://drive.google.com/file/d/1QFUGABD2AgME8vBhWGXgkPma2GKLYmEt/preview"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ⬇ Noten Vorschau
+    </a>
+  </p>
+  <br />
+  <p>
+    Zur Orientierung kannst du dir den Originalsong anhören:
+  </p>
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=-Jj4s9I-53g"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Behind Blue Eyes ansehen"
+    rel="noopener"
+  >
+    ▶️ Scarborough Fair – Simon & Garfunkel auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Vollständig ausgearbeitetes Gitarren-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält alle wichtigen Stimmen: Guitar, Gesangsmelodie passend zur bekannten Aufnahme.</p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+  <ul>
+    <li>Steel Guitar Noten & Tabs</li>
+    <li>Gesangsnoten</li>
+    <li>Orinaltonart e-Moll</li>
+    <li>Sorgfältig ausgearbeitete Fingersätze</li>
+    <li>Spinnet</li>
+    <li>Klarer und gut lesbarer Notensatz</li>
+    <li>Bassline</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht oder für Band-Arrangements.
+  </p>
+
+  <p>
+    Keine vereinfachte Lernversion, sondern ein ausführlich ausgearbeitetes Arrangement für Gitarristen.
+  </p>
+
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  <p>
+    Nach dem Kauf steht der Download sofort zur Verfügung.
+  </p>
+  <p>
+    <strong>Sofortiger Download:</strong> Alle Dateien stehen dir direkt nach dem Kauf als PDF zur Verfügung.
+  </p>
+  <p>
+    <strong>Digitale Lieferung:</strong> Es erfolgt kein Versand von physischen Produkten.
+  </p>
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    price={price}
+    returnUrl={returnUrl}
+    productId={productId}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

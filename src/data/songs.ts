@@ -45,6 +45,7 @@ export const songs = [
   { title: "The Boxer", url: "/checkout/the-boxer/" },
   { title: "Homeward Bound", url: "/checkout/homeward-bound/" },
   { title: "Shame", url: "/checkout/shame/" },
+  { title: "Scarborough Fair", url: "/checkout/scarborough-fair/" },
   { title: "Ain't No Sunshine", url: "/checkout/aint-no-sunshine/" },
   { title: "Classical Gas", url: "/checkout/classical-gas/" },
   { title: "Take Good Care Of My Baby", url: "/checkout/take-good-care-of-my-baby/" },
