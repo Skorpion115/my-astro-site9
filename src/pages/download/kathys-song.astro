@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Download: Kathy's Song – Gitarren Arrangement";
+const description = "Download der Noten »Kathy's Song«. Vielen Dank für Ihren Kauf.";
+const keywords = "Kathy's Song, Gitarren Arrangement, Noten PDF";
+const pageUrl = getPageUrl(Astro);
+const downloads = [
+  {
+    label: "Kathy's Song – Gitarren Arrangement (PDF),",
+    url: "https://drive.google.com/uc?export=download&id=1cOuKJQgsspxenp6X6COnX-hYooWra2y3",
+  },
+  {
+    label: "Kathy's Song – Lead Sheet als ZIP",
+    url: "https://drive.google.com/uc?export=download&id=1RbnutxNqAxAozJL5vkA_3XVuggbvOP7g",
+  },
+];
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  noindex={true}
+  bodyAttributes={{
+    "data-product-id": "KS-001",
+    "data-price": "7.95"
+  }}
+>
+  <h1>Vielen Dank für deinen Kauf!</h1>
+
+  <p>
+    Du kannst deine <strong>Noten „Kathy's Song – Simon & Garfunkel“</strong> jetzt
+    herunterladen.
+  </p>
+
+  <p>
+    👉 <strong>Wichtig:</strong> Bitte speichere die Datei direkt auf deinem Gerät
+    ab.
+  </p>
+
+  <hr />
+  <ul>
+    {
+      downloads.map((file) => (
+        <li>
+          <a href={file.url} download class="download-button">
+            👉 {file.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <hr />
+
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail:
+    <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p class="vat-note">
+    Rechnung mit auf Anfrage per E-Mail erhältlich.
+  </p>
+
+  <p>
+    <a href="/kurse/musikbibliothek/" class="normal-links">← Zurück zur Musikbibliothek</a>
+  </p>
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

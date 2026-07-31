@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Kathy's Song – Simon & Garfunkel (Arrangement für Gitarre)";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält Fingerpicking und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <section>
+
+  <p>
+    Dieses Arrangement basiert auf einem selbst erarbeiteten Noten- und Tab-Arrangement für Akustikgitarre.
+    Du lernst die Begleitung die vorwiegend aus zerlegten Akkorden besteht.
+  </p>
+
+  <p class="info-box">
+    Du erhältst ein vollständiges PDF mit Noten, Tabs und Spielhinweisen.  
+    Ein Video-Tutorial ist aktuell nicht enthalten.
+  </p>
+
+</section>
+
+<hr>
+
+<section>
+
+  <h2>Lernziel</h2>
+  <ul>
+    <li>Sicheres Spielen von Fingerpicking</li>
+    <li>Rhythmusgefühl und Akkordwechsel verbessern</li>
+  </ul>
+
+</section>
+
+<hr>
+
+<section>
+
+  <h2>Inhalt</h2>
+  <ul>
+    <li>PDF Noten & Tabs</li>
+    <li>Orginaltonart Ges-Dur</li>
+    <li>Genaue Fingersätze enthalten</li>
+    <li>Komplette Songstruktur</li>
+    <li>Gesangsnoten</li>
+    <li>Lead Sheet</li>
+  </ul>
+
+</section>
+
+<section class="cta">
+
+  <a href="/checkout/kathys-song/" class="cta-button">
+    Jetzt herunterladen
+  </a>
+
+</section>
+</BaseLayout>
