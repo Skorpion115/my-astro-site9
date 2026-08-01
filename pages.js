@@ -722,4 +722,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/checkout/southern-man/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
