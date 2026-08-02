@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle =
+  "You Keep Me Hanging On – Vanilla Fudge (Arrangement für Gitarre)";
+const description =
+  "Gitarren-Arrangement für fortgeschrittene Anfänger. Enthält Strumming Patterns und praxisnahe Begleitung.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <section>
+    <p>
+      Dieses Arrangement basiert auf einem selbst erarbeiteten Noten- und
+      Tab-Arrangement für Steel-Gitarre. Der Song wird im original auf einer
+      E-Gitarre gespielt.
+    </p>
+
+    <p class="info-box">
+      Du erhältst ein vollständiges PDF mit Noten, Tabs und Spielhinweisen. Ein
+      Video-Tutorial ist aktuell nicht enthalten.
+    </p>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Lernziel</h2>
+    <ul>
+      <li>Sicheres Spielen Strumming & Rhythm Guitar</li>
+      <li>Rhythmusgefühl und Akkordwechsel verbessern</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <section>
+    <h2>Inhalt</h2>
+    <ul>
+      <li>PDF Noten & Tabs</li>
+      <li>Orginaltonart 3-Moll</li>
+      <li>Genaue Fingersätze enthalten</li>
+      <li>Komplette Songstruktur</li>
+      <li>Gesangsnoten</li>
+      <li>Bassline</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <a href="/checkout/you-keep-me-hanging-on/" class="cta-button">
+      Jetzt herunterladen
+    </a>
+  </section>
+</BaseLayout>
