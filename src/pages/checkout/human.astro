@@ -1,0 +1,115 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Human – Rag'n'Bone Man (Guitar Arrangement)";
+const heading = "Human – Rag'n'Bone Man (Guitar Arrangement)";
+const description = "Sichere Zahlung für das Gitarren-Arrangement zu Human. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "Human, Rag'n'Bone Man, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/human/";
+const productId = "HUMAN-001";
+const price = "5.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/human_preview.png";
+
+const contentHtml = `
+  <br />
+
+  <p class="pdf-download">
+    <a
+      href="https://drive.google.com/file/d/1lp2ox-756fVv8js8gxfi6Fc9e9Oy6cyb/preview"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ⬇ Noten Vorschau
+    </a>
+  </p>
+
+
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=L3wKzyIN1yk"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu Human ansehen"
+    rel="noopener"
+  >
+    ▶️ Human – Rag'n'Bone Man auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Vollständig ausgearbeitetes Gitarren-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält alle wichtigen Stimmen: Guitar, Gesangsmelodie und Bass – exakt auf das Original abgestimmt.</p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>
+    Keine vereinfachte Lernversion, sondern ein ausführlich ausgearbeitetes Arrangement für Gitarristen.
+  </p>
+  <ul>
+    <li>Guitar Noten & Tabs</li>
+    <li>Gesangsnoten als Orientierung</li>
+    <li>Bass Noten & Tabs</li>
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht oder für Band-Arrangements.
+  </p>
+ 
+
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    price={price}
+    productId={productId}
+    returnUrl={returnUrl}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

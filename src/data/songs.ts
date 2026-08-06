@@ -25,6 +25,7 @@ export const songs = [
   { title: "Mrs. Robinson", url: "/checkout/mrs-robinson/" },
   { title: "We Are The People", url: "/checkout/we-are-the-people/" },
   { title: "You Keep Me Hanging On", url: "/checkout/you-keep-me-hanging-on/" },
+  { title: "Human", url: "/checkout/human/" },
   { title: "The Girl From Ipanema", url: "/checkout/the-girl-from-ipanema/" },
   { title: "Sixteen Tons", url: "/checkout/sixteen-tons/" },
   { title: "Maybe", url: "/checkout/maybe/" },
