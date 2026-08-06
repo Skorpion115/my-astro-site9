@@ -283,6 +283,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/checkout/liebesdraum-nr-3/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/checkout/nancy-rowland/`,
     changefreq: "weekly",
     lastmod: today,
