@@ -63,6 +63,7 @@ export const songs = [
   { title: "Love Will Keep Us Alive", url: "/checkout/love-will-keep-us-alive/" },
   { title: "Going Up The Country", url: "/checkout/going-up-the-country/" },
   { title: "Southern Man", url: "/checkout/southern-man/" },
+  { title: "Message In A Bottle", url: "/checkout/message-in-a-bottle/" },
   { title: "Stairway To Heaven", url: "/checkout/stairway-to-heaven/" },
   { title: "All Along The Watchtower", url: "/checkout/all-along-the-watchtower/" },
   { title: "The Wind Cries Mary", url: "/checkout/the-wind-cries-mary/" },

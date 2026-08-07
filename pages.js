@@ -738,6 +738,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/checkout/message-in-a-bottle/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/checkout/you-keep-me-hanging-on/`,
     changefreq: "weekly",
     lastmod: today,
