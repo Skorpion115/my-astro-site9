@@ -110,4 +110,5 @@ export const songs = [
   { title: "Black Mountain Rag", url: "/checkout/black-mountain-rag/" },
   { title: "Nancy Rownland", url: "/checkout/nancy-rowland/" },
   { title: "L'accordeon Triste", url: "/checkout/akkordeon-triste/" },
+  { title: "The Pink Panther Theme", url: "/checkout/the-pink-panther/" },
 ];

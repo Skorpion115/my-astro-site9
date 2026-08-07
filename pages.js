@@ -742,4 +742,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/checkout/the-pink-panther/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];

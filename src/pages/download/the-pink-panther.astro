@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: The Pink Panther Theme – Henry Mancini (Saxophon Arrangement)";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "THE-PINK-PANTHER-001",
+    "data-price": "5.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1tnoNY83E9aQ5_OhVAUhXpA7y0l9Nb8Ai"  
+        class="cta-button">
+          📄 The Pink Panther Theme – Henry Mancini – Altsax Download PDF
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1VNPEp3cGORuBeB2W6Acm_II-LelAHzXd"  
+        class="cta-button">
+          📄 The Pink Panther Theme – Henry Mancini – Tenorsax Download PDF
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>
