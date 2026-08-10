@@ -84,6 +84,7 @@ export const songs = [
   { title: "Reverie L68", url: "/checkout/reverie/" },
   { title: "Clair de Lune", url: "/checkout/clair-de-lune/" },
   { title: "Liebesdraum Nr. 3", url: "/checkout/liebesdraum-nr-3/" },
+  { title: "Sonate Facile KV 545", url: "/checkout/sonate-facile-kv-545/" },
   { title: "Imagine", url: "/checkout/imagine/" },
   { title: "Mad World", url: "/checkout/mad-world/" },
   { title: "The Long And Winding Road", url: "/checkout/the-long-and-winding-road/" },

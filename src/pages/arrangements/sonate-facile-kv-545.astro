@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "Wolfgang Amadeus Mozart - Sonate Facile KV 545 Piano Solo";
+const description =
+  "Piano Solo Sonate Facile KV 545 für fortgeschrittene Anfänger.";
+const pageUrl = getPageUrl(Astro);
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogType="product"
+>
+  <p>
+    Die originale Version von Wolfgang Amadeus Mozart hat drei Sätze: Allegro, Andante und Rondo. Es ist bekannt für seine klare Struktur und melodische Schönheit.
+  </p>
+
+  <h2>Inhalt</h2>
+
+  <ul>
+    <li>Piano Noten</li>
+  </ul>
+
+  <h2>Für wen ist das geeignet?</h2>
+
+  <p>Für Anfänger und Fortgeschrittene.</p>
+
+  <h2>Jetzt lernen</h2>
+
+  <p>
+    Hier kannst du das komplette Arrangement herunterladen und sofort spielen.
+  </p>
+
+  <!-- Platzhalter für später: Download / Kauf -->
+  <p>
+    <a
+      href="/checkout/sonate-facile-kv-545/"
+      class="cta-button"
+    >
+      Jetzt kaufen / herunterladen
+    </a>
+  </p>
+</BaseLayout>

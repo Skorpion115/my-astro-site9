@@ -423,6 +423,11 @@ export const pages = [
     lastmod: today,
   },
   {
+    loc: `${SITE_URL}/checkout/sonate-facile-kv-545/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
+  {
     loc: `${SITE_URL}/checkout/a-horse-with-no-name/`,
     changefreq: "weekly",
     lastmod: today,
