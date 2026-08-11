@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: Talk To Your Daughter – Guitar Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "TTYD-001",
+    "data-price": "6.95",
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1EjW3eVRJtaCmwJNUr19MCoQRUCeETo9l"
+        class="cta-button"
+        download
+        class="cta-button"
+      >
+        📄 Talk To Your Daughter – Guitar Arrangement
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=1thyt-WZPqZI09PlFICSxGia_uAm_FglQ"
+        class="cta-button"
+      >
+        📄 Talk To Your Daughter – E-Guitar Solo
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://drive.google.com/uc?export=download&id=13RXgjm7NHhLM3RDXzN2qPu98cWNhDdni"
+        class="cta-button"
+      >
+        📄 Talk To Your Daughter – Turnaround
+      </a>
+    </li>
+  </ul>
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

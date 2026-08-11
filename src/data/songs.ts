@@ -71,6 +71,7 @@ export const songs = [
   { title: "Sleepwalk", url: "/checkout/sleepwalk/" },
   { title: "Flor'de Luna", url: "/checkout/flor-de-luna/" },
   { title: "Europa", url: "/checkout/europa/" },
+  { title: "Talk To Your Daughter", url: "/checkout/talk-to-your-daughter/" },
   { title: "Rose Room", url: "/checkout/rose-room/" },
   { title: "Bossa Dorado", url: "/checkout/bossa-dorado/" },
   { title: "Smile", url: "/checkout/smile/" },
