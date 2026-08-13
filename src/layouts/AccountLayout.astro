@@ -84,12 +84,13 @@ const currentPath = url.pathname;
       </div>
     </header>
 
-
-    <section id="content" class="hidden">
-      <slot />
     </section>
+
+    <div id="content-slot" class="hidden">
+      <slot />
+    </div>
     
-    /<script src="/scripts/account-menu.js" is:inline></script>
+    <script src="/scripts/account-menu.js" is:inline></script>
     <script src="/scripts/login.js" defer></script>
   </body>
 </html>
