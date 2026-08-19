@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle = "Download: She's Not There – E-Piano Arrangement";
+const description = "Hier kannst du dein gekauftes Arrangement herunterladen.";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  ogType="article"
+  bodyAttributes={{
+    "data-product-id": "SNH-001",
+    "data-price": "7.95"
+  }}
+>
+  <h1>Dein Download</h1>
+
+  <p>Danke für deinen Kauf! Hier kannst du dein Arrangement herunterladen.</p>
+
+  <h2>Download</h2>
+
+  <ul>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1DHpkhzkHnz6dPObTF75Fo6ern6tO5kz8"  
+        class="cta-button">
+          📄 She's Not There – Santana E-Piano + Bass Download PDF
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1HXamZZxC7RE7JNDYIqyoNj5hXcKuFdFC"  
+        class="cta-button">
+          📄 She's Not There – Santana Bass
+      </a>
+    </li>
+    <li>
+      <a href="https://drive.google.com/uc?export=download&id=1cB75ZU_ZjEmNvAEOmEovHxjNxgCNvBJ3"  
+        class="cta-button">
+          📄 She's Not There – Santana Drums
+      </a>
+    </li>
+  </ul>
+
+  <h2>Hinweise</h2>
+
+  <ul>
+    <li>Einmal gekauft – dauerhaft verfügbar</li>
+    <li>Keine Abo-Falle</li>
+    <li>Nur für dich persönlich lizenziert</li>
+  </ul>
+
+  <script src="/scripts/purchase.js" defer></script>
+</BaseLayout>

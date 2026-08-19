@@ -1,0 +1,116 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProductPage from "../../components/ProductPage.astro";
+import { getPageUrl } from "../../utils/getPageUrl.js";
+
+const pageTitle = "She's Not There – Santana (E-Piano Arrangement)";
+const heading = "She's Not There – Santana (E-Piano Arrangement)";
+const description = "Sichere Zahlung für das E-Piano-Arrangement zu She's Not There. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords = "She's Not There - Santana, E-Piano Arrangement, E-Piano Noten, PDF Download";
+const pageUrl = getPageUrl(Astro);
+const returnUrl = "https://www.musicstudio-ziebart.de/download/shes-not-there/";
+const productId = "SNH-001";
+// const imageSrc = "/bilder/and_i_love Her_vorschau.png";
+// const imageAlt = "And I Love Her – Vorschau";
+const price = "7.95";
+
+//Open-Graph-Bild für diese Produktseite.
+// Wird von Google, Social Media und Merchant Center
+// als Hauptbild für Vorschau und Produktdarstellung verwendet.
+const ogImage = "https://www.musicstudio-ziebart.de/bilder/shes_not_there_preview.png";
+
+const contentHtml = `
+  <br />
+
+  <p class="pdf-download">
+    <a
+      href="https://drive.google.com/file/d/1YI8q94LJXkEzvpQQAKEu1CTyes1lY4cl/preview"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      ⬇ Noten Vorschau
+    </a>
+  </p>
+  <p>
+  <a
+    href="https://www.youtube.com/watch?v=K4jdiJA2TtQ"
+    class="normal-links"
+    target="_blank"
+    aria-label="YouTube Video zu She's Not There ansehen"
+    rel="noopener"
+  >
+    ▶️ She's Not There – Santana auf YouTube ansehen
+  </a>
+  </p>
+
+  <p><strong>Vollständig ausgearbeitetes E-Piano-Arrangement zum sofortigen Download.</strong></p>
+  <p>Enthält alle wichtigen Stimmen: E-Piano, Bassgitarre, Gesangsmelodie und Drums passend zur bekannten Aufnahme.</p>
+  <p>Du erhältst sofort nach Kauf Zugriff auf die E-Piano Noten als PDF-Datei.</p>
+  <p>Kein Versand physischer Produkte.</p>
+
+  <p>
+    Keine vereinfachte Lernversion, sondern ein ausführlich ausgearbeitetes Arrangement für Gitarristen.
+  </p>
+  <ul>
+    <li>E-Piano Noten</li>
+    <li>Bassgitarre Noten</li>
+    <li>Gesangsnoten</li>
+    <li>Drums Noten</li>
+
+  </ul>
+  <p>
+    Dieses Arrangement ist ein vollständiges, spielbares Gesamtwerk des Songs.
+    Ideal zum Üben, Spielen im Unterricht oder für Band-Arrangements.
+  </p>
+
+  <ul>
+    <li>Sofortiger Download nach Zahlung</li>
+    <li>PDF-Dateien</li>
+    <li>Kein Versand physischer Produkte</li>
+    <li>Einmaliger Kauf, keine Abo-Kosten</li>
+  </ul>
+  <p class="small">
+    Preis: <strong>${price.replace(".", ",")}&nbsp;€</strong> (gemäß § 19 UStG umsatzsteuerfrei)
+  </p>
+  
+  <p>
+    Bei PayPal-Problemen auf dem iPhone bitte die Seite im normalen Safari-Browser öffnen.
+  </p>
+  <p>
+    Falls es Probleme mit dem Download gibt, schreib mir bitte eine kurze
+    E-Mail: <br />
+    <strong>postmaster@musicstudio-ziebart.de</strong>
+  </p>
+
+  <p>
+    <a href="/kurse/gitarre/" class="cta-button">
+      Weitere Gitarrenstücke entdecken
+    </a>
+  </p>
+`;
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  description={description}
+  keywords={keywords}
+  href={pageUrl}
+  ogTitle={pageTitle}
+  ogDescription={description}
+  ogUrl={pageUrl}
+  ogImage={ogImage}
+  ogType="product"
+  twitterTitle={pageTitle}
+  twitterDescription={description}
+  twitterUrl={pageUrl}
+>
+  <ProductPage
+    heading={heading}
+    description={description}
+    keywords={keywords}
+    price={price}
+    returnUrl={returnUrl}
+    productId={productId}
+    contentHtml={contentHtml}
+  />
+</BaseLayout>

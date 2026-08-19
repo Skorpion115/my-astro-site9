@@ -767,4 +767,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/checkout/shes-not-there/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];
