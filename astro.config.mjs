@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import netlify from "@astrojs/netlify";
 import { fileURLToPath } from 'url';
 
-// https://astro.build/config
+// astro.build/config
 export default defineConfig({
   vite: {
     resolve: {
