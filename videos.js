@@ -28,6 +28,15 @@ export const videos = [
   },
   {
     loc: "/klavier-videoanleitung/",
+    title: "She's Not There - Santana",
+    description: "Lerne She's Not There von Santana auf dem Klavier zu spielen! In diesem Tutorial zeige ich dir Schritt für Schritt, wie du das Lied spielen kannst.",
+    thumbnail_loc: "https://i.ytimg.com/vi/Dt-e3v72F0A/hqdefault.jpg",
+    content_loc: "https://www.youtube.com/embed/Dt-e3v72F0A",
+    publication_date: "2026-08-28T14:00:00+02:00",
+    duration: "262",
+  },
+  {
+    loc: "/klavier-videoanleitung/",
     title: "PRAELUDIUM BMV 927 - Johann Sebastian Bach",
     description: "Klassisches Klavierstück auswendig lernen! Für mich ist dies eins der schwierigsten Dinge. Dieses Stück hat nur eine Seite, da geht es noch einigermaßen.",
     thumbnail_loc: "https://i.ytimg.com/vi/vxX0WiQhSUE/hqdefault.jpg",
