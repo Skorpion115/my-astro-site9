@@ -132,7 +132,50 @@ const videoData = [
               </lite-youtube>
             </div>
             <h2>{video.title}</h2>
-            <p>{video.description}</p>
+            <p>{video.description}
+                {video.title.includes("Bossa Dorado") && (
+              <>
+                <a href="/checkout/bossa-dorado/" target="_blank" class="normal-links">
+                  <br />Noten & Tabulatur kaufen
+                </a>
+              </>
+            )}
+            {video.title.includes("Silence Is Golden") && (
+              <>
+                <a href="/checkout/silence-is-golden/" target="_blank" class="normal-links">
+                  <br />Noten & Pattern kaufen
+                </a>
+              </>
+            )}
+            {video.title.includes("The Lion Sleeps Tonight") && (
+              <>
+                <a href="/checkout/the-lion-sleeps-tonight/" target="_blank" class="normal-links">
+                  <br />Noten & Pattern kaufen
+                </a>
+              </>
+            )}
+            {video.title.includes("Like Ice In The Sunshine") && (
+              <>
+                <a href="/checkout/like-ice-in-the-sunshine/" target="_blank" class="normal-links">
+                  <br />Noten & Pattern kaufen
+                </a>
+              </>
+            )}
+            {video.title.includes("Yesterday") && (
+              <>
+                <a href="/checkout/yesterday/" target="_blank" class="normal-links">
+                  <br />Noten & Tabulatur kaufen
+                </a>
+              </>
+            )}
+            {video.title.includes("Catch The Wind") && (
+              <>
+                <a href="/checkout/catch-the-wind/" target="_blank" class="normal-links">
+                  <br />Noten & Pattern kaufen
+                </a>
+              </>
+            )}
+            </p>
           </div>
         </div>
       ))
