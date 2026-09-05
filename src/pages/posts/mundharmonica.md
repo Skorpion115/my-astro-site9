@@ -21,7 +21,7 @@ Dann braucht man eine Bb Blues Harp. Einfach eine reine Quarte hoch rechnen. Die
 
 <h2>🎬 Blues Harp Solo | Minor Blues in Fm (Original Track)</h2>
 
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:800px; width:100%; margin:0 auto;">
   <iframe 
     src="https://www.youtube.com/embed/UBnLFchsIQY" 
     title="Blues Harp Solo | Minor Blues in Fm (Original Track)" 
@@ -34,7 +34,7 @@ Dann braucht man eine Bb Blues Harp. Einfach eine reine Quarte hoch rechnen. Die
 
 <h2>🎵 Blues Harp Jam in G – 12 Bar Blues mit Band</h2>
 
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:800px; width:100%; margin:0 auto;">
   <iframe 
     src="https://www.youtube.com/embed/1FpuGznIIOc" 
     title="Blues Harp Jam in G – 12 Bar Blues mit Band" 
