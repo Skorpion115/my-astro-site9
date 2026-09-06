@@ -25,8 +25,6 @@
 # LOGIN / SYSTEM
 # ==============================
 
-/kunden-login/*             /kurse/alle-kurse/           301
-
 
 # ==============================
 # SHOP ALT → NEU (SPEZIALFÄLLE)
@@ -47,29 +45,17 @@
 /shop/nocturne-opus9-no2-noten/    /checkout/chopin-nocturne-op-9-no-2/ 301
 /shop/nancy-rowland-noten-tabs/     /checkout/nancy-rowland/    301
 /shop/cripple-creek-noten-tabs/     /checkout/cripple-creek/    301
-/shop/black-mountain-rag-noten-tabs/    /checkout/black-mountain-rag/   301
 /shop/train45-noten-tabs/           /checkout/train-45/         301
 /shop/nocturne-opus9-no2/           /checkout/chopin-nocturne-op-9-no-2/    301
 /shop/klavierkonzert-nr-1/          /checkout/tschaikovsky-piano-concerto-no-1-in-b-flat-minor/ 301
 /shop/dvorak-aus-der-neuen-welt-largo-klaviernoten-download/    /checkout/dvorak-largo-from-the-new-world/  301
-/shop/klavierkonzert-nr-1/          /checkout/tschaikovsky-piano-concerto-no-1-in-b-flat-minor/ 301
 /shop/black-mountain-rag/           /checkout/black-mountain-rag/   301
 /shop/intermezzo/                   /checkout/intermezzo/           301
-
-
-
-# ==============================
-# KURSE → CHECKOUT (TABS)
-# ==============================
-
-/kurse/:slug-noten-tabs/    /checkout/:slug/    301
-
-
-# ==============================
-# KURSE → CHECKOUT (NOTEN)
-# ==============================
-
-/kurse/:slug-noten/         /checkout/:slug/    301
+/kurse/more-than-words-noten-tabs/  /checkout/more-than-words/      301
+/kurse/like-ice-in-the-sunshine-noten-tabs/ /checkout/like-ice-in-the-sunshine/ 301
+/kurse/kleiner-schelm-noten/         /checkout/kleiner-schelm/       301
+/shop/mondscheinsonate/              /checkout/beethoven-moonlight-sonata/   301
+/shop/largo/                  /checkout/dvorak-largo-from-the-new-world/     301
 
 
 # ==============================
@@ -105,5 +91,16 @@
 # GENERELLE ALT-SEITEN
 # ==============================
 
-/kurse/alle-kurse/        /kurse/musikbibliothek/      301
-/kunden-login/inhaltsverzeichnis/ /kurse/alle-kurse/ 301
+
+# ==============================
+# KURSE → CHECKOUT (TABS)
+# ==============================
+
+/kurse/:slug-noten-tabs/    /checkout/:slug/    301
+
+
+# ==============================
+# KURSE → CHECKOUT (NOTEN)
+# ==============================
+
+/kurse/:slug-noten/         /checkout/:slug/    301
