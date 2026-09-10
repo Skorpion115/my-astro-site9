@@ -772,4 +772,9 @@ export const pages = [
     changefreq: "weekly",
     lastmod: today,
   },
+  {
+    loc: `${SITE_URL}/checkout/black-magic-woman/`,
+    changefreq: "weekly",
+    lastmod: today,
+  },
 ];

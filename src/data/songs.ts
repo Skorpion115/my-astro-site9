@@ -116,4 +116,5 @@ export const songs = [
   { title: "Nancy Rownland", url: "/checkout/nancy-rowland/" },
   { title: "L'accordeon Triste", url: "/checkout/akkordeon-triste/" },
   { title: "The Pink Panther Theme", url: "/checkout/the-pink-panther/" },
+  { title: "Black Magic Woman", url: "/checkout/black-magic-woman/" },
 ];
