@@ -1,2 +1,5 @@
 /notes/*.pdf
   X-Robots-Tag: noindex
+
+/downloads/*.pdf
+  X-Robots-Tag: noindex
