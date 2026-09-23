@@ -64,6 +64,15 @@ export const videos = [
   },
   {
     loc: "/e-gitarre-videoanleitung/",
+    title: "Santana – Black Magic Woman | Guitar Solo",
+    description: "Lerne das Gitarrenstück 'Black Magic Woman' von Santana mit dieser detaillierten Gitarrenstunde.",
+    thumbnail_loc: "https://i.ytimg.com/vi/wFeeTPAvdPw/hqdefault.jpg",
+    content_loc: "https://www.youtube.com/embed/wFeeTPAvdPw",
+    publication_date: "2026-09-22T14:00:00+02:00",
+    duration: "874",
+  },
+  {
+    loc: "/e-gitarre-videoanleitung/",
     title: "Take Good Care Of My Baby - Bobby Vee Cover",
     description: "Lerne das Gitarrenstück 'Take Good Care Of My Baby' von Bobby Vee mit dieser detaillierten Gitarrenstunde.",
     thumbnail_loc: "https://i.ytimg.com/vi/nUC_b1L_IM4/hqdefault.jpg",

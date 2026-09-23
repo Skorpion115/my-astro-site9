@@ -13,6 +13,15 @@ const pageUrl = `${SITE_URL}/e-gitarre-videoanleitung/`;
 const videoData = [
   {
     loc: `${SITE_URL}/e-gitarre-videoanleitung/`, // URL der Seite, auf der das Video eingebettet ist
+    title: "Santana – Black Magic Woman | Guitar Solo",
+    description: "Lerne das Gitarrenstück 'Black Magic Woman' von Santana mit dieser detaillierten Gitarrenstunde.",
+    contentLoc: "https://www.youtube.com/embed/wFeeTPAvdPw", // URL des eingebetteten Videos
+    thumbnailLoc: "https://i.ytimg.com/vi/wFeeTPAvdPw/hqdefault.jpg", // URL des Vorschaubildes
+    publicationDate: "2026-09-22T14:00:00+02:00", // Veröffentlichungsdatum im ISO 8601 Format
+    duration: "PT14M34S",
+  },
+  {
+    loc: `${SITE_URL}/e-gitarre-videoanleitung/`, // URL der Seite, auf der das Video eingebettet ist
     title: "Joe Satriani - Ten Words Guitar Lesson+Tab",
     description: "Lerne das Gitarrenstück 'Ten Words' von Joe Satriani mit dieser detaillierten Gitarrenstunde.",
     contentLoc: "https://www.youtube.com/embed/fcHrj9ryvqo", // URL des eingebetteten Videos
@@ -115,6 +124,13 @@ const videoData = [
               <>
                 <a href="/checkout/rose-room/" target="_blank" class="normal-links">
                   <br />Noten & Tabulatur kaufen
+                </a>
+              </>
+            )}
+            {video.title.includes("Black Magic Woman") && (
+              <>
+                <a href="/checkout/black-magic-woman/" target="_blank" class="normal-links">
+                  <br />Tabulatur kaufen
                 </a>
               </>
             )}
