@@ -1,42 +1,58 @@
 <script is:inline>
-  const input = document.getElementById("songSearch");
-  const items = document.querySelectorAll("#songList li");
-  const noResults = document.getElementById("noResults");
-  const count = document.getElementById("songCount");
+  function initSongSearch() {
+    const input = document.getElementById("songSearch");
+    const items = document.querySelectorAll("#songList li");
+    const noResults = document.getElementById("noResults");
+    const count = document.getElementById("songCount");
 
-  // Anfang: alles verstecken
-  items.forEach((item) => {
-    item.style.display = "none";
-  });
+    if (!input || !noResults || !count) return;
 
-  function updateCount(n) {
-    count.textContent = n > 0 ? `${n} Song(s) gefunden` : "";
-  }
-
-  input.addEventListener("input", () => {
-    const value = input.value.toLowerCase();
-    let visibleCount = 0;
+    // Anfang: Suchfeld und Trefferliste zurücksetzen
+    input.value = "";
 
     items.forEach((item) => {
-      const title = item.dataset.title ?? "";
-      const match = title.includes(value);
-
-      if (value === "") {
-        item.style.display = "none";
-      } else {
-        item.style.display = match ? "block" : "none";
-        if (match) visibleCount++;
-      }
+      item.style.display = "none";
     });
 
-    if (value === "") {
-      noResults.style.display = "none";
-      count.textContent = "";
-      return;
+    noResults.style.display = "none";
+    count.textContent = "";
+
+    function updateCount(n) {
+      count.textContent = n > 0 ? `${n} Song(s) gefunden` : "";
     }
 
-    updateCount(visibleCount);
+    input.addEventListener("input", () => {
+      const value = input.value.toLowerCase();
 
-    noResults.style.display = visibleCount === 0 ? "block" : "none";
-  });
+      let visibleCount = 0;
+
+      items.forEach((item) => {
+        const title = item.dataset.title ?? "";
+        const match = title.includes(value);
+
+        if (value === "") {
+          item.style.display = "none";
+        } else {
+          item.style.display = match ? "block" : "none";
+
+          if (match) visibleCount++;
+        }
+      });
+
+      if (value === "") {
+        noResults.style.display = "none";
+        count.textContent = "";
+        return;
+      }
+
+      updateCount(visibleCount);
+      noResults.style.display = visibleCount === 0 ? "block" : "none";
+    });
+  }
+
+  // Erster Seitenaufruf
+  document.addEventListener("DOMContentLoaded", initSongSearch);
+
+  // Nach Astro Client-Navigation
+  document.addEventListener("astro:page-load", initSongSearch);
 </script>

@@ -2,6 +2,7 @@
 import IubendaScript from "../components/IubendaScript.astro";
 import GoogleScripts from "../components/GoogleScripts.astro";
 import Header from "../components/Header.astro";
+import { ClientRouter } from "astro:transitions";
 import Footer1 from "../components/Footer1.astro";
 import Footer2 from "../components/Footer2.astro";
 
@@ -122,6 +123,8 @@ const nonce = Astro.props.nonce || "";
         : "max-snippet:-1, index, follow"}
     />
     <meta name="theme-color" content="#191919" />
+
+    <ClientRouter />
 
     <!-- Client-Side Navigation -->
     
