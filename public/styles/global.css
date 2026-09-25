@@ -1365,7 +1365,11 @@ textarea {
   color: #666;
   line-height: 1.4;
   margin-top: 0.5rem;
-} 
+}
+
+.dark .small {
+  color: #ddd;
+}
 
 
 /* ==============================
