@@ -5,17 +5,35 @@ import { getPageUrl } from "../../utils/getPageUrl.js";
 
 const pageTitle = "Black Magic Woman – Santana (Guitar Arrangement)";
 const heading = "Black Magic Woman – Santana (Guitar Arrangement)";
-const description = "Gitarren-Arrangement für das Stück zu 'Black Magic Woman'. Vollständig ausgearbeitete Gitarren-Noten mit Gesangsmelodie. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
-const keywords = "Black Magic Woman, Santana, Guitar Arrangement, Gitarren Tabs, PDF Download";
+const description =
+  "Gitarren-Arrangement für das Stück zu 'Black Magic Woman'. Vollständig ausgearbeitete Gitarren-Noten mit Gesangsmelodie. Nach erfolgreicher Zahlung erhältst du sofort Zugriff auf den Download.";
+const keywords =
+  "Black Magic Woman, Santana, Guitar Arrangement, Gitarren Tabs, PDF Download";
 const pageUrl = getPageUrl(Astro);
-const returnUrl = "https://www.musicstudio-ziebart.de/download/black-magic-woman/";
+const returnUrl =
+  "https://www.musicstudio-ziebart.de/download/black-magic-woman/";
 const productId = "BMW-001";
 const price = "7.95";
 
-const ogImage = "https://www.musicstudio-ziebart.de/bilder/black_magic_woman_preview.png"
+const ogImage =
+  "https://www.musicstudio-ziebart.de/bilder/black_magic_woman_preview.png";
 
 const contentHtml = `
   <br />
+
+  <div class="video-container-wrapper">
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/wFeeTPAvdPw"
+        title="Black Magic Woman – Santana Lernvideo"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        ></iframe>
+    </div>
+  </div>
+
   <p class="pdf-download">
     <a
       href="https://drive.google.com/file/d/1WHGd9jM_thFq4WsLd3OVo7kZAYf8XLcP/preview"
@@ -27,17 +45,6 @@ const contentHtml = `
     </a>
   </p>
   
-  <p>
-  <a
-    href="https://www.youtube.com/watch?v=wFeeTPAvdPw"
-    class="normal-links"
-    target="_blank"
-    aria-label="YouTube Video zu Black Magic Woman Lernvideoansehen"
-    rel="noopener"
-  >
-    ▶️ Black Magic Woman – Santana Lernvideo auf YouTube ansehen
-  </a>
-  </p>
   <p><strong>Vollständig ausgearbeitetes Gitarren-Arrangement zum sofortigen Download.</strong></p>
   <p>Enthält alle wichtigen Stimmen: Guitar, Gesangsmelodie passend zur bekannten Aufnahme.</p>
   <p>Du erhältst sofort nach Kauf Zugriff auf die Gitarren Tabs als PDF-Datei.</p>
