@@ -3,3 +3,6 @@
 
 /downloads/*.pdf
   X-Robots-Tag: noindex
+
+/download/*.pdf
+  X-Robots-Tag: noindex
