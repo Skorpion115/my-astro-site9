@@ -2,6 +2,8 @@
 
 interface ImportMetaEnv {
     SITE_URL: string;
+    PUBLIC_SUPABASE_URL: string;
+    PUBLIC_SUPABASE_PUBLISHABLE_KEY: string;
     // Weitere Umgebungsvariablen hier hinzufügen
   }
   
