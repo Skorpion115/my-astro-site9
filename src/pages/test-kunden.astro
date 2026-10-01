@@ -1,0 +1,84 @@
+---
+import { supabase } from "../lib/supabase";
+
+const { data: kunden, error } = await supabase
+  .from("kunden")
+  .select("*")
+  .order("created_at", { ascending: true });
+
+const formatDatum = (datum: string) => {
+  return new Date(datum).toLocaleDateString("de-DE");
+};
+
+const formatUhrzeit = (datum: string) => {
+  return new Date(datum).toLocaleTimeString("de-DE", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+};
+
+const formatBetrag = (betrag: number) => {
+  return betrag.toLocaleString("de-DE", {
+    style: "currency",
+    currency: "EUR",
+  });
+};
+
+const gesamt = (kunden ?? []).reduce(
+  (summe, kunde) => summe + Number(kunde.betrag || 0),
+  0
+);
+---
+
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Kundendaten</title>
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+
+  <body>
+    <main class="kunden-test">
+      <h1>Kundendaten</h1>
+
+      {error ? (
+        <p class="kunden-fehler">Fehler: {error.message}</p>
+      ) : (
+        <>
+          <table class="kunden-tabelle">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Uhrzeit</th>
+                <th>Kunde</th>
+                <th>E-Mail</th>
+                <th>Produkt</th>
+                <th>Produkt-ID</th>
+                <th class="betrag">Betrag</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {(kunden ?? []).map((kunde) => (
+                <tr>
+                  <td>{formatDatum(kunde.created_at)}</td>
+                  <td>{formatUhrzeit(kunde.created_at)}</td>
+                  <td>{kunde.name}</td>
+                  <td>{kunde.email}</td>
+                  <td>{kunde.produkt}</td>
+                  <td>{kunde.produkt_id}</td>
+                  <td class="betrag">{formatBetrag(kunde.betrag)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          <p class="kunden-gesamt">
+            {kunden?.length ?? 0} Käufe · Gesamt: {formatBetrag(gesamt)}
+          </p>
+        </>
+      )}
+    </main>
+  </body>
+</html>

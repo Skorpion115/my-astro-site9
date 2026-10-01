@@ -1757,3 +1757,41 @@ section {
     opacity: 1;
   }
 }
+
+/* kunden-datenbank */
+
+.kunden-test {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.kunden-tabelle {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.kunden-tabelle th,
+.kunden-tabelle td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.kunden-tabelle th {
+  background: #f2f2f2;
+}
+
+.kunden-tabelle .betrag {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.kunden-gesamt {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.kunden-fehler {
+  color: darkred;
+}
