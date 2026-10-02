@@ -1795,3 +1795,64 @@ section {
 .kunden-fehler {
   color: darkred;
 }
+
+/* Kundendaten-Testseite */
+
+.kunden-tabelle-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.kunden-tabelle {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.kunden-tabelle th,
+.kunden-tabelle td {
+  padding: 8px 6px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.kunden-tabelle th {
+  background: #f2f2f2;
+}
+
+.kunden-tabelle .betrag {
+  text-align: right;
+}
+
+.kunden-gesamt {
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.kunden-fehler {
+  color: darkred;
+}
+
+@media (max-width: 700px) {
+  .kunden-tabelle th:nth-child(2),
+  .kunden-tabelle td:nth-child(2),
+  .kunden-tabelle th:nth-child(6),
+  .kunden-tabelle td:nth-child(6) {
+    display: none;
+  }
+
+  .kunden-tabelle {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .kunden-tabelle th,
+  .kunden-tabelle td {
+    padding: 9px 6px;
+    font-size: 0.9rem;
+  }
+}

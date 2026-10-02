@@ -1,4 +1,5 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 import { supabase } from "../lib/supabase";
 
 const { data: kunden, error } = await supabase
@@ -18,7 +19,7 @@ const formatUhrzeit = (datum: string) => {
 };
 
 const formatBetrag = (betrag: number) => {
-  return betrag.toLocaleString("de-DE", {
+  return Number(betrag).toLocaleString("de-DE", {
     style: "currency",
     currency: "EUR",
   });
@@ -30,55 +31,47 @@ const gesamt = (kunden ?? []).reduce(
 );
 ---
 
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Kundendaten</title>
-    <link rel="stylesheet" href="/styles/global.css" />
-  </head>
+<BaseLayout
+  pageTitle="Kundendaten"
+  description="Übersicht der Kundendaten"
+>
+  {error ? (
+    <p class="kunden-fehler">Fehler: {error.message}</p>
+  ) : (
+    <>
+      <div class="kunden-tabelle-wrapper">
+        <table class="kunden-tabelle">
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Uhrzeit</th>
+              <th>Kunde</th>
+              <th>E-Mail</th>
+              <th>Produkt</th>
+              <th>Produkt-ID</th>
+              <th class="betrag">Betrag</th>
+            </tr>
+          </thead>
 
-  <body>
-    <main class="kunden-test">
-      <h1>Kundendaten</h1>
-
-      {error ? (
-        <p class="kunden-fehler">Fehler: {error.message}</p>
-      ) : (
-        <>
-          <table class="kunden-tabelle">
-            <thead>
+          <tbody>
+            {(kunden ?? []).map((kunde) => (
               <tr>
-                <th>Datum</th>
-                <th>Uhrzeit</th>
-                <th>Kunde</th>
-                <th>E-Mail</th>
-                <th>Produkt</th>
-                <th>Produkt-ID</th>
-                <th class="betrag">Betrag</th>
+                <td>{formatDatum(kunde.created_at)}</td>
+                <td>{formatUhrzeit(kunde.created_at)}</td>
+                <td>{kunde.name}</td>
+                <td>{kunde.email}</td>
+                <td>{kunde.produkt}</td>
+                <td>{kunde.produkt_id}</td>
+                <td class="betrag">{formatBetrag(kunde.betrag)}</td>
               </tr>
-            </thead>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
-            <tbody>
-              {(kunden ?? []).map((kunde) => (
-                <tr>
-                  <td>{formatDatum(kunde.created_at)}</td>
-                  <td>{formatUhrzeit(kunde.created_at)}</td>
-                  <td>{kunde.name}</td>
-                  <td>{kunde.email}</td>
-                  <td>{kunde.produkt}</td>
-                  <td>{kunde.produkt_id}</td>
-                  <td class="betrag">{formatBetrag(kunde.betrag)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-
-          <p class="kunden-gesamt">
-            {kunden?.length ?? 0} Käufe · Gesamt: {formatBetrag(gesamt)}
-          </p>
-        </>
-      )}
-    </main>
-  </body>
-</html>
+      <p class="kunden-gesamt">
+        {kunden?.length ?? 0} Käufe · Gesamt: {formatBetrag(gesamt)}
+      </p>
+    </>
+  )}
+</BaseLayout>
