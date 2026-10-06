@@ -194,9 +194,10 @@ const nonce = Astro.props.nonce || "";
     >
 
     <Header nonce={nonce} />
+    <!--
     <script nonce={nonce}>
       console.log("[BROWSER] Nonce Header läuft!");
-    </script>
+    </script> -->
 
     <h1 id="top" transition:animate="slide" class="page-title">{pageTitle}</h1>
 
@@ -209,20 +210,23 @@ const nonce = Astro.props.nonce || "";
 
     <!-- IubendaScript kommt hier nach den Inhalten, aber vor GoogleScripts -->
     <IubendaScript nonce={nonce} />
+    <!--
     <script nonce={nonce}>
       console.log("[BROWSER] IubendaScript läuft!");
-    </script>
+    </script> -->
 
     <!-- GoogleScripts kommt nach IubendaScript -->
     <GoogleScripts nonce={nonce} />
+    <!--
     <script nonce={nonce}>
       console.log("[BROWSER] GoogleScripts läuft!");
-    </script>
+    </script> -->
 
     <!-- Scripte extern einbinden -->
     <script src="/scripts/menu.js" nonce={nonce} defer></script>
+    <!--
     <script src="/scripts/script-check.js" nonce={nonce} defer is:inline
-    ></script>
+    ></script> -->
     <script src="/scripts/delete-gacookies.js" defer></script>
     <!--
     <script src="/scripts/debug.js" defer></script> -->
