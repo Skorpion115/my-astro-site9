@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
-    "astro": "^7.3.5",
+    "astro": "^7.3.6",
     "xmlbuilder2": "^4.0.3"
   },
   "devDependencies": {
