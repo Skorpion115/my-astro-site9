@@ -97,7 +97,7 @@ const gesamt = (kunden ?? []).reduce(
     <section class="kunden-login">
       <h2>Interner Kundenbereich</h2>
 
-      <form method="POST">
+      <form class="kunden-kopf kunden-login-form" method="POST">
         <input type="hidden" name="action" value="login" />
 
         <label for="password">Passwort:</label>
@@ -110,7 +110,7 @@ const gesamt = (kunden ?? []).reduce(
           required
         />
 
-        <button type="submit">Anmelden</button>
+        <button class="kunden-login-button" type="submit">Anmelden</button>
 
         {request.method === "POST" && (
           <p class="kunden-fehler">Falsches Passwort.</p>
@@ -122,9 +122,9 @@ const gesamt = (kunden ?? []).reduce(
       <div class="kunden-kopf">
         <h2>Kundendaten</h2>
 
-        <form method="POST">
+        <form class="kunden-logout-form" method="POST">
           <input type="hidden" name="action" value="logout" />
-          <button type="submit">Logout</button>
+          <button class="kunden-logout-button" type="submit">Logout</button>
         </form>
       </div>
 

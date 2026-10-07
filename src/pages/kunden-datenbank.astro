@@ -67,15 +67,17 @@ if (eingeloggt) {
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Supabase Kunden</title>
+    <link rel="stylesheet" href="/styles/global.css" />
   </head>
 
-  <body>
+  <body class="kunden-datenbank-page">
     {!eingeloggt ? (
-      <section>
+      <section class="login-card">
         <h1>Interner Kundenbereich</h1>
 
-        <form method="POST">
+        <form class="login-form" method="POST">
           <input type="hidden" name="action" value="login" />
 
           <label for="password">Passwort:</label>
@@ -88,10 +90,10 @@ if (eingeloggt) {
             required
           />
 
-          <button type="submit">Anmelden</button>
+          <button class="login-button" type="submit">Anmelden</button>
 
           {request.method === "POST" && (
-            <p>Falsches Passwort.</p>
+            <p class="login-error">Falsches Passwort.</p>
           )}
         </form>
       </section>
@@ -99,9 +101,9 @@ if (eingeloggt) {
       <>
         <h1>Supabase Datenbank-Kunden</h1>
 
-        <form method="POST">
+        <form class="logout-form" method="POST">
           <input type="hidden" name="action" value="logout" />
-          <button type="submit">Logout</button>
+          <button class="logout-button" type="submit">Logout</button>
         </form>
 
         {error ? (

@@ -1796,6 +1796,95 @@ section {
   color: darkred;
 }
 
+.kunden-login {
+  width: min(100%, 420px);
+  margin: 8vh auto;
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(15 23 42 / 8%);
+}
+
+.kunden-login h2 {
+  margin: 0 0 26px;
+}
+
+.kunden-login-form {
+  display: grid;
+  gap: 12px;
+}
+
+.kunden-login-form label {
+  font-weight: 600;
+}
+
+.kunden-login-form input[type="password"] {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: #fff;
+  font: inherit;
+}
+
+.kunden-login-form input[type="password"]:focus {
+  border-color: #2563eb;
+  outline: 3px solid rgb(37 99 235 / 18%);
+}
+
+.kunden-login-button,
+.kunden-logout-button {
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.kunden-login-button {
+  margin-top: 6px;
+  background: #2563eb;
+}
+
+.kunden-login-button:hover {
+  background: #1d4ed8;
+}
+
+.kunden-logout-form {
+  margin: 0 0 20px;
+}
+
+.kunden-logout-button {
+  background: #dc2626;
+}
+
+.kunden-logout-button:hover {
+  background: #b91c1c;
+}
+
+.kunden-login-button:active,
+.kunden-logout-button:active {
+  transform: translateY(1px);
+}
+
+.kunden-login-button:focus-visible,
+.kunden-logout-button:focus-visible {
+  outline: 3px solid rgb(37 99 235 / 30%);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .kunden-login {
+    padding: 24px 20px;
+  }
+}
+
 /* Kundendaten-Testseite */
 
 .kunden-tabelle-wrapper {
@@ -1855,5 +1944,129 @@ section {
   .kunden-tabelle td {
     padding: 9px 6px;
     font-size: 0.9rem;
+  }
+}
+
+/* Kunden-Datenbank */
+
+.kunden-datenbank-page,
+.kunden-datenbank-page * {
+  box-sizing: border-box;
+}
+
+.kunden-datenbank-page {
+  min-height: 100vh;
+  margin: 0;
+  padding: 32px 20px;
+  background: #f3f6fb;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.kunden-datenbank-page h1 {
+  margin: 0 0 24px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.kunden-datenbank-page .login-card {
+  width: min(100%, 420px);
+  margin: 8vh auto 0;
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgb(15 23 42 / 8%);
+}
+
+.kunden-datenbank-page .login-card h1 {
+  margin-bottom: 26px;
+}
+
+.kunden-datenbank-page .login-form {
+  display: grid;
+  gap: 12px;
+}
+
+.kunden-datenbank-page .login-form label {
+  font-weight: 600;
+}
+
+.kunden-datenbank-page .login-form input[type="password"] {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+.kunden-datenbank-page .login-form input[type="password"]:focus {
+  border-color: #2563eb;
+  outline: 3px solid rgb(37 99 235 / 18%);
+}
+
+.kunden-datenbank-page .login-button,
+.kunden-datenbank-page .logout-button {
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 7px;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.kunden-datenbank-page .login-button {
+  margin-top: 6px;
+  background: #2563eb;
+}
+
+.kunden-datenbank-page .login-button:hover {
+  background: #1d4ed8;
+}
+
+.kunden-datenbank-page .logout-form {
+  margin: 0 0 20px;
+}
+
+.kunden-datenbank-page .logout-button {
+  background: #dc2626;
+}
+
+.kunden-datenbank-page .logout-button:hover {
+  background: #b91c1c;
+}
+
+.kunden-datenbank-page .login-button:active,
+.kunden-datenbank-page .logout-button:active {
+  transform: translateY(1px);
+}
+
+.kunden-datenbank-page .login-button:focus-visible,
+.kunden-datenbank-page .logout-button:focus-visible {
+  outline: 3px solid rgb(37 99 235 / 30%);
+  outline-offset: 3px;
+}
+
+.kunden-datenbank-page .login-error {
+  margin: 4px 0 0;
+  color: #b91c1c;
+}
+
+.kunden-datenbank-page pre {
+  overflow: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .kunden-datenbank-page .login-card {
+    padding: 24px 20px;
   }
 }
