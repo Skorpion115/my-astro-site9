@@ -1,11 +1,69 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { supabase } from "../lib/supabase";
+export const prerender = false;
 
-const { data: kunden, error } = await supabase
-  .from("kunden")
-  .select("*")
-  .order("created_at", { ascending: true });
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
+const supabaseSecretKey = import.meta.env.SUPABASE_SECRET_KEY;
+const adminPassword = import.meta.env.KUNDEN_ADMIN_PASSWORD;
+
+const supabaseAdmin = createClient(
+  supabaseUrl,
+  supabaseSecretKey
+);
+
+const AUTH_COOKIE = "kunden-admin-auth";
+
+const request = Astro.request;
+const cookies = Astro.cookies;
+
+let eingeloggt = cookies.get(AUTH_COOKIE)?.value === "ok";
+
+// Logout
+if (request.method === "POST") {
+  const formData = await request.formData();
+  const action = formData.get("action");
+
+  if (action === "logout") {
+    cookies.delete(AUTH_COOKIE, {
+      path: "/",
+    });
+
+    return Astro.redirect("/kunden/");
+  }
+
+  if (action === "login") {
+    const password = String(formData.get("password") ?? "");
+
+    if (password === adminPassword) {
+      cookies.set(AUTH_COOKIE, "ok", {
+        path: "/",
+        httpOnly: true,
+        secure: true,
+        sameSite: "strict",
+        maxAge: 60 * 60 * 8,
+      });
+
+      return Astro.redirect("/kunden/");
+    }
+
+    eingeloggt = false;
+  }
+}
+
+let kunden = [];
+let error = null;
+
+if (eingeloggt) {
+  const result = await supabaseAdmin
+    .from("kunden")
+    .select("*")
+    .order("created_at", { ascending: true });
+
+  kunden = result.data ?? [];
+  error = result.error;
+}
 
 const formatDatum = (datum: string) => {
   return new Date(datum).toLocaleDateString("de-DE");
@@ -33,45 +91,86 @@ const gesamt = (kunden ?? []).reduce(
 
 <BaseLayout
   pageTitle="Kundendaten"
-  description="Übersicht der Kundendaten"
+  description="Interner Kundenbereich"
 >
-  {error ? (
-    <p class="kunden-fehler">Fehler: {error.message}</p>
+  {!eingeloggt ? (
+    <section class="kunden-login">
+      <h2>Interner Kundenbereich</h2>
+
+      <form method="POST">
+        <input type="hidden" name="action" value="login" />
+
+        <label for="password">Passwort:</label>
+
+        <input
+          type="password"
+          id="password"
+          name="password"
+          autocomplete="current-password"
+          required
+        />
+
+        <button type="submit">Anmelden</button>
+
+        {request.method === "POST" && (
+          <p class="kunden-fehler">Falsches Passwort.</p>
+        )}
+      </form>
+    </section>
   ) : (
     <>
-      <div class="kunden-tabelle-wrapper">
-        <table class="kunden-tabelle">
-          <thead>
-            <tr>
-              <th>Datum</th>
-              <th>Uhrzeit</th>
-              <th>Kunde</th>
-              <th>E-Mail</th>
-              <th>Produkt</th>
-              <th>Produkt-ID</th>
-              <th class="betrag">Betrag</th>
-            </tr>
-          </thead>
+      <div class="kunden-kopf">
+        <h2>Kundendaten</h2>
 
-          <tbody>
-            {(kunden ?? []).map((kunde) => (
-              <tr>
-                <td>{formatDatum(kunde.created_at)}</td>
-                <td>{formatUhrzeit(kunde.created_at)}</td>
-                <td>{kunde.name}</td>
-                <td>{kunde.email}</td>
-                <td>{kunde.produkt}</td>
-                <td>{kunde.produkt_id}</td>
-                <td class="betrag">{formatBetrag(kunde.betrag)}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <form method="POST">
+          <input type="hidden" name="action" value="logout" />
+          <button type="submit">Logout</button>
+        </form>
       </div>
 
-      <p class="kunden-gesamt">
-        {kunden?.length ?? 0} Käufe · Gesamt: {formatBetrag(gesamt)}
-      </p>
+      {error ? (
+        <p class="kunden-fehler">
+          Fehler: {error.message}
+        </p>
+      ) : (
+        <>
+          <div class="kunden-tabelle-wrapper">
+            <table class="kunden-tabelle">
+              <thead>
+                <tr>
+                  <th>Datum</th>
+                  <th>Uhrzeit</th>
+                  <th>Kunde</th>
+                  <th>E-Mail</th>
+                  <th>Produkt</th>
+                  <th>Produkt-ID</th>
+                  <th class="betrag">Betrag</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {(kunden ?? []).map((kunde) => (
+                  <tr>
+                    <td>{formatDatum(kunde.created_at)}</td>
+                    <td>{formatUhrzeit(kunde.created_at)}</td>
+                    <td>{kunde.name}</td>
+                    <td>{kunde.email}</td>
+                    <td>{kunde.produkt}</td>
+                    <td>{kunde.produkt_id}</td>
+                    <td class="betrag">
+                      {formatBetrag(kunde.betrag)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <p class="kunden-gesamt">
+            {kunden?.length ?? 0} Käufe · Gesamt: {formatBetrag(gesamt)}
+          </p>
+        </>
+      )}
     </>
   )}
 </BaseLayout>

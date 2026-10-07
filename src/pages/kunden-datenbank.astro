@@ -1,9 +1,67 @@
 ---
-import { supabase } from "../lib/supabase";
+export const prerender = false;
 
-const { data, error } = await supabase
-  .from("kunden")
-  .select("*");
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
+const supabaseSecretKey = import.meta.env.SUPABASE_SECRET_KEY;
+const adminPassword = import.meta.env.KUNDEN_ADMIN_PASSWORD;
+
+const supabaseAdmin = createClient(
+  supabaseUrl,
+  supabaseSecretKey
+);
+
+const AUTH_COOKIE = "kunden-admin-auth";
+
+const request = Astro.request;
+const cookies = Astro.cookies;
+
+let eingeloggt = cookies.get(AUTH_COOKIE)?.value === "ok";
+
+if (request.method === "POST") {
+  const formData = await request.formData();
+  const action = formData.get("action");
+
+  if (action === "logout") {
+    cookies.delete(AUTH_COOKIE, {
+      path: "/",
+    });
+
+    return Astro.redirect("/kunden-datenbank/");
+  }
+
+  if (action === "login") {
+    const password = String(formData.get("password") ?? "");
+
+    if (password === adminPassword) {
+      cookies.set(AUTH_COOKIE, "ok", {
+        path: "/",
+        httpOnly: true,
+        secure: true,
+        sameSite: "strict",
+        maxAge: 60 * 60 * 8,
+      });
+
+      return Astro.redirect("/kunden-datenbank/");
+    }
+
+    eingeloggt = false;
+  }
+}
+
+let data = [];
+let error = null;
+
+if (eingeloggt) {
+  const result = await supabaseAdmin
+    .from("kunden")
+    .select("*")
+    .order("created_at", { ascending: true });
+
+  data = result.data ?? [];
+  error = result.error;
+}
 ---
 
 <html lang="de">
@@ -11,13 +69,47 @@ const { data, error } = await supabase
     <meta charset="UTF-8" />
     <title>Supabase Kunden</title>
   </head>
-  <body>
-    <h1>Supabase Datenbank-Kunden</h1>
 
-    {error ? (
-      <p>Fehler: {error.message}</p>
+  <body>
+    {!eingeloggt ? (
+      <section>
+        <h1>Interner Kundenbereich</h1>
+
+        <form method="POST">
+          <input type="hidden" name="action" value="login" />
+
+          <label for="password">Passwort:</label>
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            required
+          />
+
+          <button type="submit">Anmelden</button>
+
+          {request.method === "POST" && (
+            <p>Falsches Passwort.</p>
+          )}
+        </form>
+      </section>
     ) : (
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <>
+        <h1>Supabase Datenbank-Kunden</h1>
+
+        <form method="POST">
+          <input type="hidden" name="action" value="logout" />
+          <button type="submit">Logout</button>
+        </form>
+
+        {error ? (
+          <p>Fehler: {error.message}</p>
+        ) : (
+          <pre>{JSON.stringify(data, null, 2)}</pre>
+        )}
+      </>
     )}
   </body>
 </html>
