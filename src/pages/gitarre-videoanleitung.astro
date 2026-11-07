@@ -18,6 +18,16 @@ const pageUrl = `${SITE_URL}/gitarre-videoanleitung/`;
 const videoData = [
   {
     loc: `${SITE_URL}/gitarrenunterricht/`,
+    title: "In The Year 2525 – Guitar Performance & Tutorial | Musicstudio Ziebart",
+    description:
+      "🎸 Lerne „In The Year 2525“ von Zager & Evans auf der Gitarre – Schritt für Schritt erklärt! In diesem Gitarren-Tutorial spiele ich dir den Song komplett vor – begleitet von einem selbst erstellten Playback. Danach erkläre ich dir alle Akkorde, Schlagmuster und die Struktur, damit du den Song selbst begleiten kannst. 📌 Die Version basiert auf der Aufnahme von Zager & Evans aus dem Jahr 1969 – ich habe sie nach Gehör herausgearbeitet. ✅ Inhalt: • Komplettes Vorspiel mit Playback • Einfache Akkorde & Schlagmuster • Songabschnitte verständlich erklärt",
+    contentLoc: "https://www.youtube.com/embed/pBbKjBTjdAg",
+    thumbnailLoc: "https://i.ytimg.com/vi/pBbKjBTjdAg/hqdefault.jpg",
+    publicationDate: "2026-11-06T14:00:00+02:00",
+    duration: "PT11M47S",
+  },
+  {
+    loc: `${SITE_URL}/gitarrenunterricht/`,
     title: "🎸 Bossa Dorado Guitar Lesson – Gypsy Jazz Solo & Rhythm (Dorado Schmitt)",
     description:
       "Willkommen zu meinem Gitarren-Tutorial zu “Bossa Dorado” von Dorado Schmitt! In diesem Video zeige ich dir Schritt für Schritt, wie du den Song auf der Konzertgitarre spielen kannst. Ich habe nur das Hauptthema aufgeschrieben. Das andere wäre zu komplex. Es gehört in die Stilrichtung Gypsy Jazz, die von Django Reinhardt geprägt wurde.",
@@ -48,16 +58,6 @@ const videoData = [
   },
   {
     loc: `${SITE_URL}/gitarrenunterricht/`,
-    title: "Like Ice In The Sunshine – Beagle Music – Guitar Lesson (Gitarren-Tutorial)",
-    description:
-      "In diesem Video zeige ich dir, wie du Like Ice In The Sunshine auf der Gitarre spielen kannst. Du lernst Schritt für Schritt die Akkorde, den Rhythmus und den Schlag. Ideal für Anfänger, Fortgeschrittente und alle, die diesen bekannten Popsong auf der Akustikgitarre spielen möchten.",
-    contentLoc: "https://www.youtube.com/embed/Jk6ECVwJyZk",
-    thumbnailLoc: "https://i.ytimg.com/vi/Jk6ECVwJyZk/hqdefault.jpg",
-    publicationDate: "2025-08-30T14:23:00+02:00",
-    duration: "PT13M12S",
-  },
-  {
-    loc: `${SITE_URL}/gitarrenunterricht/`,
     title: "Beatles – Yesterday | Gitarre Tutorial 🎸",
     description:
       "Lernvideo und Gitarren Tutorial für das Gitarrenstück 'Yesterday von den Beatles'. Dieses Stück kann man wunderbar alleine spielen, also ohne Bass, Drums usw. Die Gitarre wird in einer Double Flatstimmung umgestimmt.",
@@ -65,16 +65,6 @@ const videoData = [
     thumbnailLoc: "https://i.ytimg.com/vi/Jla_18ar1aE/hqdefault.jpg",
     publicationDate: "2025-09-10T14:00:00+02:00",
     duration: "PT12M40S",
-  },
-  {
-    loc: `${SITE_URL}/gitarrenunterricht/`,
-    title: "Catch The Wind – Donovan | Gitarren Tutorial",
-    description:
-      "🎸 Lerne „Catch The Wind“ von Donovan auf der Gitarre – Schritt für Schritt erklärt! In diesem Gitarren-Tutorial spiele ich dir den Song komplett vor – begleitet von einem selbst erstellten Playback. Danach erkläre ich dir alle Akkorde, Schlagmuster und die Struktur, damit du den Song selbst begleiten kannst. 📌 Die Version basiert auf der Aufnahme von Donovan aus dem Jahr 1965 – ich habe sie nach Gehör herausgearbeitet. ✅ Inhalt: • Komplettes Vorspiel mit Playback • Einfache Akkorde & Schlagmuster • Songabschnitte verständlich erklärt",
-    contentLoc: "https://www.youtube.com/embed/ifJuoPeWBU8",
-    thumbnailLoc: "https://i.ytimg.com/vi/ifJuoPeWBU8/hqdefault.jpg",
-    publicationDate: "2025-09-16T14:00:00+02:00",
-    duration: "PT24M44S",
   },
 ];
 ---
@@ -99,7 +89,7 @@ const videoData = [
       <strong>Bossa Dorado</strong>, 
       <strong>Silence Is Golden</strong>, 
       <strong>The Lion Sleeps Tonight</strong>, 
-      <strong>Catch The Wind</strong>,
+      <strong>In The Year 2525</strong>,
       <strong>Yesterday</strong> und <strong>City of New Orleans</strong>. Die
       Tutorials sind ideal für Anfänger und fortgeschrittene Gitarristen.
     </p>
@@ -168,9 +158,9 @@ const videoData = [
                 </a>
               </>
             )}
-            {video.title.includes("Catch The Wind") && (
+            {video.title.includes("In The Year 2525") && (
               <>
-                <a href="/checkout/catch-the-wind/" target="_blank" class="normal-links">
+                <a href="/checkout/in-the-year-2525/" target="_blank" class="normal-links">
                   <br />Noten & Pattern kaufen
                 </a>
               </>
